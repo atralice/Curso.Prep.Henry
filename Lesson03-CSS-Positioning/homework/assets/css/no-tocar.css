@@ -1,0 +1,105 @@
+body {
+  background: #e5efff;
+  margin: 95px 0 100px 0;
+  color: #383f49;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#header {
+  text-align: center;
+}
+
+.container {
+  padding: 30px;
+}
+
+#ejercicioDos {
+  height: 50px;
+  text-align: center;
+  border: 1px solid purple;
+}
+
+#containerImagen {
+  width: 1000px;
+  height: 500px;
+  border: 5px solid #3574d2;
+  background-color: #bdd6fc;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+#containerObjetivo {
+  width: 400px;
+  height: 300px;
+  border: 5px dashed red;
+  position: absolute;
+  top: 95px;
+  left: 195px;
+}
+
+#spanDescriptivo {
+  position: absolute;
+  top: 100px;
+  left: 615px;
+  padding-right: 20px;
+
+}
+
+#ejercicioCuatro {
+  display: block;
+  width: 100vw;
+  height: 70px;
+  background-color: #3574d2;
+}
+
+#ejercicioCinco span {
+  font-size: 20px;
+  color: white;
+}
+
+#ejercicioCinco {
+  height: 100%;
+  padding: 0 10px;
+}
+
+#ejercicioSiete {
+  width: 500px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  position: relative;
+  background-color: black;
+  display: flex;
+}
+
+.textoElemento {
+  display: block;
+  text-align: center;
+  align-self: center;
+}
+
+.elementos {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  background-color: white;
+}
+
+#elementoUno {
+  border: 2px dashed green;
+}
+
+#elementoDos {
+  border: 2px dashed orange;
+}
+
+#elementoTres {
+  border: 2px dashed blue;
+}
+
+#elementoCuatro {
+  border: 2px dashed red;
+}

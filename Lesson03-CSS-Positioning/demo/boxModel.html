@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Box Model</title>
+  <style type="text/css">
+    .simple {
+      width: 500px;
+      margin: 20px auto;
+      background: red;
+      border: black 10px solid;
+    }
+
+    .margen {
+      width: 500px;
+      margin: 20px auto;
+      padding: 50px;
+      border-width: 10px;
+      background: gray;
+      border: yellow 10px solid;
+    }
+ 
+
+    div {
+      box-sizing: border-box;
+    }
+
+  </style>
+</head>
+<body>
+    
+    <div class="simple">Soy chico</div>
+    <div class="margen">Soy más grande. Porqué si los dos tenemos 500 px de <i>width</i></div>
+    <div class="margen">
+      Soy más grande. Porqué si los dos tenemos 500 px de <i>width</i>
+      <div class="simple">Absolute</div>
+    </div>
+
+</body>
+</html>

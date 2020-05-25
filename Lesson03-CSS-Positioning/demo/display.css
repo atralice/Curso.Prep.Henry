@@ -1,0 +1,20 @@
+.red {
+  color: red;
+  margin: 10px;
+}
+div {
+  margin: 10px;
+  border: black 1px solid;
+  /*display: inline;*/
+}
+
+/*.centrado {
+  width: 100px;
+  margin: 0 auto;
+}*/
+
+/*Scrollbar*/
+.centrado {
+  max-width: 1000px;
+  margin: 0 auto;
+}
