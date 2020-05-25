@@ -1,202 +1,91 @@
-# Lección 1: Fundamentos de Git
+# Git - Intro
 
-En esta lección cubriremos:
+Git es un _sistema de control de versión_ diseñado para trackear cambios en archivos digitales y coordinar el trabajo realizado sobre esos archivos en un equipo de personas. Su mayor uso es para el desarrollo de software, aunque también es utilizado para trackear archivos de otros tipos.
 
-* Descripción de control de versiones y Git.
-* Comandos básicos de terminal.
-* Forking y cloning de repos existentes en Github.com
-* Comandos básicos de Git (status, add, commit, push).
-* Enviar una Pull Request.
+## Version Control System
 
-### Pre-requisitos
-* Crear una cuenta en [Github.com](https://www.github.com/).
-* Si usas una computadora con Windows, puedes instalar la terminal de comandos _git-bash_ haciendo click [acá](https://git-for-windows.github.io/).
-* Si usas Mac, `git` viene pre-instalado y puedes acceder desde la terminal pulsando ⌘+Espacio y escribiendo "terminal". Puedes asegurarte de que git está instalado escribiendo `which git` en la terminal y pulsando Enter, si aparece la ruta de un archivo está todo correcto. En algunas ocasiones, podrías ser redireccionado a la descarga de la línea de comandos de Xcode, sigue las instrucciones.
-* Si usas Linux, tal vez necesites instalar git accediendo a tu terminal e ingresado `apt-get install git`
-* Si tienes problemas instalando Git, este recurso puede servir de ayuda: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+El control de versiones es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.
 
+Si eres diseñador gráfico o web, y quieres mantener cada versión de una imagen o diseño (algo que sin duda quieres), un sistema de control de versiones (Version Control System o VCS en inglés) es una elección muy sabia. Te permite revertir archivos a un estado anterior, revertir el proyecto entero a un estado anterior, comparar cambios a lo largo del tiempo, ver quién modificó por última vez algo que puede estar causando un problema, quién introdujo un error y cuándo, y mucho más. Usar un VCS también significa generalmente que si rompes o pierdes archivos, puedes recuperarlos fácilmente.
 
-## Descripción de control de versiones y Git
-El control de versiones es un concepto de ingeniería de software que aplica al manejo del código fuente. Hay muchos sistemas para aplicar prácticas de versión de controles al código fuente. Nos enfocaremos en uno de los más populares, "Git".
+Hay varios tipos de sistemas de versionado, estos puedes ser:
 
-### Git
+### Locales
 
-Git fue creado en 2005 por Linus Torvalds. Git permite a un equipo a trabajar concurrentemente en un mismo proyecto, o "repositorio", manteniendo todo actualizado. Esto se hace a través de branching, cada miembro o "feature" (característica) puede tener una rama partiendo de la rama master. Esa rama puede ser editada como se requiera sin interferir con el "master". Llegado el momento de "mergear" (unir) las ramas juntas de nuevo, git evaluará dónde se realizaron los cambios y correjirá (actualizará) el master para reflejar esos cambios sin interferir con otros cambios. Git también actúa como una especie de máquina del tiempo, permitiendo al equipo revertir cualquier cambio hecho en el código fuente a través del historial del código.
+![Local](./img/local.png)
+
+Un sistema de versionado local, automatiza  la tarea de ordenar, copiar y tagear todas las modificaciones de archivos que vayamos haciendo. Imaginense que están trabajando con código, y ustedes mismos van copiando y guardando los archivos en otra carpeta cada vez que lo mofican, y ponen un nombre indicando la fecha y la hora del cambios, este mismo proceso, pero automatizado, es un _VCS local_.
+Como se puden imaginar, este sistema funciona _bien_ para trabajar solos, pero si queremos incorporar otra gente al equipo van a empezar a surgir problemas.
+
+### Centralizados
+
+![Centralizado](./img/centralizado.png)
+
+Para solventar este problema, se desarrollaron los sistemas de control de versiones centralizados (_Centralized Version Control Systems_ o __CVCSs__ en inglés). Estos sistemas, como __CVS__, __Subversion__, y __Perforce__, tienen un único servidor que contiene todos los archivos versionados, y varios clientes que descargan los archivos desde ese lugar central. Durante muchos años éste ha sido el estándar para el control de versiones.
+
+Este sistema ofrece varias ventajas, como por ejemplo: Todo el mundo puede saber en qué están trabajando los demás colaboradores, Los administradores tienen control sobre qué archivos pueden ver/modificar cada colaborador. Pero tambien presenta _problema importante_:  que hay un __punto único de fallo__, si este server se cae, nadie puede seguir trabajando ni trackeando sus cambios. O si se rompe, y no hay backups, se pierde absolutamente _todo_ el trabajo realizado.
+
+### Distribuido
+
+![Distribuido](./img/distribuido.png)
+
+Es aquí donde entran los sistemas de control de versiones distribuidos (_Distributed Version Control Systems_ o __DVCSs__ en inglés). En un DVCS (como __Git__, __Mercurial__, __Bazaar__ o __Darcs__), los clientes no sólo descargan la última instantánea de los archivos: replican completamente el repositorio. Así, si un servidor muere, y estos sistemas estaban colaborando a través de él, cualquiera de los repositorios de los clientes puede copiarse en el servidor para restaurarlo.
+
+## Historia de Git
+
+Como muchas de las grandes cosas en esta vida, __Git__ comenzó con un poco de destrucción creativa y encendida polémica. El núcleo de Linux es un proyecto de software de código abierto con un alcance bastante grande. Durante la mayor parte del mantenimiento del núcleo de Linux (1991-2002), los cambios en el software se pasaron en forma de parches y archivos. En 2002, el proyecto del núcleo de Linux empezó a usar un DVCS propietario llamado __BitKeeper__.
+
+En 2005, la relación entre la comunidad que desarrollaba el núcleo de Linux y la compañía que desarrollaba BitKeeper se vino abajo, y la herramienta dejó de ser ofrecida gratuitamente. Esto impulsó a la comunidad de desarrollo de Linux (y en particular a Linus Torvalds, el creador de Linux) a desarrollar su propia herramienta basada en algunas de las lecciones que aprendieron durante el uso de BitKeeper. Algunos de los objetivos del nuevo sistema fueron los siguientes:
+
+* Velocidad
+* Diseño sencillo
+* Fuerte apoyo al desarrollo no lineal (miles de ramas paralelas)
+* Completamente distribuido
+* Capaz de manejar grandes proyectos (como el núcleo de Linux) de manera eficiente (velocidad y tamaño de los datos)
+
+Desde su nacimiento en 2005, Git ha evolucionado y madurado para ser fácil de usar y aún conservar estas cualidades iniciales. Es tremendamente rápido, muy eficiente con grandes proyectos, y tiene un increíble sistema de ramificación (branching) para desarrollo no lineal.
+
+## Conceptos de Git
+
+Git modela sus datos más como un conjunto de instantáneas de un mini sistema de archivos. Cada vez que confirmas un cambio, o guardas el estado de tu proyecto en Git, él básicamente hace una foto del aspecto de todos tus archivos en ese momento, y guarda una referencia a esa instantánea. Para ser eficiente, si los archivos no se han modificado, Git no almacena el archivo de nuevo, sólo un enlace al archivo anterior idéntico que ya tiene almacenado.
+
+![snapshots](./img/snapshots.png)
+
+La mayoría de las operaciones en Git sólo necesitan archivos y recursos locales para operar. Por lo general no se necesita información de ningún otro ordenador de tu red. Como tienes toda la historia del proyecto ahí mismo, en tu disco local, la mayoría de las operaciones parecen prácticamente inmediatas (con otros sistemas el proceso involucra llamados por red, que generan retardos importantes).
+
+## Integridad
+
+Todo en Git es verificado mediante una suma de comprobación (__checksum__ en inglés) antes de ser almacenado, y es identificado a partir de ese momento mediante dicha suma. __Esto significa que es imposible cambiar los contenidos de cualquier archivo o directorio sin que Git lo sepa.__
+
+El mecanismo que usa Git para generar esta suma de comprobación se conoce como hash SHA-1. Se trata de una cadena de 40 caracteres hexadecimales (0-9 y a-f), y se calcula en base a los contenidos del archivo o estructura de directorios. Un hash SHA-1 tiene esta pinta:
+
+```
+24b9da6552252987aa493b52f8696cd6d3b00373
+```
+
+Verás estos valores hash por todos lados en Git, ya que los usa con mucha frecuencia. De hecho, Git guarda todo no por nombre de archivo, sino por el valor hash de sus contenidos.
+
+Vamos a distinguir dos directorios, primero el _directorio de git_ , que es donde almacena los metadatos y la base de datos de tu proyecto, y segundo el _directorio de trabajo_ que es una copia de una versión del proyecto en particular. Estos archivos se sacan de la base de datos comprimida en el directorio de Git, y se colocan en disco para que los puedas usar o modificar. Los archivos dentro del _directorio de trabajo_ pueden estar en unos de los siguientes _estados_:
+
+### Estados
+
+Git tiene tres estados principales en los que se pueden encontrar tus archivos:
+* __committed__:significa que los datos están almacenados de manera segura en tu base de datos local.
+* __modified__: significa que has modificado el archivo pero todavía no lo has commiteado a tu base de datos.
+* __staged__: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima commiteada.
+
+![Estados](./img/estados.png)
+
+Hay un archivo simple, generalmente contenido en tu directorio de Git, llamado que almacena información acerca de lo que va a ir en tu próxima confirmación, al contenido de este archivo, o al archivo mismo se lo conoce como __staging area__.
+
+Sabiendo esto, el flujo de trabajo básico en Git sería algo así:
+
+* Modificas una serie de archivos en tu _directorio de trabajo_.
+* _Stageas_ los archivos, añadiendolos a tu __staging area__ o área de preparación.
+* Commiteas o Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y almacena esas instantáneas de manera permanente en tu directorio de Git.
+
+> Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (__committed__). Si ha sufrido cambios desde que se obtuvo del repositorio, y ha sido añadida al área de preparación, está preparada (__staged__). Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado (no se incluyó en el área de preparación), está modificada (__modified__).
 
 ### Github.com
 
 [Github.com](https://github.com) es una red para almacenar tus repositorios, esencialmente es un repositorio de repositorios. Es uno de los tantos disponibles en internet, y el más popular. Git != Github, aunque funcionen muy bien juntos. Github es un lugar donde puedes compartir tu código o encontrar otros proyectos. También actúa como portfolio para cualquier código en el que hayas trabajado. Si planeas ser un desarrollador deberías tener cuenta en Github. Usaremos Github extensivamente durante tu tiempo en Henry.
-
-## Comandos básicos de terminal
-
-> Usaremos la "terminal" o "línea de comandos" durante tu tiempo en Henry. Si estás en una computadora con Mac o Linux, deberías tener la terminal y git ya instalados. Si estás en una máquina con Linux, the recomendamos instalar ["git-bash"](https://git-for-windows.github.io/).
-
-Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, añadir, eliminar y modificar archivos, y muchas cosas más. La terminal es una herramienta muy poderosa para los desarrolladores y vas a usarla mucho en tu carrera profesional. Al principio puede parecer aterrador, pero con el tiempo terminarás disfrutando su uso, así que es mejor acostumbrarse ahora. Para comenzar, aprenderemos los comandos "básicos":
-
-"List": Nos permite ver el contenido de la carpeta donde nos encontramos.
-```bash
-  $ ls
-```
-
-
-"Change Directory": Nos permite movernos a una nueva carpeta o "directorio"
-```bash
-  $ cd [carpeta]
-```
-
-"Make Directory": Crea una nueva carpeta en el directorio donde nos encontramos actualmente.
-```bash
-  $ mkdir [nombre de la carpeta]
-```
-
-"Touch" creará un nuevo archivo.
-```bash
-  $ touch [nombre del archivo]
-```
-
-"Remove": Elimina permanentemente un archivo. ¡CUIDADO! Esto traspasa cualquier "papelera de reciclaje" que exista en el sistema y elimina los archivos PERMANENTEMENTE. Como nota, esto no eliminará carpetas, necesitamos un comando especial para eso que aprenderemos más adelante.
-
-```bash
-  $ rm [nombre del archivo]
-```
-
-## Ejercicio
-
-En este ejercicio creamos una carpeta llamada: "Henry"
-
-Para ir a la carpeta de nivel superior, escribe:
-
-```bash
-  cd ~
-```
-
-y presiona Enter. Una vez estés en el nivel superior, escribe:
-
-```bash
-  mkdir Henry
-```
-
-y presiona Enter. ¡Felicitaciones, has creado un directorio!
-
-## Github
-
-Como mencionamos antes, Github es un lugar central para almacenar, ver y descargar repositorios, no es un sinónimo de "git". Necesitas tener una cuenta en Github para completar los siguientes ejercicios.
-
-### Crear un Repo
-
-Entra a github.com y logeate con tu usario. Luego en la parte de arriba a la derecha buscá el signo '+' y elegí 'new repository'.
-
-![alt](../img/repo-create.png)
-
-En la nueva pantalla, vas a tener que seleccionar el nombre de tu nuevo repo. Crea un repo que se llame: `henry`. Podés agregarle una descripción también, pero no es obligatoria.
-
-![alt](../img/create-repository-name.png)
-
-Luego elegí la visibilidad del proyecto como público (para tener repos privados tenes que pagar el premium de github).
-
-Finalmente deseleccioná la opción: `Inicializar este repositorio con un README`.  Si lo tenés seleccionado va a aparecer un archivo vació llamado `README.md`, este archivo sirve para escribir una descripción más detallada del proyecto.
-
-Por último haz clic en **Crear repositorio**.
-
-Listo ya tenes tu propio repo. Ahora vas a poder clonarlo con las intrucciones de más abajo.
-
-### Clonar
-
-Para poder trabajar en un proyecto debes clonarlo (descargarlo) a tu máquina local. Para ello, accede a la carpeta de nivel superior del repositorio que creaste en tu cuenta, y haz click en el botón verde de la esquina superior derecha que dice "Clonar o descargar". Un dropdown aparecerá y podemos clickear en el icono del clipboard para copiar la dirección del repo. (Nota: Puedes descargar el repositorio completo, pero no se recomienda tanto como clonarlo dado que este último realizará unos pasos extra que harán tu vida mucho más fácil -> si lo descargas en vez de clonar, vas a tener que inicializar el repo vos mismo, no se preocupen por esto ahora).
-
-Una vez tengas la dirección copiada, vuelve a tu terminal y escribe lo siguiente:
-
-
-```bash
-  $ cd Henry
-
-  $ git clone [dirección copiada]
-```
-
-Esto descargará el repositorio y tendrás disponible una copia local guardada en tu máquina.
-
-## Comandos de git:
-
-Durante estas lecciones interactuaremos con git a través de la terminal. En el futuro, podrías estar interesado en usar una interfaz visual/gráfica, pero durante estas lecciones necesitaremos usar la terminal para acceder a todas las funciones de git.
-
-En este ejercicio, añadiremos un archivo a nuestro proyecto y crearemos un commit para cambiar la "memoria" de git.
-
-En tu terminal, cd (_change directory_) hacia la carpeta Henry/Precourse
-
-A continuación, escribe lo siguiete en tu terminal:
-
-```bash
-  $ touch Leccion01-Git/nuevoArchivo.js
-```
-
-Esto añadirá un nuevo archivo llamado "nuevoArchivo.js" a tu proyecto.
-
-En este momento, podemos usar el comando de git "status", esto nos mostrará los cambios hechos en el repositorio local. Usa "status" si no estás seguro de que algo haya funcionado y necesitas saber qué pasó.
-
-```bash
-  $ git status
-```
-
-Deberías ver algo parecido a estas líneas:
-
-```bash
-  Changes not staged for commit:
-    (use "git add <file>..." to update what will be committed)
-    (use "git checkout -- <file>..." to discard changes in working directory)
-
-    modified:   Leccion01-Git/README.md
-
-  Untracked files:
-    (use "git add <file>..." to include in what will be committed)
-
-    Leccion01-Git/nuevoArchivo.js
-
-  no changes added to commit (use "git add" and/or "git commit -a")
-```
-
-Esto nos dice que tenemos un archivo que ha cambiado, pero todavía no ha sido guardado en el historial de git.
-
-Para hacer esto, usaremos el comando "add":
-
-
-```bash
-  git add Leccion01-Git/nuevoArchivo.js
-```
-
-Esto agregó nuestros cambios al historial. Ahora, para guardar el historial, usaremos el comando "commit". Commit agarrará todos nuestros cambios y los guardará en el historial de git. Para futuras referencias, podrás añadir un mensaje acerca de los cambios hechos, esto facilitará ir atrás en el historial y encontrar los cambios que vos (o cualquiera) busque en el futuro en caso de necesitarlo. Siempre es una buena idea hacer una descripción clara y concisa de los cambios. Un _shorthand_ para añadir un mensaje, es usar la bandera (flag) "-m" y escribir el mensaje a continuación usando comillas.
-
-```bash
-  git commit -m 'Agregado nuevo archivo, nuevoArchivo.js'
-```
-
-Ahora que guardamos nuestros cambios localmente, vamos a querer compartir esos cambios en Github. Para ello, usaremos "push":
-
-```bash
-  git push
-```
-
-La terminal te preguntará tu usuario y contraseña. Escribimos estos datos y a continuación veremos un mensaje si todo fue "pusheado" correctamente:
-
-```bash
-  Counting objects: 5, done.
-  Delta compression using up to 8 threads.
-  Compressing objects: 100% (4/4), done.
-  Writing objects: 100% (5/5), 2.97 KiB | 0 bytes/s, done.
-  Total 5 (delta 1), reused 0 (delta 0)
-  remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-  To git@github.com:[your username]/Precourse.git
-    cccc682..283b9dd  master -> master
-```
-
-¡Felicitaciones, acabas de subir tu primer git commit!
-
-
-**_TODO_:** Completar esta sección.
-
-## Lectura recomendada y tutoriales:
-
-* [Git: sitio oficial](https://git-scm.com/)
-* [Github: tutorial oficial](https://try.github.io/levels/1/challenges/1)
-* [Codecademy: Learn Git](https://www.codecademy.com/learn/learn-git)
-* [Git: tutorial oficial](https://git-scm.com/docs/gittutorial)
-* [Terminal turorial](https://www.davidbaumgold.com/tutorials/command-line/)
