@@ -15,7 +15,7 @@ En esta clase veremos:
 HTML es el bloque básico con el que está construido internet. Todas las páginas web utilizan HTML. *No es un lenguaje de programación* propiamente dicho, sino, es un lenguaje de [**Markup**](https://es.wikipedia.org/wiki/Lenguaje_de_marcado): son lenguajes que incorporan al texto marcas o etiquetas que luego son interpretadas para darle información extra sobre la estructura del texto. En el caso de HTML, este será interpretado por los browsers, que tambien presentaran el código en forma gráfica.
 
 HTML es la abreviatura de **Hyper Text Markup Language**:
-    
+
   - Hyper Text: "Hyper Texto" quiere decir [texto con links](https://es.wikipedia.org/wiki/Hipertexto)
   - Markup Language: Los "Lenguajes de Marcado" son lenguajes de programación basados en etiquetas que uno agrega a un texto para darle estructura e información adicional. A diferencia de los "Lenguajes de Scripting" que se usan para crear programas informáticos, los lenguajes de marcado son sólo reglas para ordenar un documento.
 
@@ -29,7 +29,7 @@ HTML define una serie de elementos (o etiquetas, o tags) que serviran para delim
   </element>
 ```
 
-![alt text](../img/html.jpg)
+![alt text](./img/html.jpg)
 
 
 Algunos tags html, por su naturaleza, no necesitan tener nada *adentro*. Por lo tanto podemos abreviar su escritura y en vez de abrir y cerrar el tag, simplemente agregamos un "/" antes del bracket final.
@@ -40,7 +40,7 @@ Algunos tags html, por su naturaleza, no necesitan tener nada *adentro*. Por lo 
 
 ### Atributos
 
-En su mayoría de los atributos de un elemento son pares *nombre-valor*, separados por un signo de igual «=» y escritos en la etiqueta de comienzo de un elemento, después del nombre del elemento. El valor puede estar rodeado por comillas dobles o simples. Los atributos de los tags nos sirven para cambiar su comportamiento o *configurarlos*. 
+En su mayoría de los atributos de un elemento son pares *nombre-valor*, separados por un signo de igual «=» y escritos en la etiqueta de comienzo de un elemento, después del nombre del elemento. El valor puede estar rodeado por comillas dobles o simples. Los atributos de los tags nos sirven para cambiar su comportamiento o *configurarlos*.
 
 Por ejemplo, el tag `<img>` sirve para mostrar una imagen. Este tag recibe el atributo `src` que indica la (URL)[https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme] de donde está la imagen que queremos mostrar.
 
@@ -50,7 +50,7 @@ Por ejemplo, el tag `<img>` sirve para mostrar una imagen. Este tag recibe el at
 
 ### \<html>
 
-El tag `<html>` va a contener a todos los demás tags dentro suyo. Este tag básicamente sirve para avisarle al browser que el contenido debe ser interpretado como `html`. 
+El tag `<html>` va a contener a todos los demás tags dentro suyo. Este tag básicamente sirve para avisarle al browser que el contenido debe ser interpretado como `html`.
 
 ### \<head>
 
@@ -145,7 +145,7 @@ Son los tags que contienen los items de la lista ('list item').
 
 ## CSS
 
-Como vimos, HTML nos sirve para dar estructura al contenido. En las primeras épocas de internet las páginas eran así. De hecho, todavía esta online la [primera página web](http://info.cern.ch/hypertext/WWW/TheProject.html). Como ven es bastante aburrida. 
+Como vimos, HTML nos sirve para dar estructura al contenido. En las primeras épocas de internet las páginas eran así. De hecho, todavía esta online la [primera página web](http://info.cern.ch/hypertext/WWW/TheProject.html). Como ven es bastante aburrida.
 Luego se introdució el concepto de CSS (Cascading Style Sheets); una forma de poder agregar color y estilos en nuestras páginas!
 
 ## Reglas CSS
@@ -155,8 +155,10 @@ Básicamente una regla CSS está compuesta por un atributo o propiedad y un valo
 Por ejemplo:
 
 ```css
-  color: red;
-  font-size: 12px;
+html {
+  color: red; /* "Color" es la propiedad y "red" el valor */
+  font-size: 12px; /* "font-size" es la propiedad y "12px" el valor */
+}
 ```
 
 En este ejemplo, vemos dos atributos: `color` y `font-size`, el primero permite modificar el color del texto, en este caso está seteado a `red`; el segundo indica el tamaño del texto, en este caso `12px`.
@@ -169,8 +171,8 @@ Es importante notar que distintos atributos pueden recibir distintos valores, ge
 Antes de empezar a dar estilos, necesitamos una forma de decirle al browser qué vamos a darles reglas de estilo.
 Hay varias formas de lograr esto (más adelante veremos en detalle como funcionan cada una):
   * usando el atributo style: esta es la forma primitiva más simple, básicamente le damos reglas a cada tag html.
-  * usando el tag <style/>: Se utiliza este tag en el <head> del documento HTMl, con esto logramos agrupar todas las reglas que luego queremos que se apliquen a los elementos HTMl.
-  * Usar el tag <link/>: Este método nos permite definir las reglas CSS en un documento separado e *importarlo* a nuestra página (la ventaja que tiene es que podemos importar el mismo CSS a varias páginas);
+  * usando el tag `<style/>`: Se utiliza este tag en el `<head>` del documento HTML, con esto logramos agrupar todas las reglas que luego queremos que se apliquen a los elementos HTML.
+  * Usar el tag `<link/>`: Este método nos permite definir las reglas CSS en un documento separado e *importarlo* a nuestra página (la ventaja que tiene es que podemos importar el mismo CSS a varias páginas).
 
 ### Atributo style
 
@@ -186,13 +188,13 @@ Cons:
 
 ### \<style/>
 
-El tag *style*, que se escribe en el <head> del documento, nos permite escribir reglas que se aplicaran a uno o varios elementos html. Es importante notar que con esta forma, podremos darle estilo a muchos elementos de una sóla vez, pero sólo a elementos que estén en el mismo documento. 
+El tag *style*, que se escribe en el <head> del documento, nos permite escribir reglas que se aplicaran a uno o varios elementos html. Es importante notar que con esta forma, podremos darle estilo a muchos elementos de una sóla vez, pero sólo a elementos que estén en el mismo documento.
 
 ```html
   <html>
     <head>
       <style>
-        <!-- acá van las reglas -->
+        /*<!-- acá van las reglas -->*/
       </style>
     </head>
     <body>
@@ -210,7 +212,7 @@ Cons:
 
 ### <link/>
 
-Con el tag <link> dentro del <head> del documento, vamos a poder *importar* un archivo css que contenga varias reglas CSS. Funciona similar al tag <style/> anterior. Pero ahora tenemos la ventaja que podemos *compartir* el mismo archivo css con varios documentos HTML.
+Con el tag `<link>` dentro del `<head>` del documento, vamos a poder *importar* un archivo css que contenga varias reglas CSS. Funciona similar al tag `<style/>` anterior. Pero ahora tenemos la ventaja que podemos *compartir* el mismo archivo css con varios documentos HTML.
 
 ```html
 
@@ -221,7 +223,7 @@ Con el tag <link> dentro del <head> del documento, vamos a poder *importar* un a
 </head>
 <body>
 </body>
-</html> 
+</html>
 ```
 
 Pros:
@@ -235,7 +237,7 @@ Cons:
 
 Para poder aplicar reglas de estilo a los elementos html, necesitamos una forma de saber cómo seleccionar los elementos a los que deseamos aplicar las reglas, para esto sirven los *selectores CSS*.
 
-![alt text](../img/css-declaration-small.png)
+![alt text](./img/css-declaration-small.png)
 
 Hay varios tipos de selectores, los más básicos son los de tipo, donde indicamos a qué clase de elemntos se van a aplicar las reglas, el ejemplo de arriba usa un selector de tipo. Está diciendo: *aplicarle a todos los elementos de tipo <p\/> la regla de texto color rojo*.
 
@@ -254,8 +256,8 @@ El selector de tipo se puede usar con cualquier tipo de tag: p, div, body, etc. 
 
 * **Selector de tipo**: Selecciona todos los elementos que coinciden con el nombre del elemento especificado.
     Sintaxis: eltname
-    Ejemplo: input se aplicará a cualquier elemento <input>.
-* **Selector de clase**: 
+    Ejemplo: input se aplicará a cualquier elemento `<input>`.
+* **Selector de clase**:
     Selecciona todos los elementos que tienen el atributo de class especificado.
     Sintaxis: .classname
     Ejemplo: .index seleccionará cualquier elemento que tenga la clase "index".
@@ -324,7 +326,7 @@ Podemos decirle al navegador exactamente qué tan *ancho* y *alto* queremos que 
     width: 400px;
   }
 ```
-### margin 
+### margin
 
 El margen es el área transparente alrededor del elemento que deseas que no choque con nada. Es la capa más externa en el Modelo de caja.
 
@@ -363,14 +365,14 @@ Saber esto nos ayudará a dimensionar y posicionar nuestros elementos correctame
 
 El background se puede establecer en una variedad de reglas, la más común sería establecer el fondo en un color o una imagen. Ambos se muestran a continuación.
 
-`` `Css
+```Css
   .divClass {
     background: red;
   }
   #divId {
     background: url ('http://imageurl.com/image.jpg');
   }
-`` `
+```
 
 ### color
 
@@ -382,19 +384,19 @@ No podemos usar ancho o alto para el texto, pero podemos determinar el tamaño d
 
 ## Hojas de estilo externas y el elemento \ <link>
 
-Hemos explicado cómo usar el elemento html \ <style>. Esto está bien si tiene una página web muy pequeña y un estilo mínimo, pero la mayoría de las páginas comenzarían a sentirse abarrotadas muy rápidamente si incluimos todo nuestro CSS en el HTML. Afortunadamente, tenemos una solución para eso, hojas de estilo externas y el elemento \ <link>.
+Hemos explicado cómo usar el elemento html \ `<style>`. Esto está bien si tiene una página web muy pequeña y un estilo mínimo, pero la mayoría de las páginas comenzarían a sentirse abarrotadas muy rápidamente si incluimos todo nuestro CSS en el HTML. Afortunadamente, tenemos una solución para eso, hojas de estilo externas y el elemento \ `<link>`.
 
-Una hoja de estilo externa es simplemente otro archivo con el tipo de archivo .css. Convencionalmente, este archivo se llama algo así como "style.css". Podemos tomar todas las reglas de estilo que escribimos entre las etiquetas \ <style> y transferirlas directamente al archivo css. No necesitamos incluir nada más, solo las reglas de estilo.
+Una hoja de estilo externa es simplemente otro archivo con el tipo de archivo .css. Convencionalmente, este archivo se llama algo así como "style.css". Podemos tomar todas las reglas de estilo que escribimos entre las etiquetas \ `<style>` y transferirlas directamente al archivo css. No necesitamos incluir nada más, solo las reglas de estilo.
 
-Una vez que tengamos una hoja de estilo externa creada, necesitaremos asegurarnos de que el navegador lea ese archivo y aplique las reglas a nuestra página. Le decimos al navegador que busque ese archivo utilizando el elemento \ <link>. Podemos eliminar las etiquetas \ <style> y en su lugar agregar el elemento \ <link>. Dentro del elemento de enlace, necesitaremos proporcionar la ubicación y el tipo de archivo que estamos vinculando. Utilizaremos dos banderas, la bandera "rel" y la bandera "href".
+Una vez que tengamos una hoja de estilo externa creada, necesitaremos asegurarnos de que el navegador lea ese archivo y aplique las reglas a nuestra página. Le decimos al navegador que busque ese archivo utilizando el elemento \ `<link>`. Podemos eliminar las etiquetas \ `<style>` y en su lugar agregar el elemento \ `<link>`. Dentro del elemento de enlace, necesitaremos proporcionar la ubicación y el tipo de archivo que estamos vinculando. Utilizaremos dos banderas, la bandera "rel" y la bandera "href".
 
 La bandera rel solo le dirá al navegador qué tipo de archivo es y cómo procesarlo. En nuestro caso lo configuraremos como "hoja de estilo"
 
 La bandera href le dirá al navegador dónde encontrar el archivo. Si el archivo está en la misma carpeta que nuestro archivo html, podemos configurarlo en: "./styles.css" (esta ruta será relativa)
 
-`` `HTML
+```HTML
   <link rel = "stylesheet" href = "./ styles.css" />
-`` `
+```
 
 Ahora que tenemos nuestra hoja de estilo externa vinculada a nuestro archivo HTML, deberíamos ver las reglas de estilo que establecemos reflejadas en nuestra página.
 
