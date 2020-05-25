@@ -6,7 +6,7 @@ Git es un _sistema de control de versión_ diseñado para trackear cambios en ar
 
 ## Version Control System
 
-El control de versiones es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante. 
+El control de versiones es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.
 
 Si eres diseñador gráfico o web, y quieres mantener cada versión de una imagen o diseño (algo que sin duda quieres), un sistema de control de versiones (Version Control System o VCS en inglés) es una elección muy sabia. Te permite revertir archivos a un estado anterior, revertir el proyecto entero a un estado anterior, comparar cambios a lo largo del tiempo, ver quién modificó por última vez algo que puede estar causando un problema, quién introdujo un error y cuándo, y mucho más. Usar un VCS también significa generalmente que si rompes o pierdes archivos, puedes recuperarlos fácilmente.
 
@@ -71,9 +71,9 @@ Vamos a distinguir dos directorios, primero el _directorio de git_ , que es dond
 
 ### Estados
 
-Git tiene tres estados principales en los que se pueden encontrar tus archivos: 
+Git tiene tres estados principales en los que se pueden encontrar tus archivos:
 * __committed__:significa que los datos están almacenados de manera segura en tu base de datos local.
-* __modified__: significa que has modificado el archivo pero todavía no lo has commiteado a tu base de datos. 
+* __modified__: significa que has modificado el archivo pero todavía no lo has commiteado a tu base de datos.
 * __staged__: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima commiteada.
 
 ![Estados](./img/estados.png)
@@ -87,3 +87,44 @@ Sabiendo esto, el flujo de trabajo básico en Git sería algo así:
 * Commiteas o Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y almacena esas instantáneas de manera permanente en tu directorio de Git.
 
 > Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (__committed__). Si ha sufrido cambios desde que se obtuvo del repositorio, y ha sido añadida al área de preparación, está preparada (__staged__). Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado (no se incluyó en el área de preparación), está modificada (__modified__).
+
+### Pre-requisitos
+
+* Crear una cuenta en [Github.com](https://www.github.com/).
+* Si usas una computadora con Windows, puedes instalar la terminal de comandos _git-bash_ haciendo click [acá](https://git-for-windows.github.io/).
+* Si usas Mac, `git` viene pre-instalado y puedes acceder desde la terminal pulsando ⌘+Espacio y escribiendo "terminal". Puedes asegurarte de que git está instalado escribiendo `which git` en la terminal y pulsando Enter, si aparece la ruta de un archivo está todo correcto. En algunas ocasiones, podrías ser redireccionado a la descarga de la línea de comandos de Xcode, sigue las instrucciones.
+* Si usas Linux, tal vez necesites instalar git accediendo a tu terminal e ingresado `apt-get install git`
+* Si tienes problemas instalando Git, este recurso puede servir de ayuda: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### Comandos básicos de terminal
+
+> Usaremos la "terminal" o "línea de comandos" durante tu tiempo en Henry. Si estás en una computadora con Mac o Linux, deberías tener la terminal y git ya instalados. Si estás en una máquina con Linux, the recomendamos instalar ["git-bash"](https://git-for-windows.github.io/).
+
+Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, añadir, eliminar y modificar archivos, y muchas cosas más. La terminal es una herramienta muy poderosa para los desarrolladores y vas a usarla mucho en tu carrera profesional. Al principio puede parecer aterrador, pero con el tiempo terminarás disfrutando su uso, así que es mejor acostumbrarse ahora. Para comenzar, aprenderemos los comandos "básicos":
+
+"List": Nos permite ver el contenido de la carpeta donde nos encontramos.
+```bash
+  $ ls
+```
+
+
+"Change Directory": Nos permite movernos a una nueva carpeta o "directorio"
+```bash
+  $ cd [carpeta]
+```
+
+"Make Directory": Crea una nueva carpeta en el directorio donde nos encontramos actualmente.
+```bash
+  $ mkdir [nombre de la carpeta]
+```
+
+"Touch" creará un nuevo archivo.
+```bash
+  $ touch [nombre del archivo]
+```
+
+"Remove": Elimina permanentemente un archivo. ¡CUIDADO! Esto traspasa cualquier "papelera de reciclaje" que exista en el sistema y elimina los archivos PERMANENTEMENTE. Como nota, esto no eliminará carpetas, necesitamos un comando especial para eso que aprenderemos más adelante.
+
+```bash
+  $ rm [nombre del archivo]
+```

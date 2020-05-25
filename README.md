@@ -5,8 +5,6 @@
 # Modulo 0 - Prep
 
 * [Git](./Lesson01-Git)
-* [HTML](./Lesson02-HTML)
-* [CSS](./Lesson03-CSS-Positioning)
 * JS:
     - [I - Introducción a Javascript](./Lesson04-JS-I)
     - [II- Flujos de control, operadores de comparación, bucles for](./Lesson05-JS-II)
@@ -14,6 +12,9 @@
     - [IV - Objetos](./Lesson07-JS-IV)
     - [V - Clases y prototype](./Lesson08-JS-V)
     - [VI - Callbacks](./Lesson09-JS-VI)
-* Checkpoint
+ * Contenido extra (Recomendado)
+    - [VII - HTML](./Lesson08-HTML)
+    - [VIII - CSS](./Lesson09-CSS-Positioning)
+ * Checkpoint
 
 >> El **Checkpoint** consiste en un ejercicio que integra todo este contenido, va a ser individual y van a tener un día completo para terminarlo. Para continuar con la carrera es necesario aprobar este Checkpoint.
