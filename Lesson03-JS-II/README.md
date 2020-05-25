@@ -208,6 +208,48 @@ for (let i = 0; i >= 0; i++) {
 
 Debido a que nuestra expresión condicional SIEMPRE será `true` (` i` nunca será menor que 0), este ciclo se ejecutará esencialmente para siempre. Esto interrumpirá su programa y puede bloquear su navegador web o computadora.
 
+## Arguments
+
+Como vimos anteriormente, las funciones son objetos invocables, y podemos hacerlo pasándoles argumentos que varíen el comportamiento de estas.
+
+``` javascript
+> function log(str) {
+    console.log(str)
+  }
+
+> log('hola!')
+< 'hola!'
+```
+
+Si sabemos las variables a tomar, como en el ejemplo `str`, podemos darle nombre a este parámetro. Sino hay una propiedad _**arguments**_ , propia de todas las funciones, que contiene los parámetros pasados como argumento.
+
+``` javascript
+> function args() {
+    console.log(arguments)
+  }
+
+> args('hola!', 'otro parametro', 3)
+< ["hola!", "otro parametro", 3, callee: 'function', Symbol(Symbol.iterator): 'function']
+```
+
+_arguments_ nos da acceso a la **n** cantidad como parámetros, pero tengamos en cuenta que **no es un Arreglo**.
+
+``` javascript
+> function args() {
+    return Array.isArray(arguments)
+  }
+
+> args(1,2,3)
+< false
+```
+
+Si queremos saber cuantos parámetros puede recibir una función podemos usar la propiedad `length`.
+
+``` javascript
+> args.length
+< 0 // porque en la función `args` definimos 0 parámetros
+```
+
 ## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
 
 ## Recursos adicionales

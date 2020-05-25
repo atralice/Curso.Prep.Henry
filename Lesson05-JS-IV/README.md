@@ -145,6 +145,125 @@ usuario.decirHola(); // 'juan.perez manda saludos!'
 
 Nota: la palabra clave `this` a veces puede ser uno de los temas más difíciles en Javascript. Lo estamos usando muy básicamente aquí, pero el tema se vuelve mucho más complejo muy pronto.
 
+#### `this` y el Execution Context
+
+* ##### Contexto global inicial
+
+Este es el caso cuando ejecutamos código en el contexto global (afuera de cualquier función). En este caso `this` hace referencia al objeto `global`, en el caso del browser hace referencia a `window`.
+
+``` javascript
+// En el browser esto es verdad:
+> console.log(this === window);
+< true
+
+> this.a = 37;
+
+> console.log(window.a);
+< 37
+```
+
+* ##### En el contexto de una función
+
+Cuando estamos dentro de una función, el valor de `this` va a depender de _cómo sea invocada la función_.
+
+``` javascript
+> function f1(){
+    return this;
+  }
+
+> f1() === window;
+< true
+
+> window.fi() === window;
+< true
+```
+
+En este ejemplo la función es invocada por el objeto global por lo tanto this hará referencia a `window`.
+
+> Si usamos el modo `strict` de Javascript, el ejemplo de arriba va a devolver `undefined`, ya que no le deja al interprete _asumir_ que `this` es el objeto global.
+
+* ##### Como método de un objeto
+
+Cuando usamos el _keyword_ `this` dentro de una función que es un método de un objeto, `this` toma hace referencia al objeto sobre el cual se llamó el método:
+
+``` javascript
+> var o = {
+    prop: 37,
+    f: function() {
+      return this.prop;
+    }
+  };
+
+> console.log(o.f());
+< 37
+// this hace referencia a `o`
+```
+
+En este caso, _no depende_ donde hayamos definido la función, lo único que importa es que la función haya sido invocada como método de un objeto. Por ejemplo, si definimos la función afuera:
+
+``` javascript
+> var o = {prop: 37};
+
+// declaramos la función
+> function loguea() {
+    return this.prop;
+  }
+
+//agregamos la función como método del objeto `o`
+> o.f = loguea;
+
+> console.log(o.f());
+< 37
+// el resultado es le mismo!
+```
+
+De todos modos, hay que tener cuidado con el keyword `this`, ya que pueden aparecer casos donde es contra intuitivo ( Como varias cosas de JavaScript ). Veamos el siguiente ejemplo:
+
+``` javascript
+> var obj = {
+    nombre: 'Objeto',
+    log: function(){
+      this.nombre = 'Cambiado'; // this se refiere a este objeto, a `obj`
+      console.log(this)  // obj
+
+      var cambia = function( str ){
+        this.nombre = str;  // Uno esperaria que this sea `obj`
+      }
+
+      cambia('Hoola!!');
+      console.log(this);
+    }
+  }
+```
+
+Si ejecutamos el código de arriba, vamos a notar que después de ejecutar el código, la propiedad `nombre` de `obj` contiene el valor `Cambiado` y no `'Hoola!!'`. Esto se debe a que el keyword `this` dentro de la función cambia __NO hace referencia a `obj`__, si no que hace referencia al objeto global. No podemos considerar al `this` como obj porque la función no es método de este Objeto, fíjense que no podemos hacer obj.cambia.
+De hecho, si buscamos dentro del objeto global la variable `nombre`, vamos a encontrar con el valor `'Hoola!!'` que seteamos con la función `cambia`. Esto quiere decir que no importa en donde estuvo declarada la función, si no __cómo la invocamos__.
+
+> Prácticamente, no podemos saber a ciencia cierta que valor va a tomar el keyword hasta el momento de ejecución de una función. Porque depende fuertemente de cómo haya sido ejecutada.
+
+Para resolver este tipo de problemas existe un patrón muy común, y se basa en guardar la referencia al objeto que está en `this` antes de entrar a una función donde no sé a ciencia cierta que valor puede tomar `this`:
+
+```javascript
+var obj = {
+  nombre: 'Objeto',
+  log   : function(){
+    this.nombre = 'Cambiado'; // this se refiere a este objeto, a `obj`
+    console.log(this); // obj
+
+    var that = this; // Guardo la referencia a this
+
+    var cambia = function( str ){
+      that.nombre = str;  // Uso la referencia dentro de esta funcion
+    }
+
+    cambia('Hoola!!');
+    console.log(this);
+  }
+}
+```
+
+De esta forma, `that` (puede tener cualquier nombre) va a apuntar al objeto `obj` (`this` apuntaba a ese objeto cuando hicimos la asignación). Ahora si, podemos usar `that` en vez de `this` y estar seguros qué es lo que va a tener adentro.
+
 ## Objetos en Javascript
 
 En esta lección aprendimos qué son los Objetos y las muchas formas que existen para acceder a los valores, llamar a los métodos y asignar valores. Muchas de estas técnicas parecían muy familiares, como si las hubiéramos usado en prácticamente todos los aspectos de nuestros aprendizajes hasta ahora. Aquí hay un patrón, eso es porque TODO en Javascript es un Objeto. Las matrices son solo objetos con teclas numéricas, las cadenas son objetos bajo el capó con métodos incorporados, las funciones son en realidad objetos con sus propias propiedades especiales, todo el tiempo de ejecución de Javascript es un objeto (`window` en un navegador o` global` en el Node.js). Cuanto más trabajes con Javascript, más comenzará a tener sentido para ti. Solo recuerda, todo es un objeto.
