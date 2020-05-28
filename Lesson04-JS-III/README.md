@@ -1,4 +1,4 @@
-# Lección 6: Javascript III (continuación de bucles `for` y Arrays)
+# Lección 4: Javascript III (continuación de bucles `for` y Arrays)
 
 En esta lección cubriremos:
 

@@ -1,4 +1,4 @@
-# Lección 3: CSS Intermedio
+# Lección 9: CSS Intermedio
 
 En esta lección cubriremos:
 

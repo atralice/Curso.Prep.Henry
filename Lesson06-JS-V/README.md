@@ -1,4 +1,4 @@
-# Lección 8: Javascript V (Clases y `prototype`)
+# Lección 6: Javascript V (Clases y `prototype`)
 
 En esta lección cubriremos:
 
