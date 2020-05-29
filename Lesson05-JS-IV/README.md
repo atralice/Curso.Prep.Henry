@@ -1,4 +1,4 @@
-# Lección 7: Javascript IV (Objetos)
+# Lección 5: Javascript IV (Objetos)
 
 En esta lección cubriremos:
 

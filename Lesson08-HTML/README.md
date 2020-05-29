@@ -1,4 +1,4 @@
-# Lección 2: Fundamentos HTML/CSS
+# Lección 8: Fundamentos HTML/CSS
 
 En esta clase veremos:
 

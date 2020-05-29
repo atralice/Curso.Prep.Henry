@@ -6,12 +6,12 @@
 
 * [Git](./Lesson01-Git)
 * JS:
-    - [I - Introducción a Javascript](./Lesson04-JS-I)
-    - [II- Flujos de control, operadores de comparación, bucles for](./Lesson05-JS-II)
-    - [III - continuación de bucles for y Arrays](./Lesson06-JS-III)
-    - [IV - Objetos](./Lesson07-JS-IV)
-    - [V - Clases y prototype](./Lesson08-JS-V)
-    - [VI - Callbacks](./Lesson09-JS-VI)
+    - [I - Introducción a Javascript: Variables, tipos de datos y funciones](./Lesson02-JS-I)
+    - [II- Flujos de control, operadores de comparación, bucles for](./Lesson03-JS-II)
+    - [III - continuación de bucles for y Arrays](./Lesson04-JS-III)
+    - [IV - Objetos](./Lesson05-JS-IV)
+    - [V - Clases y prototype](./Lesson06-JS-V)
+    - [VI - Callbacks](./Lesson07-JS-VI)
  * Contenido extra (Recomendado)
     - [VII - HTML](./Lesson08-HTML)
     - [VIII - CSS](./Lesson09-CSS-Positioning)

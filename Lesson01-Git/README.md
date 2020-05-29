@@ -1,4 +1,4 @@
-# Git - Intro
+# Git - Lección 1
 
 Git es un _sistema de control de versión_ diseñado para trackear cambios en archivos digitales y coordinar el trabajo realizado sobre esos archivos en un equipo de personas. Su mayor uso es para el desarrollo de software, aunque también es utilizado para trackear archivos de otros tipos.
 

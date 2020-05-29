@@ -1,9 +1,10 @@
-# Lección 8: Javascript VI (Callbacks)
+# Lección 7: Javascript VI (Callbacks)
 
 En esta lección cubriremos:
 
 * Callbacks
 * Más métodos de Arrays
+* Introducción a la programación funcional
 
 ## Callbacks
 

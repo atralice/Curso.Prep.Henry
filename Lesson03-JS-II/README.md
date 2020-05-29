@@ -1,4 +1,4 @@
-# Lección 5: Javascript II (Flujos de control, operadores de comparación, bucles `for`)
+# Lección 3: Javascript II (Flujos de control, operadores de comparación, bucles `for`)
 
 En esta lección cubriremos:
 
