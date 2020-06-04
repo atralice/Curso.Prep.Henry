@@ -1,5 +1,5 @@
 <p align='left'>
-    <img  src='./logo.png'/ height='70px'>
+    <img  src='../logo.png' height='70px'>
 </p>
 # Lección 9: CSS Intermedio
 

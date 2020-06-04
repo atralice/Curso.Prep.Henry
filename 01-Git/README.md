@@ -1,4 +1,4 @@
-<img  src='./logo.png'/ height='70px'>
+<img  src='../logo.png' height='70px'>
 
 
 # Git - Lección 1

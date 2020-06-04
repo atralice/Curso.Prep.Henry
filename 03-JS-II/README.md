@@ -1,5 +1,5 @@
 <p align='left'>
-    <img  src='./logo.png'/ height='70px'>
+    <img  src='../logo.png' height='70px'>
 </p>
 
 # Lección 3: Javascript II (Flujos de control, operadores de comparación, bucles `for`)

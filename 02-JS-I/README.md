@@ -1,4 +1,4 @@
-<img  src='./logo.png'/ height='70px'>
+<img  src='../logo.png' height='70px'>
 
 # Lección 2: Introducción a Javascript
 
@@ -16,7 +16,7 @@ En esta lección cubriremos:
 
 ## Introducción a Javascript
 
-JavaScript es un lenguaje de programación que fue creado originalmente para ser usado en el front-end de una pǻgina web. La idea original era poder dar dinamismo a las páginas webs, que en un principio eran estáticas. La introducción del "motor V8" de Google ha mejorado la velocidad y el funcionamiento de JS. Haciendo que JS sea la lingua franca de la web, llegando inclusive al Back-End a través de NodeJs.
+JavaScript es un lenguaje de programación que fue creado originalmente para ser usado en el front-end de una pǻgina web. La idea original era poder dar dinamismo a las páginas webs, que en un principio eran estáticas. La introducción del "motor V8" de Google ha mejorado la velocidad y el funcionamiento de JS. Haciendo que JS sea la lengua franca de la web, llegando inclusive al Back-End a través de NodeJs.
 
 Vamos a aprender los conceptos más básicos de JS:
 
