@@ -6,6 +6,7 @@
 
 * [Git](./Lesson01-Git)
 * JS:
+
     - [I - Introducción a Javascript: Variables, tipos de datos y funciones](./Lesson02-JS-I)
     - [II- Flujos de control, operadores de comparación, bucles for](./Lesson03-JS-II)
     - [III - continuación de bucles for y Arrays](./Lesson04-JS-III)
@@ -18,3 +19,5 @@
  * Checkpoint
 
 >> El **Checkpoint** consiste en un ejercicio que integra todo este contenido, va a ser individual y van a tener un día completo para terminarlo. Para continuar con la carrera es necesario aprobar este Checkpoint.
+
+<iframe src="https://player.vimeo.com/video/423898676" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
