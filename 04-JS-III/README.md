@@ -1,3 +1,6 @@
+<p align='left'>
+    <img  src='./logo.png'/ height='70px'>
+</p>
 # Lección 4: Javascript III (continuación de bucles `for` y Arrays)
 
 En esta lección cubriremos:

@@ -10,7 +10,7 @@
             "eslint": "^4.13.1",
             "jest": "^22.0.3"
       },
-      "author": "",
+      "author": "Henry",
       "license": "ISC",
       "jest": {
           "testURL": "http://localhost/"

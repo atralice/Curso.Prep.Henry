@@ -1,10 +1,12 @@
-# Git - Lección 1
+<p align='left'>
+    <img  src='./logo.png'/ height='70px'>
+</p>
 
-Git es un _sistema de control de versión_ diseñado para trackear cambios en archivos digitales y coordinar el trabajo realizado sobre esos archivos en un equipo de personas. Su mayor uso es para el desarrollo de software, aunque también es utilizado para trackear archivos de otros tipos.
+# Git - Lección 1
 
 ## Version Control System
 
-El control de versiones es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.
+¿Qué es un control de versiones, y por qué debería importarte? Un control de versiones es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.
 
 Si eres diseñador gráfico o web, y quieres mantener cada versión de una imagen o diseño (algo que sin duda quieres), un sistema de control de versiones (Version Control System o VCS en inglés) es una elección muy sabia. Te permite revertir archivos a un estado anterior, revertir el proyecto entero a un estado anterior, comparar cambios a lo largo del tiempo, ver quién modificó por última vez algo que puede estar causando un problema, quién introdujo un error y cuándo, y mucho más. Usar un VCS también significa generalmente que si rompes o pierdes archivos, puedes recuperarlos fácilmente.
 
@@ -14,7 +16,7 @@ Hay varios tipos de sistemas de versionado, estos puedes ser:
 
 ![Local](./img/local.png)
 
-Un sistema de versionado local, automatiza  la tarea de ordenar, copiar y tagear todas las modificaciones de archivos que vayamos haciendo. Imaginense que están trabajando con código, y ustedes mismos van copiando y guardando los archivos en otra carpeta cada vez que lo mofican, y ponen un nombre indicando la fecha y la hora del cambios, este mismo proceso, pero automatizado, es un _VCS local_.
+Un método de control de versiones, usado por muchas personas, es copiar los archivos a otro directorio (quizás indicando la fecha y hora en que lo hicieron, si son ingeniosos). Este método es muy común porque es muy sencillo, pero también es tremendamente propenso a errores. Es fácil olvidar en qué directorio te encuentras y guardar accidentalmente en el archivo equivocado o sobrescribir archivos que no querías.
 Como se puden imaginar, este sistema funciona _bien_ para trabajar solos, pero si queremos incorporar otra gente al equipo van a empezar a surgir problemas.
 
 ### Centralizados
@@ -89,3 +91,11 @@ Sabiendo esto, el flujo de trabajo básico en Git sería algo así:
 ### Github.com
 
 [Github.com](https://github.com) es una red para almacenar tus repositorios, esencialmente es un repositorio de repositorios. Es uno de los tantos disponibles en internet, y el más popular. Git != Github, aunque funcionen muy bien juntos. Github es un lugar donde puedes compartir tu código o encontrar otros proyectos. También actúa como portfolio para cualquier código en el que hayas trabajado. Si planeas ser un desarrollador deberías tener cuenta en Github. Usaremos Github extensivamente durante tu tiempo en Henry.
+
+## Lectura recomendada:
+
+* [Git: sitio oficial](https://git-scm.com/)
+* [Github: tutorial oficial](https://try.github.io/levels/1/challenges/1)
+* [Git: tutorial oficial](https://git-scm.com/docs/gittutorial)
+* [Terminal turorial](https://www.davidbaumgold.com/tutorials/command-line/)
+

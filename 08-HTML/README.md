@@ -1,3 +1,6 @@
+<p align='left'>
+    <img  src='./logo.png'/ height='70px'>
+</p>
 # Lección 8: Fundamentos HTML/CSS
 
 En esta clase veremos:

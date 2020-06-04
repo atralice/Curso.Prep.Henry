@@ -1,3 +1,6 @@
+<p align='left'>
+    <img  src='./logo.png'/ height='70px'>
+</p>
 # Lección 7: Javascript VI (Callbacks)
 
 En esta lección cubriremos:

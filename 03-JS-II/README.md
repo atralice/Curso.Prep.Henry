@@ -1,3 +1,6 @@
+<p align='left'>
+    <img  src='./logo.png'/ height='70px'>
+</p>
 # Lección 3: Javascript II (Flujos de control, operadores de comparación, bucles `for`)
 
 En esta lección cubriremos:

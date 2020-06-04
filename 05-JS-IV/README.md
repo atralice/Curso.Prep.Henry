@@ -1,3 +1,6 @@
+<p align='left'>
+    <img  src='./logo.png'/ height='70px'>
+</p>
 # Lección 5: Javascript IV (Objetos)
 
 En esta lección cubriremos:

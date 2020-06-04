@@ -1,3 +1,6 @@
+<p align='left'>
+    <img  src='./logo.png'/ height='70px'>
+</p>
 # Lección 6: Javascript V (Clases y `prototype`)
 
 En esta lección cubriremos:
