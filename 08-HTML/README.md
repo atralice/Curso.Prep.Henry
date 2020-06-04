@@ -13,6 +13,8 @@ En esta clase veremos:
 * Modelo de Caja.
 * Hojas de estilos externas y el tag \<link\>.
 
+<iframe src="https://player.vimeo.com/video/424845809" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ## Introducción HTML
 
 HTML es el bloque básico con el que está construido internet. Todas las páginas web utilizan HTML. *No es un lenguaje de programación* propiamente dicho, sino, es un lenguaje de [**Markup**](https://es.wikipedia.org/wiki/Lenguaje_de_marcado): son lenguajes que incorporan al texto marcas o etiquetas que luego son interpretadas para darle información extra sobre la estructura del texto. En el caso de HTML, este será interpretado por los browsers, que tambien presentaran el código en forma gráfica.

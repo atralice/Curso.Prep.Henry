@@ -1,6 +1,7 @@
 <p align='left'>
     <img  src='./logo.png'/ height='70px'>
 </p>
+
 # Lección 3: Javascript II (Flujos de control, operadores de comparación, bucles `for`)
 
 En esta lección cubriremos:
@@ -11,6 +12,8 @@ En esta lección cubriremos:
 * Operados lógicos
 * Bucles `for`
 * `arguments`
+
+<iframe src="https://player.vimeo.com/video/424318886" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Undefined y null
 

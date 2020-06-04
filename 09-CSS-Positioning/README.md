@@ -11,6 +11,8 @@ En esta lección cubriremos:
 * Usar "position" para posicionar elementos.
 * Introducción a Flexbox.
 
+<iframe src="https://player.vimeo.com/video/425169846" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ## Introducción al posicionamiento
 
 Armar un layout y hacer que todo se vea limpio es lo que la mayoría de gente espera hacer cuando empiezan a aprender CSS. Posicionar elementos HTML en la página con CSS es posiblemente la habilidad más poderosa que tiene CSS, aunque también puede ser la más **frustrante**. En esta lección aprenderemos distintas formas de posicionar elementos en la página.

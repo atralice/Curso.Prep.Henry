@@ -1,6 +1,5 @@
-<p align='left'>
-    <img  src='./logo.png'/ height='70px'>
-</p>
+<img  src='./logo.png'/ height='70px'>
+
 # Lección 2: Introducción a Javascript
 
 En esta lección cubriremos:
@@ -12,6 +11,8 @@ En esta lección cubriremos:
 * Introducción a las Funciones
 * Control de flujo y operadores de comparación
 * Introducción a Node y NPM
+
+<iframe src="https://player.vimeo.com/video/423852829" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Introducción a Javascript
 

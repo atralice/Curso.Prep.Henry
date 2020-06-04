@@ -9,6 +9,8 @@ En esta lección cubriremos:
 * Más métodos de Arrays
 * Introducción a la programación funcional
 
+<iframe src="https://player.vimeo.com/video/425254623" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ## Callbacks
 
 Un concepto muy importante en Javascript es la capacidad de pasar una función como argumento a otra función. Estas funciones se denominan `callbacks`. Estas funciones pueden llamarse en cualquier momento y pasar argumentos dentro de la función. Pronto descubriremos por qué las devoluciones de llamada son tan importantes para Javascript. La convención es usar `cb` como argumento para la variable que se usará de callback.

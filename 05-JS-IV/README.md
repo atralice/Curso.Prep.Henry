@@ -11,6 +11,8 @@ En esta lección cubriremos:
 * Palabra clave `this`
 * Objetos en Javascript
 
+<iframe src="https://player.vimeo.com/video/424936732" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ## Clase Grabada:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9Sh7IFJLWNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
