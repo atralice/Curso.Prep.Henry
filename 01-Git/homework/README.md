@@ -11,7 +11,7 @@
 
 ### Comandos básicos de terminal
 
-> Usaremos la "terminal" o "línea de comandos" durante tu tiempo en Henry. Si estás en una computadora con Mac o Linux, deberías tener la terminal y git ya instalados. Si estás en una máquina con Linux, te recomendamos instalar ["git-bash"](https://git-for-windows.github.io/).
+> Usaremos la "terminal" o "línea de comandos" durante tu tiempo en Henry. Si estás en una computadora con Mac o Linux, deberías tener la terminal y git ya instalados. Si estás en una máquina con Windows, te recomendamos instalar ["git-bash"](https://git-for-windows.github.io/).
 
 Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, añadir, eliminar y modificar archivos, y muchas cosas más. La terminal es una herramienta muy poderosa para los desarrolladores y vas a usarla mucho en tu carrera profesional. Al principio puede parecer aterrador, pero con el tiempo terminarás disfrutando su uso, así que es mejor acostumbrarse ahora. Para comenzar, aprenderemos los comandos "básicos":
 
@@ -70,7 +70,7 @@ Entra a github.com y logueate con tu usuario. Luego en la parte de arriba a la d
 
 En la nueva pantalla, vas a tener que seleccionar el nombre de tu nuevo repo. Crea un repo que se llame: `henry`. Podes agregarle una descripción también, pero no es obligatoria.
 
-![alt](../../img/create-repository-name.png)
+![alt](../img/create-repository-name.png)
 
 Luego elegí la visibilidad del proyecto como público (para tener repos privados tenes que pagar el premium de github).
 

@@ -1,4 +1,4 @@
-<img  src='./logo.png'/ height='70px'>
+<img  src='./logo.png' height='70px'>
 
 
 # Modulo 0 - Prep
