@@ -2,7 +2,7 @@
 
 ## Introducción
 
-<iframe src="https://player.vimeo.com/video/426044757" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/426566544" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 # Modulo 0 - Prep
 
@@ -19,3 +19,9 @@
 * Checkpoint
 
 >> El **Checkpoint** consiste en un ejercicio que integra todo este contenido, va a ser individual y van a tener un día completo para terminarlo. Para continuar con la carrera es necesario aprobar este Checkpoint.
+
+# La Carrera
+
+Si querés saber más sobre la carrera, mirǻ este video:
+
+<iframe src="https://player.vimeo.com/video/426044757" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
