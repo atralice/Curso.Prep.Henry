@@ -257,6 +257,7 @@ Si queremos saber cuantos parámetros puede recibir una función podemos usar la
 ```
 
 ## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
+[Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/03-JS-II/homework)
 
 ## Recursos adicionales
 

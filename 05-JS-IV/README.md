@@ -274,6 +274,7 @@ De esta forma, `that` (puede tener cualquier nombre) va a apuntar al objeto `obj
 En esta lección aprendimos qué son los Objetos y las muchas formas que existen para acceder a los valores, llamar a los métodos y asignar valores. Muchas de estas técnicas parecían muy familiares, como si las hubiéramos usado en prácticamente todos los aspectos de nuestros aprendizajes hasta ahora. Aquí hay un patrón, eso es porque TODO en Javascript es un Objeto. Las matrices son solo objetos con teclas numéricas, las cadenas son objetos bajo el capó con métodos incorporados, las funciones son en realidad objetos con sus propias propiedades especiales, todo el tiempo de ejecución de Javascript es un objeto (`window` en un navegador o` global` en el Node.js). Cuanto más trabajes con Javascript, más comenzará a tener sentido para ti. Solo recuerda, todo es un objeto.
 
 ## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
+[Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/05-JS-IV/homework)
 
 ## Recursos adicionales
 

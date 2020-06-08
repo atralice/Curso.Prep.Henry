@@ -111,6 +111,7 @@ console.log(triple); // [ 6, 9, 12, 15 ]
 ```
 
 ## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
+[Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/07-JS-VI/homework)
 
 ## Recursos adicionales
 
