@@ -232,6 +232,7 @@ Para completar nuestro ejemplo creemos un método que solo pueda acceder un Alum
 
 
 ## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
+[Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/06-JS-V/homework)
 
 ## Recursos adicionales
 
