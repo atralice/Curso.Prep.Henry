@@ -1,0 +1,13 @@
+JS Homework.txt
+
+
+* `for`: Es un bucle. Ayuda a repetir un bloque de codigos muchas veces. Sirve para hacer tareas repetitivas de forma sencilla.
+
+* `&&`, `||`, `!` // SON OPERADORES LOGICOS
+
+* `&&`: Significa "AND". Evalua dos expresiones y devolvera "true" SOLO si ambas expresiones son True. Si una o ambas expresiones son false, devolvera FALSE.
+
+* `||`: Significa "OR". Determina si una de las expresiones es true. Devuelve true si una o ambas expresiones son true. Es FALSO solamente SI AMBOS operadores son falsos. 
+
+* `!`: Significa "NOT". Significa que estamos preguntando lo contrario de la expresion. El operador "not" devolvera el valor booleano OPUESTO DE LO QUE SE LE PASA. 
+Ex.: operadores ' p NOT q': Si el operador P es true, arrojara un False, ya que indica lo contrario. Si el operador P es False, arrojara true.
