@@ -1,0 +1,10 @@
+Introduccion a JavaScript.txt
+
+1.
+*Variables: Es una forma de almacenar el valor de algo para usar mas tarde. Puede ser de cualquier tipo: una cadena de texto, numeros enteros o un valor booleano; verdadero o falso.
+*Strings: Son bloques o cadenas de texto. Se definen entre comillas.
+*Funciones: Son tipos particulares de OBJETOS, llamados "callable objects" u objetos invocables. Son las que se encargan de las acciones o manejar los datos.
+*Los argumentos son los datos con los que van a trabajar las funciones.
+*Return: Es una declaracion de retorno, que devuelve los datos que escapa de la funcion. 
+* Las declaraciones (if) sirven para evaluar operaciones o sentencias.
+*Booleans: Es un tipo de dato para determinar si algo es verdadero o falso. 
