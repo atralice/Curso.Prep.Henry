@@ -33,7 +33,7 @@ Existen tres formas de declarar una variable:
 ```javascript
     var nombre = 'Juan'; // Vamos a usar principalemente esta forma
     let apellido = 'Perez';
-    var comidafavorita = 'Pizza';
+    const comidafavorita = 'Pizza';
 ```
 
 ### var
