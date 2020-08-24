@@ -1,0 +1,5 @@
+Javascript III.txt
+
+* Arrays
+Son listas o contenedores de elementos . Puede recibir cualquier elemento y todo tipo de datos.
+Inclusive funciones y Tambien pueden tener un elemento que sea un array (o arreglo) dentro.
