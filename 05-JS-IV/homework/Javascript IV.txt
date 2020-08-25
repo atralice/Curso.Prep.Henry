@@ -1,0 +1,18 @@
+Javascript IV.txt
+
+
+1. Objetos:
+Un objeto es una coleccion de propiedades o contenedores de datos.
+
+2. Propiedades:
+Una propiedad es una asociacion entre un nombre (key value) y un valor. Se puede acceder al valor mediante el key value
+
+3. Metodos: 
+Se denomina metodo a las funciones guardadas en un objeto. Con una keyword se hace referencia al objeto donde se invoca el metodo.
+
+4. Bucle (for in):
+Es un tipo de bucle integrado, que recorre la clave del objeto y finaliza cuando se hayan iterado todas las claves.
+
+5. Notacion de puntos vs notacion de corchetes:
+La notacion de puntos permite acceder a la propiedad de un objeto mediante un punto y es literal. l
+La notacion de corchetes se usa con variables y para recorrer objetos. La notación de corchetes es como llamar a un elemento en una matriz, debemos usar una cadena o número, o una variable que apunte a una cadena o número.
