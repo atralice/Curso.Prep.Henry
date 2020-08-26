@@ -1,0 +1,11 @@
+JSV-homework.txt
+
+1. `prototype`:
+Los prototipos son una propiedad de Object; el objeto del que se derivan todos los demás objetos y
+esta propiedad es, a su vez, un objeto. Entonces, un prototipo es otro objeto que se utiliza como
+una fuente de propiedades.
+
+
+
+2. _Constructors_ (de Clases):
+Una clase es una plantilla para la creacion de objetos de datos segun un modelo definido.
