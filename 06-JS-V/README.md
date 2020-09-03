@@ -92,10 +92,10 @@ El método `assign` de los objetos te permite agregar propiedades a un objeto pa
 > var obj = {}
 
 // No hace falta guardar el resultado porque los objetos se pasan por `referencia`
-> Object.assign(obj, {nombre:'facu', apellido:'velasco'})
+> Object.assign(obj, {nombre:'Emi', apellido:'Chequer'})
 
 > obj.nombre
-< 'facu' 
+< 'Emi' 
 ```
 
 ## Herencia Clásica
@@ -125,10 +125,10 @@ Nosotros también podemos generar nuestros propios constructores que de los cual
     console.log('Soy '+this.nombre+' de '+this.ciudad);
   }
 
-> var facu = new Persona('Facundo', 'Velasco', 'Buenos Aires');
+> var Emi = new Persona('Emi', 'Chequer', 'Buenos Aires');
 
-> facu.saludar()
-< 'Soy Facundo de Buenos Aires'
+> Emi.saludar()
+< 'Soy Emi de Buenos Aires'
 ```
 
 Ahora todo Alumno de Henry antes de Alumno es una Persona, asique podríamos decir que un Alumno hereda las propiedades de ser Persona.
@@ -158,14 +158,14 @@ Descartemos esta opción.
     
     // finalmente le agrego los puntos propios de Alumno
     this.curso = curso;
-    this.instituto = 'P5';
+    this.empresa = 'Soy Henry';
   }
 
-> var toni = new Alumno('Toni', 'Tralice', 'Tucuman', 'Bootcamp')
+> var toni = new Alumno('Toni', 'Tralice', 'Tucuman', 'Web Full Stack')
 
 // Ahora si tenemos nuestra instancia creada a partir de ambos constructores
 > toni.curso
-< Bootcamp
+< Web Full Stack
 
 > toni.apellido
 < Tralice
@@ -177,9 +177,7 @@ Descartemos esta opción.
 
 Como podemos ver los métodos de _Personas_ no fueron pasados a nuestros _Alumnos_. Veamos un poco el porqué.
 
-![Alumno proto](./img/AlumnoProto.png)
-
-Como podemos ver en la imagen, el constructor del `__proto__` esta ligado a Alumno y luego al `Object Object` de JS. Pero el método `saludar` esta en el objeto `prototype` de Personas... , y esta perfecto, así es como debería funcionar, las instancias acceden al `__proto__` que fue vinculado por el constructor para ver que métodos tienen. Nuestro problema es que al llamar a Persona con `call` en vez de con el método `new` no se esta haciendo ese vinculo en el que `Persona.prototype` se mete en nuestro `Prototype Chain`, y entonces las instancias de Alumno no tienen acceso a los métodos de Persona
+El constructor del `__proto__` esta ligado a Alumno y luego al `Object Object` de JS. Pero el método `saludar` esta en el objeto `prototype` de Personas... , y esta perfecto, así es como debería funcionar, las instancias acceden al `__proto__` que fue vinculado por el constructor para ver que métodos tienen. Nuestro problema es que al llamar a Persona con `call` en vez de con el método `new` no se esta haciendo ese vinculo en el que `Persona.prototype` se mete en nuestro `Prototype Chain`, y entonces las instancias de Alumno no tienen acceso a los métodos de Persona
 
 Vamos a solucionar ese problema agregando al prototipo los métodos de Persona, para esto vamos a usar el método `Object.create`.
 
@@ -190,46 +188,11 @@ Vamos a solucionar ese problema agregando al prototipo los métodos de Persona, 
 // si recuerdan el objeto prototype siempre tenia una propiedad constructor que hacia referencia a la función en si, con la asignación que hicimos arriba lo pisamos, por lo que deberíamos volver a agregarlo.
 > Alumno.prototype.constructor = Alumno
 
-> var guille = new Alumno('Guille','Aszyn','Montevideo','Bootcamp')
+> var Franco = new Alumno('Franco','Etcheverri','Montevideo','Bootcamp')
 
-> guille.saludar()
-< 'Soy Guille de Montevideo'
+> Franco.saludar()
+< 'Soy Franco de Montevideo'
 ```
-
-Ahora tenemos una instancia que puede usar los métodos del otro constructor sin necesidad de volverlos a escribir para ella misma.
-
-![prototype chain](./img/protochain.png)
-
-Para completar nuestro ejemplo creemos un método que solo pueda acceder un Alumno.
-
-``` javascript
-> Alumno.prototype.inscribirme = function (curso) {
-    cursosArr = ['Bootcamp','Introductorio','Backend']
-    // si el curso esta entre alguno de los ofrecidos 
-    if (cursosArr.includes(curso)) {
-      this.curso = curso;
-    } else {
-      console.log('No tenemos ese curso :(')
-    }
-  }
-
-> guille.curso
-< 'Bootcamp'
-
-> guille.inscribirme('Introductorio')
-
-> guille.curso
-< 'Introductorio'
-
-// y ahora probemoslo para alguien que no sea alumno
-
-> var facu = new Persona('Facundo', 'Velasco', 'Buenos Aires')
-
-> facu.inscribirse('Backend');
-< Uncaught TypeError: facu.inscribirse is not a 'function'
-  // Excelente!
-```
-
 
 ## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
 [Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/06-JS-V/homework)
