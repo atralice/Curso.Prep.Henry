@@ -149,7 +149,7 @@ Son los tags que contienen los items de la lista ('list item').
 ## CSS
 
 Como vimos, HTML nos sirve para dar estructura al contenido. En las primeras épocas de internet las páginas eran así. De hecho, todavía esta online la [primera página web](http://info.cern.ch/hypertext/WWW/TheProject.html). Como ven es bastante aburrida.
-Luego se introdució el concepto de CSS (Cascading Style Sheets); una forma de poder agregar color y estilos en nuestras páginas!
+Luego se introdujo el concepto de CSS (Cascading Style Sheets); una forma de poder agregar color y estilos en nuestras páginas!
 
 ## Reglas CSS
 
