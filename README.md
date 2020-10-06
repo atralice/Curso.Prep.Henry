@@ -19,7 +19,7 @@
 
 Si querés saber más sobre la carrera, mirá este video:
 
-[![Watch the video](http://vimeo.com/api/v2/video/426051769.php)](https://player.vimeo.com/video/426051769)
+[![Watch the video](https://i.vimeocdn.com/video/903994018.webp?mw=1200&mh=675)](https://player.vimeo.com/video/426051769)
 
 
 
