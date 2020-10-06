@@ -18,4 +18,5 @@
 # La Carrera
 
 Si querés saber más sobre la carrera, mirá este video:
-# https://player.vimeo.com/video/426051769
+[vimeo](https://player.vimeo.com/video/426051769)
+
