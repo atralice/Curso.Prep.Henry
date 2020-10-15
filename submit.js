@@ -68,7 +68,7 @@ if(args.length != 1 || !(["1","2","3","4","5","6","7","8","9"].includes(args[0])
 }
 
 var hwNumber = args[0];
-const hwPaths = ["01-Git", "02-JS-I", "03-JS-II", "04-JS-III", "05-JSI-V", "06-JS-V", "07-JS-VI", "08-HTML", "09-CSS-Positioning"];
+const hwPaths = ["01-Git", "02-JS-I", "03-JS-II", "04-JS-III", "05-JS-IV", "06-JS-V", "07-JS-VI", "08-HTML", "09-CSS-Positioning"];
 const resultFile = __dirname + "/" + hwPaths[hwNumber - 1] + "/homework/tests/result.json";
 
 try {
