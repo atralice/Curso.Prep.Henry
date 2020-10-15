@@ -17,13 +17,14 @@
 
 ## Proceso de subida de homeworks
 
-__IMPORTANTE:__ Luego de completar cada una de las homeworks del día deberán ejecutar el siguiente comando para subir sus trabajos a sus repositorios (Deben estar posicionados sobre la carpeta `homework` para que funcione y haber corrido previamente `npm install` desde la carpeta principal `Curso.Prep.Henry`):
+__IMPORTANTE:__ Luego de completar cada una de las homeworks del día deberán ejecutar el siguiente comando para subir sus trabajos a sus repositorios (Deben estar posicionados sobre la carpeta principal `Curso.Prep.Henry` para que funcione y haber corrido previamente `npm install`:
 
-*Nota: La homework 01 no incluye este proceso de subida ya que es una actividad por fuera de este repositorio*
 
 ```bash
-  node submit.js
+  node submit.js {numeroHomework}
 ```
+
+*En donde dice {numeroHomework} deben reemplazarlo simplemente por el número de homework correspondiente, por ejemplo `node submit.js 2`*
 
 # La Carrera
 
