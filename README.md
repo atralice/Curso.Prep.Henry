@@ -15,6 +15,16 @@
 * [09 - CSS](./09-CSS-Positioning) (3 hs)
 * Checkpoint
 
+## Proceso de subida de homeworks
+
+__IMPORTANTE:__ Luego de completar cada una de las homeworks del día deberán ejecutar el siguiente comando para subir sus trabajos a sus repositorios (Deben estar posicionados sobre la carpeta `homework` para que funcione y haber corrido previamente `npm install` desde la carpeta principal `Curso.Prep.Henry`):
+
+*Nota: La homework 01 no incluye este proceso de subida ya que es una actividad por fuera de este repositorio*
+
+```bash
+  node submit.js
+```
+
 # La Carrera
 
 Si querés saber más sobre la carrera, mirá este video:
