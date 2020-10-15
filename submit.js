@@ -62,7 +62,7 @@ async function submit(pasados, total) {
 }
 
 var args = process.argv.slice(2);
-if(args.length != 1 || !(["1","2","3","4","5","6","7","8","9"].includes(args[0]))) {
+if(args.length != 1 || !(["2","3","4","5","6","7","8","9"].includes(args[0]))) {
   console.log("Parámetro inválido revise que sea un número de homework válido");
   return process.exit(0);
 }
@@ -76,7 +76,7 @@ try {
 } catch(err) {
   console.log("El archivo result.json no existe por lo que se creará uno nuevo");
 }
-if(hwNumber === '1' || hwNumber === '8' || hwNumber === '9'){
+if(hwNumber === '8' || hwNumber === '9'){
   console.log("Homework sin tests \n");
   submit(0,0);
 } else {
