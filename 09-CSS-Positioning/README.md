@@ -1,6 +1,17 @@
 <p align='left'>
     <img  src='../logo.png' height='70px'>
 </p>
+<table width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=09-CSS-Positioning">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>
 # Lección 9: CSS Intermedio
 
 En esta lección cubriremos:
