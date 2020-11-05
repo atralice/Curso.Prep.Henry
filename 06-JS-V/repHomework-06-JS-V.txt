@@ -1,0 +1,11 @@
+ En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+* `prototype`
+* _Constructors_ (de Clases)
+
+               Prototype
+Si necesitamos un método que lo utilicen varios objetos utilizamos la propiedad Prototype
+Esta es una propiedad que utiliza la KeyWord this para hacer referencia a  los objetos y sus propiedades.
+
+               Constructors_ (de Clases)
+Cuando tenemos varios objetos que comparten las mismas propiedades creamos un constructor o clase y se podra utilizar por cada objeto que nesecitamos.
