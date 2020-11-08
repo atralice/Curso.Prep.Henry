@@ -1,0 +1,1 @@
+* Arrays: Son una series de elementos ordenados, los arrays pueden resivir cualquier tipo de datos (string, numeros...) y en codigo se respresentan con [].
