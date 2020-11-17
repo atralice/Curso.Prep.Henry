@@ -1,4 +1,4 @@
-<img  src='../logo.png' height='70px'>
+<img  src='../../logo.png' height='70px'>
 <table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
@@ -48,24 +48,22 @@ Fijensé que acá es importante discriminar lo que está *adentro* de los bloque
 
 Nos podemos dar cuenta que algo es un statement, porque si lo *pegamos* en la consola del intérprete -por ejemplo, en la consola del Firefox o Chrome- vamos a ver que no produce ningún resultado:
 
-![statement](./statement.png);
+![statement](./statement.png)
 
 > Una regla fácil para distinguir entre una *expression* y un *statement* en JS es la siguiente:
   Si podemos ponerlo dentro de un `console.log`, es una *expression*, si no, es un *statement*.
   Por ejemplo:
-    ```js
-      // expresiones!
-      console.log(1 + 1);
-      console.log(Math.pow(2,3) + 22);
-
-      // statements
-      console.log(if( true) {
-        // código
-      });
-      // jamás haríamos esto de arriba, no?
-    ```
-
---
+  ```js
+    // expresiones!
+    console.log(1 + 1);
+    console.log(Math.pow(2,3) + 22);
+    
+    // statements
+    console.log(if( true) {
+      // código
+    });
+    // jamás haríamos esto de arriba, no?
+  ```
 
 > El **operador ternario**, es una expresión o un statement? ej: (numero > 10 ? 'mayor' : 'menor');
 
@@ -131,7 +129,7 @@ var c = (a = 2); // vamos a ver que dentro de la variable c, está el valor reto
 
 ## Expresiones con efectos secundarios (side effects)
 
-Son expresiones que son evaluadas retornan algo, pero a su vez tienen un efecto secundario (incrementar un valor, etc...). Por ejemplo:
+Son expresiones que al ser evaluadas retornan algo, pero a su vez tienen *un efecto secundario* (incrementar un valor, etc...). Por ejemplo:
 
 ```js
 contador++; // retorna el valor de contador e incrementa uno.
