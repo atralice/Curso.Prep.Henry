@@ -1,0 +1,26 @@
+{
+  "name": "prep",
+  "version": "1.0.0",
+  "description": "<p align='left'>     <img src='https://static.wixstatic.com/media/85087f_0d84cbeaeb824fca8f7ff18d7c9eaafd~mv2.png/v1/fill/w_160,h_30,al_c,q_85,usm_0.66_1.00_0.01/Logo_completo_Color_1PNG.webp' </img> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage=false",
+    "test2": "jest JSI.test.js  --useStderr --json --outputFile=./02-JS-I/homework/tests/result.json",
+    "test3": "jest JSII.test.js  --useStderr --json --outputFile=./03-JS-II/homework/tests/result.json",
+    "test4": "jest JSIII.test.js  --useStderr --json --outputFile=./04-JS-III/homework/tests/result.json",
+    "test5": "jest JSIV.test.js  --useStderr --json --outputFile=./05-JS-IV/homework/tests/result.json",
+    "test6": "jest JSV.test.js  --useStderr --json --outputFile=./06-JS-V/homework/tests/result.json",
+    "test7": "jest JSVI.test.js  --useStderr --json --outputFile=./07-JS-VI/homework/tests/result.json"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "jest": "^22.0.3",
+    "node-fetch": "^2.6.1",
+    "prompt-sync": "^4.2.0"
+  },
+  "author": "Henry",
+  "license": "ISC",
+  "jest": {
+    "testURL": "http://localhost/"
+  }
+}
