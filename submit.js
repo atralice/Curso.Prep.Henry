@@ -29,7 +29,7 @@ async function submit(pasados, total) {
     return process.exit(0);
   }
 
-  const { username, password } = await prompts(
+  const { username, password } = await prompts([
   {
     type: 'text',
     name: 'username',
@@ -39,7 +39,7 @@ async function submit(pasados, total) {
     type: 'password',
     name: 'username',
     message: 'Password:'
-  },);
+  }]);
   let repo;
   try {
     const p = await ejecutar('git config --get remote.origin.url');
