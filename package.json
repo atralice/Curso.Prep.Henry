@@ -8,11 +8,11 @@
       },
       "devDependencies": {
             "eslint": "^4.13.1",
-            "jest": "^22.0.3"
+            "jest": "^26.6.1"
       },
       "author": "Henry",
       "license": "ISC",
       "jest": {
-          "testURL": "http://localhost/"
-        }
+            "testURL": "http://localhost/"
+      }
 }
