@@ -13,8 +13,8 @@
     "test7": "jest JSVI.test.js  --useStderr --json --outputFile=./07-JS-VI/homework/tests/result.json"
   },
   "devDependencies": {
-    "eslint": "^4.13.1",
-    "jest": "^22.0.3",
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3",
     "node-fetch": "^2.6.1",
     "prompt-sync": "^4.2.0"
   },
@@ -22,5 +22,8 @@
   "license": "ISC",
   "jest": {
     "testURL": "http://localhost/"
+  },
+  "dependencies": {
+    "prompts": "^2.4.0"
   }
 }
