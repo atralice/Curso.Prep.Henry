@@ -37,7 +37,7 @@ function suma(x, y) {
 }
 
 function resta(x, y) {
-  // Resta "x" de "y" y devuelve el valor
+  // Resta "y" de "x" y devuelve el valor
   // Tu código:
 }
 
@@ -109,12 +109,12 @@ function elevar(num, exponent) {
 }
 
 function redondearNumero(num) {
-  // Redondea "num" y devuélvelo
+  // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
 }
 
 function redondearHaciaArriba(num) {
-  // Redondea "num" hacia arriba y devuélvelo
+  // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
 }
 
@@ -137,7 +137,7 @@ function obtenerSaludo(nombre) {
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
-  // Retornar el area de un cuadrado teniendo su altura y ancho
+  // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
 }
 
