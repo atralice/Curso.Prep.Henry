@@ -37,7 +37,7 @@ async function submit(pasados, total) {
   },
   {
     type: 'password',
-    name: 'username',
+    name: 'password',
     message: 'Password:'
   }]);
   let repo;
