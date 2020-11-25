@@ -16,14 +16,11 @@
     "eslint": "^7.14.0",
     "jest": "^26.6.3",
     "node-fetch": "^2.6.1",
-    "prompt-sync": "^4.2.0"
+    "prompts": "^2.4.0"
   },
   "author": "Henry",
   "license": "ISC",
   "jest": {
     "testURL": "http://localhost/"
-  },
-  "dependencies": {
-    "prompts": "^2.4.0"
   }
 }

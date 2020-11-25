@@ -15,6 +15,10 @@
 * [09 - CSS](./09-CSS-Positioning) (3 hs)
 * Henry Challenge => [Inscribite acá para rendir](https://airtable.com/shrjhdL2GfsusMZ05)
 
+## Conceptos:
+
+* [Expressions vs Statements](./JS-conceptos/Statements-Expressions/)
+
 ## Proceso de subida de homeworks
 
 __IMPORTANTE:__ Luego de completar cada una de las homeworks del día deberán ejecutar el siguiente comando para subir sus trabajos a sus repositorios (Deben estar posicionados sobre la carpeta principal `Curso.Prep.Henry` para que funcione y haber corrido previamente `npm install`:
