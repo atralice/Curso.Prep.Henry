@@ -190,7 +190,7 @@ Math.pow(3,3) = 27;
 
 ### Math.round , Math.floor, Math.ceil
 
-`Math` también tiene métodos que redondearán los números para nosotros. `.round` redondeará un número al número entero más cercano. `.floor` siempre redondeará un número al número entero más cercano. `.ceil` siempre se redondeará al número entero más cercano.
+`Math` también tiene métodos que redondearán los números para nosotros. `.round` redondeará un número al número entero más cercano. `.floor` siempre redondeará un número al número entero más cercano hacia abajo. `.ceil` siempre se redondeará al número entero más cercano hacia arriba.
 
 ```javascript
 Math.round(6.5) = 7;
