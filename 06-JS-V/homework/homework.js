@@ -8,14 +8,12 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
-
 }
 
 function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
-
 }
 
 function agregarStringInvertida() {
@@ -24,7 +22,27 @@ function agregarStringInvertida() {
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
+}
 
+function crearPersona() {
+  //Crea una Clase de ES6 o una función constructor llamada "Persona"
+  //Debe tener las propiedades: nombre, apellido, edad y domicilio
+  //Debe tener un método llamado "Detalle" que nos devuelve las propiedades de la persona con sus valores.
+}
+  
+function crearInstanciaPersona() {
+  //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
+  //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
+  //Devolver la nueva persona creada
+}
+  
+function agregarMetodo() {
+  //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
+  //Ej: "Juan, 22 años"
+}
+  
+function invocarMetodo() {
+  //Invoca el método recientemente creado para la instancia creada de la clase Persona.
 }
 
 // No modificar nada debajo de esta línea
@@ -33,5 +51,9 @@ function agregarStringInvertida() {
 module.exports = {
   crearUsuario,
   agregarMetodoPrototype,
-  agregarStringInvertida
+  agregarStringInvertida,
+  crearPersona,
+  crearInstanciaPersona,
+  agregarMetodo,
+  invocarMetodo
 };

@@ -7,6 +7,28 @@ function obtenerMayor(x, y) {
   // Tu código:
 }
 
+function operadoresLogicos(num1, num2, num3) {
+  //La función recibe tres números distintos. 
+  //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
+  //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
+  //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
+  //Si no se cumplen ninguna de las condicione anteriores, retornar false. 
+}
+
+function mayoriaDeEdad(edad) {
+  //Determinar si la persona según su edad puede ingresar a un evento.
+  //Si tiene 18 años ó más, devolver --> "Allowed"
+  //Si es menor, devolver --> "Not allowed"
+}
+  
+function conection(status) {
+  //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
+  //Cuando el estado es igual a 1, el usuario está "Online"
+  //Cuando el estado es igual a 2, el usuario está "Away"
+  //De lo contrario, presumimos que el usuario está "Offline"
+  //Devolver el estado de conexión de usuario en cada uno de los casos.
+}
+
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
@@ -16,10 +38,20 @@ function saludo(idioma) {
   // Tu código:
 }
 
+function colors(color) {
+  //La función recibe un color. Devolver el string correspondiente:
+  //En caso que el color recibido sea "blue", devuleve --> "This is blue"
+  //En caso que el color recibido sea "red", devuleve --> "This is red"
+  //En caso que el color recibido sea "green", devuleve --> "This is green"
+  //En caso que el color recibido sea "orange", devuleve --> "This is orange"
+  //Caso default: devuelve --> "Color not found"
+  //Usar el statement Switch.
+}
+
 function esDiezOCinco(numero) {
-    // Devuelve "true" si "numero" es 10 o 5
-    // De lo contrario, devuelve "false"
-    // Tu código:
+  // Devuelve "true" si "numero" es 10 o 5
+  // De lo contrario, devuelve "false"
+  // Tu código:
 }
 
 function estaEnRango(numero) {
@@ -53,6 +85,12 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
 }
 
+function doWhile(numero) {
+  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
+  //Retornar el valor final.
+  //Usar el bucle do ... while.
+}
+
 
 
 // No modificar nada debajo de esta línea
@@ -60,10 +98,15 @@ function esPrimo(numero) {
 
 module.exports = {
   obtenerMayor,
+  operadoresLogicos,
+  mayoriaDeEdad,
+  conection,
   saludo,
+  colors,
   esDiezOCinco,
   estaEnRango,
   esEntero,
   fizzBuzz,
-  esPrimo
+  esPrimo,
+  doWhile
 };

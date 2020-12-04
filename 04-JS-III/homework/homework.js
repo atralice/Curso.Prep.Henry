@@ -74,6 +74,32 @@ function multiplicarArgumentos() {
   // Tu código:
 }
 
+function mesesDelAño(array) {
+  //Dado un array que contiene todos los meses del año desordenados, retornar un nuevo array que contenga los meses:
+  // "Enero", "Marzo" y "Noviembre"
+}
+  
+function mayorACien(array) {
+  //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
+  //valores mayores a 100. Finalmente devolver el nuevo array.
+}
+  
+function breakStatement(numero) {
+  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+  //Guardar cada nuevo valor en un array. 
+  //Devolver el array
+  //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución.
+  //Pista: usá el statement 'break'
+}
+  
+function continueStatement(numero) {
+  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+  //Guardar cada nuevo valor en un array.    
+  //Devolver el array
+  //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
+  //Pista: usá el statement 'continue'
+}
+
 // No modificar nada debajo de esta línea
 // --------------------------------
 
@@ -90,4 +116,8 @@ module.exports = {
   promedioResultadosTest,
   numeroMasGrande,
   multiplicarArgumentos,
+  mesesDelAño,
+  mayorACien,
+  breakStatement,
+  continueStatement
 };
