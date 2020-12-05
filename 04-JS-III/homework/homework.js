@@ -5,15 +5,18 @@ function devolverPrimerElemento(array) {
   // Tu código:
 }
 
+
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
 }
 
+
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
 }
+
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
@@ -22,11 +25,13 @@ function incrementarPorUno(array) {
   // Tu código:
 }
 
+
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
 }
+
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
@@ -34,6 +39,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Pista: usa el método `.unshift`
   // Tu código:
 }
+
 
 function dePalabrasAFrase(palabras) {
   // "palabras" es un array de strings/cadenas
@@ -43,11 +49,13 @@ function dePalabrasAFrase(palabras) {
   // Tu código:
 }
 
+
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
 }
+
 
 function agregarNumeros(numeros) {
   // "array" debe ser una matriz de enteros (int/integers)
@@ -55,17 +63,20 @@ function agregarNumeros(numeros) {
   // Tu código:
 }
 
+
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
 }
 
+
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
 }
+
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
@@ -74,8 +85,8 @@ function multiplicarArgumentos() {
   // Escribe tu código aquí:
 }
 
-//Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 19.
 
+//Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 19.
 function cuentoElementos(arreglo){
   //Escribe tu código aquí
 
@@ -110,6 +121,33 @@ function todosIguales(arreglo) {
 } 
 
 
+function mesesDelAño(array) {
+  //Dado un array que contiene todos los meses del año desordenados, retornar un nuevo array que contenga los meses:
+  // "Enero", "Marzo" y "Noviembre"
+}
+  
+function mayorACien(array) {
+  //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
+  //valores mayores a 100. Finalmente devolver el nuevo array.
+}
+  
+function breakStatement(numero) {
+  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+  //Guardar cada nuevo valor en un array. 
+  //Devolver el array
+  //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución.
+  //Pista: usá el statement 'break'
+}
+  
+function continueStatement(numero) {
+  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+  //Guardar cada nuevo valor en un array.    
+  //Devolver el array
+  //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
+  //Pista: usá el statement 'continue'
+}
+
+
 // No modificar nada debajo de esta línea
 // --------------------------------
 
@@ -130,4 +168,8 @@ module.exports = {
   diaDeLaSemana,
   empiezaConNueve,
   todosIguales,
+  mesesDelAño,
+  mayorACien,
+  breakStatement,
+  continueStatement
 };
