@@ -53,6 +53,26 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
 }
 
+//Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
+//si su valor es true y “Soy falso” si su valor es false.
+
+function esVerdadero(valor){
+  //Escribe tu código aquí
+}
+
+//Escribe una función que muestre la tabla de multiplicar del 6 (del 6 al 60).
+
+function tablaDelSeis(){
+    //Escribe tu código aquí
+   
+}
+
+//Leer un número entero y retornar true si tiene 3 dígitos.
+
+function tieneTresDigitos(numero){
+  //Escribe tu código aquí
+ 
+}
 
 
 // No modificar nada debajo de esta línea
@@ -65,5 +85,8 @@ module.exports = {
   estaEnRango,
   esEntero,
   fizzBuzz,
-  esPrimo
+  esPrimo,
+  esVerdadero,
+  tablaDelSeis,
+  tieneTresDigitos
 };
