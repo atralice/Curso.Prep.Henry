@@ -127,11 +127,8 @@ module.exports = {
   esEntero,
   fizzBuzz,
   esPrimo,
-<<<<<<< HEAD
   esVerdadero,
   tablaDelSeis,
-  tieneTresDigitos
-=======
+  tieneTresDigitos,
   doWhile
->>>>>>> b7b6041ab793a3c80b49b483b6217393614d2890
 };
