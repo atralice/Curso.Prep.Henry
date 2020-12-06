@@ -86,12 +86,31 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
 }
 
+//Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
+//si su valor es true y “Soy falso” si su valor es false.
+
+function esVerdadero(valor){
+  //Escribe tu código aquí
+}
+
+//Escribe una función que muestre la tabla de multiplicar del 6 (del 6 al 60).
+function tablaDelSeis(){
+    //Escribe tu código aquí
+   
+}
+
+//Leer un número entero y retornar true si tiene 3 dígitos.
+
+function tieneTresDigitos(numero){
+  //Escribe tu código aquí
+ 
+}
+
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
 }
-
 
 
 // No modificar nada debajo de esta línea
@@ -109,5 +128,8 @@ module.exports = {
   fizzBuzz,
   operadoresLogicos,
   esPrimo,
+  esVerdadero,
+  tablaDelSeis,
+  tieneTresDigitos,
   doWhile
 };
