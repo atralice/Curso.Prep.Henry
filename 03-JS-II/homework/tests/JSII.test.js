@@ -1,12 +1,17 @@
 /* eslint-disable no-undef */
 const {
   obtenerMayor,
+  mayoriaDeEdad,
+  conection,
   saludo,
+  colors,
   esDiezOCinco,
   estaEnRango,
   esEntero,
   fizzBuzz,
-  esPrimo
+  operadoresLogicos,
+  esPrimo,
+  doWhile
 } = require('../homework');
 
 describe('obtenerMayor(x, y)', function() {
@@ -18,6 +23,16 @@ describe('obtenerMayor(x, y)', function() {
   });
   it('should return either one if they are the same', function() {
     expect(obtenerMayor(1000, 1000)).toBe(1000);
+  });
+});
+
+describe('mayoriaDeEdad(edad)', function() {
+  it('should return \'Allowed\'if edad is equal or greater than 18', function() {
+    expect(mayoriaDeEdad(18)).toBe('Allowed');
+    expect(mayoriaDeEdad(35)).toBe('Allowed');
+  });
+  it('should return \'Not allowed\'if edad is less than 18', function() {
+    expect(mayoriaDeEdad(7)).toBe('Not allowed');
   });
 });
 
@@ -92,6 +107,24 @@ describe('fizzBuzz(num)', function() {
   });
   it('should return num if not divisible by 3 or 5', function() {
     expect(fizzBuzz(4)).toBe(4);
+  });
+});
+
+describe('operadoresLogicos(num1, num2, num3)', function() {
+  it('should return \'Número 1 es mayor y positivo\' if num1 is positive and if it is greater than num2 and num3', function() {
+    expect(operadoresLogicos(50, 2, 15)).toBe('Número 1 es mayor y positivo');
+  });
+  it('should return \'Hay negativos\' if any of the arguments are negative', function() {
+    expect(operadoresLogicos(80, -1, 2)).toBe('Hay negativos');
+  });
+  it('should return num3 + 1 if num3 is greater than num1 and num2', function() {
+    expect(operadoresLogicos(1, 3, 10)).toBe(11);
+  });
+  it('should return \'Error\' if any of the arguments are equal 0', function() {
+    expect(operadoresLogicos(1, 0, 10)).toBe('Error');
+  });
+  it('should return false if none of the conditions are met', function() {
+    expect(operadoresLogicos(10, 30, 6)).toBe(false);
   });
 });
 

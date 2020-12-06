@@ -23,6 +23,8 @@ const {
   elevar,
   redondearNumero,
   redondearHaciaArriba,
+  numeroRandom,
+  esPositivo,
   agregarSimboloExclamacion,
   combinarNombres,
   obtenerSaludo,
@@ -199,6 +201,22 @@ describe('redondearHaciaArriba(num)', function() {
     expect(redondearHaciaArriba(1.5)).toBe(2);
     expect(redondearHaciaArriba(2)).toBe(2);
     expect(redondearHaciaArriba(0.1)).toBe(1);
+  });
+});
+
+describe('numeroRandom()', function() {
+  it('Debería devolver un número entre 0 y 1', function() {
+    expect(typeof numeroRandom()).toBe('number');
+    expect(numeroRandom()).toBeGreaterThanOrEqual(0);
+    expect(numeroRandom()).toBeLessThan(1);
+  });
+});
+
+describe('esPositivo(numero)', function() {
+  it('Debería devolver el string \Es positivo ó Es negativo\ según corresponda', function() {
+    expect(esPositivo(0)).toBe(false);
+    expect(esPositivo(23)).toBe('Es positivo');
+    expect(esPositivo(-2)).toBe('Es negativo');
   });
 });
 
