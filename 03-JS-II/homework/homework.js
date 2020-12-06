@@ -86,24 +86,21 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
 }
 
-//Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
-//si su valor es true y “Soy falso” si su valor es false.
-
 function esVerdadero(valor){
+  //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
+  //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 }
 
-//Escribe una función que muestre la tabla de multiplicar del 6 (del 6 al 60).
 function tablaDelSeis(){
-    //Escribe tu código aquí
-   
+  //Escribe una función que muestre la tabla de multiplicar del 6 (del 6 al 60).
+  //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
+  //Escribe tu código aquí   
 }
-
-//Leer un número entero y retornar true si tiene 3 dígitos.
 
 function tieneTresDigitos(numero){
+  //Leer un número entero y retornar true si tiene 3 dígitos.
   //Escribe tu código aquí
- 
 }
 
 function doWhile(numero) {

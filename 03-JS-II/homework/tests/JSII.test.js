@@ -40,6 +40,15 @@ describe('mayoriaDeEdad(edad)', function() {
   });
 });
 
+describe('conection(status)', function() {
+  it('should return the conection state of user', function() {
+    expect(conection(1)).toBe('Online');
+    expect(conection(2)).toBe('Away');
+    expect(conection(3)).toBe('Offline');
+    expect(conection()).toBe('Offline');
+  });
+});
+
 describe('saludo(idioma)', function() {
   it('should return \'Guten Tag!\' for aleman', function() {
     expect(saludo('aleman')).toBe('Guten Tag!');
@@ -53,6 +62,19 @@ describe('saludo(idioma)', function() {
   it('should return \'Hola!\' if no argument is passed in or if a idioma beyond ingles, mandarin, and aleman is passed in.', function() {
     expect(saludo('frances')).toBe('Hola!');
     expect(saludo()).toBe('Hola!');
+  });
+});
+
+describe('colors(color)', function() {
+  it('should return \'This is {color}\'', function() {
+    expect(colors("blue")).toBe('This is blue');
+    expect(colors("red")).toBe('This is red');
+    expect(colors("green")).toBe('This is green');
+    expect(colors("orange")).toBe('This is orange');
+  });
+  it('should return \'Color not found\' if there is no argument or the argument is none of the expected ones', function() {
+    expect(colors()).toBe('Color not found');
+    expect(colors("pink")).toBe('Color not found');
   });
 });
 
@@ -152,13 +174,13 @@ describe ('esVerdadero(valor)', function() {
   it('should return false if valor is false', function() {
     expect(esVerdadero(false)).toBe(false);
   });
-})
+});
 
 describe ('tablaDelSeis()', function() {
   it('should return multiplication table of 6', function() {
     expect(tablaDelSeis()).toEqual([6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
   });
-})
+});
 
 describe ('tieneTresDigitos(numero)', function() {
   it('should return true if numero has 3 digits', function() {
@@ -166,4 +188,12 @@ describe ('tieneTresDigitos(numero)', function() {
     expect(tieneTresDigitos(820)).toBe(true);
     expect(tieneTresDigitos(900)).toBe(true);
   });
-})
+});
+
+describe('doWhile(numero)', function() {
+  it('should add 5 to number until reaching a limit of 8 times and return the sum value', function() {
+    expect(doWhile(5)).toBe(45);
+    expect(doWhile(100)).toBe(140);
+    expect(doWhile(-1)).toBe(39);
+  });
+});
