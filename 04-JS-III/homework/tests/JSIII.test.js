@@ -1,21 +1,25 @@
 /* eslint-disable no-undef */
 const {
-    devolverPrimerElemento,
-    devolverUltimoElemento,
-    obtenerLargoDelArray,
-    incrementarPorUno,
-    agregarItemAlFinalDelArray,
-    agregarItemAlComienzoDelArray,
-    dePalabrasAFrase,
-    arrayContiene,
-    agregarNumeros,
-    promedioResultadosTest,
-    numeroMasGrande,
-    multiplicarArgumentos,
-    cuentoElementos,
-    diaDeLaSemana,
-    empiezaConNueve,
-    todosIguales,
+  devolverPrimerElemento,
+  devolverUltimoElemento,
+  obtenerLargoDelArray,
+  incrementarPorUno,
+  agregarItemAlFinalDelArray,
+  agregarItemAlComienzoDelArray,
+  dePalabrasAFrase,
+  arrayContiene,
+  agregarNumeros,
+  promedioResultadosTest,
+  numeroMasGrande,
+  multiplicarArgumentos,
+  cuentoElementos,
+  diaDeLaSemana,
+  empiezaConNueve,
+  todosIguales,
+  mesesDelAño,
+  mayorACien,
+  breakStatement,
+  continueStatement
 } = require('../homework');
 
 describe('devolverPrimerElemento(arr)', function() {
@@ -135,7 +139,7 @@ describe('diaDeLaSemana(numeroDeDia)', function() {
 });
 
 describe('empiezaConNueve(n))', function() {
-  it('should return he name of the day associated with that number', function() {
+  it('should return true or false in case the received number starts with nine', function() {
     expect(empiezaConNueve(98)).toBe(true);
     expect(empiezaConNueve(9)).toBe(true);
     expect(empiezaConNueve(2)).toBe(false);
@@ -150,5 +154,37 @@ describe('todosIguales(arreglo)', function() {
     expect(todosIguales([97, 100, 190, 9])).toBe(false);
    
     expect(todosIguales([230, 230, 230, 230 ])).toBe(true);
+  });
+});
+
+describe('mesesDelAño(array)', function() {
+  it('should return a new array with the requested months', function() {
+    var ok = ["Marzo", "Diciembre", "Abril", "Junio", "Julio", "Noviembre", "Enero", "Mayo", "Febrero"];
+    var wrong = ["Marzo", "Diciembre", "Julio", "Noviembre"];
+    expect(mesesDelAño(ok)).toEqual(["Marzo", "Noviembre", "Enero"]);
+    expect(mesesDelAño(wrong)).toEqual("No se encontraron los meses pedidos");
+  });
+});
+
+describe('mayorACien(array)', function() {
+  it('should return an array with values grater than 100', function() {
+    var integers = [100, 4, 56, 78, 200, 120, 7, 160, 148, 22];
+    expect(mayorACien(integers)).toEqual([200, 120, 160, 148]);
+  });
+});
+
+describe('breakStatement(numero)', function() {
+  it('should return an array with the values ​​resulting from adding 2 in each iteration', function() {
+    expect(breakStatement(50)).toEqual([52, 54, 56, 58, 60, 62, 64, 66, 68, 70]);
+  });
+  it('should stop the execution if the sum value and the iteration number match', function() {
+    expect(breakStatement(-4)).toEqual('Se interrumpió la ejecución');
+  });
+});
+
+describe('continueStatement(numero)', function() {
+  it('should return an array with the values ​​resulting from adding 2 in each iteration when the iteration number is different from 5', function() {
+    expect(continueStatement(50)).toEqual([52, 54, 56, 58, 60, 62, 64, 66, 68]);
+    expect(continueStatement(-4)).toEqual([-2, 0, 2, 4, 6, 8, 10, 12, 14]);
   });
 });
