@@ -1,0 +1,24 @@
+h1 {
+    color: darkgreen; 
+   margin-left: 35rem;
+}
+img {
+ width: 400px;
+ 
+}
+ #ThirdDiv {
+     background-color:darkgreen;
+     height : 600px;
+     width: 500px;
+     padding: 50px;
+     
+     background-image: url(https://i.blogs.es/594843/chrome/450_1000.jpg); 
+     
+ }    
+ #spanId {
+     font-size: 18 px;
+     margin-left: 35rem;
+ }
+ body {
+     background-image: url(https://i.blogs.es/594843/chrome/450_1000.jpg); 
+ }
