@@ -178,7 +178,7 @@ describe ('esVerdadero(valor)', function() {
 
 describe ('tablaDelSeis()', function() {
   it('should return multiplication table of 6', function() {
-    expect(tablaDelSeis()).toEqual([6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
+    expect(tablaDelSeis()).toEqual([0 , 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
   });
 });
 
@@ -187,6 +187,8 @@ describe ('tieneTresDigitos(numero)', function() {
     expect(tieneTresDigitos(100)).toBe(true);
     expect(tieneTresDigitos(820)).toBe(true);
     expect(tieneTresDigitos(900)).toBe(true);
+    expect(tieneTresDigitos(10)).toBe(false);
+    expect(tieneTresDigitos(20000)).toBe(false);
   });
 });
 

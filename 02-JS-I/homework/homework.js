@@ -157,7 +157,6 @@ function obtenerAreaRectangulo(alto, ancho) {
 
 function retornarPerimetro(lado){
   //Escribe tu código aquí
- 
 }
 
 
@@ -169,11 +168,11 @@ function areaDelTriangulo(base, altura){
 }
 
 
-//Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que pida al usuario un número de dólares y calcule el cambio en euros.
+//Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que pida al usuario un número de euros y calcule el cambio en dólares.
 
 function deEuroAdolar(euro){
   //Escribe tu código aquí
- 
+  
 }
 
 
@@ -183,7 +182,7 @@ function deEuroAdolar(euro){
 
 function esVocal(letra){
   //Escribe tu código aquí
-  
+
 }
 
 
