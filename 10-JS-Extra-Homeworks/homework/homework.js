@@ -1,5 +1,11 @@
 // No cambies los nombres de las funciones.
 
+function palindromo(frase) {
+    //Definir una función que determine si la cadena de texto que se le pasa como parámetro es un palíndromo, 
+    //es decir, si se lee de la misma forma desde la izquierda y desde la derecha. 
+    //Ejemplo de palíndromo complejo: "La ruta nos aporto otro paso natural" ---> Devuelve true
+    //Tu código:
+  }
 
 // Escribe una función que convierta un objeto en una matriz, donde cada elemento representa 
 //un par clave-valor en forma de matriz.
@@ -65,5 +71,6 @@ module.exports = {
    capToFront,
    capicua,
    deleteAbc,
-   buscoInterseccion
+   buscoInterseccion,
+   palindromo
 };

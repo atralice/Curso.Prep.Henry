@@ -4,7 +4,8 @@ const {
     capToFront,
     capicua,
     deleteAbc,
-    buscoInterseccion
+    buscoInterseccion,
+    palindromo
 } = require('../homework');
 
 describe('deObjetoAmatriz(objeto)', function() {
@@ -48,3 +49,9 @@ describe('deleteAbc(cadena)', function() {
       expect(buscoInterseccion([1, 20 , 3], [22, 5, 7])).toEqual([]);
     });
   });    
+
+
+describe('palindromo(frase)', function() {
+	it('should return true if the phrase recieved is a palindrome', function() {});
+});
+
