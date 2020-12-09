@@ -186,6 +186,45 @@ function obtenerAreaRectangulo(alto, ancho) {
   return alto * ancho;
 }
 
+//Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
+
+function retornarPerimetro(lado){
+  //Escribe tu código aquí
+  return lado * 4
+}
+
+
+//Desarrolle una función que calcule el área de un triángulo.
+
+function areaDelTriangulo(base, altura){
+  //Escribe tu código aquí
+  return (base * altura)/2
+
+}
+
+
+//Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que pida al usuario un número de euros y calcule el cambio en dólares.
+
+function deEuroAdolar(euro){
+  //Escribe tu código aquí
+  return euro * 1.2
+}
+
+
+//Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
+//Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
+//que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
+
+function esVocal(letra){
+  //Escribe tu código aquí
+  if(letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+
+}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -218,4 +257,8 @@ module.exports = {
   combinarNombres,
   obtenerSaludo,
   obtenerAreaRectangulo,
+  retornarPerimetro,
+  areaDelTriangulo,
+  deEuroAdolar,
+  esVocal,
 };

@@ -82,7 +82,37 @@ function esPrimo(numero) {
   return true;
 }
 
+function esVerdadero(valor){
+  //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
+  //si su valor es true y “Soy falso” si su valor es false.
+  //Escribe tu código aquí
+  if(valor){
+    return true
+  }
+  return false
+}
 
+function tablaDelSeis(){
+  //Escribe una función que muestre la tabla de multiplicar del 6 (del 6 al 60).
+  //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
+  //Escribe tu código aquí     
+  let arrayTablaDel6 = []
+  for (let i = 0; i < 11; i++) {
+        arrayTablaDel6.push(6 * i)
+  }
+  return arrayTablaDel6
+}
+
+
+//Leer un número entero y determinar si tiene 3 dígitos.
+
+function tieneTresDigitos(numero){
+    //Escribe tu código aquí
+    if(numero > 99 && numero < 1000){
+      return true
+    }
+    return false
+}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -94,5 +124,8 @@ module.exports = {
   estaEnRango,
   esEntero,
   fizzBuzz,
-  esPrimo
+  esPrimo,
+  esVerdadero,
+  tablaDelSeis,
+  tieneTresDigitos,
 };

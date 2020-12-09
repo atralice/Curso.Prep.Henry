@@ -27,6 +27,10 @@ const {
   combinarNombres,
   obtenerSaludo,
   obtenerAreaRectangulo,
+  retornarPerimetro,
+  areaDelTriangulo,
+  deEuroAdolar,
+  esVocal,
 } = require('../homework.js');
 
 describe('nuevaString', function() {
@@ -228,5 +232,44 @@ describe('obtenerAreaRectangulo(alto, ancho)', function() {
     expect(obtenerAreaRectangulo(2, 2)).toBe(4);
     expect(obtenerAreaRectangulo(3, 6)).toBe(18);
     expect(obtenerAreaRectangulo(0, 2)).toBe(0);
+  });
+});
+
+describe('retornarPerimetro(lado)', function() {
+  it('Deberia retornar el perímetro correcto del cuadrado', function() {
+    expect(retornarPerimetro(2)).toBe(8);
+    expect(retornarPerimetro(8)).toBe(32);
+    expect(retornarPerimetro(0)).toBe(0);
+  });
+});
+
+
+describe('areaDelTriangulo( base, altura)', function() {
+  it('Deberia retornar el area correcta del triángulo', function() {
+    expect(areaDelTriangulo(10, 5)).toBe(25);
+    expect(areaDelTriangulo(20, 10)).toBe(100);
+    expect(areaDelTriangulo(0, 10)).toBe(0);
+  });
+});
+
+describe('deEuroAdolar(euro)', function() {
+  it('Deberia retornar el valor correcto de euro a dolar', function() {
+    expect(deEuroAdolar(100)).toBe(120);
+    expect(deEuroAdolar(200)).toBe(240);
+    expect(deEuroAdolar(50)).toBe(60);
+  });
+});
+
+describe('esVocal(letra)', function() {
+  it('Deberia devolver el strings "Dato incorrecto", si el valor ingresado tiene más de una letra', function() {
+    expect(esVocal("la")).toBe("Dato incorrecto");
+    expect(esVocal("pero")).toBe("Dato incorrecto");
+  });
+  it('Deberia devolver el strings "Es vocal", si el valor ingresado lo es', function() {
+    expect(esVocal('a')).toBe('Es vocal');
+    expect(esVocal('e')).toBe('Es vocal');
+    expect(esVocal('i')).toBe('Es vocal');
+    expect(esVocal('o')).toBe('Es vocal');
+    expect(esVocal('u')).toBe('Es vocal');
   });
 });
