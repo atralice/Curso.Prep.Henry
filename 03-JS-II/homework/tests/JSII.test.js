@@ -6,7 +6,10 @@ const {
   estaEnRango,
   esEntero,
   fizzBuzz,
-  esPrimo
+  esPrimo,
+  esVerdadero,
+  tablaDelSeis,
+  tieneTresDigitos,
 } = require('../homework');
 
 describe('obtenerMayor(x, y)', function() {
@@ -105,5 +108,31 @@ describe('esPrimo(num)', function() {
     expect(esPrimo(100)).toBe(false);
     expect(esPrimo(0)).toBe(false);
     expect(esPrimo(1)).toBe(false);
+  });
+});
+
+
+describe ('esVerdadero(valor)', function() {
+  it('should return true if valor is true', function() {
+    expect(esVerdadero(true)).toBe(true);
+  });
+  it('should return false if valor is false', function() {
+    expect(esVerdadero(false)).toBe(false);
+  });
+});
+
+describe ('tablaDelSeis()', function() {
+  it('should return multiplication table of 6', function() {
+    expect(tablaDelSeis()).toEqual([0 , 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
+  });
+});
+
+describe ('tieneTresDigitos(numero)', function() {
+  it('should return true if numero has 3 digits', function() {
+    expect(tieneTresDigitos(100)).toBe(true);
+    expect(tieneTresDigitos(820)).toBe(true);
+    expect(tieneTresDigitos(900)).toBe(true);
+    expect(tieneTresDigitos(10)).toBe(false);
+    expect(tieneTresDigitos(20000)).toBe(false);
   });
 });

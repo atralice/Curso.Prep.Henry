@@ -12,6 +12,10 @@ const {
     promedioResultadosTest,
     numeroMasGrande,
     multiplicarArgumentos,
+    cuentoElementos,
+    diaDeLaSemana,
+    empiezaConNueve,
+    todosIguales,
 } = require('../homework');
 
 describe('devolverPrimerElemento(arr)', function() {
@@ -111,5 +115,41 @@ describe('multiplicarArgumentos()', function () {
     expect(product3).toBe(81);
     expect(product4).toBe(1);
     expect(product5).toBe(0);
+  });
+});
+
+describe('cuentoElementos(arreglo)', function() {
+  it('should return a counter with the total of numbers greater than 18', function() {
+    expect(cuentoElementos([10, 10, 18, 21])).toBe(1);
+    expect(cuentoElementos([97, 100, 190, 5, 7, 9])).toBe(3);
+    expect(cuentoElementos([97, 20, 90, 50, 7, 709])).toBe(5);
+  });
+});
+
+describe('diaDeLaSemana(numeroDeDia)', function() {
+  it('should return he name of the day associated with that number', function() {
+    expect(diaDeLaSemana(3)).toBe("Es dia Laboral");
+    expect(diaDeLaSemana(2)).toBe("Es dia Laboral");
+    expect(diaDeLaSemana(1)).toBe("Es fin de semana");
+    expect(diaDeLaSemana(7)).toBe("Es fin de semana");
+  });
+});
+
+describe('empiezaConNueve(n))', function() {
+  it('should return true or false in case the received number starts with nine', function() {
+    expect(empiezaConNueve(98)).toBe(true);
+    expect(empiezaConNueve(9)).toBe(true);
+    expect(empiezaConNueve(2)).toBe(false);
+    expect(empiezaConNueve(7)).toBe(false);
+    expect(empiezaConNueve(-5)).toBe(false);
+  });
+});
+
+describe('todosIguales(arreglo)', function() {
+  it('should return true if all the elements of the array are equal and false otherwise', function() {
+    expect(todosIguales([20, 20, 20, 20 ])).toBe(true);
+    expect(todosIguales([97, 100, 190, 9])).toBe(false);
+   
+    expect(todosIguales([230, 230, 230, 230 ])).toBe(true);
   });
 });
