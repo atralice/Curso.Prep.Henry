@@ -26,14 +26,40 @@ function agregarStringInvertida() {
 
 function crearPersona() {
   //Crea una Clase de ES6 o una función constructor llamada "Persona"
-  //Debe tener las propiedades: nombre, apellido, edad y domicilio
-  //Debe tener un método llamado "Detalle" que nos devuelve las propiedades de la persona con sus valores.
+  //Debe tener las propiedades: "nombre", "apellido", "edad" y "domicilio"
+  //Debe tener un método llamado "detalle" que nos devuelve un objeto con las propiedades de la persona y sus valores.
+  //Ej: { 
+    //   Nombre: 'Juan',
+    //   Apellido: 'Perez',
+    //   Edad: 22,
+    //   Domicilio: 'Saavedra 123'
+    //  }
+  // Devuelve la clase
+  // Tu código:
+  class Persona {
+    constructor(nombre, apellido, edad, domicilio) {
+      this.nombre = nombre,
+      this.apellido = apellido,
+      this.edad = edad,
+      this.domicilio = domicilio
+      this.detalle = function() {
+        return { 
+          Nombre: this.nombre,
+          Apellido: this.apellido,
+          Edad: this.edad,
+          Domicilio: this.domicilio
+        }
+      }
+    }
+  }
+  return Persona;
 }
   
 function crearInstanciaPersona() {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
+  var persona = new Persona();
 }
   
 function agregarMetodo() {

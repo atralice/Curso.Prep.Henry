@@ -1,8 +1,12 @@
 /* eslint-disable no-undef */
 const {
     crearUsuario,
-    agregarMetodoPrototype,
-    agregarStringInvertida,
+	agregarMetodoPrototype,
+	agregarStringInvertida,
+	crearPersona,
+	crearInstanciaPersona,
+	agregarMetodo,
+	invocarMetodo
 } = require('../homework');
 
 describe('crearUsuario()', function() {
@@ -13,7 +17,7 @@ describe('crearUsuario()', function() {
 		expect(user.nombre).toBe('Samuel');
 		expect(user.email).toBe('samuel@email.com');
 		expect(user.password).toBe('LoveJS');
-    expect(user.saludar()).toBe('Hola, mi nombre es Samuel');
+    	expect(user.saludar()).toBe('Hola, mi nombre es Samuel');
 	});
 });
 
@@ -34,4 +38,34 @@ describe('agregarStringInvertida(StringPrototype)', function(){
 		const str = 'Hello';
 		expect(str.reverse()).toBe('olleH');
 	});
+});
+
+describe('crearPersona()', function() {
+	it('should return a persona constructor that correctly builds persona objects', function() {
+		const Persona = crearPersona();
+		const persona = new Persona('Samuel', 'Jackson', 71, '1312 Kenyon St');
+		expect(persona.nombre).toBe('Samuel');
+		expect(persona.apellido).toBe('Jackson');
+		expect(persona.edad).toBe(71);
+		expect(persona.domicilio).toBe('1312 Kenyon St');
+		expect(persona.detalle()).toEqual({
+			Nombre: 'Samuel', 
+			Apellido: 'Jackson', 
+			Edad: 71, 
+			Domicilio: '1312 Kenyon St'
+		});	
+	});
+});
+
+describe('crearInstanciaPersona()', function() {
+	const Persona = crearPersona();
+	it('should be able to call new() on Persona', () => {
+		const persona = new Persona();
+		expect(persona).toBeTruthy();
+	});
+    it('should call Persona class constructor', function() {
+		//const persona = new Persona();
+		expect(Persona).toHaveBeenCalledTimes(1);
+	});
+	// it('should return an instance of Persona class', function() {});
 });
