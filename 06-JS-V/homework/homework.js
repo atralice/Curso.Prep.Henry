@@ -47,11 +47,69 @@ function agregarStringInvertida() {
   };
 }
 
+function crearPersona() {
+  //Crea una Clase de ES6 o una función constructor llamada "Persona"
+  //Debe tener las propiedades: "nombre", "apellido", "edad" y "domicilio"
+  //Debe tener un método llamado "detalle" que nos devuelve un objeto con las propiedades de la persona y sus valores.
+  //Ej: { 
+    //   Nombre: 'Juan',
+    //   Apellido: 'Perez',
+    //   Edad: 22,
+    //   Domicilio: 'Saavedra 123'
+    //  }
+  // Devuelve la clase
+  // Tu código:
+  class Persona {
+    constructor(nombre, apellido, edad, domicilio) {
+      this.nombre = nombre,
+      this.apellido = apellido,
+      this.edad = edad,
+      this.domicilio = domicilio
+      this.detalle = function() {
+        return { 
+          Nombre: this.nombre,
+          Apellido: this.apellido,
+          Edad: this.edad,
+          Domicilio: this.domicilio
+        }
+      }
+    }
+  }
+  return Persona;
+}
+  
+function crearInstanciaPersona(nombre, apellido, edad, dir) {
+  //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
+  //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
+  //Devolver la nueva persona creada
+  // Tu código:
+}
+  
+function agregarMetodo(Persona) {
+  //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
+  //Ej: "Juan, 22 años"
+  // Tu código:
+  Persona.prototype.datos = function() {
+    return this.nombre + ", " + this.edad + " años";
+  }
+}
+  
+function invocarMetodo() {
+  //Invoca el método recientemente creado para la instancia creada de la clase Persona.
+  // Tu código:
+}
+
 // No modificar nada debajo de esta línea
 // --------------------------------
 
 module.exports = {
   crearUsuario,
   agregarMetodoPrototype,
-  agregarStringInvertida
+  agregarStringInvertida,
+  crearPersona,
+  crearInstanciaPersona,
+  agregarMetodo,
+  invocarMetodo
 };
+
+
