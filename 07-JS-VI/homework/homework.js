@@ -1,8 +1,21 @@
 // Do not change any of the function names
 
+function mayuscula(nombre) {
+  //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
+  //ej: Recibe "mario" ----> Devuelve "Mario"
+  return nombre[0].toUpperCase() + nombre.slice(1);
+}
+
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   cb();
+}
+
+function operacionMatematica(n1, n2, cb) {
+  //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
+  //Devolver el callback pasándole como argumentos los números recibidos.
+  //Tu código:
+  return cb(n1, n2);
 }
 
 function sumarArray(numeros, cb) {
@@ -53,12 +66,27 @@ function map(array, cb) {
   return nuevoArray;
 }
 
+function filter(array) {
+  //Filtrar todos los elementos del array que comiencen con la letra "a".
+  //Devolver un nuevo array con los elementos que cumplen la condición
+  var nuevoArray = [];
+  for(let i = 0; i<array.length; i++) {
+    if(array[i][0] === "a") {
+      nuevoArray.push(array[i])
+    }
+  }
+  return nuevoArray;
+}
+
 // No modificar nada debajo de esta línea
 // --------------------------------
 
 module.exports = {
+  mayuscula,
   invocarCallback,
+  operacionMatematica,
   sumarArray,
   forEach,
   map,
+  filter
 };
