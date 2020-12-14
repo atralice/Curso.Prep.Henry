@@ -11,6 +11,35 @@ function obtenerMayor(x, y) {
   return y;
 }
 
+function mayoriaDeEdad(edad) {
+  //Determinar si la persona según su edad puede ingresar a un evento.
+  //Si tiene 18 años ó más, devolver --> "Allowed"
+  //Si es menor, devolver --> "Not allowed"
+  if(edad >= 18) {
+    return "Allowed";
+  }
+  else {
+    return "Not allowed";
+  }
+}
+
+function conection(status) {
+  //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
+  //Cuando el estado es igual a 1, el usuario está "Online"
+  //Cuando el estado es igual a 2, el usuario está "Away"
+  //De lo contrario, presumimos que el usuario está "Offline"
+  //Devolver el estado de conexión de usuario en cada uno de los casos.
+  if(status === 1) {
+    return "Online";
+  }
+  else if(status === 2) {
+    return "Away";
+  }
+  else {
+    return "Offline";
+  }
+}
+
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
@@ -26,6 +55,28 @@ function saludo(idioma) {
     return 'Hello!';
   } else {
     return 'Hola!';
+  }
+}
+
+function colors(color) {
+  //La función recibe un color. Devolver el string correspondiente:
+  //En caso que el color recibido sea "blue", devuleve --> "This is blue"
+  //En caso que el color recibido sea "red", devuleve --> "This is red"
+  //En caso que el color recibido sea "green", devuleve --> "This is green"
+  //En caso que el color recibido sea "orange", devuleve --> "This is orange"
+  //Caso default: devuelve --> "Color not found"
+  //Usar el statement Switch.
+  switch(color) {
+    case "blue":
+      return "This is blue";
+    case "red": 
+      return "This is red";
+    case "green":
+      return "This is green";
+    case "orange":
+      return "This is orange";
+    default: 
+    return "Color not found";
   }
 }
 
@@ -63,6 +114,30 @@ function fizzBuzz(numero) {
   if(numero % 3 === 0) return 'fizz';
   if(numero % 5 === 0) return 'buzz';
   return numero;
+}
+
+function operadoresLogicos(num1, num2, num3) {
+  //La función recibe tres números distintos. 
+  //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
+  //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
+  //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
+  //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
+  //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  if(num1 < 0 || num2 < 0 || num3 < 0) {
+    return "Hay negativos";
+  }
+  else if(num1 === 0 || num2 === 0 || num3 === 0) {
+    return "Error";
+  }
+  else if(num1 > 0 && num1 > num2 && num1 > num3) {
+    return "Número 1 es mayor y positivo";
+  }
+  else if(num3 > num1 && num3 > num2) {
+    return num3 + 1;
+  }
+  else {
+    return false;
+  }
 }
 
 function esPrimo(numero) {
@@ -103,15 +178,27 @@ function tablaDelSeis(){
   return arrayTablaDel6
 }
 
-
-//Leer un número entero y determinar si tiene 3 dígitos.
-
 function tieneTresDigitos(numero){
-    //Escribe tu código aquí
-    if(numero > 99 && numero < 1000){
-      return true
-    }
-    return false
+  //Leer un número entero y determinar si tiene 3 dígitos.
+  //Escribe tu código aquí
+  if(numero > 99 && numero < 1000){
+    return true
+  }
+  return false
+}
+
+function doWhile(numero) {
+  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
+  //Retornar el valor final.
+  //Usar el bucle do ... while.
+  var a = numero;
+  var i = 0;
+  do {
+    i = i + 1;
+    a = a + 5;
+  }
+  while(i < 8);
+  return a;
 }
 
 // No modificar nada debajo de esta línea
@@ -119,13 +206,18 @@ function tieneTresDigitos(numero){
 
 module.exports = {
   obtenerMayor,
+  mayoriaDeEdad,
+  conection,
   saludo,
+  colors,
   esDiezOCinco,
   estaEnRango,
   esEntero,
   fizzBuzz,
+  operadoresLogicos,
   esPrimo,
   esVerdadero,
   tablaDelSeis,
   tieneTresDigitos,
+  doWhile
 };
