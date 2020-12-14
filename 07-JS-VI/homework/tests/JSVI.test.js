@@ -1,17 +1,35 @@
 /* eslint-disable no-undef */
 const {
-  invocarCallback,
-  sumarArray,
-  forEach,
-  map,
+	mayuscula,
+	invocarCallback,
+	operacionMatematica,
+	sumarArray,
+	forEach,
+	map,
+	filter
 } = require('../homework');
+
+describe('mayuscula(nombre)', function() {
+	it('should return the same name with the first letter capitalized', function() {
+		expect(mayuscula("mario")).toBe("Mario");
+		expect(mayuscula("ana")).toBe("Ana");
+	});
+});
 
 describe('invocarCallback(cb)', function() {
   it('should invoke the callback that is passed in', function() {
 		const cb = jest.fn();
 		invocarCallback(cb);
-    expect(cb).toHaveBeenCalled();
+    	expect(cb).toHaveBeenCalled();
   });
+});
+
+describe('operacionMatematica(n1, n2, cb)', function() {
+	it('should return the callback function passing it the received arguments', function() {
+		const cb = jest.fn();
+		operacionMatematica(100, 20, cb);
+		expect(cb).toHaveBeenCalled();
+	});
 });
 
 describe('sumarArray(cb)', function() {
@@ -39,5 +57,12 @@ describe('map(arr, cb)', function() {
 			return num * num;
 		});
 		expect(squares).toEqual([1, 4, 9, 16, 25]);
+	});
+});
+
+describe('filter(array)', function() {
+	it('should return an array conteining the words that starts with "a"', function() {
+		var array = ['abajo', 'pera', 'escalera', 'alerta', 'indice', 'azteca', 'arbol', 'buzo'];
+		expect(filter(array)).toEqual(["abajo", "alerta", "azteca", "arbol"]);
 	});
 });
