@@ -57,15 +57,15 @@ describe('crearPersona()', function() {
 	});
 });
 
-describe('crearInstanciaPersona()', function() {
-	const Persona = crearPersona();
-	it('should be able to call new() on Persona', () => {
-		const persona = new Persona();
-		expect(persona).toBeTruthy();
+describe('crearInstanciaPersona()', function() {});
+
+describe('agregarMetodo(Persona)', function() {
+	it('should add the method datos to the constructor', function() {
+		const Persona = crearPersona();
+		agregarMetodo(Persona);
+		const persona = new Persona("Juan", "Pérez", 22, "Saavedra 123");
+		expect(persona.datos()).toBe('Juan, 22 años');
 	});
-    it('should call Persona class constructor', function() {
-		//const persona = new Persona();
-		expect(Persona).toHaveBeenCalledTimes(1);
-	});
-	// it('should return an instance of Persona class', function() {});
 });
+
+describe('invocarMetodo()', function() {});
