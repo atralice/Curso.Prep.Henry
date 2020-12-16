@@ -3,10 +3,9 @@ const {
     crearUsuario,
 	agregarMetodoPrototype,
 	agregarStringInvertida,
-	crearPersona,
 	crearInstanciaPersona,
 	agregarMetodo,
-	invocarMetodo
+	Persona
 } = require('../homework');
 
 describe('crearUsuario()', function() {
@@ -40,32 +39,16 @@ describe('agregarStringInvertida(StringPrototype)', function(){
 	});
 });
 
-describe('crearPersona()', function() {
-	it('should return a persona constructor that correctly builds persona objects', function() {
-		const Persona = crearPersona();
-		const persona = new Persona('Samuel', 'Jackson', 71, '1312 Kenyon St');
-		expect(persona.nombre).toBe('Samuel');
-		expect(persona.apellido).toBe('Jackson');
-		expect(persona.edad).toBe(71);
-		expect(persona.domicilio).toBe('1312 Kenyon St');
-		expect(persona.detalle()).toEqual({
-			Nombre: 'Samuel', 
-			Apellido: 'Jackson', 
-			Edad: 71, 
-			Domicilio: '1312 Kenyon St'
-		});	
+describe('crearInstanciaPersona()', function() {
+	it('should return a new instance of Persona', function() {
+		expect(crearInstanciaPersona("Juan", "Pérez", 22, "Saavedra 123")).toBeInstanceOf(Persona);
 	});
 });
 
-describe('crearInstanciaPersona()', function() {});
-
 describe('agregarMetodo(Persona)', function() {
 	it('should add the method datos to the constructor', function() {
-		const Persona = crearPersona();
-		agregarMetodo(Persona);
+		agregarMetodo();
 		const persona = new Persona("Juan", "Pérez", 22, "Saavedra 123");
 		expect(persona.datos()).toBe('Juan, 22 años');
 	});
 });
-
-describe('invocarMetodo()', function() {});
