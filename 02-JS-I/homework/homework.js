@@ -70,7 +70,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (console.log(str1.length) == console.log(str2.length)) {
+  if (str1.length === str2.length) {
     return true;
   }
   return false;
@@ -110,6 +110,7 @@ function esPar(num) {
     return true;
   }
   return false;
+}
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
