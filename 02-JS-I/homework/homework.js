@@ -1,22 +1,31 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
+//EJERCICIO MAT.
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = null;
+const nuevaString = "hola";
 
+//EJERCICIO MAT.
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = 8;
 
+//EJERCICIO MAT.
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = true;
 
+//EJERCICIO MAT.
+//*
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
+const nuevaResta = 10 - 5 === 5;
 
+//EJERCICIO MAT.
+//*
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
+//EJERCICIO MAT.
+//*
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -25,121 +34,284 @@ const nuevoModulo = 21 % 5 === null;
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
+//EJERCICIO STRING
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
+  return str;
 }
 
+//EJERCICIO MAT.
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
+  return x+y;
 }
 
+//EJERCICIO MAT.
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
+  return x-y;
 }
 
+//EJERCICIO MAT.
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
+  return x*y;
 }
 
+//EJERCICIO MAT.
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
+  return x/y;
 }
 
+//EJERCICIO STRING.
+//*
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
+if (x===y) {
+  return true;
+} else {
+  return false;
 }
 
+
+}
+
+//EJERCICIO STRING.
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+if (str1.length===str2.length) {
+  return true;
+} else {
+  return false;
 }
 
+}
+
+//EJERCICIO MAT. Y CONDICIONALES
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num<90) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+//EJERCICIO MAT. Y CONDICIONALES
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num>50) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+//EJERCICIO MAT.
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+  return x%y;
 }
 
+
+//EJERCICIO MAT.
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num%2===0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+//EJERCICIO MAT.
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num%2===1) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
+//EJERCICIO MAT.
+//**
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+
+//  (method) Math.pow(x: number, y: number): number
+//Returns the value of a base expression taken to a specified power.
+//@param x — The base value of the expression.
+//@param y — The exponent value of the expression.
+  return Math.pow(num,2);
 }
 
+//EJERCICIO MAT.
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  return Math.pow(num,3)
 }
-
+//EJERCICIO MAT.
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
+  return Math.pow(num,exponent);
 }
 
+//------------------------------------------------
+//primer ejercicio calculos. y condicionales más extenso a anteriores.
+
+//EJERCICIO MAT.
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
+  var resto=num%1;
+  var entero=num-resto;
+  if (resto>=0.5) {
+    return entero+1;
+  } else {
+    return entero;
+  }
+//  round(x: number): number
+// The value to be rounded to the nearest integer.
+//  Returns a supplied numeric expression rounded to the nearest integer.
+  return Math.round(num);
 }
 
+//EJERCICIO MAT.
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
+//  ceil(x: number): number
+//  A numeric expression.
+//Returns the smallest integer greater than or equal to its numeric argument.
+  return Math.ceil(num);
 }
 
+//EJERCICIO MAT.
+//SACADO DE HENRYS, YA NO ES EJERCICIO
+//function numeroRandom() {
+//Generar un número al azar entre 0 y 1 y devolverlo
+  //Pista: investigá qué hace el método Math.random()
+
+//  (method) Math.random(): number
+//  Returns a pseudorandom number between 0 and 1
+
+  //return Math.random();
+//}
+
+//EJERCICIO MAT.
+//SACADO DE HENRYS, YA NO ES EJERCICIO
+//function esPositivo(numero) {
+   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
+  //Si el número es positivo, devolver ---> "Es positivo"
+  //Si el número es negativo, devolver ---> "Es negativo"
+  //Si el número es 0, devuelve false
+  
+//  if (numero===0) {
+//    return false;
+//  }
+//  else if (numero>0)
+//  {
+//    return "Es positivo";
+//  }
+//  else {
+//    return "Es negativo";
+//  }
+//}
+
+
+//EJERCICIO STRING 1.
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  return str+"!";
 }
 
+//EJERCICIO STRING. CONCATENAR.
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+  return nombre+" "+apellido;
 }
 
+//EJERCICIO STRING. CONCATENAR.
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+  return "Hola "+nombre+"!";
 }
 
+//EJERCICIO MAT.
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
+  return alto * ancho;
 }
+
+
+//function retornarPerimetro(lado){
+  //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
+  //Escribe tu código aquí
+//  return lado * 4
+//}
+
+//function areaDelTriangulo(base, altura){
+  //Desarrolle una función que calcule el área de un triángulo.
+  //Escribe tu código aquí
+//  return (base * altura)/2
+
+//}
+
+//function deEuroAdolar(euro){
+  //Supongamos que 1 euro equivale a 1.20 dólares. 
+  //Escribe un programa que pida al usuario un número de euros y calcule el cambio en dólares.
+  //Escribe tu código aquí
+//  return euro * 1.2
+//}
+
+
+// EJERCICIO STRING. CONDICIONALES
+//SACADO DE HENRYS, YA NO ES EJERCICIO
+//function esVocal(letra){
+  //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
+  //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
+  //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
+  //Escribe tu código aquí
+//  if(letra.length > 1){
+//    return "Dato incorrecto"
+//  }
+//  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+//    return "Es vocal"
+//  }
+
+
 
 
 // No modificar nada debajo de esta línea
