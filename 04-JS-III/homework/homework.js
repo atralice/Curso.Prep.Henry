@@ -32,7 +32,6 @@ function incrementarPorUno(array) {
 
 }
 
-
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
@@ -128,7 +127,6 @@ function cuentoElementos(arreglo){
   return contador
 }
 
-
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
@@ -139,7 +137,6 @@ function diaDeLaSemana(numeroDeDia) {
   }
   return "Es dia Laboral"
 } 
-
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
@@ -152,7 +149,6 @@ function empiezaConNueve(n) {
   return false
 }
 
-
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
@@ -164,6 +160,82 @@ function todosIguales(arreglo) {
   }
   return true
 } 
+
+function mesesDelAño(array) {
+  //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
+  // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
+  //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
+  // Tu código:
+  var nuevoArray = [];
+  for(let i= 0; i<array.length; i++) {
+    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
+      nuevoArray.push(array[i]);
+    }
+  }
+  if(nuevoArray.length < 3) {
+    return "No se encontraron los meses pedidos";
+  }
+  else {
+      return nuevoArray;
+  }
+}
+
+function mayorACien(array) {
+  //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
+  //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
+  // Tu código:
+  var nuevoArray = [];
+  for(let i= 0; i < array.length; i++) {
+    if(array[i] > 100) {
+      nuevoArray.push(array[i]);
+    }
+  }
+  return nuevoArray;
+}
+
+function breakStatement(numero) {
+  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+  //Guardar cada nuevo valor en un array. 
+  //Devolver el array
+  //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
+  //devolver: "Se interrumpió la ejecución"
+  //Pista: usá el statement 'break'
+  // Tu código:
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    suma = suma + 2;
+    if(suma === i) break;
+    else {
+      array.push(suma);
+    }
+  }
+  if(i < 10) {
+    return 'Se interrumpió la ejecución';
+  }
+  else {
+      return array;
+  }
+}
+
+function continueStatement(numero) {
+  //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+  //Guardar cada nuevo valor en un array.    
+  //Devolver el array
+  //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
+  //Pista: usá el statement 'continue'
+  // Tu código:
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    if(i === 5) continue;
+    else {
+      suma = suma + 2;
+      array.push(suma);
+    }
+  }
+  return array;
+}
 
 
 // No modificar nada debajo de esta línea
@@ -186,4 +258,8 @@ module.exports = {
   diaDeLaSemana,
   empiezaConNueve,
   todosIguales,
+  mesesDelAño,
+  mayorACien,
+  breakStatement,
+  continueStatement
 };
