@@ -86,14 +86,14 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if(valor){
-    return true
+  if(valor === true){
+    return "Soy verdadero"
   }
-  return false
+  return "Soy falso"
 }
 
 function tablaDelSeis(){
-  //Escribe una función que muestre la tabla de multiplicar del 6 (del 6 al 60).
+  //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí     
   let arrayTablaDel6 = []
