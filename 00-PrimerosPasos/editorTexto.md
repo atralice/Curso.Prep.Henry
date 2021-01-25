@@ -22,6 +22,22 @@ Nos dirigimos a la página oficial de Sublime Text.
 
 <https://www.sublimetext.com>
 
+Al ingresar, detectará automáticamente el sistema operativo que tenemos, y nos sugerirá descargar el instalador apropiado.
+
+Presionamos el botón Download
+
+Elegimos la opción adecuada según nuestro sistema operativo e iniciamos la descarga.
+
+![Sublime text Dowload](./img/sublimeDownload.png)
+
+Finalizada la descarga, ejecutamos el instalador, seleccionamos las opciones siguiente, siguiente, etc, hasta completar el proceso.
+
+## En Linux, en la distribución Ubuntu y derivados: 
+
+Nos dirigimos al sitio oficial de Sublime Text. 
+Aquí encontrarás las instrucciones para instalarlo https://www.sublimetext.com/docs/3/linux_repositories.html. 
+
+
 En la terminal, ejecutamos el siguiente comando, para instalar la clave GPG:
 
 ![Sublime text](./img/sublime_comando_1.png)
