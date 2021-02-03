@@ -1,8 +1,11 @@
 /* eslint-disable no-undef */
 const {
     crearUsuario,
-    agregarMetodoPrototype,
-    agregarStringInvertida,
+	agregarMetodoPrototype,
+	agregarStringInvertida,
+	crearInstanciaPersona,
+	agregarMetodo,
+	Persona
 } = require('../homework');
 
 describe('crearUsuario()', function() {
@@ -13,7 +16,7 @@ describe('crearUsuario()', function() {
 		expect(user.nombre).toBe('Samuel');
 		expect(user.email).toBe('samuel@email.com');
 		expect(user.password).toBe('LoveJS');
-    expect(user.saludar()).toBe('Hola, mi nombre es Samuel');
+    	expect(user.saludar()).toBe('Hola, mi nombre es Samuel');
 	});
 });
 
@@ -35,3 +38,18 @@ describe('agregarStringInvertida(StringPrototype)', function(){
 		expect(str.reverse()).toBe('olleH');
 	});
 });
+
+describe('crearInstanciaPersona()', function() {
+	it('should return a new instance of Persona', function() {
+		expect(crearInstanciaPersona("Juan", "Pérez", 22, "Saavedra 123")).toBeInstanceOf(Persona);
+	});
+});
+
+describe('agregarMetodo(Persona)', function() {
+	it('should add the method datos to the constructor', function() {
+		agregarMetodo();
+		const persona = new Persona("Juan", "Pérez", 22, "Saavedra 123");
+		expect(persona.datos()).toBe('Juan, 22 años');
+	});
+});
+

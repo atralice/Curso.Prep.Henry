@@ -10,7 +10,8 @@
     "test4": "jest JSIII.test.js  --useStderr --json --outputFile=./04-JS-III/homework/tests/result.json",
     "test5": "jest JSIV.test.js  --useStderr --json --outputFile=./05-JS-IV/homework/tests/result.json",
     "test6": "jest JSV.test.js  --useStderr --json --outputFile=./06-JS-V/homework/tests/result.json",
-    "test7": "jest JSVI.test.js  --useStderr --json --outputFile=./07-JS-VI/homework/tests/result.json"
+    "test7": "jest JSVI.test.js  --useStderr --json --outputFile=./07-JS-VI/homework/tests/result.json",
+    "test10": "jest JSX.test.js  --useStderr --json --outputFile=./10-JS-Extra-Homeworks/homework/tests/result.json"
   },
   "devDependencies": {
     "eslint": "^7.14.0",
