@@ -30,8 +30,9 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
 
 }
 
-function eliminarPropiedad(objeto, propiedad) {
-  // Elimina la propiedad "propiedad" de "objeto"
+function eliminarPropiedad(objeto, unaPropiedad) {
+  // Elimina la propiedad "unaPropiedad" de "objeto"
+  // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
 }
