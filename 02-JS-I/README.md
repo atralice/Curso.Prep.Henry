@@ -225,7 +225,6 @@ Ahora que tenemos un conjunto de variables, necesitamos funciones para calcularl
 Usaremos la primera forma en esta lección y hablaremos sobre las otras formas en próximas lecciones.
 
 ### Anatomía de una Función
-
 ```javascript
 function miFuncion() {}
 ```
