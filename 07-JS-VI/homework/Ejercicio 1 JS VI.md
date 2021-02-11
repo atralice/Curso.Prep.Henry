@@ -1,0 +1,3 @@
+Funciones Callback
+Las funciones en JS son "objetos de primera clase", esto significa que se comportan y se pueden utilizar como cualquier otro objeto de los que ya venimos hablando: variables, strings, argumentos, objetos, etc. Es decir que una función puede ser almacenada en una variable, pasada como argumento a otra función, creada a partir de una función o retornada a partir de una. 
+Puntualmente las funciones callbacks es cuando hay una función dentro de otra. Durante la ejecución de la primera función, el interprete se topará con otra función y recién en ese momento la ejecutará, para luego continuar con la ejecución de la primera. 

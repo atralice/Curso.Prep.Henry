@@ -1,0 +1,5 @@
+Prototype
+Como ya sabemos, siempre debemos tratar de no repetir codigo, de escribir de la manera mas concisa y practica posible. Esto ayuda a realizar menos trabajo, y tambien resulta menos pesado para el programa y el ordenador, y disminuye la probabilidad de errores. Todos los objetos en JS tienen un objeto superior del cual descienden, y del que adoptan sus métodos. Cuando queremos darles un mismo metodo a todos los objetos creados a partir de una misma Clase, la forma más sencilla de hacerlo es asignar esos métodos al 'prototype', y así los objetos 'heredaran' dichos metodos. 
+
+Constructors
+Un constructor es una función a partir de la cual podemos crear objetos. Esta función nos permite que todos los objetos creados tengan propiedades y metodos en común. Esta función constructora es lo más parecido a lo que se conoce como "Clases" en otros lenguajes de programación orientados a objetos. JS no es un lenguaje de programación orientado a objetos pero, por lo dicho anteriormente, muchas veces nos referimos a este tipo de funciones constructuras como "Clases". 
