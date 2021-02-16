@@ -1,0 +1,18 @@
+HOMEWORK: JavaScript II
+
+instrucciones
+
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes
+conceptos como si se los estuvieras explicando a un niño de 12 años.
+
+* for => el ciclo for lo que hace es permitirnos hacer una repetición de algo que queremos 
+evaluar cuantas veces queramos.
+
+* && => Este símbolo significa "y", lo que hace es que cuando estemos evaluando algo, obliga a 
+que dos o más condiciones de lo que estamos evaluando se cumplan.
+
+* || => Este símbolo nos permite evaluar dos o más condiciones y hacer que se cumpla al menos
+una de ellas.
+
+* ! => Este símbololo que hace es cambiar el valor de algo que estemos comparando, como 
+diciendo no, por ejemplo === (igual) cambiaría a !== (no es igual).
