@@ -58,7 +58,7 @@ function arrayContiene(array, elemento) {
 
 
 function agregarNumeros(numeros) {
-  // "array" debe ser una matriz de enteros (int/integers)
+  // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
 }
