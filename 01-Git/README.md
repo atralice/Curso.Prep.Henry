@@ -1,6 +1,15 @@
 <img  src='../logo.png' height='70px'>
-
-
+<table width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=01-Git">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>
 # Git - Lección 1
 
 <iframe src="https://player.vimeo.com/video/423898676" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

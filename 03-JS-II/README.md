@@ -1,7 +1,17 @@
 <p align='left'>
     <img  src='../logo.png' height='70px'>
 </p>
-
+<table width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=03-JS-II">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>
 # Lección 3: Javascript II (Flujos de control, operadores de comparación, bucles `for`)
 
 En esta lección cubriremos:
@@ -171,7 +181,7 @@ if (!false) {
 }
 
 if (!(1 === 1)) {
-    console.log('1 es igual a 1, de modo que la expresión devuelve true. El operador ! devolverá lo contrario de eso, por lo que este código se ejecutará');
+    console.log('1 es igual a 1, de modo que la expresión devuelve true. El operador ! devolverá lo contrario de eso, por lo que este código NO se ejecutará');
 }
 ```
 
