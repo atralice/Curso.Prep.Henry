@@ -5,10 +5,7 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if(x > y) {
-    return x;
-  }
-  return y;
+ 
 }
 
 function mayoriaDeEdad(edad) {
@@ -32,15 +29,7 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if(idioma === 'aleman') {
-    return 'Guten Tag!';
-  } else if (idioma === 'mandarin') {
-    return 'Ni Hao!';
-  } else if (idioma === 'ingles') {
-    return 'Hello!';
-  } else {
-    return 'Hola!';
-  }
+ 
 }
 
 function colors(color) {
@@ -65,7 +54,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  return numero < 50 && numero > 20;
+ 
 }
 
 function esEntero(numero) {
@@ -76,7 +65,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  return numero % 1 === 0;
+  
 }
 
 function fizzBuzz(numero) {
@@ -84,10 +73,7 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if(numero % 15 === 0) return 'fizzbuzz';
-  if(numero % 3 === 0) return 'fizz';
-  if(numero % 5 === 0) return 'buzz';
-  return numero;
+  
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -106,14 +92,7 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   // Test
-  if( numero < 2) return false;
-  if(numero === 2) return true;
-  for(var i = 2; i < numero; i++) {
-    if(numero % i === 0) {
-      return false;
-    }
-  }
-  return true;
+  
 }
 
 function esVerdadero(valor){
