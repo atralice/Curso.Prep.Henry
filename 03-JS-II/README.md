@@ -267,7 +267,7 @@ Si queremos saber cuantos parámetros puede recibir una función podemos usar la
 ```
 
 ## La mejor herramienta del programador
-Día a día nos encontramos con diversos problemas y como sabemos, cada problema puede tener distintas soluciones, la mejor forma para adquirir las herramientas que nos permitan solucionarlos y aprender su correcto uso es leer documentación oficial o "respaldada", para ello nuestro mejor amigo es Google!
+Día a día nos encontramos con diversos problemas y como sabemos, cada problema puede tener distintas soluciones, una buena forma para adquirir las herramientas que nos permitan solucionarlos y aprender su correcto uso es leer documentación oficial o "respaldada", para ello nuestro mejor amigo es Google!
 <br>
 En el homework de este módulo nos vamos a encontrar con dos temas que no estan explicados en este readme, switch y do while .
 Te invitamos a buscar en Google información de estos conceptos para poder desarrollar la homework, a continuación algunos tips de busqueda.
