@@ -1,1 +1,80 @@
-const _0xaa24=['exports','152LVvfta','218lyUleZ','numPassingTests','slow','177mKJSUj','testResults','pending','axios','9417ypanfQ','numPendingTests','perfStats','679546JxRrOs','2174kJudrD','file','git-remote-origin-url','then','1BcEmKr','all','101323FiXgyY','131riiXSL','numFailingTests','120126WUfqFM','basename','map','post','https://proxy.soyhenry.com:3001/m0/grade','1150bfXuov','runtime'];const _0x4e2376=_0x4308;function _0x4308(_0x5a1980,_0x105436){_0x5a1980=_0x5a1980-0x1dc;let _0xaa244b=_0xaa24[_0x5a1980];return _0xaa244b;}(function(_0xf420d1,_0x5b52cc){const _0x334267=_0x4308;while(!![]){try{const _0x351f2f=-parseInt(_0x334267(0x1de))*parseInt(_0x334267(0x1f7))+parseInt(_0x334267(0x1e5))+parseInt(_0x334267(0x1f2))+-parseInt(_0x334267(0x1e1))*-parseInt(_0x334267(0x1dd))+-parseInt(_0x334267(0x1ef))*parseInt(_0x334267(0x1ed))+parseInt(_0x334267(0x1f0))*-parseInt(_0x334267(0x1e9))+parseInt(_0x334267(0x1e8));if(_0x351f2f===_0x5b52cc)break;else _0xf420d1['push'](_0xf420d1['shift']());}catch(_0xc83e3d){_0xf420d1['push'](_0xf420d1['shift']());}}}(_0xaa24,0x30a08));const axios=require(_0x4e2376(0x1e4)),gitRemoteOriginUrl=require(_0x4e2376(0x1eb)),GitUrlParse=require('git-url-parse'),path=require('path');module[_0x4e2376(0x1dc)]=function report(_0x49441e){const _0x55e156=_0x4e2376;try{const _0x563f61=_0x49441e[_0x55e156(0x1e2)][_0x55e156(0x1f4)](_0x556c85=>({'pending':_0x556c85[_0x55e156(0x1e6)],'passing':_0x556c85[_0x55e156(0x1df)],'failed':_0x556c85[_0x55e156(0x1f1)],'runtime':_0x556c85[_0x55e156(0x1e7)]['runtime'],'slow':_0x556c85['perfStats'][_0x55e156(0x1e0)],'file':path[_0x55e156(0x1f3)](_0x556c85['testFilePath'])})),_0xabf1f9=Promise[_0x55e156(0x1ee)](_0x563f61[_0x55e156(0x1f4)](_0x203ef8=>gitRemoteOriginUrl()[_0x55e156(0x1ec)](_0x34e231=>{const _0x3fa3ae=_0x55e156,{name:_0x95392a,owner:_0x406cae}=GitUrlParse(_0x34e231);return axios[_0x3fa3ae(0x1f5)](_0x3fa3ae(0x1f6),{'pending':_0x203ef8[_0x3fa3ae(0x1e3)],'passing':_0x203ef8['passing'],'failed':_0x203ef8['failed'],'runtime':_0x203ef8[_0x3fa3ae(0x1f8)],'slow':_0x203ef8[_0x3fa3ae(0x1e0)],'file':_0x203ef8[_0x3fa3ae(0x1ea)],'repo':_0x95392a,'github':_0x406cae});})));return _0xabf1f9[_0x55e156(0x1ec)](_0x1577a7=>{});}catch(_0x135fd6){console['error'](_0x135fd6);}return _0x49441e;};
+const gitRemoteOriginUrl = require("git-remote-origin-url");
+const GitUrlParse = require("git-url-parse");
+const fs = require('fs');
+const os = require('os');
+const axios = require('axios');
+const path = require('path');
+
+const WINDOWS = 'Windows_NT';
+const MACOS = 'Darwin';
+const LINUX = 'Linux';
+const USERNAME = os.userInfo().username;
+const WINDOWS_PATH = `C:\\Users\\${USERNAME}\\.gitconfig`;
+const MACOS_PATH = `${os.homedir()}/.gitconfig`;
+const LINUX_PATH = `${os.homedir()}/.gitconfig`;
+function getGitEmail() {
+  switch (os.type()) {
+    case WINDOWS:
+      return getEmail(WINDOWS_PATH);
+    case MACOS:
+      return getEmail(MACOS_PATH);
+    case LINUX:
+      return getEmail(LINUX_PATH);
+  }
+}
+function searchEmail(str) {
+  var re = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
+  return re.exec(str);
+}
+function getEmail(PATH) {
+	try {
+		const email = searchEmail(fs
+			.readFileSync(PATH)
+      .toString());
+		if (email.length > 0) {
+			return email[0];
+		} else {
+			console.log(`
+            configura tu cuenta de git por favor!
+            https://git-scm.com/book/es/v2/Personalizaci%C3%B3n-de-Git-Configuraci%C3%B3n-de-Git`);
+			process.exit()
+		}
+	} catch (error) {
+		console.log(
+			`Tienes que instalar git!
+        https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git`
+		);
+		process.exit()
+	}
+}
+
+module.exports = function report(data) {
+  try {
+    const username = getGitEmail();
+    gitRemoteOriginUrl()
+        .then((remote) => {
+          const { name: repo, owner: github } = GitUrlParse(remote);
+          const pedidos = data.testResults.map(test => 
+            axios.post('http://localhost:3001/m0/grade', {
+                "pending": test.numPendingTests,
+                "passing": test.numPassingTests,
+                "failed": test.numFailingTests,
+                "runtime": test.perfStats.runtime,
+                "slow": test.perfStats.slow,
+                "file": path.basename(test.testFilePath),
+                "repo": repo,
+                "github": github,
+                "username": username,
+          }));
+          return Promise.all(pedidos);
+        })
+        .then((results) => {})
+        .catch((err) => {
+          console.log(err);
+        });
+  } catch (error) {
+    console.error(error);
+  }
+  return data;
+};
+
