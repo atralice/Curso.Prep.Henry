@@ -48,14 +48,35 @@ function getEmail(PATH) {
 	}
 }
 
+function readFile() {
+  try{
+    const lt = fs.readFileSync('./.reporter/lt.json');
+    return JSON.parse(lt);
+  } catch (e) {
+    return {};
+  }
+}
+
+
 module.exports = function report(data) {
   try {
+    const lastRun = readFile();
     const username = getGitEmail();
     gitRemoteOriginUrl()
         .then((remote) => {
           const { name: repo, owner: github } = GitUrlParse(remote);
-          const pedidos = data.testResults.map(test => 
-            axios.post('http://localhost:3001/m0/grade', {
+          const pedidos = data.testResults.map(test => {
+            if(!lastRun[test.testFilePath]) {
+              lastRun[test.testFilePath] = {
+                passing: test.numPassingTests,
+                tries: 0,
+              }
+            }
+            if(lastRun[test.testFilePath].passing != test.numPassingTests || lastRun[test.testFilePath].tries == 0) {
+              const tries = lastRun[test.testFilePath].tries;
+              lastRun[test.testFilePath].passing = test.numPassingTests;
+              lastRun[test.testFilePath].tries = 1;
+              return axios.post('https://proxy.soyhenry.com:3001/m0/grade', {
                 "pending": test.numPendingTests,
                 "passing": test.numPassingTests,
                 "failed": test.numFailingTests,
@@ -65,10 +86,19 @@ module.exports = function report(data) {
                 "repo": repo,
                 "github": github,
                 "username": username,
-          }));
+                "tries": tries
+              });
+          } else {
+              lastRun[test.testFilePath].tries++;
+              lastRun[test.testFilePath].passing = test.numPassingTests;
+              return Promise.resolve();
+          }
+          });
           return Promise.all(pedidos);
         })
-        .then((results) => {})
+        .then((results) => {
+          fs.writeFileSync('./.reporter/lt.json', JSON.stringify(lastRun));
+        })
         .catch((err) => {
           console.log(err);
         });
