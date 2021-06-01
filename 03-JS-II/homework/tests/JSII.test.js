@@ -12,7 +12,7 @@ const {
   operadoresLogicos,
   esPrimo,
   esVerdadero,
-  tablaDelSeis,
+  sumatoria,
   tieneTresDigitos,
   doWhile
 } = require('../homework');
@@ -176,10 +176,15 @@ describe ('esVerdadero(valor)', function() {
   });
 });
 
-describe ('tablaDelSeis()', function() {
-  it('should return multiplication table of 6', function() {
-    expect(tablaDelSeis()).toEqual([0 , 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
+describe('sumatoria(numero', function() {
+  it('should return the sum of all the numbers up to the "numero" sent as a parameter', function(){
+    expect(sumatoria(6)).toBe(15);
+    expect(sumatoria(10)).toBe(45);
   });
+  it('should return false if "numero" is negative', function(){
+    expect(sumatoria(-1)).toBe(false);
+    expect(sumatoria(-4)).toBe(false);
+  })
 });
 
 describe ('tieneTresDigitos(numero)', function() {
