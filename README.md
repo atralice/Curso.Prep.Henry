@@ -22,15 +22,17 @@
 
 ## Proceso de subida de homeworks
 
-__IMPORTANTE:__ Luego de completar cada una de las homeworks del día deberán ejecutar el siguiente comando para subir sus trabajos a sus repositorios (Deben estar posicionados sobre la carpeta principal `Curso.Prep.Henry` para que funcione y haber corrido previamente `npm install`:
+__IMPORTANTE:__ Para ejecutar los tests de cada homework tenes que parate en la carpeta donde clonaste tu repo (es decir la carpeta donde está este README) y ejecutar el siguiente comando:
 
-Para la homework número 1 no es necesario ya que su trabajo se realiza por fuera de este repositorio
-
-```bash
-  node submit.js {numeroHomework}
+```
+npm test {nombre del homework}.test.js
 ```
 
-*En donde dice {numeroHomework} deben reemplazarlo simplemente por el número de homework correspondiente, por ejemplo `node submit.js 2`*
+Por ejemplo, para ejecutar los tests del homework 02, ejecutar: `npm test JSII.test.js`
+el del homework 01: `npm test JSI.test.js`
+y así.
+
+> No todos los homeworks tiene tests, está detallado en la descripción de cada uno.
 
 # La Carrera
 
