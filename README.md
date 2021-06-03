@@ -20,9 +20,13 @@
 
 * [Expressions vs Statements](./JS-conceptos/Statements-Expressions/)
 
-## Proceso de subida de homeworks
+## Homeworks
 
-__IMPORTANTE:__ Para ejecutar los tests de cada homework tenes que parate en la carpeta donde clonaste tu repo (es decir la carpeta donde está este README) y ejecutar el siguiente comando:
+__IMPORTANTE:__ Para ejecutar los tests de cada homework tenes que pararte en la carpeta donde clonaste tu repo (es decir la carpeta donde está este `README.md`) y ejecutar el siguiente comando:
+
+`npm install`
+
+Esto instalará todas las dependencias necesarias (lo tenés que hacer una sóla vez), una vez terminado y cada vez que quieras ver cuantos tests pasaste ejecutá:
 
 ```
 npm test {nombre del homework}.test.js
