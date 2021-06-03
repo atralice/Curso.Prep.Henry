@@ -7,8 +7,8 @@
     "test": "jest --collectCoverage=false --testResultsProcessor ./.reporter/index.js --detectOpenHandles"
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
-    "jest": "^26.6.3"
+    "eslint": "^7.27.0",
+    "jest": "^27.0.4"
   },
   "author": "Henry",
   "license": "ISC",
