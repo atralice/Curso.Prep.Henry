@@ -267,14 +267,14 @@ Si queremos saber cuantos parámetros puede recibir una función podemos usar la
 ```
 
 ## La mejor herramienta del programador
-Día a día nos encontramos con diversos problemas y como sabemos, cada problema puede tener distintas soluciones, una buena forma para adquirir las herramientas que nos permitan solucionarlos y aprender su correcto uso es leer documentación oficial o "respaldada", para ello nuestro mejor amigo es Google!
+Día a día nos encontramos con diversos problemas y, como sabemos, cada problema puede tener distintas soluciones. Una buena forma para adquirir las herramientas que nos permitan resolverlos y aprender su correcto uso es leer documentación oficial o "respaldada". Para ello, nuestro mejor amigo es Google!
 <br>
-En el homework de este módulo nos vamos a encontrar con dos temas que no estan explicados en este readme: switch y do while .
-Te invitamos a buscar en Google información de estos conceptos para poder desarrollar la homework, a continuación algunos tips de búsqueda.
+En el homework de este módulo nos vamos a encontrar con dos temas que no están explicados en este readme: switch y do while .
+Te invitamos a buscar en Google información de estos conceptos para poder desarrollar la homework. A continuación, algunos tips de búsqueda.
 
-* Recomendado buscar en inglés, aparecen mejores y mayor cantidad de resultados! Ej: "switch statement javascript".
-* Recordemos aclarar el lenguaje en el que estamos buscando el tema, como en el ejemplo de arriba, aclaramos javascript, ya que un mismo tema puede existir en distintos lenguajes de programación y funcionar de manera distinta en cada uno de ellos.
-* Uno de los primeros resultados que vas a encontrar sera MDN (Mozilla Developer Network), es una web muy completa que incluye tanto documentación como ejemplos.
+* Recomendado buscar en inglés: ¡Aparecen mejores y mayor cantidad de resultados! Ej: "switch statement javascript".
+* Recordemos aclarar el lenguaje en el que estamos buscando el tema, como en el ejemplo de arriba donde aclaramos javascript, ya que un mismo tema puede existir en distintos lenguajes de programación y funcionar de manera distinta en cada uno de ellos.
+* Uno de los primeros resultados que vas a encontrar será MDN (Mozilla Developer Network): es una web muy completa que incluye tanto documentación como ejemplos.
 
 <br>
 <br>
