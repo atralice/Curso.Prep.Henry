@@ -93,11 +93,13 @@ function esVerdadero(valor){
 
 }
 
-function tablaDelSeis(){
-  //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
-  //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  
+function factorial(numero){
+  // el factorial de un número dado se define como la multiplicacion 
+  // de todos sus numeros anteriores asi 
+  // 5! = 120 => 5*4*3*2*1 = 120    
+  // si el numero es negativo retorna "number is negative"
+  //y si el numero es 0 retorna 1
+  // escribe una funcionn que calcule el factorial de numero y lo retorne
 }
 
 function tieneTresDigitos(numero){
@@ -129,7 +131,7 @@ module.exports = {
   operadoresLogicos,
   esPrimo,
   esVerdadero,
-  tablaDelSeis,
+  factorial,
   tieneTresDigitos,
   doWhile
 };

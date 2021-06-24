@@ -12,7 +12,7 @@ const {
   operadoresLogicos,
   esPrimo,
   esVerdadero,
-  tablaDelSeis,
+  factorial,
   tieneTresDigitos,
   doWhile
 } = require('../homework');
@@ -176,9 +176,12 @@ describe ('esVerdadero(valor)', function() {
   });
 });
 
-describe ('tablaDelSeis()', function() {
-  it('should return multiplication table of 6', function() {
-    expect(tablaDelSeis()).toEqual([0 , 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
+describe ('factorial()', function() {
+  it('should return the factorial of the given number', function() {
+    expect(factorial(5)).toEqual(120);
+    expect(factorial(7)).toEqual(5040);
+    expect(factorial(0)).toEqual(1);
+    expect(factorial(-2)).toEqual("number is negative");
   });
 });
 
