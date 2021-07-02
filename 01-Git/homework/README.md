@@ -46,7 +46,7 @@ Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, aña
 
 En este ejercicio crearemos un nuevo repositorio en Github y a partir de la linea de comandos crearemos un nuevo archivo y lo agregaremos a nuestro nuevo repositorio.
 
-Iniciaremos creando una carpeta desde la consola llamada: "Henry"
+Iniciaremos creando una carpeta desde la consola llamada: "CarpetaHenry"
 
 Para ello primero iremos a la carpeta de nivel superior, escribe en la consola:
 
@@ -57,7 +57,7 @@ Para ello primero iremos a la carpeta de nivel superior, escribe en la consola:
 y presiona Enter. Una vez estés en el nivel superior, escribe:
 
 ```bash
-  mkdir Henry
+  mkdir CarpetaHenry
 ```
 
 y presiona Enter. ¡Felicitaciones, has creado un directorio!
@@ -68,7 +68,7 @@ Entra a github.com y logueate con tu usuario. Luego en la parte de arriba a la d
 
 ![alt](../img/repo-create.png)
 
-En la nueva pantalla, vas a tener que seleccionar el nombre de tu nuevo repo. Crea un repo que se llame: `henry`. Podes agregarle una descripción también, pero no es obligatoria.
+En la nueva pantalla, vas a tener que seleccionar el nombre de tu nuevo repo. Crea un repo que se llame: `repositorio-henry`. Podes agregarle una descripción también, pero no es obligatoria.
 
 ![alt](../img/create-repository-name.png)
 
@@ -82,11 +82,13 @@ Listo ya tenes tu propio repo. Ahora vas a poder clonarlo con las intrucciones d
 
 Para poder trabajar en un proyecto debes clonarlo (descargarlo) a tu máquina local. Para ello, accede al repositorio que creaste en tu cuenta, y haz click en el botón de la esquina superior derecha que dice "Clonar o descargar". Un dropdown aparecerá y podemos clickear en el icono del clipboard para copiar la dirección del repo. O, si el repo esta vacio vas a ver en el medio de la pantalla la URL con la dirección de tu repositorio.
 
-Una vez tengas la dirección copiada, vuelve a tu terminal y escribe lo siguiente:
+Una vez tengas la dirección copiada, abre una terminal nueva y escribe lo siguiente:
 
 
 ```bash
-  $ cd Henry
+  $ cd ~
+
+  $ cd CarpetaHenry
 
   $ git clone [dirección copiada]
 ```
@@ -102,7 +104,8 @@ En este ejercicio, añadiremos un archivo a nuestro proyecto y crearemos un comm
 A continuación, escribe lo siguiente en tu terminal:
 
 ```bash
-  $ cd henry
+  $ cd repositorio-henry
+  
   $ touch archivo-ejemplo.js
 ```
 
