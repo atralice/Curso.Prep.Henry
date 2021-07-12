@@ -1,0 +1,17 @@
+h1{
+    color:deeppink;
+}
+img {
+    width:400px;
+}
+#thirdDiv { 
+    height:600px;
+    width:500px;
+    background-color: gold;
+    padding:50px;
+    border: 7px solid black;  
+}
+#spanId {
+    font-size:18px;
+    margin:50px;
+}  

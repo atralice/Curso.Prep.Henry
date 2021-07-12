@@ -1,0 +1,24 @@
+{
+  "name": "prep",
+  "version": "1.0.0",
+  "description": "<p align='left'>     <img src='https://static.wixstatic.com/media/85087f_0d84cbeaeb824fca8f7ff18d7c9eaafd~mv2.png/v1/fill/w_160,h_30,al_c,q_85,usm_0.66_1.00_0.01/Logo_completo_Color_1PNG.webp' </img> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage=false --testResultsProcessor ./.reporter/index.js --detectOpenHandles"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "jest": "^27.0.4"
+  },
+  "author": "Henry",
+  "license": "ISC",
+  "jest": {
+    "testURL": "http://localhost/"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "git-remote-origin-url": "^3.1.0",
+    "git-url-parse": "^11.4.4",
+    "simple-git": "^2.39.0"
+  }
+}
