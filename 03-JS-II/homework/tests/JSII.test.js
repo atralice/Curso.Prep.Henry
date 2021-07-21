@@ -180,7 +180,11 @@ describe ('factorial()', function() {
   it('should return the factorial of the given number', function() {
     expect(factorial(5)).toEqual(120);
     expect(factorial(7)).toEqual(5040);
+  });
+  it('should return 1 if number is 0', function() {
     expect(factorial(0)).toEqual(1);
+  });
+  it('should return "number is negative" when number is negative', function(){
     expect(factorial(-2)).toEqual("number is negative");
   });
 });
