@@ -16,7 +16,7 @@
 # Comandos👨🏻‍💻👩🏻‍💻
 
     - git init: se utiliza para iniciar nuestro repositorio.
-    - git add + "el archivo": crea el archivo pero no lo guarda de forma definitiva, lo almacena en (Staging Area).
+    - git add ArchivoEjemplo.js: crea el archivo pero no lo guarda de forma definitiva, lo almacena en (Staging Area).
     - git commit -m "versión 1": aqui se guardan cambios de "Staging Area" y con ( -m "") se deja un mensaje que nos sea util.
     - git add .: Agrega los archivos actualizados al repositorio, pero únicamente en la carpeta que te encuentras.
     - git commit -m "Cambios v1": genera cambias sobre la version antigua.
