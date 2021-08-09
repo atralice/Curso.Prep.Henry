@@ -1,0 +1,35 @@
+Bluce o ciclo FOR
+
+ * Nos permite repetir un conjunto de instrucciones un determinado numero de veces.
+ * Para usar un ciclo for se requiere colocar la palabra for y entre parentesis (  ) se colocara 3 elementos 
+    1) escribimos un variable (palabra o letra) donde le indicamos el numero donde iniciara en ciclo for
+    2) escribimos la condicion que al ser cumplida terminara el ciclo for
+    3) escribimos el incremento o decremento de la variable declarada en el punto 1
+ * Despues se coloca entre corchetes {...} todas las instrucciones que se quieren repetir varias veces.
+ 
+ 
+&& AND (Y)
+
+Este simbolo nos permite verificar si se cumple con dos instrucciones (o expresiones), en caso de que se cumplan se dice que las acciones son Ciertas
+y si alguna instruccion no se cumple se dice que es falso
+Ejemplo:
+  Supongamos que yo asigno dos tareas o acciones (instrucciones)
+    * Hacer tu tarea.
+    * Limpiar tu cuarto. 
+  Si te dejo hacer las dos tareas y las realizas las dos se dice que es cierta
+  Pero si solo haces alguna de las dos tareas se dice que la tarea es falsa.
+
+
+|| OR (O)
+
+Este simbolo nos permite verificar si se cumple almenos una de todas las instrucciones (expresiones o acciones) requeridas, 
+en caso de que se cumpla tan solo una se dice que las acciones es completada (o Cierta)
+y si ninguna instruccion no se cumple se dice que es falso
+
+
+
+! NOT (no)
+Este simbolo nos permite contradecir el cumplimiento de una accion (instruccion o expresion).
+Es decir si se pide que realices una tarea pero se coloca un signo advertencia como este ! significa 
+que no se tiene cumplir esa tarea para terminarla.
+    
