@@ -1,0 +1,205 @@
+
+Introduccion a los objetos
+
+    //Las matrices son contenedores que sostienen colecciones de datos. Los objetos contienen mucha información sobre una sola cosa. Los objetos se instancian usando llaves ({}).
+
+        const nuevoObjeto = {};
+
+Pares Key:Value
+
+    //Key (clave) es el identificador y el Value es el valor que queremos guardar en esa clave. Los objetos pueden contener muchos pares de clave-valor, deben estar separados por una coma. Las claves son únicas en un objeto, solo puede haber una clave de ese nombre, aunque, varias claves pueden tener el mismo valor. Los valores pueden ser cualquier tipo de dato de Javascript: cadena, número, booleano, matriz, función o incluso otro objeto.
+
+
+        const user = {
+            username: "juan.perez",
+            password: "loremipsumpwd123",
+            lovesJavascript: true,
+            favoriteNumber: 42
+        };
+
+Acceder a los valores
+
+    //Podemos acceder a los valores de "key:value" llamando al nombre del objeto y la clave. Hay dos formas, usando puntos o usando corchetes.
+
+    //Con la notacion de puntos podemos llamar al nombre del objeto, un punto y el nobre de la clave.
+
+        user.lovesJavascript;   //true
+        user.username;          //juan.perez
+
+
+    //La notación de corchetes es como llamar a un elemento en una matriz, aunque con corchetes debemos usar una cadena o número, o una variable que apunte a una cadena o número. Se puede llamar a cada clave envolviéndola con comillas:
+
+        const passString = "password";
+        user["lovesJavascript"];    //true
+        user["username"];           //juan.perez
+        user[passString];           //loremipsumpwd123
+
+    //Generalmente, verás que los corchetes casi siempre se usan con variables.
+
+Asignacion de valores
+
+    //Podemos asignarlos cuando creamos el objeto, con notacion de puntos o con notacion de corchetes
+
+        const nuevoUsuario = {
+            esNuevo: true
+        };
+
+        const loveJSString = "lovesJavascript";
+
+        nuevoUsuario.username = "otro.nombre.de.usuario";
+        nuevoUsuario["password"] = "12345";
+        nuevoUsuario[loveJSString] = true;
+
+Eliminando propiedades
+
+    //Podemos hacerlo usando la palabra delete
+
+        const nuevoObjeto = {
+            eliminarEstaPropiedad: true
+        };
+
+        delete nuevoObjeto.eliminarEstaPropiedad;
+
+    //Tambien se puede establecer el valor de una palabra clave en undefined.
+
+Metodos
+
+    //En los objetos, los valores se pueden establecer en funciones. Las funciones guardadas en un objeto se denominan métodos. Llamaremos a este método usando notación de puntos y paréntesis finales.
+    (Nota: podemos llamar a un método con argumentos como lo haríamos con una función normal)
+
+        const nuevoObjeto = {
+            decirHola: function(){
+                console.log("Hola a todo el mundo!");
+            }
+        }
+
+        nuevoObjeto.decirHola();    //Hola a todo el mundo!
+
+Bucles for...in
+
+    //Javascript tiene un segundo tipo de bucle for integrado llamado "for ... in loop". Es una sintaxis ligeramente diferente, comienza igual pero entre paréntesis declararemos una variable, la palabra clave in y el nombre del objeto. Esto recorrerá cada clave del objeto y finalizará cuando se hayan iterado todas las claves. Podemos usar esta clave, y la notación de corchetes, en nuestro bucle for para acceder al valor asociado con esa clave.
+
+        const usuario = {
+            username: "juan.perez",
+            password: "loremipsumpwd123",
+            lovesJavascript: true,
+            favoriteNumber: 42
+        };
+        
+        for (let clave in usuario){
+            console.log(clave);
+            console.log(usiario[clave]);
+        }
+
+        //username
+        //"juan.perez"
+        //password
+        //"loremipsumpwd123"
+        //lovesJavascript
+        //true
+        //favoriteNumber
+        //42
+
+La palabra clave "this"
+
+    //Los objetos tienen una parte referencial que se puede aplicar en cada objeto llamado this. Cuando se llama dentro de un objeto, se refiere a ese mismo objeto. This puede usarse  para acceder a otras claves en el mismo objeto, y es especialmente util en metodos
+
+        const usuario = {
+            username: "juan.perez",
+            password: "loremipsumpwd123",
+            lovesJavascript: true,
+            favoriteNumber: 42,
+            decirHola: function() {
+            console.log(this.username + " manda saludos!");
+            }
+        };
+
+        usuario.decirHola();    //"juan.perez manda saludos!"
+
+    //Nota: la palabra clave this a veces puede ser uno de los temas más difíciles en Javascript. Lo estamos usando muy básicamente aquí, pero el tema se vuelve mucho más complejo muy pronto.
+
+This y el Ejecution Context 
+
+    <<<< contexto global inicial >>>>
+
+        //Cuando ejecutamos codigo en el contexto global (afuera de cualquier funcion). En este caso this hace referencia al objeto global, en el caso de browser hace referencia a window.
+
+            //En el browser esto es verdad:
+            > console.log (this === window);
+            < true
+
+            > this.a = 37;
+
+            > console.log(window.a);
+            < 37
+
+
+    <<<< En el contexto de una funcion >>>>
+
+        //Cuando estamos dentro de una funcion, el valor de this va a depender de como sea ivocada la funcion.
+
+            > function f1(){
+                return this;
+              }
+
+            > f1() === window;
+            < true
+
+            > window.f1() === window;
+            < true
+
+        //En este ejemplo la funcion es invocada por el objeto global por lo tanto this hara referencia a window.
+            //Si usamos el modo strict de Javascript, el ejemplo de arriba va a devolver undefined, ya que no le deja al interprete asumir que this es el objeto global.
+    
+    <<<<Como metodo de un objeto>>>>
+
+        //Cuando usamos el keyword this dentro de una funcion que es un metodo de un objeto this hace referencia al objeto sobre el cual se llamo el metodo
+
+            > var hola = {
+                prop: 37,
+                f: function(){
+                    return this.prop;
+                }
+              };
+
+            > console.log(hola.f());
+            < 37
+            //this hace referencia a "hola"
+
+        //En este caso, no depende donde hayamos definido la función, lo único que importa es que la función haya sido invocada como método de un objeto. Por ejemplo, si definimos la función afuera:
+
+            > var hola = {prop: 37};
+            
+            //declaro la función
+            > function loguea() {
+                return this.prop;
+            }
+            
+            //agregamos la funcion como metodo del objeto "hola"
+            > hola.f = loguea;
+            
+            > console.log(o.f());
+            < 37
+            //El resultado es el mismo!!
+
+        //De todos modos, hay que tener cuidado con el keyword this, ya que pueden aparecer casos donde es contra intuitivo ( Como varias cosas de JavaScript ). Veamos el siguiente ejemplo:
+        
+            > var obj = {
+                nombre: 'Objeto',
+                log: function(){
+                  this.nombre = 'Cambiado'; // this se refiere a este objeto, a `obj`
+                  console.log(this)  // obj
+
+                  var cambia = function( str ){
+                    this.nombre = str;  // Uno esperaria que this sea `obj`
+                  }
+
+                  cambia('Hoola!!');
+                  console.log(this);
+                }
+            }
+
+        De esta forma, that (puede tener cualquier nombre) va a apuntar al objeto obj (this apuntaba a ese objeto cuando hicimos la asignación). Ahora si, podemos usar that en vez de this y estar seguros qué es lo que va a tener adentro.
+
+
+        <<<The End>>>

@@ -1,0 +1,98 @@
+Introducción a los arrays (matrices/arreglos)
+    
+    //Construir una matriz es simple, declarar una variable y establecerla en []. Luego podemos agregar al contenedor (separadas por coma) tantas cadenas, números o booleanos como queramos y acceder a esos elementos cuando lo deseemos.
+
+        const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
+
+
+.length
+
+    //Al igual que la cadena .length cuenta los caracteres, la matriz .length devolverá el número de elementos en una matriz:
+
+        const nombresEstudiantes = ["Martin", "Antonio", "Sara", "Samuel"];
+        console.log(nombresEstudiantes.length); //4
+
+Acceso a elementos en una matriz
+
+    //Podemos acceder a un elemento de una matriz en cualquier momento, solo necesitamos llamar al elemento por su posición en la matriz. Los elementos reciben una posición numérica (índice) de acuerdo con su ubicación en la matriz, en orden. El orden numérico de una matriz SIEMPRE comienza en 0, por lo que el primer elemento está en el índice 0, el segundo en el índice 1, el tercero en el 2, y así sucesivamente (esto puede ser complicado al principio, pero solo recuerda que las matrices siempre comienzan en 0).
+
+        const nombresEstudiantes = ["Martin", "Antonio", "Sara", "Samuel"];                   //0         1         2
+            3
+
+    //Para acceder al elemento, escribiremos el nombre o la variable de matriz, seguidos de corchetes que contienen la asignación numérica.
+
+        const nombresEstudiantes = ["Martin", "Antonio", "Sara", "Samuel"];
+
+        console.log(nombresEstudiantes[1]); //"Antonio"
+
+    //Para acceder dinámicamente al último elemento de la matriz, utilizaremos el método .length.
+    //En este ejemplo, el último elemento tiene un índice de 3. Usando nuestra propiedad de longitud mostraremos cómo se hace cuando no sabemos el número de elementos en una matriz:
+
+        const nombresEstudiantes["Martin", "Antonio", "Sara", "y mas...", "Samuel"];
+
+        console.log(nombresEstudiantes[nombresEstudiantes.length -1]);  //"Samuel"
+
+Asignacion
+
+    Podemos asignar y reasignar cualquier indice en la matriz usando el parentesis/indice y un "=".
+
+        const nombresEstudiantes = ["Martin", "Antonio", "Sara", "Samuel"];
+
+        nombresEstudiantes[0] = "Jorge";
+
+        console.log(nombresEstudiantes);    //["Jorge", "Antonio", "Sara", "Samuel"]
+
+.push y .pop 
+    
+    Estos metodos se refieren a la edicion y eliminacion de elementos  de la matriz despues de su declaracion inicial
+
+    .push: Agrega un elemento al final de la matriz, incrementando su longitud en 1. .push devuelvela nueva longitud.
+
+        const nombresEstudiantes =["Martin", "Antonio", "Sara", "Samuel"];
+
+        nombresEstudiantes.push("Patricia");
+
+        console.log(nombresEstudiantes);    //["Martin", "Antonio", "Sara", "Samuel", "Patricia"]
+
+    .pop: Elimina el ultimo elemento de la matriz, disminuyendo la longitud en 1. .pop devuelve el elemento "reventado" (popped).
+
+        const nombresEstudiantes = ["Martin", "Antonio", "Sara", "Samuel"];
+
+        nombresEstudiantes.pop();
+
+        console.log(nombresEstudiantes);    //["Martin", "Antonio", "Sara"]
+
+.unshift y .shift
+    
+    Son exactamente como .push y .pop, excepto que operan en el primer elemento de la matriz. 
+     
+    .unshift(item) colocará un nuevo elemento en la primera posición de la matriz.
+
+        const nombresEstudiantes = ["Martin", "Antonio", "Sara", "Samuel"];
+
+        nombresEstudiantes.unshift("Leo");
+
+        console.log(nombresEstudiantes);  // ["Leo", "Martin", "Antonio", "Sara", "Samuel"]
+
+    .shift() eliminará el primer elemento de la matriz.
+        
+        const nombresEstudiantes = ["Leo", "Martin", "Antonio", "Sara", "Samuel"];
+
+        nombresEstudiantes.shift();
+
+        console.log(nombresEstudiantes);  // ["Martin", "Antonio", "Sara", "Samuel"]
+
+Bucles for en arrays
+    La mayoría de las veces, los bucles for se utilizan para iterar sobre todos los elementos de una matriz. Usando la técnica de acceso al índice ("index access technique") podemos acceder a cada elemento de la matriz. Para hacer esto, usamos el método .length como punto de parada para el ciclo.
+
+
+    const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
+
+    for (let i = 0; i < nombresEstudiantes.length; i++) {
+    console.log(nombresEstudiantes[i]);
+    }
+
+    // 'Martin'
+    // 'Antonio'
+    // 'Sara'
+    // 'Samuel'

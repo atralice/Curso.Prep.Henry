@@ -1,0 +1,155 @@
+Variables
+
+    /Una variable es una forma de almacenar el valor de algo para usar más tarde.
+    /Para crear una variable en JavaScript utilizamos la palabra clave var, seguida de un espacio y el nombre de la variable (con este nombre podremos hacer referencia a ella luego). Además de declarar una variable, podemos asignarle un valor usando el signo =.
+    /Nota: Las palabras claves o keywords son palabras especiales que utiliza el lenguaje para indicar algo. No podremos usas las palabras claves del lenguaje cómo nombres de variables.
+
+Formas de crar una variable:
+    var nombre = "Juan";    //esta vamos a utilizar principalmente
+    let apellido = "Perez";
+    const comidaFavorita = "Pizza";
+
+Tipos de datos
+
+    strings     /Son bloques de texto, siempre se definiran entre comillas. Cualquier texto entre comillas es una cadena o string
+        var nombreperro = "Firulais";
+    
+    numbers     /Los numeros no se envuelven entre comillas, pueden ser negativos
+        var positivo = "27";
+        var negativo = "-40";
+    
+    boolean     /Un valor booleano representa un valor de verdad; es decir, TRUE o FALSE.
+        var meEncantaJS = "true";
+    
+Operadores
+
+    /Son los simbolos (+,-,/,*) 
+        var a = 2+3; //5
+        var b = 3/3; //1
+    /De hecho esa forma de escribirt se llama notacion INFIX o INFIJA en ella se escribe el operador entre los operados
+    /Tambien existen otros tipos de notaciones como la POSTFIX o POSTFIJA y la PREFIX o PREFIJA. En estas ultimas el operador va a la derecha de los operados o a la izquierda respectivamente
+
+    Infix Expression                Prefix Expression               Postfix Expression
+        A+B                         +AB
+        A+B*C                       +A*BC
+
+
+    IMPORTANTE: Los operadores son funciones
+
+
+
+    Precedencia de operadores
+        https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+    /Operador matematico  %, este se encarga de dividir los dos numeros y devolver el resto.
+        21 % 5 = 1
+        21 % 6 = 3
+        21 % 7 = 0
+
+Objetos globales y metodos
+    
+    Math.pow
+        /Podemos usa el metodo POW en MATH pra devolver un numero elevado a un exponente. Tomara dos numeros
+        
+        Math.pow(2,2) = 4;
+        Math.pow(3,2) = 9;
+        Math.pow(3,3) = 27;
+    
+    Math.round, Math.floor, Math.ceil
+        /Math también tiene métodos que redondearán los números para nosotros. 
+        /.ROUND redondeará un número al número entero más cercano. 
+        /.FLOOR siempre redondeará un número al número entero más cercano hacia abajo. 
+        /.CEIL siempre se redondeará al número entero más cercano hacia arriba.
+
+        Math.round(6.5) = 7;
+        Math.round(6.45) = 6;
+        Math.floor(6.999) = 6;
+        Math.ceil(6.0001) = 7;
+
+    .length
+        /El tipo de datos "string" tiene un método incorporado llamado .length. Cualquier cadena que llamemos a esto devolverá la cantidad de caracteres en esa cadena.
+
+        var nombreGato = 'felix';
+        console.log(nombreGato.length); // 5
+
+Introduccion a las funciones
+    /Són tipos particulares de Objetos, llamados callable objects u objetos invocables, por lo que tienen las mismas propiedades que cualquier objeto.
+
+    function miFuncion() {}
+    var otraFuncion = function () {};
+    var yOtra = () => {};
+
+    Su Anatomía
+
+        /Una funcion comenzara con la palabra clave FUNCTION, Luego de eso viene el nombre de la funcio. Luego viene un parentesis [abierto y uno cerrado]. Finalmente viene un corchete {abierto y uno cerrado}. Entre estos corcheteses donde ira todo nuestro codigo a ejecutar.
+
+        function logHola(){
+            console.log("hola!");
+        }
+        logHola();
+
+            /En este ejemplo que puse declaro la funcion logHola y la configuro en console.log "hello". Entoncespodemos ver que para ejecutar esta funcion, necesitamos escribir el nombre y los parentesis. Esta es la forma para ejecutar una funcion. Una funcion siempre necesita parentesis para ejecutarse.
+
+Argumentos
+
+    function logHola(nombre) {
+        console.log("hola", "+ nombre);
+    }
+    logHola("Martin");
+    
+    /Si le agrago una variable a los paarentesis cuando declaramos la funcion, podemos usar esta variable dentro de nuestra funcion.  Iniciamos el valorde esta variable pasandolaa la funcion cuando la llamamo. Entonces en este caso nombre = "Martin". Tambien podemos pasar otras variables a esto:
+
+    function logHola(nombre) {
+        console.log("Hola, ${nombre}");
+    }
+    var miNombre = "Antonio";
+    logHola(miNombre);
+
+    /Tambien se pueden agregar multiples argumentos colocando una coma entre ellos:
+
+    function sumarDosNumeros(a, b) {
+        var suma = a + b;
+        return suma;
+    }
+    sumarDosNumeros(1, 5);  //6
+
+Declaracion RETURN y SCOPE
+    /Piense en la declaración de retorno ("return") como la única forma en que los datos escapan de una función. No se puede acceder a nada más que a lo que se devuelve fuera de la función. También tenga en cuenta que cuando una función golpea una declaración de retorno, la función detiene inmediatamente lo que está haciendo y "devuelve" lo especificado.
+
+    function dividirDosNumeros(a, b) {
+        var producto = a / b;
+        return producto;
+    }
+    dividirDosNumeros(6,3); //2
+    console.log(producto);  //undefined
+
+    /Si intentamos console.log algo que declaramos dentro de la función, devolverá undefined porque no tenemos acceso a él fuera de la función. Esto se llama Scope ("alcance"). La única forma de acceder a algo dentro de la función es devolverlo.
+
+    Variables para igualar lo que devuelvela funcion
+
+        function restarDosNumeros(a, b) {
+            var diferencia = a - b;
+            return diferencia;
+        }
+        var diferenciaDeResta = restarDosNumeros(10, 9);
+        console.log(diferenciaDeResta);  //1
+        console.log(diferencia);        //undefined
+
+Control de flujo y operadores de comparacion
+
+    /el flujo de controles una forma de que nuestra funcion verifique si es true, y ya sea ejecutando el codigo suministrado si es asi o avanzado si no lo es. Para esto utilizare un if:
+
+        function puedeManejar (edad) {
+            if (edad > 18) {
+                return true;
+            }
+
+            return false;
+        }
+
+        puedeManejar (22);  //true
+
+    /Aquí estamos tomando un número (edad) y verificando si la declaración es true (22>18), lo es, por lo que devolveremos true, y la función se detendrá. Si no es así, omitirá ese código y la función devolverá false.
+
+
+                    <<TERMINO>>

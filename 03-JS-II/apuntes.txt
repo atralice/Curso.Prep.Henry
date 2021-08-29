@@ -1,0 +1,205 @@
+Undefined y null:
+
+    //Se obtiene "undefined" cuando buscas o pedis algo que no existe, como una variable que aún no tiene un valor.
+    
+        console.log(variableInexistente);   //undefined
+
+    //"null" es un objeto que establecemos cuando queremos decirle a otros que el elemento que estan buscando existe, pero no hay ningun valor asociado con el.
+
+        let numeroTelefono = "11-1234-5678";
+        numeroTelefono = null; 
+
+        numeroTelefono;     //null
+    
+    //Undefined esta configurado por Javascript.
+    //Null esta configurado por un desarrollador.(otro desarrollador establecio ese valor en "null")
+    //Undefined y null NO son cadenas, ellas estan sin comillas, como un booleano.
+
+Veracidad (truthy y falsey):
+
+    //PRESTAR ATENCION. COPIÉ Y PEGUÉ
+    //En estas lecciones hemos hablado sobre los valores booleanos, true y false. Cuando se usa una declaración if u otra declaración que espera un valor booleano (como !, NOT), y la expresión dada no es un valor booleano, Javascript hará algo llamado "coerción de tipo" y transformará lo que sea que se le entregue a un valor booleano. Esto se conoce como "truthy" y "falsey". Cada tipo de datos tiene una veracidad. Acá hay unos ejemplos:
+
+        // todos los siguientes retornan `false`
+            Boolean(false)
+            Boolean(0)
+            Boolean(-0)
+            Boolean(0n)
+            Boolean("")
+            Boolean('')
+            Boolean(``)
+            Boolean(null)
+            Boolean(undefined)
+            Boolean(NaN)
+
+        // cualquier otro valor retorna `true`
+            Boolean(true)
+            Boolean([])
+            Boolean({})
+            Boolean('Hola mundo')
+            Boolean(new Date())
+        
+    //jsconsole.com     Entrar para comprobar y entender mejor.
+
+Operadores de comparacion (continuación)
+
+    //Los operadores de comparacion (> >= < <= ===!==) funcionan como un mayor que, menor que, etc. Usamos estos operadores para evaluar dos expresiones. A medida que la computadoraejecuta el codigo, el operador devolvera un verdadero o un falso.
+
+    1 > 2;      //false
+    2 < 3;      //true
+    10 >= 10;   //true
+    100 <= 1;   //false
+
+    //El triple igual (===) compara todo sobre dos elementos, incuido el tipo y devolvera si son exactamente iguales o no.
+
+    ++
+    //Segun Henry: (Algo a tener en cuenta: hay un "doble igual" (==) que comparará dos elementos, pero NO tendrá en cuenta sus tipos (1 == '1' // verdadero). Debido a esto , se considera una mala práctica usar el doble igual. Nos gustaría verte siempre usando el triple, y siempre nos verás usándolo.)
+    ++
+
+        1 === 1;                //true
+        1=== "1";               //false
+        "perro" === "perro";    //true
+        "perro" === "Perro";    //false
+
+    //"Not" (!): Significa que estamos preguntando lo contrario de la expresion.
+    //Con eso en mente, podemos introducir el "no es igual" (!==).Esto devolvera verdadero si los articulos NO son iguales entre si de alguna manera.
+
+        1 !== 1;          // false
+        1 !== '1';        // true
+        'perro' !== 'perro';  // false
+        'perro' !== 'Perro';  // true
+
+Flujos de control (continuacion)
+
+    //Podemos usar el "if" para verificar y ver si una expresion es true, si es asi, ejecute algun codigo, o si no es asi, que omita el codigo y siga ejecutando el programa
+
+    if (1 + 1 === 2) {
+        console.log('La expresión es verdadera');
+    }
+
+    //Para complementar "if", podemos usar las declaraciones "else if" y "else".Estas declaraciones seran evaluadas si "if" devuelve false. Else if es otra declaracion if que esta encadenada. Solo se ejecutara un bloque de instruccion if o else if.
+    //En el caso que la declaracion devuelva true, el codigo se ejecutara y el resto se omitira:
+
+        if (false) {
+            console.log('Este código será omitido');
+        } else if (true) {
+            console.log('Este código correrá');
+        } else if (true) {
+            console.log('Este código NO correrá');
+        }
+
+    //La declaracion else siempre va al final de una cadena if-else o if, y actuara de manera predeterminada. 
+    //Si ninguna de las expreciones devuelve true, el bloque de codigo else se ejecutara sin importar que.
+    //Si alguna de las expresiones anteriores if o else if son true, el bloque de codigo de instruccion else no se ejecutara
+ 
+        if (false) {
+            console.log('Este código será omitido');
+        }else if (false) {
+            console.log('Este código NO correrá');
+        } else {
+            console.log('Este código correrá');
+        }
+
+Operadores logicos
+
+    //Los operadores logicos comparan valores booleanos y devuelven respuestas booleanas. Hay dos tipos de operadores lógicos estos son "&&" (AND) y "||" (OR).
+        && (and): Evalua ambas expresiones y devolvera verdadero si ambas expresiones son true. Si uno (o ambos) de ellos es falso, este operador devolvera false:
+
+            if (100 > 10 && 10 === 10) {
+                console.log('Ambas declaraciones son ciertas, este código se ejecutará');
+            }
+
+            if (10 === 9 && 10 > 9) {
+                console.log('Una de las declaraciones es false, por lo que && devolverá false, y este código no se ejecutará');
+        
+        || (or): Determina si una de las expresiones es true. Devuelve true si una (o ambas) de las expresiones es true. Devolvera false si AMBAS expreciones son false:
+
+            if (100 > 10 || 10 === 10) {
+                console.log('Ambas declaraciones son ciertas, este código se ejecutará');
+            }
+
+            if (10 === 9 || 10 > 9) {
+                console.log('Una de las declaraciones es true, por lo que || devolverá true y este código se ejecutará');
+            }
+
+            if (10 === 9 || 1 > 9) {
+                console.log('Ambas declaraciones son falsas, por lo que || devolverá false y este código no se ejecutará');
+            }
+
+        ! (not). Vimos este operador antes al determinar la igualdad (!==). Como antes, el operador ! devolverá el valor booleano opuesto de lo que se le pasa:
+
+            if (!false) {
+                console.log('El ! devolverá true, porque es lo contrario de false, así que ste código se ejecutará');
+            }
+
+            if (!(1 === 1)) {
+                console.log('1 es igual a 1, de modo que la expresión devuelve true. El operador ! devolverá lo contrario de eso, por lo que este código NO se ejecutará');
+            }
+
+    NOTAS: 
+        //Las expresiones se evalúan en orden, y la computadora omitirá cualquier expresión redundante. En una declaración &&, si la primera expresión es false, la segunda expresión no se evaluará porque AMBAS expresiones deben ser true. Lo mismo para la declaración ||. Si la primera expresión es verdadero, la segunda no se evaluará porque solo debe haber una declaración verdadero para cumplir con los requisitos del operador.
+
+        //Usá paréntesis. Como vimos en el segundo ejemplo de operador !, usamos paréntesis para evaluar PRIMERO lo que estaba dentro de los paréntesis, luego aplicamos el operador !. Podemos ajustar cualquier expresión entre paréntesis y se evaluará antes de evaluar la expresión como un todo.
+
+Bucles for:
+
+    //El bucle for es una estructura de control en la que se puede indicar de antemano el numero maximo de iteraciones
+
+    //Estructura:
+        //Primero tenemos la palabra clave for, seguida de paréntesis y luego abrir y cerrar llaves. Dentro de los paréntesis necesitaremos tres cosas. Primero, debemos declarar una variable, esto es sobre lo que se repetirá el bucle. Entonces tendremos una expresión condicional, el ciclo continuará sucediendo hasta que esta declaración sea false. Tercero, incrementaremos nuestra variable. Las tres declaraciones están separadas por un punto y coma.
+
+        for (let i = 0                 ; i <10                  ; i++   ){
+        //| Declaramos la variable   | Expresion condicional  | Incrementamos la variable |
+            console.log(i);
+        }
+
+        //Inicialmente tenemos la variable "i" esta en 0, el ciclo se ejecutara y cada vez que llegue al final aumentara el contador en uno. El bucle forevaluara la expresion condicional. Si es true se ejecutara nuevamente, si es false dejara de funcionar.
+
+Operador ++
+    
+    //Establece el valor de la variable a su valor actual mas uno.
+
+Bucles Infinitos
+
+    for (let i = 0; i >= 0; i++) {
+        console.log(i);
+    }
+
+    //Debido a nuestra expresion condicionalSIEMPRE sera true ( i nunca sera menor que 0), este ciclo se ejecutara esencialmente para siempre. esto interrumpira su programa y se puede bloquear su navegador web o computador.
+
+Arguments
+    como vimos anteriormente, las funciones 
+    son objetios invocables, y podemos hacerlo pasandoles argumentos que varien el comportamiento de estas
+
+    > function log(str) {
+        console.log(str)
+        }
+    > log("hola!")
+    < "hola!"
+
+    //Si sabemos las variables a tomar, como el ejemplo str, podemos darle nombre a este parametro. Sino hay una propiedad arguments, propia de todas las funciones que contiene los parametros pasados como argumento.
+
+    > function args(){
+        console.log(arguments)
+        }
+    >args("hola!", "otro parametro",3)
+    < ["hola!", "otro parametro", 3, callee: "function",
+    Simbol(Simbol.iterator): "function"]
+
+    //arguments nos da acceso a la n cantidad como parametro, pero tengamos en cuenta que no es un arreglo.
+
+    > function args(){
+        return Array.isArray(arguments)
+      }
+    
+    > args(1,2,3)
+    < flase
+
+    //Si queremos saber cuantos parámetros puede recibir una función podemos usar la propiedad length.
+
+    > args.length
+    < 0     //porque en la función "args" definimos 0 parámetros
+
+<<< En el homework de este módulo nos vamos a encontrar con dos temas que no están explicados en este readme: switch y do while. >>>
+
+        The End.

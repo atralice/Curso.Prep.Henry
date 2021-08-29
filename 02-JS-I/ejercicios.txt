@@ -1,0 +1,52 @@
+1)
+    1. Variables:
+        /Una variable es una forma de almacenar o guardar datos. Con ellas es posible crear un "programa generico", o sea, programas que funcionan siempre igual independientemente de los valores concretos utilizados. 
+            /Ej: Sistema de Facturación para una pequeña o mediana empresa. Esta tiene un software generico
+
+    2. Strings:
+        /Son bloques de textos que siempre van a estar definidos entre comillas
+            /Ej: var nombrePerro = "Firulais"
+
+    3. Funciones(argumentos, return):
+        /Son tipos particulares de objetos, llamados callable objects u objetos invocables, por lo que tienen las mismas propiedades que cualquier objeto.
+        /Hay tres formasen que podemos construir una funcion:
+            
+            function miFuncion(){}
+
+            var otraFuncion = function(){};
+
+            var yOtra = () => {} ;
+
+        
+        /La sentencia return tiene dos usos importantes. Primero, fuerza una salida inmediata de la función en que se encuentra. O sea, hace que la ejecución del programa vuelva al código que llamó a la función. En segundo lugar, se puede utilizar para devolver un valor.
+
+        function puedeManejar(edad) {
+            if (edad > 18) {
+                return true;
+            }
+
+            return false;
+        }
+
+        puedeManejar(22); // true
+
+
+    4. Declaraciones (if):
+
+        function puedeManejar(edad) {
+            if (edad > 18) {
+                return true;
+                }
+
+            return false;
+            }
+
+        puedeManejar(22); // true
+
+
+        /Aquí estamos tomando un número (edad) y verificando si la declaración es true (22>18), lo es, por lo que devolveremos true, y la función se detendrá. Si no es así, omitirá ese código y la función devolverá false.
+
+    5. Valores booleanos (true, false):
+        /Un valor booleano representa un valor, es decir, true o false --, existe o no existe, etc.
+
+            var meEncantaJS = true;

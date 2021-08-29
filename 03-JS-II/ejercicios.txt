@@ -1,0 +1,16 @@
+1)
+    1.
+        a_ For:
+            //El bucle for es una estructura de control en la que podemos indicar de antemano el numero inicial y maximo de iteraciones.
+
+    2.
+        a_ &&:
+            //El operador logigo &&  evalua ambas expresiones y devolvera verdadero si ambas expresiones son true. Si una (o ambas) son falsas, este operador devolvera false.
+
+        b_ ||:
+            //El operador logico || determina si una de las expresiones es true. Devuelve true si una (o ambas) de las expresiones es true. Devolvera false si AMBAS espreciones son false
+
+        c_ !:
+            //El operador ! devolvera el valor booleano opuesto al que se lo pase.
+
+            
