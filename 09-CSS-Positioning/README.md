@@ -22,7 +22,7 @@ En esta lección cubriremos:
 * Usar "position" para posicionar elementos.
 * Introducción a Flexbox.
 
-<iframe src="https://player.vimeo.com/video/425169846" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/594723655" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Introducción al posicionamiento
 
