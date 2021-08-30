@@ -19,7 +19,7 @@ En esta lección cubriremos:
 * Clases
 * `prototype`
 
-<iframe src="https://player.vimeo.com/video/425235994" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/594720502" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Clases
 
