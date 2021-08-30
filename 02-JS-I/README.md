@@ -23,7 +23,7 @@ En esta lección cubriremos:
 * Control de flujo y operadores de comparación
 * Introducción a Node y NPM
 
-<iframe src="https://player.vimeo.com/video/594721730?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=c307ce5c36" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Clase 01 Introducci&amp;oacute;n JS.mp4"></iframe>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/594721730?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=c307ce5c36" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Clase 01 Introducci&amp;oacute;n JS.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## Introducción a Javascript
 
