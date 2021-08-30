@@ -20,7 +20,7 @@ En esta lección cubriremos:
 * Más métodos de Arrays
 * Introducción a la programación funcional
 
-<iframe src="https://player.vimeo.com/video/425254623" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/594726480" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Callbacks
 
