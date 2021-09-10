@@ -12,7 +12,7 @@ function crearGato(nombre, edad) {
     meow: function(){
       return  "Meow!"
     }
-  }
+  };
   return gato;
 }
 
@@ -66,7 +66,6 @@ function nuevoUsuario(nombre, email, password) {
     password: password
   }
   return usuario;
-
 }
 
 function tieneEmail(usuario) {
@@ -143,11 +142,6 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-
-//  var usuario ={
-//    post =[(post1), (post2), (post3)],
-//  }
-
 
   var suma = 0;
   for(var i = 0; i < usuario.posts.length; i++){
