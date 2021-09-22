@@ -1,0 +1,33 @@
+body {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+img {
+    display: block;
+    width : 400px;
+    height: auto; /*to preserve the aspect ratio of the image*/
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: burlywood;
+}
+divClass {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#thirdDiv {
+    width : 500px;
+    height: 600px;
+    color : black;
+    padding : 50px 50px 50px 50px;
+    border : 1px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#spanId {
+    font-size : 18px;
+    margin: 50px 50px 50px 50px;
+}
