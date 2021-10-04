@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Declarar Variables */
+
 :root {
     --main-background-color: #fff;
     --text-color-primary: #fff;
-    --main-icon-color: #03a9f4;
-    --alternative-background-color: #003147;
+    --main-icon-color: #3bc4ff;
+    --alternative-background-color: #227093;
     --main-text-color: #000;
     --alternative-text-color: #000;
 }
+
 /* Aplicar a todo el documentos */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,9 +19,11 @@
     font-family: 'Roboto', sans-serif;
     /* border: 1px solid red; */
 }
+
 /* General */
+
 body {
-    background-color: lightblue;
+    background-color: rgb(207, 220, 224);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +40,9 @@ body {
     display: grid;
     grid-template-columns: 1.2fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, .1)
+}
+a{
+    text-decoration: none;
 }
 
 /* Lado izquierdo */
@@ -146,21 +154,18 @@ body {
     font-size: .8em;
     font-weight: 600;
     letter-spacing: .8px;
-
-    
-    
 }
 
-.contactInfo .languages .percent{
+.contactInfo .languages .percent {
     position: relative;
     width: 100%;
-    height: 6px;
+    height: 8px;
     background-color: #081921;
     display: block;
     margin-top: 5px;
 }
 
-.contactInfo .languages .percent div{
+.contactInfo .languages .percent div {
     position: absolute;
     top: 0;
     left: 0%;
@@ -169,40 +174,46 @@ body {
 }
 
 /* Lado Derecho */
+
+/* Perfil */
 .container .right_side {
     position: relative;
     background: var(--main-background-color);
     padding: 40px;
 }
 
-.about{
+.about {
     margin-bottom: 50px;
 }
-.about:last-child{
+
+.about:last-child {
     margin-bottom: 0px;
 }
-.about .tittle2{
+
+.about .tittle2 {
     color: var(--alternative-background-color);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
-.about p{
+.about p {
     color: #333;
 }
 
-.about .box{
+/* Experiencia */
+.about .box {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
 }
 
-.about .box .year-company{
+.about .box .year-company {
     min-width: 150px;
     max-width: 150px;
 }
-.about .box .year-company h5{
+
+.about .box .year-company h5 {
     text-transform: uppercase;
     color: #848c90;
     font-weight: 600;
@@ -213,23 +224,23 @@ body {
     color: #2a7da2;
     font-size: 16px;
 }
-
-.skills .box{
+/* Habilidades Profesionales */
+.skills .box {
     position: relative;
-    width:  100%;
-    display:  grid;
+    width: 100%;
+    display: grid;
     grid-template-columns: 150px 1fr;
     justify-content: center;
     align-items: center;
 }
 
-.skills .box h4{
+.skills .box h4 {
     text-transform: uppercase;
     color: #848c90;
     font-weight: 500;
 }
 
-.skills .box .percent{
+.skills .box .percent {
     position: relative;
     width: 100%;
     height: 10px;
@@ -238,28 +249,27 @@ body {
     margin-top: 5px;
 }
 
-.skills .box .percent div{
+.skills .box .percent div {
     position: absolute;
     top: 0;
     left: 0%;
     height: 100%;
-    background-color: var(--main-icon-color)
-    ;
+    background-color: var(--main-icon-color);
 }
-
-.interest ul{
+/* Intereses */
+.interest ul {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.interest ul li{
+.interest ul li {
     list-style: none;
     color: #333;
     font-weight: 500;
     margin: 10px;
 }
-.interest ul li .fas{
+
+.interest ul li .fas {
     color: var(--main-icon-color);
     font-size: 18px;
     width: 20px;
@@ -267,26 +277,28 @@ body {
 }
 
 @media (max-width:1000px) {
-    .container{
+    .container {
         margin: 10px;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .interest ul{
-        grid-template-columns: repeat(3,1fr);
+    .interest ul {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
+
 @media (max-width:600px) {
-    .about .box{
+   
+    .about .box {
         flex-direction: column;
     }
-    .about .box .year-company{
+    .about .box .year-company {
         max-width: 300px;
         margin-bottom: 5px;
     }
-    .interest ul{
-        grid-template-columns: repeat(3,1fr);
+    .interest ul {
+        grid-template-columns: repeat(4, 1fr);
     }
-    .skills .box{
-        grid-template-columns: repeat(1,1fr);
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
