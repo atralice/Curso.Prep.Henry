@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Declarar Variables */
+:root {
+    --main-background-color: #fff;
+    --text-color-primary: #fff;
+    --main-icon-color: #03a9f4;
+    --alternative-background-color: #003147;
+    --main-text-color: #000;
+    --alternative-text-color: #000;
+}
+/* Aplicar a todo el documentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
+}
+/* General */
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: var( --main-background-color);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, .1)
+}
+
+/* Lado izquierdo */
+
+.container .left_side {
+    position: relative;
+    background: var(--alternative-background-color);
+    padding: 30px;
+    /*  position: fixed;
+    z-index: 9999;
+    height: 100vh;
+    top: 0;
+    left: 0; */
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: var(--main-background-color);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    list-style: 1.4em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo {
+    padding-top: 40px;
+}
+
+.contactInfo .tittle {
+    color: var(--text-color-primary);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    color: var(--text-color-primary);
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: var(--main-icon-color);
+}
+
+.contactInfo ul li span {
+    color: var(--text-color-primary);
+    font-weight: 300;
+}
+
+.contactInfo .education li {
+    margin-bottom: 15px;
+}
+
+.contactInfo .education h5 {
+    color: var(--main-icon-color);
+    font-weight: 500;
+}
+
+.contactInfo .education h4 {
+    color: var(--text-color-primary);
+    font-weight: 500;
+}
+
+.contactInfo .education h6 {
+    color: var(--text-color-primary);
+    font-size: .8em;
+    font-weight: 600;
+    letter-spacing: .8px;
+
+    
+    
+}
+
+.contactInfo .languages .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo .languages .percent div{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    background-color: var(--main-icon-color);
+}
+
+/* Lado Derecho */
+.container .right_side {
+    position: relative;
+    background: var(--main-background-color);
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0px;
+}
+.about .tittle2{
+    color: var(--alternative-background-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about p{
+    color: #333;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year-company{
+    min-width: 150px;
+    max-width: 150px;
+}
+.about .box .year-company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.skills .box{
+    position: relative;
+    width:  100%;
+    display:  grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+    display: block;
+    margin-top: 5px;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    background-color: var(--main-icon-color)
+    ;
+}
+
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px;
+}
+.interest ul li .fas{
+    color: var(--main-icon-color);
+    font-size: 18px;
+    width: 20px;
+    margin-right: 7px;
+}
+
+@media (max-width:1000px) {
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:600px) {
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year-company{
+        max-width: 300px;
+        margin-bottom: 5px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
