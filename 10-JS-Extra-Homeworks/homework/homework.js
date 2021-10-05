@@ -10,14 +10,12 @@ function deObjetoAmatriz(objeto) {
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
-    let array = []
-  for(ob in objeto){
-    array.push([ob,objeto[ob]])
+  let array = [];
+  for (ob in objeto) {
+    array.push([ob, objeto[ob]]);
   }
-  return array
+  return array;
 }
-
-
 
 function numberOfCharacters(string) {
   //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece
@@ -27,14 +25,14 @@ function numberOfCharacters(string) {
   let dict = {};
   for (letter of string) {
     if (letter in dict) {
-      ++dict[letter]
+      ++dict[letter];
     } else {
-      dict[letter] = 1
+      dict[letter] = 1;
     }
   }
-  return dict
-}
 
+  return dict;
+}
 
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
@@ -53,40 +51,36 @@ function capToFront(s) {
   return arrayjoin.concat(stringreplace);
 }
 
-
 function asAmirror(str) {
-  //La función recibe una frase. 
-  //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda a derecha 
+  //La función recibe una frase.
+  //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda a derecha
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí:
-  let strToArray = str.split(" ")
-  let newArray = []
-  for(let i = 0; i < strToArray.length; i++){
-    newArray.push(strToArray[i].split("").reverse().join(""))
+  let strToArray = str.split(" ");
+  let newArray = [];
+  for (let i = 0; i < strToArray.length; i++) {
+    newArray.push(strToArray[i].split("").reverse().join(""));
   }
-  return newArray.join(" ")
-} 
+  return newArray.join(" ");
+}
 
-
-function capicua(numero){
+function capicua(numero) {
   //Escribe una función, la cual recibe un número y determina si es o no capicúa.
-  //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
+  //La misma debe retornar: "Es capicua" si el número se número que se lee igual de
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
-  let numStr = numero.toString()
-  if(numStr === numStr.split("").reverse().join("")) return "Es capicua"
-  return "No es capicua"
+  let numStr = numero.toString();
+  if (numStr === numStr.split("").reverse().join("")) return "Es capicua";
+  return "No es capicua";
 }
 
-
-function deleteAbc(cadena){
-  //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
+function deleteAbc(cadena) {
+  //Define una función que elimine las letras "a", "b" y "c" de la cadena dada
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
-  return cadena.replace(/[abc]/gi,"")
+  return cadena.replace(/[abc]/gi, "");
 }
-
 
 function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
@@ -95,38 +89,34 @@ function sortArray(arr) {
   return arr.sort((a, b) => a.length - b.length);
 }
 
-
-function buscoInterseccion(arreglo1, arreglo2){
-  //Existen dos arrays, cada uno con 5 números. A partir de ello, escribir una función que permita 
+function buscoInterseccion(arreglo1, arreglo2) {
+  //Existen dos arrays, cada uno con 5 números. A partir de ello, escribir una función que permita
   //retornar un nuevo array con la intersección de ambos elementos. (Ej: [4,2,3] unión [1,3,4] = [3,4].
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
-  //Escribe tu código aquí 
-  let arrayVacio = []
-  for(let i = 0; i < arreglo1.length; i++){
-    for(let j = 0; j < arreglo2.length; j++){
-      console.log(j)
-      if(arreglo1[i] == arreglo2[j]){
-        arrayVacio.push(arreglo1[i])
+  //Escribe tu código aquí
+  let arrayVacio = [];
+  for (let i = 0; i < arreglo1.length; i++) {
+    for (let j = 0; j < arreglo2.length; j++) {
+      console.log(j);
+      if (arreglo1[i] == arreglo2[j]) {
+        arrayVacio.push(arreglo1[i]);
       }
     }
   }
-  return arrayVacio 
+  return arrayVacio;
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
 
 module.exports = {
-   deObjetoAmatriz,
-   numberOfCharacters,
-   capToFront,
-   asAmirror,
-   capicua,
-   deleteAbc,
-   sortArray,
-   buscoInterseccion,
+  deObjetoAmatriz,
+  numberOfCharacters,
+  capToFront,
+  asAmirror,
+  capicua,
+  deleteAbc,
+  sortArray,
+  buscoInterseccion,
 };
-
