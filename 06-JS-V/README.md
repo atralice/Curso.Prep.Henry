@@ -70,7 +70,7 @@ let juan = new Usuario('Juan', 'juan.perez');
 let antonio = new Usuario('Antonio', 'atralice');
 
 console.log(juan.introduccion()); // Mi nombre es Juan, mi usuario de Github es juan.perez.
-console.log(riley.introduccion()); // Mi nombre es Antonio, mi usuario de Github es atralice.
+console.log(antonio.introduccion()); // Mi nombre es Antonio, mi usuario de Github es atralice.
 
 ```
 
@@ -89,7 +89,7 @@ El método `create` de los objetos nos permite crear un nuevo objeto a partir de
 > obj
 < Object {}
 
-// creo que un objeto a partir de un proto de Objeto
+// creo un objeto a partir de un proto de Objeto
 > var obj = Object.create(Object.prototype)
 // que es lo mismo que crear un objeto vacio literal
 > var obj = {}
