@@ -28,6 +28,8 @@ Acá vas a encontrar todo lo que necesitas para arrancar el Curso de Preparació
 
 > **Nota**: Wanda menciona un mail con la invitacion al repo, ahora el repo es público, por lo tanto *no es necesario ese email*. Se puede acceder en este [link](https://github.com/atralice/Curso.Prep.Henry).
 
+> **Importante**: Github cambió el método de autenticación, ahora es por PAT (Personal Access Token), para crearlo pueden seguir este [link](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). Pueden elegir expiration infinita para hacerlo una sóla vez.
+
 ### Cómo usar SLACK
 
 <iframe src="https://player.vimeo.com/video/548902078" width="640" height="365" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
