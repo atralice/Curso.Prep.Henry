@@ -1,0 +1,18 @@
+
+        h1{
+           color:dodgerblue; 
+        }
+        img{
+            width: 400px;
+        }
+        #thirdDiv{
+            height: 600px;
+            width: 500px;
+            background-color: dodgerblue;
+            border: 5px solid royalblue;
+        }
+        #spanId{
+            font-size: 18px;
+            margin: 50px;
+        }
+    
