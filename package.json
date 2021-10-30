@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2",
     "axios": "^0.21.4",
     "git-remote-origin-url": "^3.1.0",
     "git-url-parse": "^11.6.0",

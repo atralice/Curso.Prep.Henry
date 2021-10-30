@@ -9,12 +9,22 @@
 <body>
 
   <header>
-    <img src='/_src/assets/logo-white.png' height=30px alt='logo Henry'/>
+    <div>
+      <img src='/_src/assets/logo-white.png' height=30px alt='logo Henry'/>
+    </div>
+    <div class='lessonTitle'>
+      < {{ title }} >
+    </div>
   </header>
 
+
+  <nav>
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+  </nav>
+
   <main>
-    {{ content | safe }}
-  </ma>
+      {{ content | safe }}
+  </main>
 
   <footer>
   <h5>Hecho con 💛 por alumnos de Henry</h5>
