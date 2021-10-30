@@ -1,7 +1,12 @@
-<p align='left'>
-    <img  src='../logo.png' height='70px'>
-</p>
-<table width="100%" style='table-layout:fixed;'>
+---
+title: 'JavaScript IV: Objetos'
+eleventyNavigation:
+  key: 'JavaScript IV: Objetos'
+  # parent: Introducción
+  order: 6
+---
+
+<!-- <table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=05-JS-IV">
@@ -11,7 +16,7 @@
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 # Lección 5: Javascript IV (Objetos)
 
 En esta lección cubriremos:

@@ -1,5 +1,13 @@
+---
+title: Introducción
+permalink: "/index.html"
+eleventyNavigation:
+  key: Introducción
+  order: 0
+---
+
 ## Introducción
-# Modulo 0 - Prep
+<!-- # Modulo 0 - Prep
 
 * [00 - Primeros Pasos](./00-PrimerosPasos)
 * [01 - Git](./01-Git)
@@ -10,10 +18,10 @@
 * [06 - V - Clases y prototype](./06-JS-V)
 * [07 - VI - Callbacks](./07-JS-VI)
 * [08 - HTML](./08-HTML)
-* [09 - CSS](./09-CSS-Positioning)
+* [09 - CSS](./09-CSS-Positioning) -->
 * Henry Challenge => [Inscribite acá para rendir](https://challenge.prep.soyhenry.com/)
 
-## Conceptos:
+## Conceptos
 
 * [Expressions vs Statements](./JS-conceptos/Statements-Expressions/)
 
@@ -36,8 +44,7 @@ Esto instalará todas las dependencias necesarias (lo tenés que hacer una sóla
 npm test {nombre del homework}.test.js
 ```
 
-Por ejemplo, para ejecutar los tests del homework 02, ejecutar: `npm test JSII.test.js`,
-el del homework 01: `npm test JSI.test.js`
+Por ejemplo, para ejecutar los tests del homework 02, ejecutar: `npm test JSII.test.js`, el del homework 01: `npm test JSI.test.js`
 y así.
 
 > No todos los homeworks tienen tests, está detallado en la descripción de cada uno.

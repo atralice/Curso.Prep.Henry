@@ -1,4 +1,11 @@
-<img  src='../logo.png' height='70px'>
+---
+title: Git
+eleventyNavigation:
+  key: Git
+  # parent: Introducción
+  order: 2
+---
+<!-- 
 <table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
@@ -9,7 +16,7 @@
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 
 # Git - Lección 1
 

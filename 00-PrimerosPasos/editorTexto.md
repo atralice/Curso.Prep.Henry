@@ -1,3 +1,11 @@
+<!-- ---
+title: Editor de Texto
+eleventyNavigation:
+  key: Editor de Texto
+  parent: Primeros Pasos
+  order: 1
+--- -->
+
 # Editor de Texto.
 
 Para poder escribir código que pueda ser interpretado por un lenguaje de programación, necesitamos utilizar un editor de texto.

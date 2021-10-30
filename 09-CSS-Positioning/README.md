@@ -1,7 +1,12 @@
-<p align='left'>
-    <img  src='../logo.png' height='70px'>
-</p>
-<table width="100%" style='table-layout:fixed;'>
+---
+title: 'CSS'
+eleventyNavigation:
+  key: 'CSS'
+  # parent: Introducción
+  order: 10
+---
+
+<!-- <table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=09-CSS-Positioning">
@@ -11,7 +16,7 @@
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 # Lección 9: CSS Intermedio
 
 En esta lección cubriremos:

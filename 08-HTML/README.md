@@ -1,7 +1,12 @@
-<p align='left'>
-    <img  src='../logo.png' height='70px'>
-</p>
-<table width="100%" style='table-layout:fixed;'>
+---
+title: HTML
+eleventyNavigation:
+  key: HTML
+  # parent: Introducción
+  order: 9
+---
+
+<!-- <table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=08-HTML">
@@ -11,7 +16,7 @@
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 
 # Lección 8: Fundamentos HTML/CSS
 

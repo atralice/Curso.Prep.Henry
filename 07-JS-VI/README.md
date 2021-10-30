@@ -1,7 +1,12 @@
-<p align='left'>
-    <img  src='../logo.png' height='70px'>
-</p>
-<table width="100%" style='table-layout:fixed;'>
+---
+title: "JavaScript VI: Callbacks"
+eleventyNavigation:
+  key: "JavaScript VI: Callbacks"
+  # parent: Introducción
+  order: 8
+---
+
+<!-- <table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=07-JS-VI">
@@ -11,7 +16,7 @@
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 # Lección 7: Javascript VI (Callbacks)
 
 En esta lección cubriremos:

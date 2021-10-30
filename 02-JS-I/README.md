@@ -1,5 +1,12 @@
-<img  src='../logo.png' height='70px'>
-<table width="100%" style='table-layout:fixed;'>
+---
+title: JavaScript I
+eleventyNavigation:
+  key: JavaScript I
+  # parent: Introducción
+  order: 3
+---
+
+<!-- <table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=02-JS-I">
@@ -9,7 +16,7 @@
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 
 # Lección 2: Introducción a Javascript
 
@@ -42,9 +49,9 @@ Para crear una variable en JavaScript utilizamos la palabra clave `var`, seguida
 Existen tres formas de declarar una variable:
 
 ```javascript
-    var nombre = 'Juan'; // Vamos a usar principalemente esta forma
-    let apellido = 'Perez';
-    const comidafavorita = 'Pizza';
+var nombre = 'Juan'; // Vamos a usar principalemente esta forma
+let apellido = 'Perez';
+const comidafavorita = 'Pizza';
 ```
 
 ### var

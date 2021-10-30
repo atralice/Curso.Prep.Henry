@@ -1,7 +1,12 @@
-<p align='left'>
-    <img  src='../logo.png' height='70px'>
-</p>
-<table width="100%" style='table-layout:fixed;'>
+---
+title: JavaScript II
+eleventyNavigation:
+  key: JavaScript II
+#   parent: Introducción
+  order: 4
+---
+
+<!-- <table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=03-JS-II">
@@ -11,7 +16,7 @@
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 # Lección 3: Javascript II (Flujos de control, operadores de comparación, bucles `for`)
 
 En esta lección cubriremos:

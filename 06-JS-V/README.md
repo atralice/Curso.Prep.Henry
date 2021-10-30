@@ -1,7 +1,12 @@
-<p align='left'>
-    <img  src='../logo.png' height='70px'>
-</p>
-<table width="100%" style='table-layout:fixed;'>
+---
+title: 'JavaScript V: Clases y prototype'
+eleventyNavigation:
+  key: 'JavaScript V: Clases y prototype'
+  # parent: Introducción
+  order: 7
+---
+
+<!-- <table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=06-JS-V">
@@ -11,7 +16,7 @@
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 # Lección 6: Javascript V (Clases y `prototype`)
 
 En esta lección cubriremos:
