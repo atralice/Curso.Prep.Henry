@@ -13,10 +13,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-ul {
-  list-style: none;
-}
-
 header {
   /* border-style: solid; */
   /* display: flex;
@@ -78,6 +74,7 @@ nav li {
 nav ul {
   padding: 0rem;
   margin: 5rem 0 0 1rem;
+  list-style: none;
 }
 
 main {
@@ -87,7 +84,12 @@ main {
   color: black;
   font-size: 1.2em;
   text-align: justify;
-  margin-left: 210px;
+  margin-left: 215px;
+}
+
+main ul {
+  list-style: square;
+  margin-left: 2rem;
 }
 
 footer {
@@ -114,21 +116,10 @@ pre code {
   margin-left: 1rem;
   display: block;
   width: 600px;
-  /* white-space: pre-line; */
 }
 
 code {
-  /* margin: 1rem 0 0.5rem 0; */
-  /* color:forestgreen; */
   font-weight: bold;
-  /* background-color:rgb(197, 197, 197); */
-  /* border: 1px solid #999; */
-  /* border-radius: 0.2rem; */
-  /* padding: 0 0.1rem 0 0.5rem; */
-  /* margin-left: 1rem; */
-  /* display: block; */
-  /* width: 500px; */
-  /* white-space: pre-line; */
 }
 
 h1 {
@@ -142,7 +133,6 @@ h2 {
 h3 {
   margin: 1rem 0 1rem 0
 }
-
 
 p {
   margin: 1rem 0 1rem 0
