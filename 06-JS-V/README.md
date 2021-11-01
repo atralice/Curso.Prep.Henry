@@ -36,7 +36,8 @@ Si tienes experiencia en un lenguaje orientado a objetos (como Java o C#), proba
 
 En este ejemplo crearemos una clase `Gato`. La convención para las clases consiste en dar un nombre en mayúscula al nombre de todo lo que se pueda instanciar con la palabra clave `new`. Cuando usamos la palabra clave `new`, Javascript hace un gran trabajo detrás de escena para nosotros y crea y devuelve un objeto automáticamente.
 
-```javascript
+```js
+
 function Gato(nombre) {
     // El nuevo operador crea un objeto, "this"
     this.nombre = nombre;
@@ -120,7 +121,7 @@ En el paradigma de _Programación Orientada a Objetos_ un tema muy importante es
 
 Cuando hacemos referencia a **Herencia** nos referimos a la capacidad de un constructor de _heredar_ propiedades y métodos de otro constructor, así como un Gato es Mamífero antes que Gato, y hereda sus 'propiedades' (nace, se reproduce y muere).
 
-Cuando hablamos de **Polimorfismo** nos referimos a la capacidad de que objetos distintos puedan responder a un llamado igual de acuerdo a su propia naturaleza. 
+Cuando hablamos de **Polimorfismo** nos referimos a la capacidad de que objetos distintos puedan responder a un llamado igual de acuerdo a su propia naturaleza.
 
 ## Herencia en JavaScript
 
@@ -211,6 +212,7 @@ Vamos a solucionar ese problema agregando al prototipo los métodos de Persona, 
 ```
 
 ## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
+
 [Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/06-JS-V/homework)
 
 ## Recursos adicionales
