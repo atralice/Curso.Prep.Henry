@@ -34,13 +34,13 @@ Estudiantes más avanzados de la carrera resuelven los ejercicios en vivo en for
 
 __IMPORTANTE:__ Para ejecutar los tests de cada homework tenes que pararte en la carpeta donde clonaste tu repo (es decir la carpeta donde está este `README.md`) y ejecutar el siguiente comando:
 
-```text
+```shell
 npm install
 ```
 
 Esto instalará todas las dependencias necesarias (lo tenés que hacer una sóla vez), una vez terminado y cada vez que quieras ver cuantos tests pasaste ejecutá:
 
-```text
+```shell
 npm test {nombre del homework}.test.js
 ```
 
