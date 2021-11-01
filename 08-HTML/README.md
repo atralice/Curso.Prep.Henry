@@ -51,7 +51,6 @@ HTML define una serie de elementos (o etiquetas, o tags) que serviran para delim
 
 ![alt text](./img/html.jpg)
 
-
 Algunos tags html, por su naturaleza, no necesitan tener nada *adentro*. Por lo tanto podemos abreviar su escritura y en vez de abrir y cerrar el tag, simplemente agregamos un "/" antes del bracket final.
 
 ```html
@@ -95,6 +94,7 @@ Entonces, hasta ahora, un documento HTML se ve así:
     </body>
   </html>
 ```
+
 Como ven, para mayor fácilidad en la lectura y la estructuración del documento, el documento HTML se escribe [indentando (o usando sangría)](https://es.wikipedia.org/wiki/Indentaci%C3%B3n).
 
 (Todos los tags que presentaremos más abajo van siempre adentro de un tag `<body>`)
@@ -198,13 +198,13 @@ Hay varias formas de lograr esto (más adelante veremos en detalle como funciona
 
 Todos los *tags* HTML pueden recibir el atributo `style`. Este atributo indica las reglas CSS (que veremos más abajo), que se aplicaran **sólo** al elemento que las tiene.
 
-` <h1 style="color:blue;">Esto es un título Azul</h1>`
+`<h1 style="color:blue;">Esto es un título Azul</h1>`
 
 Pros:
-  * Fácil de escribir y leer.
-  * Cómo se aplican a un sólo elemento no hay forma de confundirse y que se aplique la regla a un elemento no deseado.
+* Fácil de escribir y leer.
+* Cómo se aplican a un sólo elemento no hay forma de confundirse y que se aplique la regla a un elemento no deseado.
 Cons:
-  * La regla aplica a un sólo elemento, si quisieramos que varios elementos tengan la misma regla, deberíamos copypastear!
+* La regla aplica a un sólo elemento, si quisieramos que varios elementos tengan la misma regla, deberíamos copypastear!
 
 ### \<style/>
 
@@ -346,6 +346,7 @@ Podemos decirle al navegador exactamente qué tan *ancho* y *alto* queremos que 
     width: 400px;
   }
 ```
+
 ### margin
 
 El margen es el área transparente alrededor del elemento que deseas que no choque con nada. Es la capa más externa en el Modelo de caja.
@@ -359,6 +360,7 @@ Borde establecerá un *borde* alrededor de su elemento, puedes determinar el tam
     border: 1px solid black;
   }
 ```
+
 ### padding
 
 El padding es el area transparente entre el borde y el contenido, es similar al margen, pero para adentro
@@ -385,7 +387,7 @@ Saber esto nos ayudará a dimensionar y posicionar nuestros elementos correctame
 
 El background se puede establecer en una variedad de reglas, la más común sería establecer el fondo en un color o una imagen. Ambos se muestran a continuación.
 
-```Css
+```css
   .divClass {
     background: red;
   }
@@ -414,7 +416,7 @@ La bandera rel solo le dirá al navegador qué tipo de archivo es y cómo proces
 
 La bandera href le dirá al navegador dónde encontrar el archivo. Si el archivo está en la misma carpeta que nuestro archivo html, podemos configurarlo en: "./styles.css" (esta ruta será relativa)
 
-```HTML
+```html
   <link rel = "stylesheet" href = "./ styles.css" />
 ```
 
