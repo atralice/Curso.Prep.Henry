@@ -36,8 +36,8 @@ HTML es el bloque básico con el que está construido internet. Todas las págin
 
 HTML es la abreviatura de **Hyper Text Markup Language**:
 
-  - Hyper Text: "Hyper Texto" quiere decir [texto con links](https://es.wikipedia.org/wiki/Hipertexto)
-  - Markup Language: Los "Lenguajes de Marcado" son lenguajes de programación basados en etiquetas que uno agrega a un texto para darle estructura e información adicional. A diferencia de los "Lenguajes de Scripting" que se usan para crear programas informáticos, los lenguajes de marcado son sólo reglas para ordenar un documento.
+* Hyper Text: "Hyper Texto" quiere decir [texto con links](https://es.wikipedia.org/wiki/Hipertexto)
+* Markup Language: Los "Lenguajes de Marcado" son lenguajes de programación basados en etiquetas que uno agrega a un texto para darle estructura e información adicional. A diferencia de los "Lenguajes de Scripting" que se usan para crear programas informáticos, los lenguajes de marcado son sólo reglas para ordenar un documento.
 
 ## Elementos básicos HTML
 
@@ -190,20 +190,26 @@ Es importante notar que distintos atributos pueden recibir distintos valores, ge
 
 Antes de empezar a dar estilos, necesitamos una forma de decirle al browser qué vamos a darles reglas de estilo.
 Hay varias formas de lograr esto (más adelante veremos en detalle como funcionan cada una):
-  * usando el atributo style: esta es la forma primitiva más simple, básicamente le damos reglas a cada tag html.
-  * usando el tag `<style/>`: Se utiliza este tag en el `<head>` del documento HTML, con esto logramos agrupar todas las reglas que luego queremos que se apliquen a los elementos HTML.
-  * Usar el tag `<link/>`: Este método nos permite definir las reglas CSS en un documento separado e *importarlo* a nuestra página (la ventaja que tiene es que podemos importar el mismo CSS a varias páginas).
+
+* usando el atributo style: esta es la forma primitiva más simple, básicamente le damos reglas a cada tag html.
+* usando el tag `<style/>`: Se utiliza este tag en el `<head>` del documento HTML, con esto logramos agrupar todas las reglas que luego queremos que se apliquen a los elementos HTML.
+* Usar el tag `<link/>`: Este método nos permite definir las reglas CSS en un documento separado e *importarlo* a nuestra página (la ventaja que tiene es que podemos importar el mismo CSS a varias páginas).
 
 ### Atributo style
 
 Todos los *tags* HTML pueden recibir el atributo `style`. Este atributo indica las reglas CSS (que veremos más abajo), que se aplicaran **sólo** al elemento que las tiene.
 
-`<h1 style="color:blue;">Esto es un título Azul</h1>`
+```html
+<h1 style="color:blue;">Esto es un título Azul</h1>
+```
 
 Pros:
+
 * Fácil de escribir y leer.
 * Cómo se aplican a un sólo elemento no hay forma de confundirse y que se aplique la regla a un elemento no deseado.
+
 Cons:
+
 * La regla aplica a un sólo elemento, si quisieramos que varios elementos tengan la misma regla, deberíamos copypastear!
 
 ### \<style/>
@@ -223,19 +229,20 @@ El tag *style*, que se escribe en el <head> del documento, nos permite escribir 
 ```
 
 Pros:
-  * Lugar central donde podemos escribir las reglas CSS del documento
-  * Podemos compartir reglas entre varios elementos iguales
-Cons:
-  * No podemos compartir las reglas con *otro* documento HTML.
-  * Hay que prestar atención a las reglas, y a qué elementos se aplican.
 
+* Lugar central donde podemos escribir las reglas CSS del documento
+* Podemos compartir reglas entre varios elementos iguales
+
+Cons:
+
+* No podemos compartir las reglas con *otro* documento HTML.
+* Hay que prestar atención a las reglas, y a qué elementos se aplican.
 
 ### <link/>
 
 Con el tag `<link>` dentro del `<head>` del documento, vamos a poder *importar* un archivo css que contenga varias reglas CSS. Funciona similar al tag `<style/>` anterior. Pero ahora tenemos la ventaja que podemos *compartir* el mismo archivo css con varios documentos HTML.
 
 ```html
-
  <!DOCTYPE html>
 <html>
 <head>
@@ -247,11 +254,14 @@ Con el tag `<link>` dentro del `<head>` del documento, vamos a poder *importar* 
 ```
 
 Pros:
-  * Lugar central donde podemos escribir las reglas CSS del documento
-  * Podemos compartir reglas entre varios elementos iguales
-  * Podemos compartir reglas entre varios documentos HTML
+
+* Lugar central donde podemos escribir las reglas CSS del documento
+* Podemos compartir reglas entre varios elementos iguales
+* Podemos compartir reglas entre varios documentos HTML
+  
 Cons:
-  * Hay que prestar atención a las reglas, y a qué elementos se aplican.
+
+* Hay que prestar atención a las reglas, y a qué elementos se aplican.
 
 ### Selectores
 
