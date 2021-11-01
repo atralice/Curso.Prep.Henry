@@ -49,7 +49,7 @@ HTML define una serie de elementos (o etiquetas, o tags) que serviran para delim
   </element>
 ```
 
-![alt text](./img/html.jpg)
+![alt text](/_src/assets/08-HTML/html.jpg)
 
 Algunos tags html, por su naturaleza, no necesitan tener nada *adentro*. Por lo tanto podemos abreviar su escritura y en vez de abrir y cerrar el tag, simplemente agregamos un "/" antes del bracket final.
 
@@ -267,7 +267,7 @@ Cons:
 
 Para poder aplicar reglas de estilo a los elementos html, necesitamos una forma de saber cómo seleccionar los elementos a los que deseamos aplicar las reglas, para esto sirven los *selectores CSS*.
 
-![alt text](./img/css-declaration-small.png)
+![alt text](/_src/assets/08-HTML/css-declaration-small.png)
 
 Hay varios tipos de selectores, los más básicos son los de tipo, donde indicamos a qué clase de elemntos se van a aplicar las reglas, el ejemplo de arriba usa un selector de tipo. Está diciendo: *aplicarle a todos los elementos de tipo <p\/> la regla de texto color rojo*.
 
@@ -334,7 +334,7 @@ Ahora que tenemos los elementos seleccionados podemos empezar a agregar las regl
 
 Para poder entender y luego manipular la forma en que los elementos HTML aparecen distribuidos en la página, tenemos que aprender cómo son representados estos en el browser.
 
-![Image](./img/boxModel.png)
+![Image](/_src/assets/08-HTML/boxModel.png)
 
 En un documento html cada elemento es representado como una *caja rectangular* y en CSS cada una de estas cajas tiene 4 capas que podemos manipular. Yendo desde afuera hacia adentro, las capas son:
 

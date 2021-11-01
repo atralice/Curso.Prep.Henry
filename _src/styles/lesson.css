@@ -48,7 +48,7 @@ nav {
   border-color: rgb(180, 180, 180);
   background-color: rgb(235, 235, 235);
   border-width: 1px;
-  z-index: 0;
+  z-index: 9;
 }
 
 nav a {
@@ -100,7 +100,7 @@ footer {
   margin: 2rem 0 0 0;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  z-index: 8;
   text-align: center;
 }
 
