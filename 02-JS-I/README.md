@@ -224,9 +224,9 @@ Las funciones son una parte muy importante de todo lenguaje de programacion y so
 Ahora que tenemos un conjunto de variables, necesitamos funciones para calcularlas, cambiarlas, hacer algo con ellas. Hay tres formas en que podemos construir una función.
 
 ```javascript
-    function miFuncion() {}
-    var otraFuncion = function () {};
-    var yOtra = () => {};
+function miFuncion() {}
+var otraFuncion = function () {};
+var yOtra = () => {};
 ```
 
 Usaremos la primera forma en esta lección y hablaremos sobre las otras formas en próximas lecciones.
