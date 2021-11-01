@@ -51,18 +51,22 @@ nav {
   z-index: 9;
 }
 
-nav a {
+nav div {
+  /* border-style: solid; */
+  margin: 5rem 0 0 0rem;
+}
+
+nav div a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  /* padding: 10px 30px; */
   display: block;
 }
 
-nav a:hover {
+nav div a:hover {
   color: rgb(88, 80, 80);
 }
 
-nav a:active {
+nav div a:active {
   color: rgb(255, 238, 0);
 }
 
@@ -72,8 +76,8 @@ nav li {
 }
 
 nav ul {
-  padding: 0rem;
-  margin: 5rem 0 0 1rem;
+  /* padding: 1rem; */
+  margin: 0 0 0 1rem;
   list-style: none;
 }
 
