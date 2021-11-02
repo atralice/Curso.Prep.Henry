@@ -17,7 +17,10 @@ eleventyNavigation:
     </td>
   </tr>
 </table> -->
-# Lección 4: Javascript III (continuación de bucles `for` y Arrays)
+
+# Lección 4: Javascript III
+
+## continuación de bucles `for` y Arrays
 
 En esta lección cubriremos:
 
@@ -36,7 +39,7 @@ const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
 
 ### .length
 
-Al igual que el tipo de dato _String_ tiene un método incorporado `.length`, también lo hace la matriz. De hecho, la matriz tiene muchos métodos incorporados útiles (los discutiremos en lecciones posteriores). Al igual que la cadena `.length` cuenta los caracteres, la matriz` .length` devolverá el número de elementos en una matriz:
+Al igual que el tipo de dato _String_ tiene un método incorporado `.length`, también lo hace la matriz. De hecho, la matriz tiene muchos métodos incorporados útiles (los discutiremos en lecciones posteriores). Al igual que la cadena `.length` cuenta los caracteres, la matriz`.length` devolverá el número de elementos en una matriz:
 
 ```javascript
 const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
@@ -80,9 +83,10 @@ nombresEstudiantes[0] = 'Jorge';
 
 console.log(nombresEstudiantes);  // ['Jorge', 'Antonio', 'Sara', 'Samuel']
 ```
-### `.push` y `.pop`
 
-Otros dos métodos de matriz incorporados muy útiles son `.push` y` .pop`. Estos métodos se refieren a la adición y eliminación de elementos de la matriz después de su declaración inicial.
+### .push y .pop
+
+Otros dos métodos de matriz incorporados muy útiles son `.push` y `.pop`. Estos métodos se refieren a la adición y eliminación de elementos de la matriz después de su declaración inicial.
 
 `.push` agrega un elemento al final de la matriz, incrementando su longitud en 1. `.push` devuelve la nueva longitud.
 
@@ -104,9 +108,9 @@ nombresEstudiantes.pop();
 console.log(nombresEstudiantes);  // ['Martin', 'Antonio', 'Sara']
 ```
 
-### `.unshift` y `.shift`
+### .unshift y .shift
 
-`.unshift` y` .shift` son exactamente como `.push` y` .pop`, excepto que operan en el primer elemento de la matriz. `.unshift(item)` colocará un nuevo elemento en la primera posición de la matriz, y `.shift()` eliminará el primer elemento de la matriz.
+`.unshift` y `.shift` son exactamente como `.push` y `.pop`, excepto que operan en el primer elemento de la matriz. `.unshift(item)` colocará un nuevo elemento en la primera posición de la matriz, y `.shift()` eliminará el primer elemento de la matriz.
 
 ```javascript
 const nombresEstudiantes = ['Martin', 'Antonio', 'Sara', 'Samuel'];
@@ -141,10 +145,11 @@ for (let i = 0; i < nombresEstudiantes.length; i++) {
 // 'Samuel'
 ```
 
-## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
+### Abre la carpeta "homework" y completa la tarea descrita en el archivo README
+
 [Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/04-JS-III/homework)
 
-## Recursos adicionales
+### Recursos adicionales
 
 * [MDN: Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 * [MDN: for Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
