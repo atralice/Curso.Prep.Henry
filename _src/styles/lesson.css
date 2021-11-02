@@ -104,7 +104,7 @@ footer {
   margin: 2rem 0 0 0;
   bottom: 0;
   left: 0;
-  z-index: 8;
+  z-index: 10;
   text-align: center;
 }
 
