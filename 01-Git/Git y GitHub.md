@@ -11,7 +11,7 @@
   </tr>
 </table>
 
-# Git y GitHub!!
+# Git y GitHub
 
 # Comandos👨🏻‍💻👩🏻‍💻
 
