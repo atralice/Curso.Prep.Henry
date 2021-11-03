@@ -9,13 +9,17 @@ eleventyNavigation:
 # Editor de Texto
 
 Para poder escribir código que pueda ser interpretado por un lenguaje de programación, necesitamos utilizar un editor de texto.
-Hay varios. Puedes probarlos y elegir con el que te sientas más a gusto.
+Hay varios, puedes probarlos y optar por el que te sientas más a gusto.
 
-A continuación van a ver una lista de algunos editores de textos populares:
+A continuación veremos una lista de los más populares:
 
-# [Sublime Text](https://www.sublimetext.com)
+![Sublime Text Logo](/_src/assets/00-PrimerosPasos/sublimeText_logo.png)
 
-![Sublime text](/_src/assets/00-PrimerosPasos/sublime.png)
+<div class='imgDiv'>
+
+![Sublime Text](/_src/assets/00-PrimerosPasos/sublimeText_screen.png)
+
+</div>
 
 Es un editor de texto liviano, que cuenta con una serie de plugins para adaptarlo a las necesidades de cada desarrollador.
 
@@ -25,64 +29,68 @@ Para instalarlo, realizaremos los siguientes pasos:
 
 ## En Windows o en OS X
 
-Nos dirigimos a la página oficial de Sublime Text.
+1. Nos dirigimos a la página oficial de [Sublime Text](https://www.sublimetext.com).
 
-<https://www.sublimetext.com>
+2. Al ingresar, detectará automáticamente el sistema operativo que tenemos, y nos sugerirá descargar el instalador apropiado.
 
-Al ingresar, detectará automáticamente el sistema operativo que tenemos, y nos sugerirá descargar el instalador apropiado.
+3. Presionamos el botón ***Download***.
 
-Presionamos el botón Download
+4. Elegimos la opción adecuada según nuestro sistema operativo e iniciamos la descarga.
 
-Elegimos la opción adecuada según nuestro sistema operativo e iniciamos la descarga.
+<div class='imgDiv'>
 
-![Sublime text Dowload](/_src/assets/00-PrimerosPasos/sublimeDownload.png)
+![Sublime Text Download](/_src/assets/00-PrimerosPasos/sublimeText_download.png)
+</div>
 
-Finalizada la descarga, ejecutamos el instalador, seleccionamos las opciones siguiente, siguiente, etc, hasta completar el proceso.
+5. Finalizada la descarga, ejecutamos el instalador, seleccionamos las opciones ***siguiente, siguiente, etc***, hasta completar el proceso.
 
 ## En Linux, en la distribución Ubuntu y derivados
 
-Nos dirigimos al sitio oficial de Sublime Text.
-Aquí encontrarás las instrucciones para instalarlo <https://www.sublimetext.com/docs/3/linux_repositories.html>.
+1. Nos dirigimos al sitio oficial de Sublime Text. Aquí encontrarás las instrucciones para instalarlo:
 
-En la terminal, ejecutamos el siguiente comando, para instalar la clave GPG:
+<https://www.sublimetext.com/docs/3/linux_repositories.html>
 
-![Sublime text](/_src/assets/00-PrimerosPasos/sublime_comando_1.png)
+2. En la terminal, ejecutamos el siguiente comando, para instalar la clave GPG:
 
 ```shell
 wget -q0 - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 ```
 
-Para asegurarte de que apt esté configurado para trabajar con orígenes https, ejecutamos:
-
-![Sublime text](/_src/assets/00-PrimerosPasos/sublime_comando_2.png)
+3. Para asegurarnos de que `apt` esté configurado para trabajar con orígenes https, ejecutamos:
 
 ```shell
 sudo apt-get install apt-transport-https
 ```
 
-Para agregar el repositorio estable, ejecutamos:
-
-![Sublime text](/_src/assets/00-PrimerosPasos/sublime_comando_3.png)
+4. Luego para agregar el repositorio estable, ejecutamos:
 
 ```shell
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 ```
 
-Finalmente, procedemos a instalar el programa:
-
-![Sublime text](/_src/assets/00-PrimerosPasos/sublime_comando_4.png)
+5. Finalmente, procedemos a instalar el programa:
 
 ```shell
 sudo apt-get install sublime-text
 ```
 
-Ahora, si en el Menú de inicio buscamos Sublime text, veremos la siguiente imagen:
+Ahora, si en el **Menú de inicio** buscamos **Sublime text**, veremos la siguiente imagen:
 
-![Sublime text](/_src/assets/00-PrimerosPasos/sublime_instalado.png)
+<div class='imgDiv'>
 
-# [Atom](https://atom.io/)
+![Sublime Text Linux](/_src/assets/00-PrimerosPasos/sublimeText_linux.png)
 
-![Sublime text](/_src/assets/00-PrimerosPasos/atom_site.png)
+</div>
+
+_ _ _
+
+![Atom Logo](/_src/assets/00-PrimerosPasos/atom_logo.png)
+
+<div class='imgDiv'>
+
+![Atom Site](/_src/assets/00-PrimerosPasos/atom_site.png)
+
+</div>
 
 Es un editor de código abierto, disponible tanto para Windows, como Linux y para OS X.
 
@@ -109,9 +117,15 @@ Descomprimimos el instalador, hacemos doble click, y nos dirigimos a:
 
 al hacer doble click, se abrirá el editor.
 
-# [Visual Studio Code](https://code.visualstudio.com/)
+_ _ _
 
-![Sublime text](/_src/assets/00-PrimerosPasos/vc_consola.png)
+![VSC Logo](/_src/assets/00-PrimerosPasos/vsc_logo.png)
+
+<div class='imgDiv'>
+
+![VSC Console](/_src/assets/00-PrimerosPasos/vsc_console.png)
+
+</div>
 
 Es un editor desarrollado por Microsoft.
 Tiene integrada el control de versiones mediante Git y Github para tener un seguimiento de tus proyectos. Brinda una cantidad de extensiones que facilitan el trabajo de un desarrollador.
@@ -120,6 +134,10 @@ Para descargarlo, nos dirigimos al sitio oficial, en la sección Dowload y desca
 
 <https://code.visualstudio.com/download>
 
-![Sublime text](/_src/assets/00-PrimerosPasos/dowload_vc.png)
+<div class='imgDiv'>
+
+![VSC Download](/_src/assets/00-PrimerosPasos/vsc_download.png)
+
+</div>
 
 Una vez finalizada la descarga, procedemos a ejecutar el instalador.
