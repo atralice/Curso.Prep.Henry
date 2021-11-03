@@ -1,4 +1,12 @@
-<img src="./img/github_PNG15.png" width="500">
+---
+title: GitHub
+eleventyNavigation:
+  key: GitHub
+  parent: Primeros Pasos
+  order: 2
+---
+
+![GitHub-Logo](/_src/assets/00-PrimerosPasos/github_logo.png)
 
 ## ¿Qué es GitHub?
 
@@ -6,40 +14,58 @@ Es una red para almacenar tus repositorios, sería un repositorio de repositorio
 
 ## Comenzando
 
-Para comenzar debes crearte una cuenta --- > https://github.com/  🚀 
-<p></p></br>
+1. Para comenzar nos creamos una cuenta --- > <https://github.com>  🚀
 
-<img src="./img/registrarse.png" width="500">
-<p></p></br>
+<div class='imgDiv'>
 
-<p> Una vez registrados, ingresan con su usuario y contraseña </p></br>
+![GitHub-Register](/_src/assets/00-PrimerosPasos/github_register.png)
 
-<img src="./img/iniciar_sesion.png" width="500">
-<p></p></br>
+</div>
 
-<p> Una vez que ingresan van a ver una página de inicio como la siguiente: </p></br>
+2. Una vez registrados, ingresamos con usuario y contraseña:
 
-<img src="./img/inicio.png" width="500">
-<p></p></br>
+<div class='imgDiv'>
 
-A la izquierda tienen un acceso rápido a **sus repositorios**. En el centro van a ver la actividad de los usuarios que ustedes siguen.
-Arriba a la derecha, si están logeados van a ver su fotito de perfil. Desde ahí tienen opciones para gestionar su perfil, repositorios y configuración. Si acceden a su perfil van a ver algo parecido a esto:
+![GitHub-Login](/_src/assets/00-PrimerosPasos/github_login.png)
 
-<img src="./img/profile.png" width="500">
-<p></p></br>
+</div>
 
-<p> Pueden poner una foto de perfil, editar su nombre, agregar su ubicación, link y organizaciones a las que pertenezcan. En el centro pueden fijar repositorios que ustedes quieran mostrar para que estén visibles en su perfil. Y más abajo se muestra un diagrama de todas las contribuciones que van haciendo en los repositorios. Si acceden a la pestaña de arriba que dice repositorios van a poder ver una lista de todos ellos. Cuando eligen un repositorio para ver, los lleva a una página como esta: </p></br>
+3. Listo! Ahora vemos una página de inicio como la siguiente:
 
-<img src="./img/repo.png" width="500">
-<p></p></br>
+<div class='imgDiv'>
 
-<p> Así se ve un repositorio. Arriba a la izquierda tienen su nombre de usuario/nombre del repo.  En el centro pueden ver todos los archivos que tiene dentro el repo. El botón verde que dice “Code” es importante, si clickean ahí van a poder obtener la url del repo que van a usar para clonarlo (esto lo van a ver más adelante). Arriba a la derecha tienen tres botones. El primero de ellos Watch nos permite seguir un repositorio y con Star podemos marcar como favorito un repo que nos guste. Por último hay un botón que dice Fork, este es MUY importante! Lo van a necesitar cuando cursen el Prep y cuando hagan el Challenge!! Ya van a ver esto, por ahora ténganlo en mente. </p></br>
+![GitHub-Home](/_src/assets/00-PrimerosPasos/github_home.png)
+
+</div>
+
+A la izquierda tenemos un acceso rápido a **mis repositorios**.
+
+En el centro vemos la actividad de los usuarios a quienes seguimos.
+
+En la parte superior derecha, vemos nuestra imagen de perfil. Desde ahí podemos desplegar opciones para gestionar nuestro perfil, repositorios y configuración. Si accedemos a nuestro perfil encontramos algo parecido a esto:
+
+<div class='imgDiv'>
+
+![GitHub-profile](/_src/assets/00-PrimerosPasos/github_profile.png)
+
+</div>
+
+Podemos poner una foto de perfil, editar el nombre, agregar la ubicación, link y organizaciones a las que pertenecemos. En el centro podemos fijar los repositorios que queremos mostrar para que estén visibles en nuestro perfil.
+
+Más abajo se muestra un diagrama de todas las contribuciones que vamos haciendo a los repositorios.
+
+Si accedemos a la pestaña de arriba que dice `repositorios` veremos una lista de todos ellos. Cuando elegimos un repositorio para ver, nos lleva a una página como esta:
+
+<div class='imgDiv'>
+
+![GitHub-repo](/_src/assets/00-PrimerosPasos/github_repo.png)
+
+</div>
+
+Así se ve un repositorio. Arriba a la izquierda tenemos el `nombre de usuario/nombre del repo`.  
+
+En el centro podemos ver todos los archivos que tiene dentro el repo. El botón verde que dice `Code` es importante, si clickeamos ahí vamos a poder obtener la url del repo, para así poder ***clonarlo*** (esto lo veremos más adelante).
+
+Arriba a la derecha encontramos tres botones. `Watch` nos permite seguir un repositorio, mientras que con `Star` podemos marcar como favorito un repo que nos guste. Por último tenemos `Fork`, este es **muy** importante, lo vamos a necesitar cuando hagamos el ***Challenge!***
 
 Acá termina nuestro breve recorrido por GitHub! Éxitos! 🍀
-
-
-
-
-
-
-
