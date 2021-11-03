@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
   <header>
     <div>
       <img src='/_src/assets/logo-white.png' height=30px alt='logo Henry'/>
@@ -19,17 +18,15 @@
     </div>
   </header>
 
-
   <nav>
-  <div>
-    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
-  </div>
+    <div>
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+    </div>
   </nav>
 
   <main>
       {{ content | safe }}
   </main>
-
 </body>
 
   <footer>
