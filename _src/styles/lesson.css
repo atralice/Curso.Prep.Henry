@@ -72,12 +72,12 @@ nav div a:active {
 
 nav li {
   color: rgb(44, 44, 44);
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 nav ul {
   /* padding: 1rem; */
-  margin: 0 0 0 1rem;
+  margin: 0 0 1rem 1rem;
   list-style: none;
 }
 
@@ -106,6 +106,10 @@ main ul {
   margin-left: 2rem;
 }
 
+main li {
+  margin: 1rem 0 1rem 2rem;
+}
+
 .imgDiv {
   display: flex;
   justify-content: center;
@@ -129,9 +133,8 @@ footer {
 
 code {
   font-weight: bold;
+  font-size: 1.2em;
 }
-
-
 
 h2 {
   margin: 1rem 0 1rem 0;
