@@ -6,7 +6,9 @@ eleventyNavigation:
   order: 4
 ---
 
-# Instalar Node js
+![Node.JS Logo](/_src/assets/00-PrimerosPasos/nodejs_logo.png)
+
+## Instalación
 
 Para instalar Node js en nuestra computadora, nos dirigimos al sitio oficial:
 
@@ -14,15 +16,23 @@ Para instalar Node js en nuestra computadora, nos dirigimos al sitio oficial:
 
 Al ingresar, el sitio detectará nuestro Sistema Operativo y nos sugerirá que descarguemos el instalador adecuado.
 
-![Sublime text](./img/nodejs.png)
+<div class='imgDiv'>
+
+![Node.JS Screen](/_src/assets/00-PrimerosPasos/nodejs_screen.png)
+
+</div>
 
 Para proceder a la descarga, seleccionamos la versión LTS, que es la versión estable.
 Una vez finalizada la descarga, procedemos a ejecutar el instalador.
 
 Para corroborar que Node js se instaló correctamente, procedemos a ejecutar el siguiente comando por la consola o terminal de nuestro sistema operativo:
 
-![Sublime text](./img/node_verificar.png)
+```shell
+node -v
+```
 
 Y si seguimos los pasos anteriores, la consola o terminal, nos devolverá la versión de Node js que tenemos instalada:
 
-![Sublime text](./img/node_version.png)
+```shell
+v12.18.3
+```
