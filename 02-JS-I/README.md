@@ -187,7 +187,7 @@ Javascript tiene una serie de objetos integrados para que los usemos. Ya hemos v
 
 ### Math.pow
 
-Podemos usar el método `pow` en` Math` para devolver un número elevado a un exponente. Tomará dos números.
+Podemos usar el método `pow` en `Math` para devolver un número elevado a un exponente. Tomará dos números.
 
 ```javascript
 Math.pow(2,2) = 4;
@@ -247,7 +247,7 @@ function logHola() {
 logHola();
 ```
 
-En este ejemplo declaramos una función `logHola` y la configuramos en` console.log` `'hello'`. Entonces podemos ver que para ejecutar esta función, necesitamos escribir el nombre y los paréntesis. Esta es la sintaxis para ejecutar una función. Una función siempre necesita paréntesis para ejecutarse.
+En este ejemplo declaramos una función `logHola` y la configuramos en `console.log` `'hello'`. Entonces podemos ver que para ejecutar esta función, necesitamos escribir el nombre y los paréntesis. Esta es la sintaxis para ejecutar una función. Una función siempre necesita paréntesis para ejecutarse.
 
 ### Argumentos
 
@@ -282,6 +282,7 @@ function sumarDosNumeros(a, b) {
 
 sumarDosNumeros(1, 5); // 6
 ```
+
 ### Declaración "return" y Scope
 
 En el ejemplo anterior presentamos la declaración `return`. No vamos a usar `console.log` con todo lo que salga de una función. Lo más probable es que queramos devolver algo. En este caso es la suma de los dos números. Piense en la declaración de retorno ("return") como la única forma en que los datos escapan de una función. No se puede acceder a nada más que a lo que se devuelve fuera de la función. También tenga en cuenta que cuando una función golpea una declaración de retorno, la función detiene inmediatamente lo que está haciendo y "devuelve" lo especificado.
@@ -295,6 +296,7 @@ function dividirDosNumeros(a, b) {
 dividirDosNumeros(6, 3); // 2
 console.log(producto); // undefined
 ```
+
 Si intentamos `console.log` algo que declaramos dentro de la función, devolverá `undefined` porque no tenemos acceso a él fuera de la función. Esto se llama Scope ("alcance"). La única forma de acceder a algo dentro de la función es devolverlo.
 
 También podemos establecer variables para igualar lo que devuelve una función.
@@ -328,15 +330,16 @@ function puedeManejar(edad) {
 puedeManejar(22); // true
 ```
 
-Aquí estamos tomando un número (`edad`) y verificando si la declaración es` true` (`22>18`), lo es, por lo que devolveremos` true`, y la función se detendrá. Si no es así, omitirá ese código y la función devolverá `false`.
+Aquí estamos tomando un número (`edad`) y verificando si la declaración es `true` (`22>18`), lo es, por lo que devolveremos `true`, y la función se detendrá. Si no es así, omitirá ese código y la función devolverá `false`.
 
-El símbolo "mayor que" (`>`) que ve en el último ejemplo se llama _Operador de comparación_. Los operadores de comparación evalúan dos elementos y devuelven `verdadero` o` falso`. Estos operadores son: `<`, `<=`, `>`, `> =`, `===`, `! ==`. Aprenderemos más sobre estos operadores en la próxima lección.
+El símbolo "mayor que" (`>`) que ve en el último ejemplo se llama _Operador de comparación_. Los operadores de comparación evalúan dos elementos y devuelven `verdadero` o `falso`. Estos operadores son: `<`, `<=`, `>`, `> =`, `===`, `! ==`. Aprenderemos más sobre estos operadores en la próxima lección.
 
 ## Introducción a Node y NPM
 
 _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para su uso en servidores/back-end. Tendremos que instalarlo en nuestras máquinas para completar los próximos ejercicios. Para instalar Node, haga clic aquí: [Descargar e instalar Node.js](https://nodejs.org/en/download/). Node viene con "NPM" incluido. NPM es un administrador de paquetes ("package manager") para paquetes Javascript y lo usaremos a lo largo de nuestro aprendizaje en Henry. Una vez que hayas instalado Node.js, no necesitas hacer nada más para instalar NPM.
 
 ## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
+
 [Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/02-JS-I/homework)
 
 ## Recursos adicionales
