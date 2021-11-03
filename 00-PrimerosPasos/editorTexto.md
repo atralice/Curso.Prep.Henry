@@ -111,11 +111,9 @@ Una vez finalizada la descarga, hacemos doble click en el instalador y esperamos
 
 ## En Ubuntu y derivados
 
-Descomprimimos el instalador, hacemos doble click, y nos dirigimos a:
+Descomprimimos el instalador, hacemos doble click, y nos dirigimos a: `/usr/bin/atom`
 
-```/usr/bin/atom```
-
-al hacer doble click, se abrirá el editor.
+Al hacer doble click, se abrirá el editor.
 
 _ _ _
 
