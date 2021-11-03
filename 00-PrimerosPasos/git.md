@@ -3,11 +3,10 @@ title: Git
 eleventyNavigation:
   key: Git
   parent: Primeros Pasos
-  order: 2
+  order: 3
 ---
 
-![logoGit](/_src/assets/00-PrimerosPasos/git.png)
-<img src="/_src/assets/00-PrimerosPasos/git.png" width="400">
+![logoGit](/_src/assets/00-PrimerosPasos/git_logo.png)
 
 ## ¿Qué es Git?
 
@@ -20,43 +19,39 @@ Git es un sistema de control de versiones, distribuido y open source. Un control
 ### Ver estos enlaces
 
 <https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Instalaci%C3%B3n-de-Git>
+
 <https://www.youtube.com/watch?v=PSULlxUk744>
+
 <https://www.youtube.com/watch?v=oV0spTF71AI>
 
 ### Para Windows
 
 Ingreso a <https://git-scm.com> y descargo la útlima versión.
 
-<!-- <img src="./img/instalar_window.png" width="500"> -->
-
 ![installGit](/_src/assets/00-PrimerosPasos/instalar_window.png)
 
 Una vez descargado, se abre el archivo .exe y van a visualizar la siguiente ventana
 
-<!-- <img src="./img/1.png"> -->
-
 ![installGit](/_src/assets/00-PrimerosPasos/1.png)
-
 
 Clickeamos “Next” hasta que llegamos a esta parte:
 
-<img src="./img/2.png">
-<p></p></br>
+![installGit](/_src/assets/00-PrimerosPasos/2.png)
 
-<p> En este momento de la instalación si quieren pueden elegir el editor de texto que van a usar. (Importante, ténganlo instalado antes de instalar Git) </p></br>
+En este momento de la instalación si quieres puedes elegir el editor de texto que van a usar. (Importante, ténganlo instalado antes de instalar Git)
 
-<p> Seguimos clickeando “Next” y luego “Install” </p></br>
+Seguimos clickeando “Next” y luego “Install”
 
-<img src="./img/3.png"></br>
+![installGit](/_src/assets/00-PrimerosPasos/3.png)
 
-<p> Por último, finalizar! Si seleccionan la opción "Launch Git Bash", una vez que finalizan la instalación se va a abrir la consola </p></br>
+Por último, finalizar! Si seleccionan la opción "Launch Git Bash", una vez que finalizan la instalación se va a abrir la consola
 
-<img src="./img/4.png"></br>
+![installGit](/_src/assets/00-PrimerosPasos/4.png)
 
-<p> Otra forma de abrir la consola es haciendo click derecho sobre el escritorio y elegir la opción "Git Bash Here" </p></br>
+Otra forma de abrir la consola es haciendo click derecho sobre el escritorio y elegir la opción "Git Bash Here"
 
-<img src="./img/consola.png"></br>
+![installGit](/_src/assets/00-PrimerosPasos/consola.png)
 
-<p> Una vez instalado Git van a poder visualizar la consola: ingresamos el comando <code> git --version </code> para chequear que está instalado. Si ven la consola así, ya están listos para comenzar a trabajar! </p></br>
+Una vez instalado Git van a poder visualizar la consola: ingresamos el comando `git --version` para chequear que está instalado. Si ven la consola así, ya están listos para comenzar a trabajar!
 
-<img src="./img/5.png" width="500">
+![installGit](/_src/assets/00-PrimerosPasos/5.png)
