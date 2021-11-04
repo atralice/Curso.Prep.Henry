@@ -139,3 +139,5 @@ Para descargarlo, nos dirigimos al sitio oficial, en la sección Dowload y desca
 </div>
 
 Una vez finalizada la descarga, procedemos a ejecutar el instalador.
+
+{% readerBar %}
