@@ -38,7 +38,7 @@ header {
   align-items: center;
 }
 
-nav {
+sideBar {
   position: fixed;
   width: 200px;
   top: 0px;
@@ -48,34 +48,47 @@ nav {
   border-color: rgb(180, 180, 180);
   background-color: rgb(235, 235, 235);
   border-width: 1px;
-  z-index: 9;
+  z-index: 9; 
 }
 
-nav div {
+/* nav {
+  position: fixed;
+  width: 200px;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgb(180, 180, 180);
+  background-color: rgb(235, 235, 235);
+  border-width: 1px;
+  z-index: 15;
+} */
+
+sideBar div {
   /* border-style: solid; */
-  margin: 5rem 0 0 0rem;
+  margin: 4rem 0 0 0rem;
 }
 
-nav div a {
+sideBar div a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   display: block;
 }
 
-nav div a:hover {
+sideBar div a:hover {
   color: rgb(88, 80, 80);
 }
 
-nav div a:active {
+sideBar div a:active {
   color: rgb(255, 238, 0);
 }
 
-nav li {
+sideBar li {
   color: rgb(44, 44, 44);
-  /* margin-bottom: 0.5rem; */
+  margin-bottom: 0.5rem;
 }
 
-nav ul {
+sideBar ul {
   /* padding: 1rem; */
   margin: 0 0 1rem 1rem;
   list-style: none;
@@ -106,6 +119,10 @@ main h1 {
   padding-left: 1rem;
   text-align: left;
   color: rgb(60, 60, 60);
+}
+
+main h2 {
+  margin: 2rem 0 1rem 0;
 }
 
 main ul {
@@ -143,9 +160,7 @@ code {
   font-size: 1.2em;
 }
 
-h2 {
-  margin: 1rem 0 1rem 0;
-}
+
 
 h3 {
   margin: 1rem 0 1rem 0;
