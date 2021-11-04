@@ -105,9 +105,10 @@ console.log(suma); // 45
 console.log(productos); // 362880
 console.log(frases); // "Frase completa: Hola, mi nombre es Martin"
 ```
+
 ### `.map`
 
-`.map` se usa cuando queremos cambiar cada elemento de una matriz de la misma manera. `.map` toma una devolución de llamada como único argumento. Al igual que el método `.forEach`, el callback tiene el elemento y el índice de argumentos opcionales. A diferencia de `.reduce`,` .map` devolverá toda la matriz.
+`.map` se usa cuando queremos cambiar cada elemento de una matriz de la misma manera. `.map` toma una devolución de llamada como único argumento. Al igual que el método `.forEach`, el callback tiene el elemento y el índice de argumentos opcionales. A diferencia de `.reduce`, `.map` devolverá toda la matriz.
 
 ```javascript
 const numeros = [2, 3, 4, 5];
