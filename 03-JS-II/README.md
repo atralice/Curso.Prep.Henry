@@ -17,6 +17,7 @@ eleventyNavigation:
     </td>
   </tr>
 </table> -->
+
 # Lección 3: Javascript II (Flujos de control, operadores de comparación, bucles `for`)
 
 En esta lección cubriremos:
@@ -276,7 +277,7 @@ Si queremos saber cuantos parámetros puede recibir una función podemos usar la
 
 Día a día nos encontramos con diversos problemas y, como sabemos, cada problema puede tener distintas soluciones. Una buena forma para adquirir las herramientas que nos permitan resolverlos y aprender su correcto uso es leer documentación oficial o "respaldada". Para ello, nuestro mejor amigo es Google!
 
-En el homework de este módulo nos vamos a encontrar con dos temas que no están explicados en este readme: switch y do while .
+En el homework de este módulo nos vamos a encontrar con dos temas que no están explicados en este readme: switch y do while.
 Te invitamos a buscar en Google información de estos conceptos para poder desarrollar la homework. A continuación, algunos tips de búsqueda.
 
 * Recomendado buscar en inglés: ¡Aparecen mejores y mayor cantidad de resultados! Ej: "switch statement javascript".
