@@ -107,3 +107,4 @@ dist
 
 # Eleventy build
 _dist
+.vscode/settings.json
