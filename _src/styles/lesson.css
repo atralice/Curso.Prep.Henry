@@ -90,6 +90,13 @@ main {
   margin-left: 215px;
 }
 
+.readingTime {
+  border: 1px solid grey; 
+  padding: 0.2rem 0.7rem ;
+  font-size: 0.8em;
+  margin-bottom: 2rem;
+}
+
 main h1 {
   background-color: rgb(240, 240, 0);
   border: 1px solid;
