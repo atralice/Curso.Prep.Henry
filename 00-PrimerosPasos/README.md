@@ -18,16 +18,18 @@ eleventyNavigation:
   </tr>
 </table> -->
 
-## Primeros Pasos
+# Primeros Pasos
 
 ### Preparando tu compu
 
-Acá vas a encontrar todo lo que necesitas para arrancar el Curso de Preparación:
+<!-- CORREGIR ESTO: -->
 
-* [Editor de Texto](./editorTexto.md)
+Acá vas a encontrar todo lo que necesitas para arrancar el Curso de Preparación.
+
+<!-- * [Editor de Texto](./editorTexto.md)
 * [Github](./github.md)
 * [Git](./git.md)
-* [Instalar Node](./node.md)
+* [Instalar Node](./node.md) -->
 
 ### Instructivo de Primeros Pasos
 
