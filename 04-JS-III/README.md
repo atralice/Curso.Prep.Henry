@@ -153,3 +153,5 @@ for (let i = 0; i < nombresEstudiantes.length; i++) {
 
 * [MDN: Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 * [MDN: for Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+{% readerBar "2px" "black" "yellow" %}
