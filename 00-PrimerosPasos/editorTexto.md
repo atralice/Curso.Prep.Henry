@@ -13,8 +13,9 @@ Hay varios, puedes probarlos y optar por el que te sientas más a gusto.
 
 A continuación veremos una lista de los más populares:
 
-![Sublime Text Logo](/_src/assets/00-PrimerosPasos/sublimeText_logo.png)
+## Sublime Text
 
+<!-- ![Sublime Text Logo](/_src/assets/00-PrimerosPasos/sublimeText_logo.png) -->
 <div class='imgDiv'>
 
 ![Sublime Text](/_src/assets/00-PrimerosPasos/sublimeText_screen.png)
@@ -27,24 +28,25 @@ Es multiplataforma, por lo que se puede instalar tanto en Windows, como Linux y 
 
 Para instalarlo, realizaremos los siguientes pasos:
 
-## En Windows o en OS X
+### En Windows o en OS X
 
 1. Nos dirigimos a la página oficial de [Sublime Text](https://www.sublimetext.com).
 
 2. Al ingresar, detectará automáticamente el sistema operativo que tenemos, y nos sugerirá descargar el instalador apropiado.
 
-3. Presionamos el botón ***Download***.
+3. Presionamos el botón **_Download_**.
 
 4. Elegimos la opción adecuada según nuestro sistema operativo e iniciamos la descarga.
 
 <div class='imgDiv'>
 
 ![Sublime Text Download](/_src/assets/00-PrimerosPasos/sublimeText_download.png)
+
 </div>
 
-5. Finalizada la descarga, ejecutamos el instalador, seleccionamos las opciones ***siguiente, siguiente, etc***, hasta completar el proceso.
+5. Finalizada la descarga, ejecutamos el instalador, seleccionamos las opciones **_siguiente, siguiente, etc_**, hasta completar el proceso.
 
-## En Linux, en la distribución Ubuntu y derivados
+### En Linux, en la distribución Ubuntu y derivados
 
 1. Nos dirigimos al sitio oficial de Sublime Text. Aquí encontrarás las instrucciones para instalarlo:
 
@@ -82,9 +84,11 @@ Ahora, si en el **Menú de inicio** buscamos **Sublime text**, veremos la siguie
 
 </div>
 
-_ _ _
+---
 
-![Atom Logo](/_src/assets/00-PrimerosPasos/atom_logo.png)
+## Atom
+
+<!-- ![Atom Logo](/_src/assets/00-PrimerosPasos/atom_logo.png) -->
 
 <div class='imgDiv'>
 
@@ -103,21 +107,23 @@ En Windows, Linux o en OS X, nos dirigimos al sitio oficial, mediante el siguien
 
 Al ingresar, el navegador detecta automáticamente el instalador que necesitamos bajar, según nuestro sistema operativo.
 
-Allí,  presionamos el botón Download para almacenarlo en nuestra computadora.
+Allí, presionamos el botón Download para almacenarlo en nuestra computadora.
 
-## En Windows
+### En Windows
 
 Una vez finalizada la descarga, hacemos doble click en el instalador y esperamos a que finalice el proceso de instalación.
 
-## En Ubuntu y derivados
+### En Ubuntu y derivados
 
 Descomprimimos el instalador, hacemos doble click, y nos dirigimos a: `/usr/bin/atom`
 
 Al hacer doble click, se abrirá el editor.
 
-_ _ _
+---
 
-![VSC Logo](/_src/assets/00-PrimerosPasos/vsc_logo.png)
+## Visual Studio Code
+
+<!-- ![VSC Logo](/_src/assets/00-PrimerosPasos/vsc_logo.png) -->
 
 <div class='imgDiv'>
 
@@ -126,7 +132,8 @@ _ _ _
 </div>
 
 Es un editor desarrollado por Microsoft.
-Tiene integrada el control de versiones mediante Git y Github para tener un seguimiento de tus proyectos. Brinda una cantidad de extensiones que facilitan el trabajo de un desarrollador.
+
+Tiene integrado el control de versiones mediante Git y Github para tener un seguimiento de tus proyectos. Brinda una cantidad de extensiones que facilitan el trabajo de un desarrollador.
 
 Para descargarlo, nos dirigimos al sitio oficial, en la sección Dowload y descargamos el instalador según nuestro Sistema Operativo:
 
@@ -140,4 +147,4 @@ Para descargarlo, nos dirigimos al sitio oficial, en la sección Dowload y desca
 
 Una vez finalizada la descarga, procedemos a ejecutar el instalador.
 
-{% readerBar %}
+{% readerBar "2px" "black" "yellow" %}
