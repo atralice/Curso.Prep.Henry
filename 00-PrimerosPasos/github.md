@@ -69,3 +69,5 @@ En el centro podemos ver todos los archivos que tiene dentro el repo. El botón 
 Arriba a la derecha encontramos tres botones. `Watch` nos permite seguir un repositorio, mientras que con `Star` podemos marcar como favorito un repo que nos guste. Por último tenemos `Fork`, este es **muy** importante, lo vamos a necesitar cuando hagamos el ***Challenge!***
 
 Acá termina nuestro breve recorrido por GitHub! Éxitos! 🍀
+
+{% readerBar "2px" "black" "yellow" %}
