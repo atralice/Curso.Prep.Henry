@@ -145,7 +145,7 @@ main li {
 footer {
   color: rgb(248, 248, 248);
   background-color: black;
-  position: fixed;
+  position: relative;
   width: 100%;
   padding: 0.5rem;
   margin: 2rem 0 0 0;
