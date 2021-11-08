@@ -25,11 +25,11 @@
           {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
         </div>
         <nav>
+        {# {{ content | toc | safe }} #}
         </nav>
       </sideBar>
 
       <main>
-        {# {{ content | toc | safe }} #}
         <div>
           <p>
             <span class="readingTime">Tiempo de lectura {{ content | readingTime }}</span>
