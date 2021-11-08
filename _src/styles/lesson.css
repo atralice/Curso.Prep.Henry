@@ -13,6 +13,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 header {
   /* border-style: solid; */
   /* display: flex;
@@ -135,6 +136,11 @@ main li {
 }
 
 .imgDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.imgDivBorderless {
   display: flex;
   justify-content: center;
 }
