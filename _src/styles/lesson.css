@@ -5,30 +5,12 @@
 
 html {
   scroll-behavior: smooth;
-  background: #fafafa;
-  font-family: 'Averin', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  /* background: #fafafa; */
+  font-family: "Averin", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-
-header {
-  /* border-style: solid; */
-  /* display: flex;
-  justify-content: space-around; */
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  padding: 0.7rem;
-  background-color: black;
-  border-bottom: solid;
-  border-bottom-width: 1px;
-  border-color: rgb(44, 44, 44);
-  z-index: 10;
-  color: rgb(248, 248, 248);
 }
 
 .lessonTitle {
@@ -49,7 +31,7 @@ sideBar {
   border-color: rgb(180, 180, 180);
   background-color: rgb(235, 235, 235);
   border-width: 1px;
-  z-index: 9; 
+  z-index: 9;
 }
 
 /* nav {
@@ -104,8 +86,8 @@ main {
 }
 
 .readingTime {
-  border: 1px solid grey; 
-  padding: 0.2rem 0.7rem ;
+  border: 1px solid grey;
+  padding: 0.2rem 0.7rem;
   font-size: 0.8em;
   margin-bottom: 2rem;
 }
@@ -114,7 +96,7 @@ main h1 {
   background-color: rgb(240, 240, 0);
   border: 1px solid;
   border-radius: 4px;
-  border-color: rgb(220,220,9);
+  border-color: rgb(220, 220, 9);
   margin: 1rem 0 1rem 0;
   padding-left: 1rem;
   text-align: left;
@@ -145,7 +127,10 @@ main li {
 }
 
 .imgDiv img {
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;}
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
 
 footer {
   color: rgb(248, 248, 248);
@@ -163,8 +148,6 @@ code {
   font-size: 1.2em;
 }
 
-
-
 h3 {
   margin: 1rem 0 1rem 0;
 }
@@ -175,14 +158,14 @@ p {
 
 /* Bloques de codigo */
 
-pre[class*='language-'],
-code[class*='language-'] {
+pre[class*="language-"],
+code[class*="language-"] {
   border-radius: 0.2rem;
   color: #d4d4d4;
   font-size: 14px;
   text-shadow: none;
-  font-family: Menlo, Monaco, Consolas, 'Andale Mono', 'Ubuntu Mono',
-    'Courier New', monospace;
+  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono",
+    "Courier New", monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -198,29 +181,29 @@ code[class*='language-'] {
   hyphens: none;
 }
 
-pre[class*='language-']::selection,
-code[class*='language-']::selection,
-pre[class*='language-'] *::selection,
-code[class*='language-'] *::selection {
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection,
+pre[class*="language-"] *::selection,
+code[class*="language-"] *::selection {
   text-shadow: none;
   background: #264f78;
 }
 
 @media print {
-  pre[class*='language-'],
-  code[class*='language-'] {
+  pre[class*="language-"],
+  code[class*="language-"] {
     text-shadow: none;
   }
 }
 
-pre[class*='language-'] {
+pre[class*="language-"] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
   background: #1e1e1e;
 }
 
-:not(pre) > code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
   padding: 0.1em 0.3em;
   border-radius: 0.3em;
   color: #db4c69;
@@ -411,24 +394,24 @@ pre[class*='language-'] {
 * Language Specific
 */
 
-pre[class*='language-javascript'],
-code[class*='language-javascript'],
-pre[class*='language-jsx'],
-code[class*='language-jsx'],
-pre[class*='language-typescript'],
-code[class*='language-typescript'],
-pre[class*='language-tsx'],
-code[class*='language-tsx'] {
+pre[class*="language-javascript"],
+code[class*="language-javascript"],
+pre[class*="language-jsx"],
+code[class*="language-jsx"],
+pre[class*="language-typescript"],
+code[class*="language-typescript"],
+pre[class*="language-tsx"],
+code[class*="language-tsx"] {
   color: #9cdcfe;
 }
 
-pre[class*='language-css'],
-code[class*='language-css'] {
+pre[class*="language-css"],
+code[class*="language-css"] {
   color: #ce9178;
 }
 
-pre[class*='language-html'],
-code[class*='language-html'] {
+pre[class*="language-html"],
+code[class*="language-html"] {
   color: #d4d4d4;
 }
 
@@ -442,7 +425,7 @@ code[class*='language-html'] {
 /*********************************************************
 * Line highlighting
 */
-pre[class*='language-'] > code[class*='language-'] {
+pre[class*="language-"] > code[class*="language-"] {
   position: relative;
   z-index: 1;
 }

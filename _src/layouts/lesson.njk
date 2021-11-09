@@ -13,29 +13,39 @@
   <body>
     <div class="reader-bar-start">
 
-      <header>
-        <div>
+
+        <navbar class="navbar fixed-top navbar-light bg-black">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src='/_src/assets/logo-white.png' alt='logo Henry' height=30px class="d-inline-block align-text-top">
+            </a>
+          </div>
+        </navbar>
+
+        {# <div>
           <img src='/_src/assets/logo-white.png' height=30px alt='logo Henry'/>
         </div>
         <div class='lessonTitle'>
           {{ title }}
-        </div>
-      </header>
+        </div> #}
 
       <sideBar>
         <div>
-        {{ collections.all | eleventyNavigation | bootstrapNav | safe }}
+          {# {{ collections.all | eleventyNavigation | bootstrapNav | safe }} #}
 
- {# {{ collections.all | eleventyNavigation | bootstrapNav({
+          {# {{ collections.all | eleventyNavigation | bootstrapNav({
     listClass: "nav nav-pills justify-content-center", listChildItemClass: "dropdown-menu shadow", activeKey: eleventyNavigation.key
   }) | safe }} #}
         </div>
         <nav>
-          {# {{ content | toc | safe }} #}
+          {{ content | toc | safe }}
         </nav>
       </sideBar>
 
       <main>
+        {{ collections.all | eleventyNavigation | bootstrapNav({
+    listClass: "nav nav-pills justify-content-center", listChildItemClass: "dropdown-menu shadow", activeKey: eleventyNavigation.key
+  }) | safe }}
         <div>
           <p>
             <span class="readingTime">Tiempo de lectura {{ content | readingTime }}</span>
@@ -53,6 +63,8 @@
       </footer>
 
     </div>
-     {% readerBar "3px", "black", "yellow" %}
+    {% readerBar "3px",
+    "black",
+    "yellow" %}
   </body>
 </html>
