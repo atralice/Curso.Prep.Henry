@@ -70,21 +70,21 @@ sideBar div {
   margin: 4rem 0 0 0rem;
 }
 
-sideBar div a {
+/* sideBar div a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   display: block;
-}
+} */
 
-sideBar div a:hover {
+/* sideBar div a:hover {
   color: rgb(88, 80, 80);
-}
+} */
 
-sideBar div a:active {
+/* sideBar div a:active {
   color: rgb(255, 238, 0);
-}
+} */
 
-sideBar li {
+/* sideBar li {
   color: rgb(44, 44, 44);
   margin-bottom: 0.5rem;
 }
@@ -92,7 +92,7 @@ sideBar li {
 sideBar ul {
   margin: 0 0 1rem 1rem;
   list-style: none;
-}
+} */
 
 main {
   /* border-style: solid; */
@@ -149,11 +149,13 @@ main li {
 
 footer {
   color: rgb(248, 248, 248);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   position: relative;
-  padding: 0.5rem;
+  height: 30px;
   z-index: 10;
-  text-align: center;
 }
 
 code {
@@ -170,6 +172,8 @@ h3 {
 p {
   margin: 1rem 0 1rem 0;
 }
+
+/* Bloques de codigo */
 
 pre[class*='language-'],
 code[class*='language-'] {

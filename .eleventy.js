@@ -7,6 +7,8 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItHighlightJS = require("markdown-it-highlightjs");
 const readerBar = require("eleventy-plugin-reader-bar");
 
+const toBootstrapNav = require('eleventy-navigation-bootstrap')
+
 const mdOptions = {
   html: true,
   breaks: true,
@@ -39,6 +41,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("_src/styles");
   eleventyConfig.addPassthroughCopy("_src/assets");
+
+  eleventyConfig.addNunjucksFilter('bootstrapNav', toBootstrapNav)
+
 
   return {
     dir: {
