@@ -13,6 +13,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 75px;
+}
+
 .lessonTitle {
   display: flex;
   font-weight: bold;
@@ -34,6 +40,12 @@ sideBar {
   z-index: 9;
 }
 
+
+
+navbar p {
+  color: lightgrey
+}
+
 /* nav {
   position: fixed;
   width: 200px;
@@ -49,24 +61,24 @@ sideBar {
 
 sideBar div {
   /* border-style: solid; */
-  margin: 4rem 0 0 0rem;
+  margin: 5rem 0 0 0rem;
 }
 
-/* sideBar div a {
+sideBar div a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   display: block;
-} */
+}
 
-/* sideBar div a:hover {
+sideBar div a:hover {
   color: rgb(88, 80, 80);
-} */
+}
 
-/* sideBar div a:active {
+sideBar div a:active {
   color: rgb(255, 238, 0);
-} */
+}
 
-/* sideBar li {
+sideBar li {
   color: rgb(44, 44, 44);
   margin-bottom: 0.5rem;
 }
@@ -74,7 +86,7 @@ sideBar div {
 sideBar ul {
   margin: 0 0 1rem 1rem;
   list-style: none;
-} */
+}
 
 main {
   /* border-style: solid; */
