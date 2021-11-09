@@ -3,7 +3,7 @@ title: HTML
 eleventyNavigation:
   key: HTML
   # parent: Introducción
-  order: 9
+  order: 13
 ---
 
 <!-- <table width="100%" style='table-layout:fixed;'>
@@ -18,7 +18,7 @@ eleventyNavigation:
   </tr>
 </table> -->
 
-# Lección 8: Fundamentos HTML/CSS
+# Fundamentos HTML/CSS
 
 En esta clase veremos:
 
@@ -48,10 +48,8 @@ HTML define una serie de elementos (o etiquetas, o tags) que serviran para delim
     ...
   </element>
 ```
-<div class='imgDivBorderless'>
 
 ![alt text](/_src/assets/08-HTML/html.jpg)
-</div>
 
 Algunos tags html, por su naturaleza, no necesitan tener nada *adentro*. Por lo tanto podemos abreviar su escritura y en vez de abrir y cerrar el tag, simplemente agregamos un "/" antes del bracket final.
 
@@ -63,7 +61,7 @@ Algunos tags html, por su naturaleza, no necesitan tener nada *adentro*. Por lo 
 
 En su mayoría de los atributos de un elemento son pares *nombre-valor*, separados por un signo de igual «=» y escritos en la etiqueta de comienzo de un elemento, después del nombre del elemento. El valor puede estar rodeado por comillas dobles o simples. Los atributos de los tags nos sirven para cambiar su comportamiento o *configurarlos*.
 
-Por ejemplo, el tag `<img>` sirve para mostrar una imagen. Este tag recibe el atributo `src` que indica la (URL)[https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme] de donde está la imagen que queremos mostrar.
+Por ejemplo, el tag `<img>` sirve para mostrar una imagen. Este tag recibe el atributo `src` que indica la [URL](https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme) de donde está la imagen que queremos mostrar.
 
 ```html
   <img src="http://imagen.com/img.jpg" />
@@ -269,10 +267,7 @@ Cons:
 
 Para poder aplicar reglas de estilo a los elementos html, necesitamos una forma de saber cómo seleccionar los elementos a los que deseamos aplicar las reglas, para esto sirven los *selectores CSS*.
 
-<div class='imgDiv'>
-
 ![alt text](/_src/assets/08-HTML/css-declaration-small.png)
-</div>
 
 Hay varios tipos de selectores, los más básicos son los de tipo, donde indicamos a qué clase de elemntos se van a aplicar las reglas, el ejemplo de arriba usa un selector de tipo. Está diciendo: *aplicarle a todos los elementos de tipo <p\/> la regla de texto color rojo*.
 
@@ -302,7 +297,7 @@ El selector de tipo se puede usar con cualquier tipo de tag: p, div, body, etc. 
     Ejemplo: #toc se aplicará a cualquier elemento que tenga el ID "toc".
 * **Selector universal**
     Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres.
-    Sintaxis: * ns|* *|*
+    Sintaxis: *ns|* *|*
     Ejemplo: * se aplicará a todos los elementos del documento.
 * **Selector de atributo**
     Selecciona elementos basándose en el valor de un determinado atributo.
@@ -339,10 +334,7 @@ Ahora que tenemos los elementos seleccionados podemos empezar a agregar las regl
 
 Para poder entender y luego manipular la forma en que los elementos HTML aparecen distribuidos en la página, tenemos que aprender cómo son representados estos en el browser.
 
-<div class='imgDiv'>
-
 ![Image](/_src/assets/08-HTML/boxModel.png)
-</div>
 
 En un documento html cada elemento es representado como una *caja rectangular* y en CSS cada una de estas cajas tiene 4 capas que podemos manipular. Yendo desde afuera hacia adentro, las capas son:
 
