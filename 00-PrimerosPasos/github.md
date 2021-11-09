@@ -2,11 +2,11 @@
 title: GitHub
 eleventyNavigation:
   key: GitHub
-  parent: Primeros Pasos
-  order: 2
+  # parent: Primeros Pasos
+  order: 4
 ---
 
-![GitHub-Logo](/_src/assets/00-PrimerosPasos/github_logo.png)
+# GitHub
 
 ## ¿Qué es GitHub?
 
@@ -16,27 +16,15 @@ Es una red para almacenar tus repositorios, sería un repositorio de repositorio
 
 1. Para comenzar nos creamos una cuenta --- > <https://github.com>  🚀
 
-<div class='imgDiv'>
-
 ![GitHub-Register](/_src/assets/00-PrimerosPasos/github_register.png)
-
-</div>
 
 2. Una vez registrados, ingresamos con usuario y contraseña:
 
-<div class='imgDiv'>
-
 ![GitHub-Login](/_src/assets/00-PrimerosPasos/github_login.png)
-
-</div>
 
 3. Listo! Ahora vemos una página de inicio como la siguiente:
 
-<div class='imgDiv'>
-
 ![GitHub-Home](/_src/assets/00-PrimerosPasos/github_home.png)
-
-</div>
 
 A la izquierda tenemos un acceso rápido a **mis repositorios**.
 
@@ -44,11 +32,7 @@ En el centro vemos la actividad de los usuarios a quienes seguimos.
 
 En la parte superior derecha, vemos nuestra imagen de perfil. Desde ahí podemos desplegar opciones para gestionar nuestro perfil, repositorios y configuración. Si accedemos a nuestro perfil encontramos algo parecido a esto:
 
-<div class='imgDiv'>
-
 ![GitHub-profile](/_src/assets/00-PrimerosPasos/github_profile.png)
-
-</div>
 
 Podemos poner una foto de perfil, editar el nombre, agregar la ubicación, link y organizaciones a las que pertenecemos. En el centro podemos fijar los repositorios que queremos mostrar para que estén visibles en nuestro perfil.
 
@@ -56,11 +40,7 @@ Más abajo se muestra un diagrama de todas las contribuciones que vamos haciendo
 
 Si accedemos a la pestaña de arriba que dice `repositorios` veremos una lista de todos ellos. Cuando elegimos un repositorio para ver, nos lleva a una página como esta:
 
-<div class='imgDiv'>
-
 ![GitHub-repo](/_src/assets/00-PrimerosPasos/github_repo.png)
-
-</div>
 
 Así se ve un repositorio. Arriba a la izquierda tenemos el `nombre de usuario/nombre del repo`.  
 

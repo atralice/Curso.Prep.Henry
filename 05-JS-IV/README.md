@@ -1,9 +1,9 @@
 ---
 title: 'JavaScript IV: Objetos'
 eleventyNavigation:
-  key: 'JavaScript IV: Objetos'
+  key: 'JS IV'
   # parent: Introducción
-  order: 6
+  order: 10
 ---
 
 <!-- <table width="100%" style='table-layout:fixed;'>
@@ -17,14 +17,14 @@ eleventyNavigation:
     </td>
   </tr>
 </table> -->
-# Lección 5: Javascript IV (Objetos)
+# Javascript IV (Objetos)
 
 En esta lección cubriremos:
 
 * Introducción a los Objetos
 * Métodos
-* Bucles `for…in`
-* Palabra clave `this`
+* Bucles ***for…in***
+* Palabra clave ***this***
 * Objetos en Javascript
 
 <iframe src="https://player.vimeo.com/video/424936732" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

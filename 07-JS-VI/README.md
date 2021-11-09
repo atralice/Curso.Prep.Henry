@@ -1,9 +1,9 @@
 ---
 title: "JavaScript VI: Callbacks"
 eleventyNavigation:
-  key: "JavaScript VI: Callbacks"
+  key: "JS VI"
   # parent: Introducción
-  order: 8
+  order: 12
 ---
 
 <!-- <table width="100%" style='table-layout:fixed;'>
@@ -17,7 +17,7 @@ eleventyNavigation:
     </td>
   </tr>
 </table> -->
-# Lección 7: Javascript VI (Callbacks)
+# Javascript VI (Callbacks)
 
 En esta lección cubriremos:
 
@@ -50,7 +50,7 @@ crearSaludo('Dan', decirAdiosAlUsuario); // 'Goodbye Dan!'
 
 ## Más métodos de Arrays
 
-Ya conocemos y utilizamos métodos de matriz, `.push`,` .pop`, `.shift`,` .unshift` y `.length`. Pero hay muchos más métodos disponibles de forma nativa en un array. Los métodos de los que vamos a hablar aquí se denominan "métodos de orden superior", porque toman los callbacks como argumentos.
+Ya conocemos y utilizamos métodos de matriz, `.push`, `.pop`, `.shift`, `.unshift` y `.length`. Pero hay muchos más métodos disponibles de forma nativa en un array. Los métodos de los que vamos a hablar aquí se denominan "métodos de orden superior", porque toman los callbacks como argumentos.
 
 ### `.forEach`
 
@@ -127,12 +127,13 @@ console.log(doble); // [ 4, 6, 8, 10 ]
 console.log(triple); // [ 6, 9, 12, 15 ]
 ```
 
-## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
-[Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/07-JS-VI/homework)
-
 ## Recursos adicionales
 
 * [Understanding Callback Functions and How to Use Them](http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/)
 * [Eloquent Javascript: Higher Order Functions](https://eloquentjavascript.net/05_higher_order.html)
 * [MDN: Callback function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 * [MDN: Array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+## Homework
+
+Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/07-JS-VI/homework)

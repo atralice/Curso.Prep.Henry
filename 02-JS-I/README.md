@@ -1,9 +1,9 @@
 ---
 title: JavaScript I
 eleventyNavigation:
-  key: JavaScript I
+  key: JS I
   # parent: Introducción
-  order: 3
+  order: 7
 ---
 
 <!-- <table width="100%" style='table-layout:fixed;'>
@@ -18,9 +18,9 @@ eleventyNavigation:
   </tr>
 </table> -->
 
-# Lección 2: Introducción a Javascript
+# Introducción a Javascript
 
-En esta lección cubriremos:
+<!-- En esta lección cubriremos:
 
 * Introducción a Javascript
 * Variables
@@ -28,11 +28,9 @@ En esta lección cubriremos:
 * Math
 * Introducción a las Funciones
 * Control de flujo y operadores de comparación
-* Introducción a Node y NPM
+* Introducción a Node y NPM -->
 
 <iframe src="https://player.vimeo.com/video/423852829" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-## Introducción a Javascript
 
 JavaScript es un lenguaje de programación que fue creado originalmente para ser usado en el front-end de una pǻgina web. La idea original era poder dar dinamismo a las páginas webs, que en un principio eran estáticas. La introducción del "motor V8" de Google ha mejorado la velocidad y el funcionamiento de JS. Haciendo que JS (javascript) sea la lengua franca de la web, llegando inclusive al Back-End a través de NodeJs.
 
@@ -95,6 +93,7 @@ Las "strings" son bloques de texto, siempre se definirán entre comillas, ya sea
 ```javascript
 var nombrePerro = 'firulais';
 ```
+
 ### Numbers
 
 Los números son solo eso, números. Los números NO se envuelven en comillas. Pueden ser negativos también. Javascript tiene una limitación en el tamaño de un número (+/- 9007199254740991), pero muy raramente aparecerá esa limitación en nuestro uso diario.

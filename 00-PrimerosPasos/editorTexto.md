@@ -2,8 +2,8 @@
 title: Editor de Texto
 eleventyNavigation:
   key: Editor de Texto
-  parent: Primeros Pasos
-  order: 1
+  # parent: Primeros Pasos
+  order: 2
 ---
 
 # Editor de Texto
@@ -15,12 +15,7 @@ A continuación veremos una lista de los más populares:
 
 ## Sublime Text
 
-<!-- ![Sublime Text Logo](/_src/assets/00-PrimerosPasos/sublimeText_logo.png) -->
-<div class='imgDiv'>
-
 ![Sublime Text](/_src/assets/00-PrimerosPasos/sublimeText_screen.png)
-
-</div>
 
 Es un editor de texto liviano, que cuenta con una serie de plugins para adaptarlo a las necesidades de cada desarrollador.
 
@@ -38,7 +33,7 @@ Para instalarlo, realizaremos los siguientes pasos:
 
 4. Elegimos la opción adecuada según nuestro sistema operativo e iniciamos la descarga.
 
-<div class='imgDiv'>
+<div class=''>
 
 ![Sublime Text Download](/_src/assets/00-PrimerosPasos/sublimeText_download.png)
 
@@ -78,7 +73,7 @@ sudo apt-get install sublime-text
 
 Ahora, si en el **Menú de inicio** buscamos **Sublime text**, veremos la siguiente imagen:
 
-<div class='imgDiv'>
+<div class=''>
 
 ![Sublime Text Linux](/_src/assets/00-PrimerosPasos/sublimeText_linux.png)
 
@@ -90,7 +85,7 @@ Ahora, si en el **Menú de inicio** buscamos **Sublime text**, veremos la siguie
 
 <!-- ![Atom Logo](/_src/assets/00-PrimerosPasos/atom_logo.png) -->
 
-<div class='imgDiv'>
+<div class=''>
 
 ![Atom Site](/_src/assets/00-PrimerosPasos/atom_site.png)
 
@@ -125,11 +120,7 @@ Al hacer doble click, se abrirá el editor.
 
 <!-- ![VSC Logo](/_src/assets/00-PrimerosPasos/vsc_logo.png) -->
 
-<div class='imgDiv'>
-
 ![VSC Console](/_src/assets/00-PrimerosPasos/vsc_console.png)
-
-</div>
 
 Es un editor desarrollado por Microsoft.
 
@@ -139,10 +130,6 @@ Para descargarlo, nos dirigimos al sitio oficial, en la sección Dowload y desca
 
 <https://code.visualstudio.com/download>
 
-<div class='imgDiv'>
-
 ![VSC Download](/_src/assets/00-PrimerosPasos/vsc_download.png)
-
-</div>
 
 Una vez finalizada la descarga, procedemos a ejecutar el instalador.

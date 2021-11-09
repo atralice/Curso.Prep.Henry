@@ -2,11 +2,11 @@
 title: Node.JS
 eleventyNavigation:
   key: Node.JS
-  parent: Primeros Pasos
-  order: 4
+  # parent: Primeros Pasos
+  order: 5
 ---
 
-![Node.JS Logo](/_src/assets/00-PrimerosPasos/nodejs_logo.png)
+# Node.JS
 
 ## Instalación
 
@@ -16,11 +16,7 @@ Para instalar Node js en nuestra computadora, nos dirigimos al sitio oficial:
 
 Al ingresar, el sitio detectará nuestro Sistema Operativo y nos sugerirá que descarguemos el instalador adecuado.
 
-<div class='imgDiv'>
-
 ![Node.JS Screen](/_src/assets/00-PrimerosPasos/nodejs_screen.png)
-
-</div>
 
 Para proceder a la descarga, seleccionamos la versión LTS, que es la versión estable.
 Una vez finalizada la descarga, procedemos a ejecutar el instalador.

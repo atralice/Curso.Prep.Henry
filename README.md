@@ -2,11 +2,11 @@
 title: Introducción
 permalink: "/index.html"
 eleventyNavigation:
-  key: Introducción
+  key: Intro
   order: 0
 ---
+# Introducción
 
-## Introducción
 <!-- # Modulo 0 - Prep
 
 * [00 - Primeros Pasos](./00-PrimerosPasos)
@@ -19,6 +19,7 @@ eleventyNavigation:
 * [07 - VI - Callbacks](./07-JS-VI)
 * [08 - HTML](./08-HTML)
 * [09 - CSS](./09-CSS-Positioning) -->
+
 * Henry Challenge => [Inscribite acá para rendir](https://challenge.prep.soyhenry.com/)
 
 ## Conceptos

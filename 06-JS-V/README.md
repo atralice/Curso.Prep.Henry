@@ -1,9 +1,9 @@
 ---
 title: 'JavaScript V: Clases y prototype'
 eleventyNavigation:
-  key: 'JavaScript V: Clases y prototype'
+  key: 'JS V'
   # parent: Introducción
-  order: 7
+  order: 11
 ---
 
 <!-- <table width="100%" style='table-layout:fixed;'>
@@ -17,12 +17,12 @@ eleventyNavigation:
     </td>
   </tr>
 </table> -->
-# Lección 6: Javascript V (Clases y `prototype`)
+# Javascript V (Clases y ***prototype***)
 
 En esta lección cubriremos:
 
 * Clases
-* `prototype`
+* ***prototype***
 
 <iframe src="https://player.vimeo.com/video/425235994" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 

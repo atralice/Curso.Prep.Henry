@@ -1,9 +1,9 @@
 ---
 title: JavaScript III
 eleventyNavigation:
-  key: JavaScript III
+  key: JS III
   # parent: Introducción
-  order: 5
+  order: 9
 ---
 
 <!-- <table width="100%" style='table-layout:fixed;'>
@@ -18,14 +18,14 @@ eleventyNavigation:
   </tr>
 </table> -->
 
-# Lección 4: Javascript III
+# Javascript III
 
-## continuación de bucles `for` y Arrays
+## Continuación de bucles ***for*** y Arrays
 
 En esta lección cubriremos:
 
 * Introducción a los arrays
-* Bucles `for` con arrays
+* Bucles ***for*** con arrays
 
 <iframe src="https://player.vimeo.com/video/424916422" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
@@ -153,5 +153,3 @@ for (let i = 0; i < nombresEstudiantes.length; i++) {
 
 * [MDN: Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 * [MDN: for Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-
-{% readerBar "2px" "black" "yellow" %}

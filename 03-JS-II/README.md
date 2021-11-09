@@ -1,9 +1,9 @@
 ---
 title: JavaScript II
 eleventyNavigation:
-  key: JavaScript II
+  key: JS II
 #   parent: Introducción
-  order: 4
+  order: 8
 ---
 
 <!-- <table width="100%" style='table-layout:fixed;'>
@@ -18,16 +18,18 @@ eleventyNavigation:
   </tr>
 </table> -->
 
-# Lección 3: Javascript II (Flujos de control, operadores de comparación, bucles `for`)
+# Javascript II 
 
-En esta lección cubriremos:
+## Flujos de control, operadores de comparación, bucles ***for***
+
+<!-- En esta lección cubriremos:
 
 * `Undefined` y `null`
 * Operadores de comparación (continuación)
 * Flujos de control (continuación)
 * Operados lógicos
 * Bucles `for`
-* `arguments`
+* `arguments` -->
 
 <iframe src="https://player.vimeo.com/video/424318886" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 

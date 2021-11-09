@@ -3,7 +3,7 @@ title: 'CSS'
 eleventyNavigation:
   key: 'CSS'
   # parent: Introducción
-  order: 10
+  order: 14
 ---
 
 <!-- <table width="100%" style='table-layout:fixed;'>
@@ -17,7 +17,7 @@ eleventyNavigation:
     </td>
   </tr>
 </table> -->
-# Lección 9: CSS Intermedio
+# CSS Intermedio
 
 En esta lección cubriremos:
 
@@ -26,6 +26,7 @@ En esta lección cubriremos:
 * Propiedad "position".
 * Usar "position" para posicionar elementos.
 * Introducción a Flexbox.
+* Recursos adicionales.
 
 <iframe src="https://player.vimeo.com/video/425169846" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
@@ -162,7 +163,9 @@ Ejemplo: si quisiésemos nuestros elementos centrados en el medio exacto de un "
 Esta propiedad puede cambiar cómo el navegador interpreta `justify-content` (JC) y `align-items` (AI). El valor por defecto es "row" (fila), y esto funciona en la mayoría de los casos, pero algunas veces queremos cambiar cómo funciona la dirección del contenido.
 
 * `row`: es la dirección por defecto. JC aplica de izquierda a derecha, AI aplica de arriba a abajo.
-+ `column`: Esto invertirá qué propiedad controla qué dirección. JC aplicará de arriba a abajo y AI de izquierda a derecha.
+
+* `column`: Esto invertirá qué propiedad controla qué dirección. JC aplicará de arriba a abajo y AI de izquierda a derecha.
+
 * `row-reverse`: Sólo invierte la dirección de JC de derecha a izquierda, no afecta a AI.
 * `column-reverse`: Sólo invierte la dirección de AI de abajo a arriba, no afecta a JC.
 
@@ -174,7 +177,7 @@ Por último, cubriremos una propiedad más avanzada llamada "align-self". La mis
 
 ## Recursos adicionales
 
-* [Flexbox Froggy ](http://flexboxfroggy.com/) (un excelente tutorial sobre flexbox)
+* [Flexbox Froggy](http://flexboxfroggy.com/) (un excelente tutorial sobre flexbox)
 * [Conceptos básicos de FlexBox](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Conceptos_Basicos_de_Flexbox)
 * [CSS tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
