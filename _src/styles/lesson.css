@@ -5,10 +5,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* background: #fafafa; */
-  font-family: "Averin", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,153 +15,239 @@ html {
   height: 75px;
 }
 
-.lessonTitle {
-  display: flex;
-  font-weight: bold;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+@font-face {
+  font-family: "Avenir Black";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Black")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Black-03-968e784956ff9b6a05c29cc3be18cad0.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
 }
 
-sideBar {
+@font-face {
+  font-family: "Avenir Normal";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Normal")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Heavy-05-f080b6894f8375c59a197caa24aac91c.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Heavy")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Heavy-05-f080b6894f8375c59a197caa24aac91c.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+
+@font-face {
+  font-family: "Avenir Book";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Book")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Book-01-995b34ab56b423abffe48e64bf8b8df1.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+@font-face {
+  font-family: "Avenir Light";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Light")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Light-07-33f6570a328d84cb7d06e829a0c7ca1b.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+@font-face {
+  font-family: "Avenir Medium";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Medium")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Medium-09-7d635ea94b4460e86cd678e9e754a643.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+@font-face {
+  font-family: "Avenir Roman";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Roman")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Roman-12-c6d37b26297461a78d10f169dd5cf46d.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+
+body {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #fafafa;
+}
+
+navbar {
+  padding: 0 0.8rem 0 0.8rem;
+  color: rgb(240, 240, 240);
+  height: 50px;
+}
+
+#main {
+  /* border: 2px dashed; */
+  margin-top: 53px;
+}
+
+#header {
+  border-bottom: solid 1px;
+  border-color: rgb(180, 180, 180);
+  padding: 0.2rem;
+}
+
+#sidebar {
+  /* position: fixed; */
+  border-right: solid 1px;
+  border-color: rgb(180, 180, 180);
+  background-color: rgb(235, 235, 235);
+  z-index: 5;
+}
+
+#readingTime {
+  display: flex;
+  margin: 0rem 0rem 2rem 1rem;
+  width: 250px;
+  border: solid 1px;
+  justify-content: center;
+}
+
+#lesson {
+  text-align: justify;
+  padding: 2rem 1rem 3rem 2rem;
+  font-size: 1.1em;
+}
+
+#lesson h1 {
+  border: 1px solid;
+  border-radius: 4px;
+  margin: 0rem 15rem 2rem -2.2rem;
+  padding: 0.2rem 1.5rem;
+  background-color: rgb(240, 240, 0);
+  border-color: rgb(220, 220, 9);
+  color: rgb(60, 60, 60);
+}
+
+#lesson img {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#lesson iframe {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+/* sideBar {
   position: fixed;
   width: 200px;
   top: 0px;
   left: 0px;
   height: 100%;
   border-right: solid;
-  border-color: rgb(180, 180, 180);
-  background-color: rgb(235, 235, 235);
   border-width: 1px;
   z-index: 9;
-}
-
-
-
-navbar p {
-  color: lightgrey
-}
-
-/* nav {
-  position: fixed;
-  width: 200px;
-  top: 0px;
-  right: 0px;
-  height: 100%;
-  border-right: solid;
-  border-color: rgb(180, 180, 180);
-  background-color: rgb(235, 235, 235);
-  border-width: 1px;
-  z-index: 15;
 } */
 
-sideBar div {
-  /* border-style: solid; */
-  margin: 5rem 0 0 0rem;
+/* sideBar lessonTitle {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+} */
+
+/* sideBar div {
+  border-style: solid;
+  margin: 40px 0 0 0rem;
 }
 
 sideBar div a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   display: block;
-}
+} */
 
-sideBar div a:hover {
+/* sideBar div a:hover {
   color: rgb(88, 80, 80);
-}
+} */
 
-sideBar div a:active {
+/* sideBar div a:active {
   color: rgb(255, 238, 0);
-}
+} */
 
-sideBar li {
+/* sideBar li {
   color: rgb(44, 44, 44);
   margin-bottom: 0.5rem;
-}
+} */
 
-sideBar ul {
-  margin: 0 0 1rem 1rem;
-  list-style: none;
-}
+/* sideBar ul {
+  margin: 0 0 1rem 1rem; 
+  /* list-style: none;
+} */
 
-main {
-  /* border-style: solid; */
+/* main {
+  border-style: solid;
   margin: 5rem 2rem 5rem 14rem;
-  color: black;
-  font-size: 1.1em;
   text-align: justify;
-  /* margin-left: 215px; */
-}
-
-.readingTime {
-  border: 1px solid grey;
-  padding: 0.2rem 0.7rem;
-  font-size: 0.8em;
-  margin-bottom: 2rem;
-}
-
-main h1 {
-  background-color: rgb(240, 240, 0);
-  border: 1px solid;
-  border-radius: 4px;
-  border-color: rgb(220, 220, 9);
-  margin: 1rem 0 1rem 0;
-  padding-left: 1rem;
-  text-align: left;
-  color: rgb(60, 60, 60);
-}
+} */
 
 main h2 {
-  margin: 2rem 0 1rem 0;
+  margin: 3rem 0 2rem 0;
 }
 
 main ul {
   list-style: square;
-  margin-left: 2rem;
-}
-
-main li {
-  margin: 1rem 0 1rem 2rem;
-}
-
-.imgDiv {
-  display: flex;
-  justify-content: center;
-}
-
-.imgDivBorderless {
-  display: flex;
-  justify-content: center;
-}
-
-.imgDiv img {
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 footer {
-  color: rgb(248, 248, 248);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  position: relative;
-  height: 30px;
-  z-index: 10;
+  color: rgb(240, 240, 240);
 }
 
 code {
   font-weight: bold;
   font-size: 1.2em;
-}
-
-h3 {
-  margin: 1rem 0 1rem 0;
-}
-
-p {
-  margin: 1rem 0 1rem 0;
 }
 
 /* Bloques de codigo */
@@ -174,6 +256,7 @@ pre[class*="language-"],
 code[class*="language-"] {
   border-radius: 0.2rem;
   color: #d4d4d4;
+  font-weight: normal;
   font-size: 14px;
   text-shadow: none;
   font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono",
