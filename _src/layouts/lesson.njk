@@ -10,7 +10,7 @@
 
   <body>
     <div class="reader-bar-start">
-    
+
       <header>
         <div>
           <img src='/_src/assets/logo-white.png' height=30px alt='logo Henry'/>
@@ -25,7 +25,7 @@
           {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
         </div>
         <nav>
-        {# {{ content | toc | safe }} #}
+          {# {{ content | toc | safe }} #}
         </nav>
       </sideBar>
 
@@ -47,5 +47,6 @@
       </footer>
 
     </div>
+     {% readerBar "2px", "black", "yellow" %}
   </body>
 </html>
