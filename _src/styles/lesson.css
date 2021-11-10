@@ -106,13 +106,14 @@ html {
 body {
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.875rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Avenir Medium";
   font-weight: 400;
   line-height: 1.43;
   background-color: #fafafa;
 }
 
 navbar {
+  /* border: 2px dashed; */
   padding: 0 0.8rem 0 0.8rem;
   color: rgb(240, 240, 240);
   height: 50px;
@@ -127,19 +128,35 @@ navbar {
   /* border-bottom: solid 1px;
   border-color: rgb(180, 180, 180); */
   padding-top: 0.3rem;
+  /* margin-bottom: 1rem; */
+  /* z-index: 999; */
 }
 
 #header a {
   color: black;
-  font-weight: bold;
 }
 
 #sidebar {
-  /* position: fixed; */
-  border-right: solid 1px;
+  padding-top: 2rem;
+  margin-top: 3rem;
+  border-top-left-radius: 8px;
+  border-left: solid 1px;
+  border-top: solid 1px;
   border-color: rgb(180, 180, 180);
   background-color: rgb(235, 235, 235);
-  z-index: 5;
+}
+
+#sidebar a {
+  color: black;
+  text-decoration: none;
+}
+
+#sidebar a:hover {
+  color: rgb(88, 80, 80);
+}
+
+#sidebar a:active {
+  color: rgb(255, 238, 0);
 }
 
 #readingTime {
@@ -152,6 +169,7 @@ navbar {
 }
 
 #lesson {
+  /* border: 2px dashed; */
   text-align: justify;
   padding: 2rem 1rem 3rem 2rem;
   font-size: 1.1em;
@@ -194,52 +212,6 @@ navbar {
 footer {
   color: rgb(240, 240, 240);
 }
-
-/* sideBar {
-  position: fixed;
-  width: 200px;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  border-right: solid;
-  border-width: 1px;
-  z-index: 9;
-} */
-
-/* sideBar lessonTitle {
-  margin-left: 1rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-} */
-
-/* sideBar div {
-  border-style: solid;
-  margin: 40px 0 0 0rem;
-}
-
-sideBar div a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  display: block;
-} */
-
-/* sideBar div a:hover {
-  color: rgb(88, 80, 80);
-} */
-
-/* sideBar div a:active {
-  color: rgb(255, 238, 0);
-} */
-
-/* sideBar li {
-  color: rgb(44, 44, 44);
-  margin-bottom: 0.5rem;
-} */
-
-/* sideBar ul {
-  margin: 0 0 1rem 1rem; 
-  /* list-style: none;
-} */
 
 code {
   font-weight: bold;
