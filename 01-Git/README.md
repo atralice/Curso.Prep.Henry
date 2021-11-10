@@ -28,7 +28,7 @@ eleventyNavigation:
 
 Si eres diseñador gráfico o web, y quieres mantener cada versión de una imagen o diseño (algo que sin duda quieres), un sistema de control de versiones (Version Control System o VCS en inglés) es una elección muy sabia. Te permite revertir archivos a un estado anterior, revertir el proyecto entero a un estado anterior, comparar cambios a lo largo del tiempo, ver quién modificó por última vez algo que puede estar causando un problema, quién introdujo un error y cuándo, y mucho más. Usar un VCS también significa generalmente que si rompes o pierdes archivos, puedes recuperarlos fácilmente.
 
-### Hay varios tipos de sistemas de versionado, estos pueden ser
+ Hay varios tipos de sistemas de versionado, estos pueden ser:
 
 ### Locales
 
@@ -39,10 +39,7 @@ Como se pueden imaginar, este sistema funciona _bien_ para trabajar solos, pero 
 
 ### Centralizados
 
-<div class='imgDivBorderless'>
-
 ![Centralizado](/_src/assets/01-Git/centralizado.png)
-</div>
 
 Para solventar este problema, se desarrollaron los sistemas de control de versiones centralizados (_Centralized Version Control Systems_ o __CVCSs__ en inglés). Estos sistemas, como __CVS__, __Subversion__, y __Perforce__, tienen un único servidor que contiene todos los archivos versionados, y varios clientes descargan los archivos desde ese lugar central. Durante muchos años éste ha sido el estándar para el control de versiones.
 
