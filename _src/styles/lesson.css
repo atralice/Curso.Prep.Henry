@@ -181,6 +181,14 @@ navbar {
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
+#lesson ul {
+  list-style: square;
+}
+
+footer {
+  color: rgb(240, 240, 240);
+}
+
 /* sideBar {
   position: fixed;
   width: 200px;
@@ -227,27 +235,10 @@ sideBar div a {
   /* list-style: none;
 } */
 
-/* main {
-  border-style: solid;
-  margin: 5rem 2rem 5rem 14rem;
-  text-align: justify;
-} */
-
-main h2 {
-  margin: 3rem 0 2rem 0;
-}
-
-main ul {
-  list-style: square;
-}
-
-footer {
-  color: rgb(240, 240, 240);
-}
 
 code {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 /* Bloques de codigo */
