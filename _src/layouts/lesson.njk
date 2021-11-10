@@ -15,7 +15,7 @@
     <div class="reader-bar-start">
       <navbar class="navbar fixed-top navbar-light bg-black">
         <div class="container-fluid">
-            <img src='/_src/assets/logo-white.png' alt='logo Henry' height=27px class="d-inline-block align-text-top">
+          <img src='/_src/assets/logo-white.png' alt='logo Henry' height=27px class="d-inline-block align-text-top">
           <span>Prep Course</span>
         </div>
       </navbar>
@@ -24,9 +24,13 @@
         <div id='header' class="row">
 
           {# Navigation #}
+
           {{ collections.all | eleventyNavigation | bootstrapNav({
-    listClass: "nav nav-pills justify-content-center", listChildItemClass: "dropdown-menu shadow", activeKey: eleventyNavigation.key
-  }) | safe }}
+              listClass: "nav nav-tabs justify-content-center", 
+              activeKey: eleventyNavigation.key
+            }) | safe }}
+
+          {# {{ collections.all | eleventyNavigation | bootstrapNav | safe }} #}
 
         </div>
         <div class="row">
@@ -45,7 +49,7 @@
 
             {# Lesson (markdown content) #}
             {{ content | safe }}
-          
+
           </div>
         </div>
       </div>
