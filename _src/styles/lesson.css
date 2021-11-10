@@ -129,6 +129,11 @@ navbar {
   padding-top: 0.3rem;
 }
 
+#header a {
+  color: black;
+  font-weight: bold;
+}
+
 #sidebar {
   /* position: fixed; */
   border-right: solid 1px;
@@ -235,7 +240,6 @@ sideBar div a {
   margin: 0 0 1rem 1rem; 
   /* list-style: none;
 } */
-
 
 code {
   font-weight: bold;
