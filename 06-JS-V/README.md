@@ -54,11 +54,11 @@ console.log(kitty.maullar()); // 'Mi nombre es Kitty ... Meow!'
 
 ```
 
-### `this` en las clases
+### ***this*** en las clases
 
 La palabra clave `this` puede comenzar a volverse muy confusa cuando comenzamos a usarla en clases. En el último ejemplo lo usamos en el método de los maullidos. Una buena regla general si no está seguro de a qué se refiere `this`, es observar dónde se llama el método y el objeto a la izquierda del 'punto'. Ese es el objeto al que se refiere `this`.
 
-## `prototype`
+## ***prototype***
 
 La creación de funciones es costosa (refiriéndonos a la capacidad de memoria de una computadora) y cada vez que creamos un nuevo objeto de clase con métodos, estamos recreando esos métodos en la memoria. Puede imaginar que si estamos creando miles de objetos de clase a partir de una clase con docenas de métodos, la memoria se acumulará rápidamente (20.000 - 40.000 métodos). Las clases tienen una forma única de establecer un método una vez y dar acceso a cada objeto de esa clase a esos métodos. Esto se llama el `prototype`. Cada clase tiene una propiedad _prototype_, que luego podemos establecer en métodos:
 
@@ -84,7 +84,7 @@ Los métodos de `prototype` tienen acceso a la palabra clave `this` y, al igual 
 
 Hasta ahora siempre que teníamos que crear un objeto nuevo declarábamos un object literal, pero vamos a ver que hay otros métodos que nos da el prototype de Object para cumplir esa tarea
 
-##### Object.create
+### Object.create
 
 El método `create` de los objetos nos permite crear un nuevo objeto a partir de un prototype especificado.
 
@@ -101,7 +101,7 @@ El método `create` de los objetos nos permite crear un nuevo objeto a partir de
 > var obj = {}
 ```
 
-##### Object.assign
+### Object.assign
 
 El método `assign` de los objetos te permite agregar propiedades a un objeto pasado por parámetro
 

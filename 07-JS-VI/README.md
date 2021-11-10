@@ -52,7 +52,7 @@ crearSaludo('Dan', decirAdiosAlUsuario); // 'Goodbye Dan!'
 
 Ya conocemos y utilizamos métodos de matriz, `.push`, `.pop`, `.shift`, `.unshift` y `.length`. Pero hay muchos más métodos disponibles de forma nativa en un array. Los métodos de los que vamos a hablar aquí se denominan "métodos de orden superior", porque toman los callbacks como argumentos.
 
-### `.forEach`
+### **.forEach**
 
 `.forEach` es un bucle for integrado en cada array. `.forEach` toma un callback como su único argumento, e itera sobre cada elemento de la matriz y llama al callback en él. El callback puede tomar dos argumentos, el primero es el elemento en sí, el segundo es el índice del elemento (este argumento es opcional).
 
@@ -74,7 +74,7 @@ function mostrarNombres(elemento) {
 autos.forEach(mostrarNombres);
 ```
 
-### `.reduce`
+### **.reduce**
 
 `.reduce` ejecutará un bucle en nuestra matriz con la intención de reducir cada elemento en un elemento que se devuelve. Como es el primer argumento, acepta un callback que toma dos argumentos, primero un 'acumulador' (el resultado del método de reducción hasta ahora), y el segundo es el elemento en el que se encuentra actualmente. El callback debe contener siempre una declaración de devolución ("return"). `.reduce` también toma un segundo argumento opcional, que sería el acumulador de arranque ("starting accumulator"). Si no se suministra el acumulador de arranque, la reducción comenzará en el primer elemento de la matriz. `.reduce` siempre devolverá el acumulador cuando termine de recorrer los elementos.
 
@@ -106,7 +106,7 @@ console.log(productos); // 362880
 console.log(frases); // "Frase completa: Hola, mi nombre es Martin"
 ```
 
-### `.map`
+### **.map**
 
 `.map` se usa cuando queremos cambiar cada elemento de una matriz de la misma manera. `.map` toma una devolución de llamada como único argumento. Al igual que el método `.forEach`, el callback tiene el elemento y el índice de argumentos opcionales. A diferencia de `.reduce`, `.map` devolverá toda la matriz.
 

@@ -20,7 +20,7 @@ eleventyNavigation:
 
 # Introducción a Javascript
 
-<!-- En esta lección cubriremos:
+En esta lección cubriremos:
 
 * Introducción a Javascript
 * Variables
@@ -28,7 +28,7 @@ eleventyNavigation:
 * Math
 * Introducción a las Funciones
 * Control de flujo y operadores de comparación
-* Introducción a Node y NPM -->
+* Introducción a Node y NPM
 
 <iframe src="https://player.vimeo.com/video/423852829" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
@@ -82,9 +82,7 @@ En ciencias de la computación, un tipo de dato informático o simplemente tipo,
 
 Los tipos de datos aceptados varían de lenguaje en lenguaje.
 
-### Strings, Numbers, and Booleans
-
-Estos son los tipos de datos más básicos en Javascript.
+Los tipos de datos más básicos en Javascript son ***Strings***, ***Numbers***, and ***Booleans***.
 
 ### Strings
 
@@ -337,12 +335,12 @@ El símbolo "mayor que" (`>`) que ve en el último ejemplo se llama _Operador de
 
 _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para su uso en servidores/back-end. Tendremos que instalarlo en nuestras máquinas para completar los próximos ejercicios. Para instalar Node, haga clic aquí: [Descargar e instalar Node.js](https://nodejs.org/en/download/). Node viene con "NPM" incluido. NPM es un administrador de paquetes ("package manager") para paquetes Javascript y lo usaremos a lo largo de nuestro aprendizaje en Henry. Una vez que hayas instalado Node.js, no necesitas hacer nada más para instalar NPM.
 
-## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
-
-[Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/02-JS-I/homework)
-
 ## Recursos adicionales
 
 * [Codecademy: Learn Javascript](https://www.codecademy.com/learn/learn-javascript)
 * [Udacity: Intro to Javascript](https://www.udacity.com/course/intro-to-javascript--ud803)
 * [MDN: Official Javascript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+## Homework
+
+Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/02-JS-I/homework)
