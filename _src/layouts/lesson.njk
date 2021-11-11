@@ -64,48 +64,6 @@
       </div>
     </footer>
 
-    {# 
-    <div class="reader-bar-start">
-
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src='/_src/assets/logo-white.png' alt='logo Henry' height=30px class="d-inline-block align-text-top">
-          </a>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-    Contenido
-  </button>
-            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
-              {{ collections.all | eleventyNavigation | bootstrapNav | safe }}
-            </ul>
-          </div>
-        </div>
-      </navbar>
-
-      <sideBar>
-          <div>
-
-            {{ content | toc | safe }}
-
-          </div>
-      </sideBar>
-
-      <main>
-
-        <div>
-
-
-          <lesson>
-          </lesson>
-
-        </div>
-      </main>
-
-
-    </div>
-     #}
-    {% readerBar "3px",
-    "black",
-    "yellow" %}
+    {% readerBar "3px", "black", "yellow" %}
   </body>
 </html>
