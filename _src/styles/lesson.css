@@ -180,9 +180,13 @@ navbar {
   border-radius: 4px;
   margin: 0rem 15rem 2rem -2.2rem;
   padding: 0.2rem 1.5rem;
-  background-color: rgb(240, 240, 0);
+  background-color: rgb(255, 238, 0);
   border-color: rgb(220, 220, 9);
   color: rgb(60, 60, 60);
+}
+
+#lesson h3 {
+  margin-top: 2rem;
 }
 
 #lesson img {
