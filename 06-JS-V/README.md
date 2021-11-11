@@ -160,7 +160,7 @@ Ahora todo Alumno de Henry antes de Alumno es una Persona, asique podríamos dec
   }
 ```
 
-#### Constructores Anidados
+### Constructores Anidados
 
 Pero en este caso estaríamos repitiendo código, y si en un futuro quisiera cambiar una propiedad tendría que hacerlo en ambos constructores.
 Descartemos esta opción.
@@ -211,11 +211,11 @@ Vamos a solucionar ese problema agregando al prototipo los métodos de Persona, 
 < 'Soy Franco de Montevideo'
 ```
 
-## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
-
-[Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/06-JS-V/homework)
-
 ## Recursos adicionales
 
 * [MDN: Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 * [MDN: Prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+
+## Homework
+
+Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/06-JS-V/homework)
