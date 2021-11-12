@@ -104,6 +104,7 @@ html {
 }
 
 body {
+  /* border: 2px dashed; */
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.875rem;
   font-family: "Avenir Medium";
@@ -121,15 +122,13 @@ navbar {
 
 #main {
   /* border: 2px dashed; */
+  max-width: 1400px;
   margin-top: 53px;
 }
 
 #header {
-  /* border-bottom: solid 1px;
-  border-color: rgb(180, 180, 180); */
+  /* border: 2px dashed; */
   padding-top: 0.3rem;
-  /* margin-bottom: 1rem; */
-  /* z-index: 999; */
 }
 
 #header a {
@@ -140,10 +139,10 @@ navbar {
   padding-top: 2rem;
   margin-top: 3rem;
   border-top-left-radius: 8px;
-  border-left: solid 1px;
-  border-top: solid 1px;
+  border: solid 1px;
   border-color: rgb(180, 180, 180);
   background-color: rgb(235, 235, 235);
+  /* border: 2px dashed; */
 }
 
 #sidebar a {
