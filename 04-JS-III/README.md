@@ -145,11 +145,11 @@ for (let i = 0; i < nombresEstudiantes.length; i++) {
 // 'Samuel'
 ```
 
-### Abre la carpeta "homework" y completa la tarea descrita en el archivo README
-
-[Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/04-JS-III/homework)
-
 ### Recursos adicionales
 
 * [MDN: Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 * [MDN: for Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+## Homework
+
+Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/04-JS-III/homework)

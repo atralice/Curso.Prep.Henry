@@ -286,19 +286,12 @@ Te invitamos a buscar en Google información de estos conceptos para poder desar
 * Recordemos aclarar el lenguaje en el que estamos buscando el tema, como en el ejemplo de arriba donde aclaramos javascript, ya que un mismo tema puede existir en distintos lenguajes de programación y funcionar de manera distinta en cada uno de ellos.
 * Uno de los primeros resultados que vas a encontrar será MDN (Mozilla Developer Network): es una web muy completa que incluye tanto documentación como ejemplos.
 
-<br>
-<br>
-<details>
+
+
     <summary>Spoiler, resultado de búsqueda en Google!</summary>
     <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/switch">MDN : Switch</a>
     <br>
     <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/do...while">MDN : Do While</a>
-</details>
-<br>
-<br>
-
-## Abre la carpeta "homework" y completa la tarea descripta en el archivo README
-[Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/03-JS-II/homework)
 
 ## Recursos adicionales
 
@@ -306,3 +299,7 @@ Te invitamos a buscar en Google información de estos conceptos para poder desar
 * [MDN: Control Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 * [MDN: Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
 * [MDN: for Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+## Homework
+
+Abre la carpeta "homework" y completa la tarea descripta en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/03-JS-II/homework)

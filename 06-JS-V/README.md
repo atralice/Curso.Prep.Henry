@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript V: Clases y prototype'
+title: 'JavaScript V'
 eleventyNavigation:
   key: 'JS V'
   # parent: Introducción
@@ -38,7 +38,6 @@ Si tienes experiencia en un lenguaje orientado a objetos (como Java o C#), proba
 En este ejemplo crearemos una clase `Gato`. La convención para las clases consiste en dar un nombre en mayúscula al nombre de todo lo que se pueda instanciar con la palabra clave `new`. Cuando usamos la palabra clave `new`, Javascript hace un gran trabajo detrás de escena para nosotros y crea y devuelve un objeto automáticamente.
 
 ```js
-
 function Gato(nombre) {
     // El nuevo operador crea un objeto, "this"
     this.nombre = nombre;
