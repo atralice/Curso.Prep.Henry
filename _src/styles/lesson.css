@@ -121,28 +121,46 @@ navbar {
 }
 
 #main {
-  /* border: 2px dashed; */
+  /* border: 2px dashed red; */
   max-width: 1400px;
   margin-top: 53px;
 }
 
-#header {
-  /* border: 2px dashed; */
+#headerTags {
+  /* border: 2px dashed blue; */
   padding-top: 0.3rem;
 }
 
-#header a {
+#headerTags a {
   color: black;
 }
 
 #sidebar {
-  padding-top: 2rem;
-  margin-top: 3rem;
-  border-top-left-radius: 8px;
+  display: flex;
+  position: fixed;
+  z-index: 200;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   border: solid 1px;
   border-color: rgb(180, 180, 180);
   background-color: rgb(235, 235, 235);
-  /* border: 2px dashed; */
+  width: 200px;
+  /* border: 2px dashed yellow; */
+}
+
+#tocTitle {
+  font-weight: bold;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+}
+
+#tocBox {
+  margin-top: 1rem;
 }
 
 #sidebar a {
@@ -159,29 +177,34 @@ navbar {
 }
 
 #readingTime {
-  display: flex;
-  margin: 0rem 0rem 2rem 1rem;
+  text-align: center;
+  font-weight: bold;
   width: 250px;
-  border: solid 1px;
-  justify-content: center;
+  /* border: solid 1px; */
   font-size: 1rem;
+  margin-bottom: -4rem;
+  margin-top: 3rem;
 }
 
 #lesson {
-  /* border: 2px dashed; */
+  /* border: 2px dashed green; */
   text-align: justify;
-  padding: 2rem 1rem 3rem 2rem;
+  padding: 2rem 4rem 4rem 17rem;
   font-size: 1.1em;
 }
 
 #lesson h1 {
   border: 1px solid;
   border-radius: 4px;
-  margin: 0rem 15rem 2rem -2.2rem;
-  padding: 0.2rem 1.5rem;
+  margin: 1rem 0 3rem 0;
+  padding: 0.2rem 0.5rem;
   background-color: rgb(255, 238, 0);
   border-color: rgb(220, 220, 9);
   color: rgb(60, 60, 60);
+}
+
+#lesson h2 {
+  margin-top: 3rem;
 }
 
 #lesson h3 {
@@ -201,6 +224,9 @@ navbar {
 #lesson iframe {
   display: block;
   margin: auto;
+  align-self: center;
+  display: flex;
+  justify-self: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
@@ -210,6 +236,20 @@ navbar {
 
 #lesson ul {
   list-style: square;
+}
+
+#feedbackBox {
+  /* border: 2px dashed; */
+  display: flex;
+  margin-bottom: 3rem;
+  height: 200px;
+  justify-content: space-around;
+  align-content: space-evenly;
+}
+
+#feedbackBox a {
+  display: flex;
+  justify-content: center;
 }
 
 footer {

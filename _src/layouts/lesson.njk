@@ -21,44 +21,57 @@
       </navbar>
 
       <div id='main' class="container-fluid">
-        <div id='header' class="row">
-
+        <div id='headerTags' class="row">
           {# Navigation #}
-
           {{ collections.all | eleventyNavigation | bootstrapNav({
               listClass: "nav nav-tabs justify-content-center", 
               activeKey: eleventyNavigation.key
             }) | safe }}
-
         </div>
+
         <div class="row">
-          <div id='lesson' class="col-10">
-            <div class="row">
+
+          <div id='sidebar'>
+            <div id="tocTitle" class="row">
+            Contenido de la clase
+            </div>
+            <div id="tocBox" class="row">
+              {# Table of contents #}
+              {{ content | toc | safe }}
+            </div>
+          </div>
+
+          <div id='lesson'>
+            <div style="display:flex; justify-content: right">
               <div id="readingTime">
                     Tiempo de lectura {{ content | readingTime }}
               </div>
             </div>
-
-            {# Lesson (markdown content) #}
-            {{ content | safe }}
-
-          </div>
-          <div id='sidebar' class="col-2">
-
-            {# Table of contents #}
-            {{ content | toc | safe }}
-
+            <div>
+              {# Lesson (markdown content) #}
+              {{ content | safe }}
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <footer class="bg-light text-center text-lg-start">
-      <div class="text-center p-1" style="background-color: black">
-        <h6>Hecho con 💛 por alumnos de Henry</h6>
-      </div>
-    </footer>
+          <div class="row" id="feedbackBox">
+                Qué te pareció la clase?
+              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{title}}' target="_blank">
+              <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
+            </a>
+              Dejanos tu feedback!
+          </div>
 
-    {% readerBar "3px", "black", "yellow" %}
-  </body>
-</html>
+      </div>
+
+      <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-1" style="background-color: black">
+          <h6>Hecho con 💛 por alumnos de Henry</h6>
+        </div>
+      </footer>
+
+      {% readerBar "3px",
+      "black",
+      "yellow" %}
+    </body>
+  </html>
