@@ -69,19 +69,19 @@ Por ejemplo, el tag `<img>` sirve para mostrar una imagen. Este tag recibe el at
 
 ### Tags
 
-#### \<html>
+#### ***\<html>***
 
 El tag `<html>` va a contener a todos los demás tags dentro suyo. Este tag básicamente sirve para avisarle al browser que el contenido debe ser interpretado como `html`.
 
-#### \<head>
+#### ***\<head>***
 
 Este tag sirve para contener tags que contengan información sobre el documento, pero es información que no queremos que se renderee. Comunmente contiene el *titulo* de la página y *links* a recursos externos que pueda usar la página (javascript o css).
 
-#### \<title>
+#### ***\<title>***
 
 Es el título de la página, se mostrará en el tab del browser o en la parte superior (pero no en la página).
 
-#### \<body>
+#### ***\<body>***
 
 En este tag estára encerrado todo lo que querramos que se vea en la pantalla.
 
@@ -101,7 +101,7 @@ Como ven, para mayor fácilidad en la lectura y la estructuración del documento
 
 (Todos los tags que presentaremos más abajo van siempre adentro de un tag `<body>`)
 
-#### \<p>
+#### ***\<p>***
 
 Es el tag para los párrafos. Mostrará el texto contenido dentro en una nueva línea.
 
@@ -109,15 +109,15 @@ Es el tag para los párrafos. Mostrará el texto contenido dentro en una nueva l
   <p>Soy un párrafo</p>
 ```
 
-#### \<span>
+#### ***\<span>***
 
 El elemento span es un contenedor de texto genérico. No inserta una nueva linea, como lo hace el elemento p. Sirve básicamente para darle estilo al texto.
 
-#### \<div>
+#### ***\<div>***
 
 El elemento div es un *contenedor* genérico. Es usado principalmente para dar estilo, imaginen que es una caja (cuyo tamaño y color podes modificar *a piacere*), y que dentro podés poner otras cajas iguales.
 
-#### \<a>
+#### ***\<a>***
 
 El tag a (del inglés *anchor*), nos permite crear **links** a otros documentos y páginas. Este tag recibe el *atributo* `href` que indica a dónde apunta el link.
 
@@ -125,7 +125,7 @@ El tag a (del inglés *anchor*), nos permite crear **links** a otros documentos 
   <a href="http://www.soyhenry.com">Esto es un link!</a>
 ```
 
-#### \<h1> ... \<h6>
+#### ***\<h1> ... \<h6>***
 
 Son los tags de encabezado o títulos, están pensandos del 1 al 6, para indicar la importancia del contenido y su jerarquía.
 
@@ -135,7 +135,7 @@ Son los tags de encabezado o títulos, están pensandos del 1 al 6, para indicar
   <h6>El título menos importante.</h6>
 ```
 
-#### \<img>
+#### ***\<img>***
 
 Este tag nos permite mostrar imágenes en la pantalla. Necesita el atributo `src` que indica la *URL* de donde sacar la imagen a mostrar.
 
@@ -143,11 +143,11 @@ Este tag nos permite mostrar imágenes en la pantalla. Necesita el atributo `src
   <img src="http://www.soyhenry.com/imageurl.jpg" />
 ```
 
-#### \<ul>
+#### ***\<ul>***
 
 Este tag representa una lista desordenada (del inglés "unordered list"). Este tag está diseñado para contener otros tags de tipo item. También existe el tag `<ol>` que viene de "ordered list".
 
-#### \<li>
+#### ***\<li>***
 
 Son los tags que contienen los items de la lista ('list item').
 
@@ -214,9 +214,9 @@ Cons:
 
 * La regla aplica a un sólo elemento, si quisieramos que varios elementos tengan la misma regla, deberíamos copypastear!
 
-### \<style/>
+### ***\<style/>***
 
-El tag *style*, que se escribe en el <head> del documento, nos permite escribir reglas que se aplicaran a uno o varios elementos html. Es importante notar que con esta forma, podremos darle estilo a muchos elementos de una sóla vez, pero sólo a elementos que estén en el mismo documento.
+El tag `style`, que se escribe en el <head> del documento, nos permite escribir reglas que se aplicaran a uno o varios elementos html. Es importante notar que con esta forma, podremos darle estilo a muchos elementos de una sóla vez, pero sólo a elementos que estén en el mismo documento.
 
 ```html
   <html>
@@ -240,7 +240,7 @@ Cons:
 * No podemos compartir las reglas con *otro* documento HTML.
 * Hay que prestar atención a las reglas, y a qué elementos se aplican.
 
-### <link/>
+### ***\<link/>***
 
 Con el tag `<link>` dentro del `<head>` del documento, vamos a poder *importar* un archivo css que contenga varias reglas CSS. Funciona similar al tag `<style/>` anterior. Pero ahora tenemos la ventaja que podemos *compartir* el mismo archivo css con varios documentos HTML.
 
@@ -340,15 +340,15 @@ Para poder entender y luego manipular la forma en que los elementos HTML aparece
 
 En un documento html cada elemento es representado como una *caja rectangular* y en CSS cada una de estas cajas tiene 4 capas que podemos manipular. Yendo desde afuera hacia adentro, las capas son:
 
-* **margin**: el espacio que separa al elemento de los otros elementos. Si los pensamos como cajas, es el espacio entre las cajas.
+* `margin`: el espacio que separa al elemento de los otros elementos. Si los pensamos como cajas, es el espacio entre las cajas.
 
-* **border**: el "borde de la caja". Podemos hacerlo visible con diferentes grosores, estilos y colores, como ya hicimos varias veces en ejercicios anteriores.
+* `border`: el "borde de la caja". Podemos hacerlo visible con diferentes grosores, estilos y colores, como ya hicimos varias veces en ejercicios anteriores.
 
-* **padding**: el espacio entre el borde de la caja y su contenido. En la metáfora de la caja, podríamos por ejemplo tener una caja grande con algo chiquito adentro, osea que "habría mucho padding".
+* `padding`: el espacio entre el borde de la caja y su contenido. En la metáfora de la caja, podríamos por ejemplo tener una caja grande con algo chiquito adentro, osea que "habría mucho padding".
 
-* **content**: el contenido de la caja. Por ejemplo el texto en un h1, otros tags anidados, etc, todo lo que esté contenido en el elemento.
+* `content`: el contenido de la caja. Por ejemplo el texto en un h1, otros tags anidados, etc, todo lo que esté contenido en el elemento.
 
-### height (alto) y width (ancho)
+### ***height*** (alto) y ***width*** (ancho)
 
 Podemos decirle al navegador exactamente qué tan *alto* y *ancho* queremos que sea nuestro elemento (contenido), esto se usa en `div`, `img` y otros elementos basados en la altura (para determinar el tamaño del texto, necesitaremos usar un propiedad de estilo diferente). Los valores de tamaño pueden estar en muchas medidas diferentes, pero el más común es el píxel "px".
 
@@ -359,11 +359,11 @@ Podemos decirle al navegador exactamente qué tan *alto* y *ancho* queremos que 
   }
 ```
 
-### margin
+### ***margin***
 
 El margen es el área transparente alrededor del elemento que deseas que no choque con nada. Es la capa más externa en el Modelo de caja.
 
-### border
+### ***border***
 
 Borde establecerá un *borde* alrededor de su elemento, puedes determinar el tamaño, color y estilo del borde. Puede encontrar una lista de estilos de borde aquí: https://developer.mozilla.org/en-US/docs/Web/CSS/border. El borde está fuera del padding, pero dentro del margen.
 
@@ -373,7 +373,7 @@ Borde establecerá un *borde* alrededor de su elemento, puedes determinar el tam
   }
 ```
 
-### padding
+### ***padding***
 
 El padding es el area transparente entre el borde y el contenido, es similar al margen, pero para adentro
 
@@ -395,7 +395,7 @@ Saber esto nos ayudará a dimensionar y posicionar nuestros elementos correctame
 
 ## Otras propiedades CSS
 
-### background
+### ***background***
 
 El background se puede establecer en una variedad de reglas, la más común sería establecer el fondo en un color o una imagen. Ambos se muestran a continuación.
 
@@ -408,11 +408,11 @@ El background se puede establecer en una variedad de reglas, la más común ser�
   }
 ```
 
-### color
+### ***color***
 
 El color se usa sólo para texto. Establecerá el color de tu texto
 
-### font-size
+### ***font-size***
 
 No podemos usar ancho o alto para el texto, pero podemos determinar el tamaño de la fuente utilizada. Puede usar cualquier unidad de tamaño aquí que usaría con una fuente en un procesador de textos (px, em, in, etc.). El más popular es px.
 
