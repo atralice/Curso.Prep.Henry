@@ -52,21 +52,21 @@ let apellido = 'Perez';
 const comidafavorita = 'Pizza';
 ```
 
-### var
+#### var
 
 `var` es la forma declarar una variable en ES5 (ES5 es la versión de JS, hoy en día existe ES6 que es la nueva versión, pero que todavía no es la más usada). Esta es una _palabra clave_ genérica para "variable".
 
 Las dos formas siguentes, si bien son válidas, vamos a utilizarlas más adelante en la carrera, cuando tengamos más claros otros conceptos:
 
-### let
+#### let
 
 `let` es una nueva palabra clave de ES6, esto asignará una variable muy similar a `var`, pero con un comportamiento un poco diferente. Lo más notable es que difiere al crear un "nivel de _scope_" (hablaremos sobre esto más adelante).
 
-### const
+#### const
 
 `const` también es nuevo en ES6. Un `const` es una variable que no se podrá cambiar. Esto es la abreviatura de "constante".
 
-### console.log
+#### console.log
 
 Otro concepto del que hablaremos de inmediato es
 
@@ -84,7 +84,7 @@ Los tipos de datos aceptados varían de lenguaje en lenguaje.
 
 Los tipos de datos más básicos en Javascript son ***Strings***, ***Numbers***, and ***Booleans***.
 
-### Strings
+#### Strings
 
 Las "strings" son bloques de texto, siempre se definirán entre comillas, ya sea simple o doble. Cualquier texto entre comillas es una cadena o string.
 
@@ -92,7 +92,7 @@ Las "strings" son bloques de texto, siempre se definirán entre comillas, ya sea
 var nombrePerro = 'firulais';
 ```
 
-### Numbers
+#### Numbers
 
 Los números son solo eso, números. Los números NO se envuelven en comillas. Pueden ser negativos también. Javascript tiene una limitación en el tamaño de un número (+/- 9007199254740991), pero muy raramente aparecerá esa limitación en nuestro uso diario.
 
@@ -101,7 +101,7 @@ var positivo = 27;
 var negativo = -40;
 ```
 
-### Boolean
+#### Boolean
 
 Los booleanos provienen de la [lógica de Boole](https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole). Es un concepto que alimenta el código binario y el núcleo de las computadoras. Es posible que haya visto código binario en el pasado (0001 0110…), esto es lógica booleana. Esencialmente significa que tiene dos opciones, activar o desactivar, 0 o 1, verdadero o falso. En Javascript usamos booleanos para significar verdadero o falso. Esto puede parecer simple al principio, pero puede complicarse más adelante.
 

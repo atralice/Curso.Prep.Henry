@@ -34,7 +34,7 @@ En esta lección cubriremos:
 
 Armar un layout y hacer que todo se vea limpio es lo que la mayoría de gente espera hacer cuando empiezan a aprender CSS. Posicionar elementos HTML en la página con CSS es posiblemente la habilidad más poderosa que tiene CSS, aunque también puede ser la más **frustrante**. En esta lección aprenderemos distintas formas de posicionar elementos en la página.
 
-## La propiedad "display"
+## La propiedad ***display***
 
 Esta propiedad es una de las más importante de posicionamiento en CSS. Podemos usarla para controlar cómo se muestra el contenido en relación a los elementos alrededor de este, y cómo se comportan en la pantalla.
 
@@ -46,11 +46,11 @@ Esta propiedad es una de las más importante de posicionamiento en CSS. Podemos 
 
 Hay dos tipos de elementos "display" ya incluidos en HTML; "block" e "inline",
 
-### Elementos "block"
+#### Elementos ***block***
 
 Un elemento "block" siempre arrancará en una nueva línea, y siempre tomará el ancho máximo del contenedor en el cual se encuentre. ¿Recuerdas que en la lección anterior aprendimos que el elemento `<p>` siempre empieza en una nueva línea? Es porque es un elemento "block", como también lo son los `div` y los `<h1-6>`.
 
-### Elementos "inline"
+#### Elementos ***inline***
 
 Los elementos "inline" son opuestos a los "block", dado que no comenzarán en una nueva linea y sólo tomarán el espacio suficiente que necesiten para mostrar la información dentro del mismo. Los elementos `<span>`, `<a>` e `<img>` son inline.
 
@@ -64,21 +64,19 @@ Podemos controlar cómo un elemento se comporta usando la propiedad "display". S
 
 Y vice-versa.
 
-### "Display" tiene otras reglas que debemos conocer:
-
-### none
+#### ***none***
 
 Definir como valor "none" hará que el elemento desaparezca completamente. No debe ser confundido con la regla `visibility: hidden;` dado que esta hace que el elemento sea invisible pero no lo elimina de la página (el espacio continuará ocupado por _algo_). Si un elemento está definido como `display: none;` no habrá signos de él en la página.
 
-### flex
+#### ***flex***
 
 Flex es una nueva herramienta que nos ofrece CSS3, la cual nos da la habilidad de controlar en qué parte de la página queremos que estén nuestros items. Hablaremos sobre ella más adelante en esta lección.
 
-### grid
+#### ***grid***
 
 Esta es una característica de CSS3 que nos permitirá crear sistemas de grillas dentro de un elemento.
 
-## La propiedad "position"
+## La propiedad ***position***
 
 Esta propiedad especificará qué tipo de método de posicionamiento usará un elemento HTML. Hay 5 métodos diferentes disponibles (aquí veremos 4 de ellos).
 
@@ -88,19 +86,19 @@ Esta propiedad especificará qué tipo de método de posicionamiento usará un e
   }
 ```
 
-### static
+#### ***static***
 
 Este es el posicionamiento por defecto de un elemento, definir un elemento como "estático" no afectará al comportamiento del mismo de ninguna manera.
 
-### relative
+#### ***relative***
 
 Usar este valor mantendrá el elemento posicionado como si fuese estático, pero nos permitirá usar otros métodos de posicionamiento de elementos que veremos enseguida.
 
-### fixed
+#### ***fixed***
 
 Definir un elemento como "fijo" hará que éste quede fijo en un lugar de la pantalla, sin importar cuánto navegemos, "scroleemos" o movamos la pantalla, el elemento se quedará en ese lugar. Los casos de uso pueden ser un header o la barra de navegació de un sitio web.
 
-### absolute
+#### ***absolute***
 
 "absolute" es muy parecido a "fixed", excepto que el elemento quedará anclado de forma relativa al elemento _parent_ (siempre que el elemento padre tenga alguna posición definida, excepto "static").
 
@@ -108,7 +106,7 @@ Definir un elemento como "fijo" hará que éste quede fijo en un lugar de la pan
 
 Ahora que hemos definido nuestros métodos de posicionamiento al estilo que queremos usar, podemos arrancar a posicionar nuestro elemento. (Nota: esto funciona para cada método de posición que no sea "static", dado que no afecta al elemento de ninguna forma).
 
-### top, left, right y bottom
+#### ***top***, ***left***, ***right*** y ***bottom***
 
 Después de haber definido nuestro método de posicionamiento, podemos usar las propiedades "top", "left", "right" y "bottom" para acomodar nuestro elemento. El valor que le des a cada uno determinará qué tan lejos del borde quedará nuestro elemento. Por ejemplo, si queremos que nuestro elemento esté en la esquina superior izquierda (con una posición fija), podemos usar lo siguiente:
 
@@ -134,11 +132,11 @@ Si lo quisiésemos 10 píxeles debajo del límite superior y 10 píxeles del bor
 
 Introducido en CSS3, Flexbos es una nueva e interesante característica. La misma nos permite posicionar nuestros elementos en relación a su _parent_ y entre ellos. Ya no necesitamos aplicar "hacks" para cosas como centrar elementos. Esto nos permite que el diseño "mobile-friendly" sea excelente y nos hace dedicar menos tiempo tratando de posicionar elementos como corresponde. Flexbox se puede complicar muy rápido, pero veremos los aspectos básicos a continuación.
 
-### "display: flex" e "inline-flex"
+### ***display: flex*** e ***inline-flex***
 
 Como mencionamos anteriormente en la sección de la propiedad "display", uno de los valores puede ser "flex", esto hace que cualquier contenedor sea un "flex block". También podemos usar "inline-flex" para hacer que el elemento sea "flex" e "inline", aunque para la mayor parte del tiempo, usaremos simplemente "flex".
 
-### "justify-content" y "align-items"
+### ***justify-content*** y ***align-items***
 
 Ahora que nuestro contenedor (elemento) es "flex", podemos imaginarlo como una grilla con columnas que van de izquierdo a derecha y filas que van de arriba a abajo. Podemos usar las propiedades "justify-content" y "align-items" para decirle al contenedor dónde queremos que estén los elementos en la grilla. En principio, "justify-content" aplicará al movimiento de izquierda a derecha (fila), y "align-items" lo hará de arriba a abajo (columna). Tenemos unas reglas que debemos aplicar a cada una de estas reglas:
 
@@ -158,7 +156,7 @@ Ejemplo: si quisiésemos nuestros elementos centrados en el medio exacto de un "
   }
 ```
 
-### "flex-direction"
+### ***flex-direction***
 
 Esta propiedad puede cambiar cómo el navegador interpreta `justify-content` (JC) y `align-items` (AI). El valor por defecto es "row" (fila), y esto funciona en la mayoría de los casos, pero algunas veces queremos cambiar cómo funciona la dirección del contenido.
 
@@ -169,11 +167,9 @@ Esta propiedad puede cambiar cómo el navegador interpreta `justify-content` (JC
 * `row-reverse`: Sólo invierte la dirección de JC de derecha a izquierda, no afecta a AI.
 * `column-reverse`: Sólo invierte la dirección de AI de abajo a arriba, no afecta a JC.
 
-### "align-self"
+### ***align-self***
 
 Por último, cubriremos una propiedad más avanzada llamada "align-self". La misma será aplicada a un elemento dentro del "flex box" del cual queremos separar el control de `align-items`. Si le damos la propiedad `align-self`, podemos colocarla en cualquier lugar a lo largo del eje de elementos de alineación que queramos. (Nota: NO existe `justify-self`, esta es la razón principal por la que los desarrolladores cambiarán la dirección de "flex").
-
-### Abre una nueva ventana en el navegador y completa "homework.html"
 
 ## Recursos adicionales
 
@@ -183,3 +179,7 @@ Por último, cubriremos una propiedad más avanzada llamada "align-self". La mis
 * [MDN: Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 * [MDN: CSS display propery](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 * [MDN: CSS position property](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+
+## Homework
+
+Abre una nueva ventana en el navegador y completa "homework.html"
