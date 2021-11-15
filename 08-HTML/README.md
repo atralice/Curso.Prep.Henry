@@ -67,19 +67,21 @@ Por ejemplo, el tag `<img>` sirve para mostrar una imagen. Este tag recibe el at
   <img src="http://imagen.com/img.jpg" />
 ```
 
-### \<html>
+### Tags
+
+#### \<html>
 
 El tag `<html>` va a contener a todos los demás tags dentro suyo. Este tag básicamente sirve para avisarle al browser que el contenido debe ser interpretado como `html`.
 
-### \<head>
+#### \<head>
 
 Este tag sirve para contener tags que contengan información sobre el documento, pero es información que no queremos que se renderee. Comunmente contiene el *titulo* de la página y *links* a recursos externos que pueda usar la página (javascript o css).
 
-### \<title>
+#### \<title>
 
 Es el título de la página, se mostrará en el tab del browser o en la parte superior (pero no en la página).
 
-### \<body>
+#### \<body>
 
 En este tag estára encerrado todo lo que querramos que se vea en la pantalla.
 
@@ -99,7 +101,7 @@ Como ven, para mayor fácilidad en la lectura y la estructuración del documento
 
 (Todos los tags que presentaremos más abajo van siempre adentro de un tag `<body>`)
 
-### \<p>
+#### \<p>
 
 Es el tag para los párrafos. Mostrará el texto contenido dentro en una nueva línea.
 
@@ -107,15 +109,15 @@ Es el tag para los párrafos. Mostrará el texto contenido dentro en una nueva l
   <p>Soy un párrafo</p>
 ```
 
-### \<span>
+#### \<span>
 
 El elemento span es un contenedor de texto genérico. No inserta una nueva linea, como lo hace el elemento p. Sirve básicamente para darle estilo al texto.
 
-### \<div>
+#### \<div>
 
 El elemento div es un *contenedor* genérico. Es usado principalmente para dar estilo, imaginen que es una caja (cuyo tamaño y color podes modificar *a piacere*), y que dentro podés poner otras cajas iguales.
 
-### \<a>
+#### \<a>
 
 El tag a (del inglés *anchor*), nos permite crear **links** a otros documentos y páginas. Este tag recibe el *atributo* `href` que indica a dónde apunta el link.
 
@@ -123,7 +125,7 @@ El tag a (del inglés *anchor*), nos permite crear **links** a otros documentos 
   <a href="http://www.soyhenry.com">Esto es un link!</a>
 ```
 
-### \<h1> ... \<h6>
+#### \<h1> ... \<h6>
 
 Son los tags de encabezado o títulos, están pensandos del 1 al 6, para indicar la importancia del contenido y su jerarquía.
 
@@ -133,7 +135,7 @@ Son los tags de encabezado o títulos, están pensandos del 1 al 6, para indicar
   <h6>El título menos importante.</h6>
 ```
 
-### \<img>
+#### \<img>
 
 Este tag nos permite mostrar imágenes en la pantalla. Necesita el atributo `src` que indica la *URL* de donde sacar la imagen a mostrar.
 
@@ -141,11 +143,11 @@ Este tag nos permite mostrar imágenes en la pantalla. Necesita el atributo `src
   <img src="http://www.soyhenry.com/imageurl.jpg" />
 ```
 
-### \<ul>
+#### \<ul>
 
 Este tag representa una lista desordenada (del inglés "unordered list"). Este tag está diseñado para contener otros tags de tipo item. También existe el tag `<ol>` que viene de "ordered list".
 
-### \<li>
+#### \<li>
 
 Son los tags que contienen los items de la lista ('list item').
 
@@ -348,7 +350,7 @@ En un documento html cada elemento es representado como una *caja rectangular* y
 
 ### height (alto) y width (ancho)
 
-Podemos decirle al navegador exactamente qué tan *ancho* y *alto* queremos que sea nuestro elemento (contenido), esto se usa en divs, imgs y otros elementos basados en la altura (para determinar el tamaño del texto, necesitaremos usar un propiedad de estilo diferente). Los valores de tamaño pueden estar en muchas medidas diferentes, pero el más común es el píxel "px".
+Podemos decirle al navegador exactamente qué tan *alto* y *ancho* queremos que sea nuestro elemento (contenido), esto se usa en `div`, `img` y otros elementos basados en la altura (para determinar el tamaño del texto, necesitaremos usar un propiedad de estilo diferente). Los valores de tamaño pueden estar en muchas medidas diferentes, pero el más común es el píxel "px".
 
 ```css
   div {
@@ -391,7 +393,7 @@ Por ejemplo. Si establecemos la altura del contenido en 20 px y el ancho en 20 p
 
 Saber esto nos ayudará a dimensionar y posicionar nuestros elementos correctamente.
 
-## Un par de otras propiedades CSS
+## Otras propiedades CSS
 
 ### background
 
