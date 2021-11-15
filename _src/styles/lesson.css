@@ -149,7 +149,7 @@ navbar {
   border: solid 1px;
   border-color: rgb(180, 180, 180);
   background-color: rgb(235, 235, 235);
-  width: 200px;
+  width: 220px;
   /* border: 2px dashed yellow; */
 }
 
@@ -189,7 +189,7 @@ navbar {
 #lesson {
   /* border: 2px dashed green; */
   text-align: justify;
-  padding: 2rem 4rem 4rem 17rem;
+  padding: 2rem 3rem 4rem 18rem;
   font-size: 1.1em;
 }
 
@@ -205,10 +205,17 @@ navbar {
 
 #lesson h2 {
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 #lesson h3 {
   margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#lesson h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 #lesson img {
