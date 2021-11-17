@@ -1,0 +1,10 @@
+Variable: Es un cajon donde guardamos algo que vamos a usar despues.
+
+String: es una cadena de caracteres
+
+Funciones: Es una lista de tareas que se puede guardar para reutilizar dentro del codigo, sin tener que escribirla nuevamente. Los argumentos llaman
+a las Variables definidas dentro de la funcion. Return es necesario para decirle a la funcion que me muetre el resultado de su operacion.
+
+Declaraciones IF: Se utilizan para comparar datos y automatizar un resultado dependiendo si cumple o no lo definido en el if.
+
+Valores booleanos: Son solo 2 true y false, son palabras reservadas por el lenguaje para decir q algo es verdadero o es falso.

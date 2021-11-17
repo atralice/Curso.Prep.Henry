@@ -15,13 +15,13 @@
 
 En esta lección cubriremos:
 
-* Introducción a Javascript
-* Variables
-* Strings, Numbers y Booleanos
-* Math
-* Introducción a las Funciones
-* Control de flujo y operadores de comparación
-* Introducción a Node y NPM
+-   Introducción a Javascript
+-   Variables
+-   Strings, Numbers y Booleanos
+-   Math
+-   Introducción a las Funciones
+-   Control de flujo y operadores de comparación
+-   Introducción a Node y NPM
 
 <iframe src="https://player.vimeo.com/video/423852829" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
@@ -88,6 +88,7 @@ Las "strings" son bloques de texto, siempre se definirán entre comillas, ya sea
 ```javascript
 var nombrePerro = 'firulais';
 ```
+
 ### Numbers
 
 Los números son solo eso, números. Los números NO se envuelven en comillas. Pueden ser negativos también. Javascript tiene una limitación en el tamaño de un número (+/- 9007199254740991), pero muy raramente aparecerá esa limitación en nuestro uso diario.
@@ -128,7 +129,7 @@ En fin, lo importante a tener en cuenta es que los operadores _son_ funciones.
 
 Esto parece aburrido, pero nos va a ayudar a saber cómo piensa el intérprete y bajo que reglas actua.
 
-La _precedencia de operadores_ es básicamente el orden en que se van a llamar las funciones de los operadores. Estás funciones son llamadas en _orden de precedencia_ (las que tienen __mayor__ precedencia se ejecutan primero).  O sea que si tenemos más de un operador, el intérprete va a llamar al operador de mayor precendencia primero y después va a seguir con los demás.
+La _precedencia de operadores_ es básicamente el orden en que se van a llamar las funciones de los operadores. Estás funciones son llamadas en _orden de precedencia_ (las que tienen **mayor** precedencia se ejecutan primero).  O sea que si tenemos más de un operador, el intérprete va a llamar al operador de mayor precendencia primero y después va a seguir con los demás.
 
 La _Asociatividad de operadores_ es el orden en el que se ejecutan los operadores cuando tienen la misma precedencia, es decir, de izquierda a derecha o de derecha a izquierda.
 
@@ -136,7 +137,7 @@ La _Asociatividad de operadores_ es el orden en el que se ejecutan los operadore
 
 Por ejemplo: `console.log( 3 + 4 * 5)` Para resolver esa expresión y saber qué resultado nos va a mostrar el intérprete deberíamos conocer en qué orden ejecuta las operaciones. Al ver la tabla del link de arriba, vemos que la multiplicación tiene una precedencia de 15, y la suma de 14. Por lo tanto el intérprete primero va a ejecutar la multiplicación y luego la suma con el resultado de lo anterior -> `console.log( 3 + 20 )` -> `console.log(23)`.
 
-> Cuando invocamos una función en Javascript, los argumentos son evaluados primeros (se conoce como [__non-lazy__ evaluation]()), está definido en la [especificación](http://es5.github.io/#x11.2.3).
+> Cuando invocamos una función en Javascript, los argumentos son evaluados primeros (se conoce como [**non-lazy** evaluation](<>)), está definido en la [especificación](http://es5.github.io/#x11.2.3).
 > No confundir el orden de ejecución con asociatividad y precedencia, [ver esta pregunta de StackOverflow](http://stackoverflow.com/questions/13849906/operator-precedence-and-associativity-with-math-floormath-random).
 
 Ahora si tuvieramos la misma precedencia entraría en juego la asociatividad, veamos un ejemplo:
@@ -155,7 +156,7 @@ Qué veriamos en el console.log? Para eso tenemos que revisar la tabla por la as
 
 Los operadores matemáticos trabajan en JavaScript tal como lo harían en su calculadora.
 
-### + - * / =
+### + - \* / =
 
 ```javascript
 1 + 1 = 2
@@ -176,11 +177,11 @@ Algo que quizás no haya visto antes es el Módulo (`%`), este operador matemát
 
 ## Objetos Globales y métodos
 
-Javascript tiene una serie de objetos integrados para que los usemos. Ya hemos visto, y hemos estado usando, el objeto de consola y su método `log`. Otro de estos objetos es `Math`. `Math` tiene varios métodos, al igual que` console` tiene `log`. Para agregar a esto, algunos de nuestros tipos de datos también tienen métodos incorporados.
+Javascript tiene una serie de objetos integrados para que los usemos. Ya hemos visto, y hemos estado usando, el objeto de consola y su método `log`. Otro de estos objetos es `Math`. `Math` tiene varios métodos, al igual que`console` tiene `log`. Para agregar a esto, algunos de nuestros tipos de datos también tienen métodos incorporados.
 
 ### Math.pow
 
-Podemos usar el método `pow` en` Math` para devolver un número elevado a un exponente. Tomará dos números.
+Podemos usar el método `pow` en`Math` para devolver un número elevado a un exponente. Tomará dos números.
 
 ```javascript
 Math.pow(2,2) = 4;
@@ -240,7 +241,7 @@ function logHola() {
 logHola();
 ```
 
-En este ejemplo declaramos una función `logHola` y la configuramos en` console.log` `'hello'`. Entonces podemos ver que para ejecutar esta función, necesitamos escribir el nombre y los paréntesis. Esta es la sintaxis para ejecutar una función. Una función siempre necesita paréntesis para ejecutarse.
+En este ejemplo declaramos una función `logHola` y la configuramos en`console.log` `'hello'`. Entonces podemos ver que para ejecutar esta función, necesitamos escribir el nombre y los paréntesis. Esta es la sintaxis para ejecutar una función. Una función siempre necesita paréntesis para ejecutarse.
 
 ### Argumentos
 
@@ -275,6 +276,7 @@ function sumarDosNumeros(a, b) {
 
 sumarDosNumeros(1, 5); // 6
 ```
+
 ### Declaración "return" y Scope
 
 En el ejemplo anterior presentamos la declaración `return`. No vamos a usar `console.log` con todo lo que salga de una función. Lo más probable es que queramos devolver algo. En este caso es la suma de los dos números. Piense en la declaración de retorno ("return") como la única forma en que los datos escapan de una función. No se puede acceder a nada más que a lo que se devuelve fuera de la función. También tenga en cuenta que cuando una función golpea una declaración de retorno, la función detiene inmediatamente lo que está haciendo y "devuelve" lo especificado.
@@ -288,6 +290,7 @@ function dividirDosNumeros(a, b) {
 dividirDosNumeros(6, 3); // 2
 console.log(producto); // undefined
 ```
+
 Si intentamos `console.log` algo que declaramos dentro de la función, devolverá `undefined` porque no tenemos acceso a él fuera de la función. Esto se llama Scope ("alcance"). La única forma de acceder a algo dentro de la función es devolverlo.
 
 También podemos establecer variables para igualar lo que devuelve una función.
@@ -321,19 +324,20 @@ function puedeManejar(edad) {
 puedeManejar(22); // true
 ```
 
-Aquí estamos tomando un número (`edad`) y verificando si la declaración es` true` (`22>18`), lo es, por lo que devolveremos` true`, y la función se detendrá. Si no es así, omitirá ese código y la función devolverá `false`.
+Aquí estamos tomando un número (`edad`) y verificando si la declaración es`true` (`22>18`), lo es, por lo que devolveremos`true`, y la función se detendrá. Si no es así, omitirá ese código y la función devolverá `false`.
 
-El símbolo "mayor que" (`>`) que ve en el último ejemplo se llama _Operador de comparación_. Los operadores de comparación evalúan dos elementos y devuelven `verdadero` o` falso`. Estos operadores son: `<`, `<=`, `>`, `> =`, `===`, `! ==`. Aprenderemos más sobre estos operadores en la próxima lección.
+El símbolo "mayor que" (`>`) que ve en el último ejemplo se llama _Operador de comparación_. Los operadores de comparación evalúan dos elementos y devuelven `verdadero` o`falso`. Estos operadores son: `<`, `<=`, `>`, `> =`, `===`, `! ==`. Aprenderemos más sobre estos operadores en la próxima lección.
 
 ## Introducción a Node y NPM
 
 _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para su uso en servidores/back-end. Tendremos que instalarlo en nuestras máquinas para completar los próximos ejercicios. Para instalar Node, haga clic aquí: [Descargar e instalar Node.js](https://nodejs.org/en/download/). Node viene con "NPM" incluido. NPM es un administrador de paquetes ("package manager") para paquetes Javascript y lo usaremos a lo largo de nuestro aprendizaje en Henry. Una vez que hayas instalado Node.js, no necesitas hacer nada más para instalar NPM.
 
 ## Abre la carpeta "homework" y completa la tarea descrita en el archivo README
+
 [Homework](https://github.com/atralice/Curso.Prep.Henry/tree/master/02-JS-I/homework)
 
 ## Recursos adicionales
 
-* [Codecademy: Learn Javascript](https://www.codecademy.com/learn/learn-javascript)
-* [Udacity: Intro to Javascript](https://www.udacity.com/course/intro-to-javascript--ud803)
-* [MDN: Official Javascript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+-   [Codecademy: Learn Javascript](https://www.codecademy.com/learn/learn-javascript)
+-   [Udacity: Intro to Javascript](https://www.udacity.com/course/intro-to-javascript--ud803)
+-   [MDN: Official Javascript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
