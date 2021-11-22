@@ -1,0 +1,10 @@
+For: Es un bucle. Muy útil para repetir la ejecucion de un bloque de codigo mientras la expresión cumpla la condicion pautada (verdadero),
+      la repticion del codigo escrito se detiene cuando
+      el resultado de la condicion sea falso.
+
+Operador &&: Es un operador logico, significa "y" ó "and", se usa para concatenar condiciones las cuales deben cumplirse todas para que el resultado booleano sea true,
+            sino será false.
+Operador ||: Es un operador logico significa "o" ó "or", se usa para concatenar condiciones, al cumplirse alguna de las condiciones el resultado booleano sera true
+            omitiendo la comprobacion de la siguiente.
+            Si no se cumple ninguna el resultado sera false.
+Operador !: Es un operador logico significa "no" ó "not", es la negación de la condicion, si la condicion es true, devolvera false y viceversa. 

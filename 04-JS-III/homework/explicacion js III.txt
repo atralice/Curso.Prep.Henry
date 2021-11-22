@@ -1,0 +1,3 @@
+Array: Es una lista en blanco a la que se le puede agregar o quitar distintos tipos de datos, (numeros, string, funciones, otros array, etc). Se puede usar como un contenedor para acceder a esos datos segun el
+        en el que esten cargados, cada dato guardado tiene un numero índice. Ésta numeración comienza en el indice "0", se asigna hacia adelante al guardar
+        un nuevo dato.
