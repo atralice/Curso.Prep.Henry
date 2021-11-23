@@ -272,8 +272,8 @@ function sumarDosNumeros(a, b) {
   var suma = a + b;
   return suma;
 }
-
-sumarDosNumeros(1, 5); // 6
+o
+sumarDosNumers(1, 5); // 6
 ```
 ### Declaración "return" y Scope
 
