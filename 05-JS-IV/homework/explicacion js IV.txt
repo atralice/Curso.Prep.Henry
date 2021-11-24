@@ -1,0 +1,17 @@
+Objetos: Básicamente funcionan parecido a los array´s, con la diferencia que los indices no son numericos y tampoco estan ordenados.
+        los indices son string's predefinidos, y de la misma forma q un array cada indice tiene un valor definido.
+
+Propiedades: Se le llama propiedad a la "clave: valor" que define a un objeto, un objeto puede estar definido por varias propiedades. Por ejemplo la propiedad
+              "nombre" del objeto "estudiante", sería Charly:
+
+                var estudiante = {
+                  nombre: Charly
+                }
+Métodos: Son funciones que se asignan como valor a un propiedad.
+
+Bucle for…in: Son bucles que sirve para recorrer las propiedades de un objeto. Como las propiedades de un objeto no son indices numericos no se puede recorre con los bucles
+              anteriores.
+
+Notación de puntos vs notación de corchetes: Son las dos formas de llamar a una propiedad/clave para que nos devuelva el valor asignado.
+            La notación de puntos (objeto.clave) es mas agil de escribir pero mas limitada en su uso, porque el llamado es literal.
+            La notacion de corchetes(objeto['clave']) es lo contrario, pero por ejemplo puedo llamar a la clave por medio de una variable definida.
