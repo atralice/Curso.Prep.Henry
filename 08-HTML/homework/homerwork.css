@@ -1,0 +1,19 @@
+h1{
+    color :rgb(32, 71, 197)
+}
+img  {
+    width: 400px;
+}
+
+#thirddiv{
+    height:600px ;
+    width: 500px;
+    background: pink;
+    padding: 50px;
+    border:5px solid blue;
+
+}
+#spanid {
+    font-size: 18px;
+    margin: 50px;
+}
