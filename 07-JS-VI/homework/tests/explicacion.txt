@@ -1,0 +1,5 @@
+Escribir explicaciones de los siguientes conceptos como si se lo estuviera explicando a un niño de 12 años.
+
+* Funciones Callback
+
+Funciones Callback: las funciones callback nos permiten agregar un valor como parámetro a una función luego de haber sido procesado por otra función, como ejemplo podemos poner una maquina cafetera que se le ingresa granos enteros de café y primero son molidos por un pequeño sistema integrado de la maquina y posteriormente le pasa el café molido a la cafetera para que termine el proceso de la preparación del café, con los demás ingredientes como pueden ser la leche y el azúcar. 

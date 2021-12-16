@@ -1,0 +1,35 @@
+body{
+    background-image: url(https://i.pinimg.com/564x/b2/6c/4e/b26c4ef5fbed53918fd7af8569628852.jpg);
+    background-size: contain;
+}
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: #004d00;
+}
+
+img{
+    width: 400px;
+}
+
+div{
+    text-align: center;
+}
+
+#thirdDiv{
+    height: 600px;
+    width: 500px;
+    background-color: #004d00;
+    padding: 50px;
+    border: 3px solid black;
+}
+
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+}

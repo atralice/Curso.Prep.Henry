@@ -1,0 +1,14 @@
+Escribir explicaciones de los siguientes conceptos como si se lo estuviera explicando a un niño de 12 años
+
+* `for`
+* `&&`, `||`, `!`
+
+For: el for lo podríamos ver como un tipo de evaluador de una condición pero este lo podemos programar para que evalué la cantidad de veces que consideremos necesaria, entonces ya sea para evaluar múltiples elementos o el mismo elemento varias veces, y si se cumple la condición entonces realice una acción que deseamos. Como ejemplo podemos tomar a un maestro calificando las notas de sus estudiantes, al usar un for podemos evaluar la cantidad total de sus estudiantes, pero de lo contrario solo se evaluaría al primero de la lista ya que solo se ejecuta una vez. 
+
+`&&`, `||`, `!`= estos operadores lógicos nos permiten evaluar múltiples aspectos a la vez por ejemplo con el operador “and” (&&) decimo que si sus estudiantes obtuvieron más de 7 y asistieron a la mayoría de las clases pasan el curso de lo contrario no.
+
+Para el operador “or” (||) como ejemplo podríamos decir que si los estudiantes asistieron a una conferencia final sobre la materia o entregaron un ensayo literario sobre el tema de la conferencia pasarían el curso  
+
+Finalmente tenemos el operador de negación (!) que se encarga de contradecir alguna afirmación, por ejemplo si yo digo que ya almorcé, si ponemos este operador estaría de negación al inicio estaría diciendo que no he almorzado y viceversa. 
+
+

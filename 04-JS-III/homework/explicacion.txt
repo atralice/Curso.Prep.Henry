@@ -1,0 +1,3 @@
+Escribir explicaciones de los siguientes conceptos como si se lo estuviera explicando a un niño de 12 años
+
+Arrays: Los arreglos nos permiten agrupar elementos en una lista de manera ordenada ya que tienen un valor numérico que los identifica, esto podríamos asemejarlo a los vagones de un tren el cual lleva en cada valor una carga, y a su vez cada vagón tiene un numero que lo identifica, que en este de caso del array su primer valor  es cero.

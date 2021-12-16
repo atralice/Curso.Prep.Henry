@@ -1,0 +1,18 @@
+Escribir explicaciones de los siguientes conceptos como si se lo estuviera explicando a un niño de 12 años
+
+
+* Variables
+* Strings
+* Funciones (argumentos, `return`)
+* Declaraciones `if`
+* Valores booleanos (`true`, `false`)
+
+Variables:  las variables son una espacio de memoria, lo podemos asemejar a una caja en la cual guardamos un juguete, si queremos obtener el juguete debemos buscar el nombre de la caja y ese seria el nombre de variable.
+
+Strings: un String o cadena de texto son múltiples letras o símbolos que al ser unidos forman palabras o incluso frases.
+
+Funciones(argumentos, `return`): las funciones las podríamos comparar con las maquinas que hacen tareas específicas, y cada maquina(funcion) está especializada en hacer algo, por ejemplo, podríamos tomar una cafetera donde recibe unos ingredientes(argumentos) según la cantidad de los ingredientes me va a entregar(return) cierto café, ya sea muy oscuro, con leche o muy dulce, esto según la proporción de los ingredientes agregados.  
+
+If: bueno los if se encargan de evaluar condiciones y luego de evaluarla según si se cumple la condición realizara cierta acción. Podríamos tomar de ejemplo a un guarda de seguridad de una empresa, él está en la puerta de la empresa y si una persona se acerca sin el carnet de acceso el le dirá que no puede entrar, pero si tiene el carnet de acceso el guarda le abrirá la puerta.
+
+Valores booleanos (`true`, `false`): los boleanos son un tipo de datos que solo tiene dos estados. El solo te pueda dar una respuesta ya sea “si” o “no”, “frio” o “caliente” pero no  respuestas intermedias

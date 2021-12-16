@@ -1,0 +1,12 @@
+Escribir explicaciones de los siguientes conceptos como si se lo estuviera explicando a un niño de 12 años.
+
+    * Objetos
+    * Propiedades
+    * Métodos
+    * Bucle `for…in`
+    * Notación de puntos vs notación de corchetes
+
+Para el caso de los objetos podemos verlo como el hecho de modelar elementos de la vida real usando un lenguaje de programación. Una manera de involucrar múltiples de estos temas es con el clásico ejemplo de un perro, el cual será el objeto al que haremos referencia. Sus propiedades serán sus características como podrían serlo el color de su pelo, el largo de su pelo, su altura su peso. Los métodos nos referimos a las acciones que puede realizar dicho objeto que en este caso es el perro, estas acciones pueden ser comer, descansar, saltar, correr y ladrar. 
+El bucle for..in nos permitirá tener acceso a los atributos de cada objeto, ya que los objetos no cuentan con un identificador numérico a cada valor de atributo si no algo que se le conoce como “key” que será la llave que almacena el valor, ejemplo la key podría ser “color de pelo” y su valor seria “café” entonces para esto es necesario un for..in que nos permite recorrer cada uno de sus atributos.
+
+La notación de punto nos permite llamar directamente la del objeto, en caso de que sepamos exactamente que atributo nos interesa pero en el caso de que queramos iterar y llamar cada atributos con el uso de una variable lo recomendable es hacerlo con la notación de corchetes que nos permite por ejemplo obtener cada atributo con el uso de un bucle, por ejemplo perro.colorDePelo eso con punto con corchete perro[cadaKeyDelPerro]

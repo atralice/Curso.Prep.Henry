@@ -1,0 +1,10 @@
+Escribir explicaciones de los siguientes conceptos como si se lo estuviera explicando a un niño de 12 años.
+
+* `prototype`
+* _Constructors_ (de Clases)
+
+
+Prototype: realiza un tipo de herencia la cual nos permite que nuestros nuevos objetos creados adquieran los métodos de un tipo de prototipo referente a ese tipo de objeto, como si en el caso del perro el perro padre automáticamente al nacer su hijo en sus genes le entregara la capacidad de comer, correr, saltar y ladrar y a su vez le permite usar esas acciones cuando lo considere necesario.
+ 
+_Constructors_ (de Clases): 
+Los constructores suelen ser la primer acción que realiza una clase una vez es llamada, y esto nos ayuda al momento de crear nuevas clases basadas en dicha clase y así compartir esos método, de esa manera cuando creamos esas clases lo primero que realizaran es la acción que queremos y compartan similares tipos de características pero cambiando sus valores, como un perro comparten el hecho de tener diferente color de pelo pero con un color. 
