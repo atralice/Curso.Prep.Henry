@@ -9,7 +9,7 @@ const nuevaString = 'Alexis';
 const nuevoNum = 25;
 
 // Crea una variable booleana:
-const nuevoBool = 1 == 1;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -62,20 +62,22 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x == y){
+  if (x === y){
     return true;
-  }
+  }else{
    return false;
+  }
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (str1 === str2){
+    if (str1.length === str2.length){
       return true;
-    }
+    }else{
      return false;
+    }
 }
 
 function menosQueNoventa(num) {
@@ -84,9 +86,9 @@ function menosQueNoventa(num) {
   // Tu código:
   if (num < 90) {
     return true;
-  }
-   
+  }else{
    return false;
+  }
 }
 
 function mayorQueCincuenta(num) {
@@ -95,33 +97,37 @@ function mayorQueCincuenta(num) {
   // Tu código:
   if (num > 50) {
     return true;
-  }
-  
+  }else{
    return false;
+  }
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-   
+   return x % y;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num === 2, 4, 6, 8, 0){
+  if ((num % 2) === 0){
     return true;
-  }
-  
+  }else{
   return false;
+  }
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if ((num % 2) === 1){
+    return true;
+  }else{
+  return false;
+  }
 }
 
 function elevarAlCuadrado(num) {
