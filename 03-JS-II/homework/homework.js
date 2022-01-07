@@ -7,7 +7,7 @@ function obtenerMayor(x, y) {
   // Tu código:
   if (x === y) return x;
   else if (x > y) return x;
-  else return y;
+  return y;
 }
 
 function mayoriaDeEdad(edad) {
@@ -69,7 +69,7 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
 if(numero === 10 || numero === 5) return true
-else return false
+return false
 }
 
 function estaEnRango(numero) {
