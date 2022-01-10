@@ -1,0 +1,24 @@
+1. En un archivo de texto separado que debes crear, escribe explicando los siguientes conceptos como si se lo estuviera explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+- Variables
+
+RESPUESTA: Una variable es como una caja donde alamacenamos un dato.
+
+- Instrumentos de cuerda
+
+RESPUESTA: Es una cadena ejemplo "cadena".
+
+- Funciones (argumentos, return)
+
+RESPUESTA: Una función es para reutilizar un bloque de código y no volver a repetir el mismo código 100 o más veces.
+
+ -- LOS ARGUMENTOS: Es una variable local, esto quiere decir que está dentro de la función
+ -- RETURN: Sirve devolver un valor determinado y salir de la función.
+
+- Declaraciones if
+
+RESPUESTA: Es un si, por ejemplo decir, si haces la tarea puedes ir a jugar futbol.
+
+- Valores booleanos ( true, false)
+
+RESPUESTA: Son como banderas de verdadero y falso.
