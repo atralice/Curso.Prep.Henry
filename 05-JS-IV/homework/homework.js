@@ -83,6 +83,7 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+
  
 }
 
@@ -90,6 +91,7 @@ function verificarPassword(usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
+
  
 }
 
@@ -97,6 +99,7 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
   // Tu código:
+
   
 }
 
@@ -106,12 +109,16 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // Tu código:
 
+
 }
 
 function pasarUsuarioAPremium(usuarios) {
-  // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
-  // De lo contratio, devuelve "false"
+  // "usuarios" es un array de objetos "usuario"
+  // Cada objeto "usuario" tiene la propiedad "esPremium"
+  // Define cada propiedad "esPremium" de cada objeto como "true"
+  // Devuelve el array de usuarios
   // Tu código:
+
 
 }
 
@@ -122,6 +129,8 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+ 
+  
 
 }
 
@@ -135,7 +144,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-  
+ 
 }
 
 // No modificar nada debajo de esta línea
