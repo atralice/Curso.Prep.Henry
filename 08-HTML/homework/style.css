@@ -1,0 +1,19 @@
+html{
+    background-color: rgb(177, 177, 248);
+}
+h1{
+    color:rgb(58, 37, 22);
+}
+img{
+    width: 400px;
+}
+#thirdDiv{
+    height: 600px;
+    width: 500px;
+    background-color: darkblue;
+    padding: 50px;
+    border: 3px solid violet;
+}
+#spamId{
+    font-size: 18px;
+}
