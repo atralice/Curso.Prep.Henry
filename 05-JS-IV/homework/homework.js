@@ -6,14 +6,28 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+  const objeto = {
+    nombre,
+    edad,
+    meow: function meow(){
+        return "Meow!"
+        }
+    }
+    return objeto
 }
 
 
-function agregarPropiedad(objeto, property) {
+function agregarPropiedad(objeto = null, property) {
   // Agrega una propiedad al objeto (argumento "objeto") con el valor `null`
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+  const object = {
+    objeto: objeto,
+    property,
+}
+return object
+
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -21,13 +35,14 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+  
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-
+ 
 }
 
 function eliminarPropiedad(objeto, unaPropiedad) {
@@ -41,14 +56,22 @@ function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-
+  const nuevoObjeto = {
+    nombre,
+    email,
+    password,
+  }
+  return nuevoObjeto;
 }
 
 function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+  const nuevoObjeto = {
+   
 }
+
 
 
 
@@ -77,6 +100,9 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // // Tu código:
+  const object = {
+    
+  }
 }
 
 function pasarUsuarioAPremium(usuarios) {
