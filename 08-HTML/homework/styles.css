@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+h1 {
+  color: rgb(5, 5, 10);
+}
+
+img {
+  width: 400px;
+}
+
+.fondo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://www.elcolombiano.com/documents/10157/0/726x365/73c0/580d365/none/11101/JTDD/image_content_32589831_20190108143030.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+.divClass {
+  text-align: center;
+  font-size: 20px;
+}
+#spanId {
+  font-size: 18px;
+  margin: 50px;
+}
+
+#thirdDiv {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(204, 162, 83);
+  height: 600px;
+  width: 500px;
+  padding: 50px;
+  text-align: center;
+}
