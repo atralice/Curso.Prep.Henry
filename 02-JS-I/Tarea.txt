@@ -1,0 +1,18 @@
+Variables
+un contenedor en el cual se puede colocar un valor, ya sea texto, numero o booleano
+
+Strings
+variables que pueden contener valores de texto
+
+Funciones (argumentos, return)
+funciones - son procesos paso a paso a realizar
+argumentos - son valores definidos para una variable para una función
+return - comando que interrumpe una función y regresa un valor
+
+Declaraciones if
+
+un comando que permite armar arboles de con funcionamientos diferentes dependiendo de los valores en una variable
+
+Valores booleanos (true, false)
+
+valores 0 y 1, se utilizan normalmente como respuesta a una prueba
