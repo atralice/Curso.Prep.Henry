@@ -16,7 +16,7 @@ function deObjetoAmatriz(objeto){
   }
   return arreglo;
 }
-
+console.log(deObjetoAmatriz(({D: 1,B: 2,C: 3})));
 
 function numberOfCharacters(string) {
   //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
@@ -34,13 +34,14 @@ function numberOfCharacters(string) {
   }
   return obj;
 }
-
+console.log(numberOfCharacters("adsjfdsfsfjsdjfhacabcsbajda"));
 
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+
 }
 
 
@@ -50,30 +51,50 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  return str.split(' ').map((str)=> str.split('').reverse().join('')
+  ).join(' ');
 } 
-
+console.log(asAmirror("The Henry Challenge is close!"))
 
 function capicua(numero){
   //Escribe una función, la cual recibe un número y determina si es o no capicúa.
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  var numero = numero.toString();
+  var numero2 = numero.split('').reverse().join('');
+  if( numero2 === numero){
+    return "Es capicua";
+  }else{
+    return "No es capicua";
+  }
 }
-
+console.log(capicua([1,2,1]))
 
 function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  var letras = "";
+  for(i = 0; i < cadena.length; i++){
+    if(cadena[i] !== 'a' && cadena[i] !== 'b' && cadena[i] !== 'c'){
+      letras = letras + cadena[i];
+   }
+  }
+  return letras;
 }
-
+console.log(deleteAbc(['a', 'g', 'b', 'c']));
 
 function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  var nuevoArray = arr.sort(function(a,b){
+    return a.length - b.length;
+  });
+  return nuevoArray;
 }
-
+console.log(sortArray(["You", "are", "beautiful", "looking"]));
 
 function buscoInterseccion(arreglo1, arreglo2){
   //Existen dos arrays, cada uno con 5 números. A partir de ello, escribir una función que permita 
@@ -81,8 +102,16 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  var iguales = [];
+  for(i = 0; i < arreglo1.length; i++){
+    for(j = 0; j < arreglo2.length; i++){
+      if(arreglo2[j] === arreglo1[i]){
+        iguales.push(arreglo1[i]);
+      }
+    }
+  }
+  return iguales;
 }
-
 
 
 // No modificar nada debajo de esta línea

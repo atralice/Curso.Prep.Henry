@@ -61,7 +61,6 @@ function filter(array) {
     return e[0]=== 'a';
   });
 }
-
 // No modificar nada debajo de esta línea
 // --------------------------------
 

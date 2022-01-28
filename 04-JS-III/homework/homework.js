@@ -20,7 +20,6 @@ function obtenerLargoDelArray(array) {
   return array.length;
 }
 
-
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
@@ -32,7 +31,7 @@ function incrementarPorUno(array) {
   }
   return nuevoArray;
 }
-
+console.log(incrementarPorUno([1,2,3,4]))
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
@@ -82,13 +81,19 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var suma = 0;
-  for(var i = 0; i < numeros.length; i++){
-    suma = suma + numeros[i];
-  }
+  
+  //var suma = 0;
+  //for(var i = 0; i < numeros.length; i++){
+   // suma = suma + numeros[i];
+  //}
+  //return suma;
+
+  var suma = numeros.reduce(function(acc, curr){
+    return acc + curr;
+  });
   return suma;
 }
-
+console.log(agregarNumeros([1,2,3]));
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
