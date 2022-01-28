@@ -1,0 +1,51 @@
+¿ Que es una variable ?
+
+Una variable es una forma de asignar una valor que usaras mas adelante en cualquir
+funcion que ejecutes en Javascript, una variable la puedes configurar y restablecer
+cunado lo desees.
+Para formar una variable solo debes declara el comando "Var" segido de la palabra
+o letras que desees, mas el valor a asignar.
+
+Ejemplo:
+
+var nombre = "Alexis";
+
+¿ Que son los Strings ?
+
+Son textos que se usan en cadena y se encuentran encerrados en "" ya sean doble
+o simple.
+
+Ejemplo:
+
+var deportefavorito = "Futbol";
+
+¿ Que son funciones ?
+
+Son parte inportante de la programacion sobre todo en Javascript, para identificar
+una funcion podemos partir que la misma comensara con el comando o palabra clable
+"function", seguido del nombre de la misma que describe lo que haremos, luego unos
+paréntesis y finaliza con unos corchetes; dentro de estos se deben ejecutar los codigos 
+para que que pueda ejecutarse la funcion.
+
+Las funcione tambien pueden contener argumentos.
+
+Los argumentos son valores suministrados para ejecutar el procedimiento de la funcion
+(cuando dicha funcion lo requiera).
+
+En las funciones tambien nos encotrmos con el comando "return".
+dicho comando es el que usanos para retornar el resultado del procedimiento
+realizado de una funcion.
+
+Ejemplo:
+
+function sumardosnumeros(a, b) {
+    var suma = a + b;
+    return suma;
+}
+
+// a = 5
+// b = 5
+
+sumardosnumeros( 5, 5)
+
+// 10
