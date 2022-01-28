@@ -34,7 +34,6 @@ function numberOfCharacters(string) {
   }
   return obj;
 }
-console.log(numberOfCharacters("adsjfdsfsfjsdjfhacabcsbajda"));
 
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
