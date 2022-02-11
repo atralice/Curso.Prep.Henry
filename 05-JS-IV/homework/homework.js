@@ -156,7 +156,6 @@ function agregarMetodoCalculoDescuento(producto) {
   producto.precioConDescuento = producto.calcularPrecioDescuento()
   return producto;
 }
-
 // No modificar nada debajo de esta línea
 // --------------------------------
 
