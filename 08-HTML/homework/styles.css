@@ -1,0 +1,20 @@
+
+h1 
+{ color: blue;
+    }
+
+img {
+    width: 400px; 
+}
+#thirdDiv {
+    hight: 600px; 
+    width: 500px;
+    background-color: aquamarine;
+    padding: 50px; 
+    border-style: dotted; 
+    border-color: blueviolet;
+}
+#spanId {
+    font-size: 18px;
+    margin: 50px; 
+}
