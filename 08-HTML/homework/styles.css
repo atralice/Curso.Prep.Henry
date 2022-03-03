@@ -1,15 +1,15 @@
-<style>
-        h1 {color:coral;}
-        img {
-            width: 400px;}
-        #thirdDiv {
-            width: 500px;
-            height: 600px;
-            background-color: coral;
-            padding: 50px;
-            border: 3px solid black;
-        }
-        #spanId{font-size: 18px;
-        margin: 50px;}
-
-</style>
+h1 {color: coral;}        
+h3 {color: coral;}     
+h4 {color: coral;}     
+#spanId {color: coral;}
+img {
+    width: 400px;}
+#thirdDiv {
+    width: 500px;
+    height: 600px;
+    background-color: coral;
+    padding: 50px;
+    border: 3px solid black;
+}
+#spanId{font-size: 18px;
+margin: 50px;}
