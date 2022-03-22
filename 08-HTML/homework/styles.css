@@ -1,0 +1,30 @@
+
+h1 
+{ color: blue;
+    margin:auto
+    }
+
+img {
+    width: 400px; 
+}
+#thirdDiv {
+    hight: 600px; 
+    width: 500px;
+    background-color: aquamarine;
+    padding: 50px; 
+    border-style: dotted; 
+    border-color: blueviolet;
+}
+#spanId {
+    font-size: 18px;
+    margin: 50px; 
+}
+
+body {
+
+	background: url(https://thumbs.dreamstime.com/z/paper-texture-background-crumpled-paper-texture-background-design-paper-texture-background-crumpled-paper-texture-151402592.jpg) no-repeat center top;
+
+}
+div {
+    margin: auto;
+}

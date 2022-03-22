@@ -1,4 +1,5 @@
 // No cambies los nombres de las funciones.
+// Este es un mensaje de prueba
 
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
@@ -7,6 +8,7 @@ function crearUsuario() {
   // El `contructor` debe tener un método llamado "saludar" en su `prototype` que devuelva una string 'Hola, mi nombre es {{nombre}}'
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
+/// mensaje de prueba
   // Tu código:
 }
 
@@ -22,6 +24,7 @@ function agregarStringInvertida() {
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
+// mensaje de prueba 
 }
 
 // ---------------------------------------------------------------------------//

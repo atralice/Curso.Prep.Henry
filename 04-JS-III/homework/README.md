@@ -6,7 +6,7 @@
 
 	* Arrays
 
-2. Desde la carpeta `Prep` en la carpeta donde clonaste el repo, ingresa el comando `npm test JSIII.test.js` para correr los tests automatizados. Al principio, todos los tests estarán fallados/rotos. Encontrarás las funciones para hacer pasar los tests en el archivo `homework.js`.
+2. Desde la carpeta `Prep` en la carpeta donde clonaste el repo, ingresa el comandnpm test JSIII.test.jso `` para correr los tests automatizados. Al principio, todos los tests estarán fallados/rotos. Encontrarás las funciones para hacer pasar los tests en el archivo `homework.js`.
 
 
 ### Aca tendras acceso a las [Soluciones](https://github.com/atralice/Curso.Prep.Henry/blob/solution/04-JS-III/homework/homework.js)
