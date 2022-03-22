@@ -1,4 +1,5 @@
 // No cambies los nombres de las funciones.
+// Este es un mensaje de prueba
 
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"

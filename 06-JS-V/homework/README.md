@@ -7,6 +7,6 @@
 * `prototype`
 * _Constructors_ (de Clases)
 
-2. Desde la carpeta `Prep` en la carpeta donde clonaste el repo, ingresa el comando `npm test JSV.test.js` para correr los tests automatizados. Al principio, todos los tests estarán fallados/rotos. Encontrarás las funciones para hacer pasar los tests en el archivo `homework.js`.
+2. Desde la carpeta `Prep` en la carpeta donde clonaste el repo, ingresa el comando `` para correr los tests automatizados. Al principio, todos los testsnpm test JSV.test.js estarán fallados/rotos. Encontrarás las funciones para hacer pasar los tests en el archivo `homework.js`.
 
 ### Aca tendras acceso a las [Soluciones](https://github.com/atralice/Curso.Prep.Henry/blob/solution/06-JS-V/homework/homework.js)
