@@ -1,0 +1,10 @@
+Variables: Nos permiten almacenar el valor de algo para luego más adelante poder ser utilizado.
+
+Strings: Son cadenas de texto, siempre colocados entre comillas. Puede incluir cualquier tipo de caracter, numero, letra, etc.
+
+Funciones (argumentos, return): Son varias instrucciones que permiten hacer una tarea, que toma una entrada de datos a través de los argumentos y devuelve una salida de datos a 
+través de un return, con una obvia relación entre la entrada y salida
+
+Declaraciones IF: Permiten verificar si algo es verdadero (true) o falso (false), a traves de la comparación de valores.
+
+Valores booleanos (true, false): Significa que existen dos opciones como respuesta a un interrogante, verdadero o falso (true o false).
