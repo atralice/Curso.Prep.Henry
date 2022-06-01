@@ -104,3 +104,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+#token
+token 60dias.txt
