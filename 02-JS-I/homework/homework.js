@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return 'Mi nombre es Harbey';
+  return 'Henry';//'Mi nombre es Harbey';// creo que no especifica el string es como una clave despues de intentarlo
 }
 
 function suma(x, y) {
@@ -175,7 +175,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ('hola ' + nombre);
+  return (`Hola ${nombre}!`);// me toco ponerle bagtits creo que s edice asi no se como se escribe para poder resolver lo del nombre concadenado
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -188,7 +188,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  return (lado + lado);
+  return (lado *4);
 }
 
 
