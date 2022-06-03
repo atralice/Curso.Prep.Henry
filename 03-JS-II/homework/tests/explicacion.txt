@@ -1,0 +1,18 @@
+# Homework: Javascript II
+
+## Instrucciones
+---
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se 
+lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero 
+en tu comprensión.
+
+* `for`
+    lo conozco como palabra clave reservada,w de ciclo o bucles qeu se repiten determiando tiempo o infinitos,
+     dependiendo de sus Valores existen otros ciclos para objetos o arrays multidimencionales esto es incorporar ua for dentro de otro for
+     el concepto es la repeticion dentro de un parametro especifico para encontrar un resultado.
+    
+* `&&`, `||`, `!`
+    condicionales, estos son && and o verdadero || or o parcial verdadero  y ! la negacion de todo, esto quiere decir commo
+    en matematicas en && verdeadero sera en la igualdad de los dos terminos comparados; || verdadero sera siempre y cuando uno de los dos
+    terminos comparados sea iguales y por ultimo ! la negacion si es veradero sera falso y asi el opuesto.
+    
