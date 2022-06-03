@@ -216,7 +216,6 @@ function esVocal(letra){
   let vocal=['a','e','i','o','u'], estado=0;
   if(letra.length===1){
     for(var x= 0;x<vocal.length; x++){
-     // console.log(`letra va en ${vocal[x]}`);
       if (vocal[x]===letra)return "Es vocal";
       else estado=1;
     }
