@@ -39,7 +39,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array.push(elemento);
+  array.push(elemento);
+  return array;
 }
 
 
@@ -48,7 +49,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  return array.unshift(elemento);
+ array.unshift(elemento);
+  return array;
 }
 
 
@@ -58,10 +60,10 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var frase="'";
+  let frase="";
   for(var x=0;x<palabras.length;x++){    
     if(x===palabras.length-1){
-      frase=frase+palabras[x]+"'";
+      frase=frase+palabras[x];
     }else frase=frase+palabras[x]+' ';
   }
   return frase;
@@ -72,10 +74,14 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for(var x=0;x<array.length;x++){
-    if(array[x]===elemento) return true;
-    else  return false;
-  }
+  if(array.length!==0){
+    for(var x=0;x<array.length;x++){
+      if(array[x]===elemento) return true;
+      else if(array[x]===undefined) return false; // tratare despues
+      else return false;
+    }
+  }else return false;
+
 }
 
 
@@ -120,9 +126,11 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   let resultado=1;
-  for(var x=0;x<arguments.length;x++){
-    resultado=resultado*arguments[x];
-  }
+  if(arguments.length!==0){
+    for(var x=0;x<arguments.length;x++){
+      resultado=resultado*arguments[x];
+    }
+  }else return 0;
   return resultado;
 }
 
@@ -130,7 +138,11 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-
+  let contador=0;
+  for(var x=0;x<arreglo.length;x++){
+    if(arreglo[x]>18) contador +=1;
+  }
+  return contador;
 }
 
 
@@ -139,15 +151,25 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  
+  if(numeroDeDia===1 || numeroDeDia===7) return "Es fin de semana";
+  else return "Es dia Laboral"; 
 } 
 
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
-  //Escribe tu código aquí
-  
+  //Escribe tu código aquí 
+  function envio(valor){
+    if(valor===9) return true;
+      else return false;
+  }
+  if(n>10000 && n<=99999) return envio(Math.floor(n/1000)); 
+  if(n>1000 && n<=9999)   return envio(Math.floor(n/1000)); 
+  if(n>100 && n<=999)     return envio(Math.floor(n/100));
+  if(n>10 && n<=99)       return envio(Math.floor(n/10));
+  if(n>1 && n<=9)         return envio(n);
+  if(n<0 && n>=-9)        return envio(n);
 }
 
 
