@@ -6,6 +6,18 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+  const object={
+    nombre:nombre,
+    edad:edad,
+    meow:function(){
+     return "Meow!";  
+     //console.log('Meow!');          
+    },
+    //mostar:function(){for(let valor in object){console.log(`  ${valor}: ${object[valor]}`);}}
+  }
+  object.nombre=nombre;
+  object.edad=edad;
+  return object;   
 }
 
 
@@ -14,6 +26,8 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+  objeto[property]=null;
+  return objeto;
 }
 
 function invocarMetodo(objeto, metodo) {
