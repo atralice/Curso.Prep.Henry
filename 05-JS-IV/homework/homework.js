@@ -35,13 +35,15 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+  objeto[metodo]();// me dio por ponerle al nombre de metodo por refrencia agregarle los () despues  ya que necesitava que se viera object.incrementX() jajajj
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-
+  //var x = objetoMisterioso.numeroMisterioso *5; //llamando al objeto y a la clave accede al valor y se multiplica para hacer la operacion
+  return objetoMisterioso.numeroMisterioso*5;  
 }
 
 function eliminarPropiedad(objeto, unaPropiedad) {
@@ -49,6 +51,9 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  var bracket=unaPropiedad;
+  delete objeto[bracket];
+  return objeto;
 }
 
 function nuevoUsuario(nombre, email, password) {
