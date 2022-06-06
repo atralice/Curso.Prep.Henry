@@ -60,6 +60,12 @@ function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
+  const object ={
+    nombre:nombre,
+    email: email,
+    password:password
+  }
+  return object;
 
 }
 
@@ -67,6 +73,8 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+  if(usuario.email===null || usuario.email===undefined) return false;// veo que en la salida no havia registro de email y revisando puse undefined para verificar  y me salio
+  else return true;
 }
 
 
@@ -76,6 +84,9 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  var bracket=propiedad;
+  if(objeto[bracket]!==undefined) return true;
+  else return false;
 }
 
 function verificarPassword(usuario, password) {
@@ -83,6 +94,9 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
+  var bracket= password;
+  if(usuario[bracket]===password) return true;
+  else return false;
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
