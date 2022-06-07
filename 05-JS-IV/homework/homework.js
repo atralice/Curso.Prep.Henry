@@ -20,7 +20,6 @@ function crearGato(nombre, edad) {
   return object;   
 }
 
-
 function agregarPropiedad(objeto, property) {
   // Agrega una propiedad al objeto (argumento "objeto") con el valor `null`
   // Devuelve el objeto
@@ -77,15 +76,13 @@ function tieneEmail(usuario) {
   else return true;
 }
 
-
-
 function tienePropiedad(objeto, propiedad) {
   // Devuelve "true" si el objeto (parámetro "objeto") tiene una propiedad (key) cuyo nombre es igual al valor del argumento "propiedad"
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
   var bracket=propiedad;
-  if(objeto[bracket]!==undefined) return true;
+  if(objeto[bracket]!==undefined) return true;// de esta manera se confirma si existe la propiedad 
   else return false;
 }
 
@@ -94,8 +91,7 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  var bracket= password;
-  if(usuario[bracket]===password) return true;
+  if(usuario.password===password) return true;//existe en los dos la propiedad password por tal razon se ve es su contenido.
   else return false;
 }
 
@@ -103,13 +99,20 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
+  if(usuario.password===nuevaPassword) return usuario;
+  else {
+    usuario.password=nuevaPassword;
+    return usuario;  //solo era enviar el objeto no con la nueva contraseña huuu 
+  }   
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
   // "usuario" tiene una propiedad llamada "amigos" que es un array
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
-  // // Tu código:
+  // // Tu código: 
+  usuario.amigos.push(nuevoAmigo);  // despues de varios intentos y monton de codigo este fue el mas optimo y basico para resolver el ejercicio 
+  return usuario;
 }
 
 function pasarUsuarioAPremium(usuarios) {
@@ -118,6 +121,10 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  for(let clave in usuarios)
+    if (usuarios[clave].esPremium=== false)//usuarios[clave].esPremium asumi que el nombre del objeto seria usuarios[clave].esPremium  seria el valor 
+      usuarios[clave].esPremium=true;  
+   return usuarios;
 }
 
 function sumarLikesDeUsuario(usuario) {
@@ -127,6 +134,11 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+  //console.log(usuario.posts[2].likes);// asi accedo a los like el usuario.posts[2] es como el nombre del objeto
+  var total_likes=0;
+  for(let clave in usuario.posts) 
+    total_likes += usuario.posts[clave].likes;  
+  return total_likes;
 }
 
 function agregarMetodoCalculoDescuento(producto) {
@@ -139,7 +151,13 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-
+  producto['calcularPrecioDescuento']=function(){
+    var resultado=0;
+    //console.log(` precio ${this.precio} * % ${this.porcentajeDeDescuento} = ${this.precio-(this.precio * this.porcentajeDeDescuento)}`);
+    resultado=this.precio-(this.precio * this.porcentajeDeDescuento);
+    return resultado;
+  };
+  return producto;  
 }
 
 // No modificar nada debajo de esta línea
