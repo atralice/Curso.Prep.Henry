@@ -8,6 +8,31 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
+  //esta es la version ES& antigua me faltaba era definir el envio por argumentos con solo opciones no lo sabia y estaba patinando asi como el de saludar lo mescle con lo visto y era asi facil como en los array
+/*
+  class Usuario{
+    constructor(opciones){//esto es el constructor antiguo
+      this.usuario=opciones.usuario;
+      this.nombre=opciones.nombre;
+      this.email=opciones.email;
+      this.password=opciones.password;
+      this.saludar=function(){
+             return `Hola, mi nombre es ${this.nombre}`;
+          }
+    }
+  }
+  return Usuario;*/
+  // forma moderna para poderlo, como un aplantilla para futuros objetos, esto servira para que funciones para futuras classes
+  function Usuario(opciones){//esto es el constructor moderno
+    this.usuario=opciones.usuario;
+    this.nombre=opciones.nombre;
+    this.email=opciones.email;
+    this.password=opciones.password;
+  }
+  Usuario.prototype.saludar=function(){
+    return `Hola, mi nombre es ${this.nombre}`;
+  }
+  return Usuario;
 }
 
 function agregarMetodoPrototype(Constructor) {
