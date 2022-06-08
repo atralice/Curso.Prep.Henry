@@ -1,0 +1,109 @@
+linea de tiempo 53:30
+
+function Persona(edad){
+	this.edad:
+}
+Persona.prototype.getEdad=function(){
+	return this.edad;
+}
+var obj = new Persona(22);
+var obj2 = new Persona(34);
+var obj3 = new Persona(213221);
+>>obj.getEdad()
+>>22
+>>obj2.getEdad()
+>>34
+>>obj3.getEdad()
+>>213221
+>>obj3.getEdad()=function(){return this.edad/2}//sobreescribir las propiedades de cada uno
+>>106610.5
+Persona.prototype.getEdad=function(){
+	return `tiene: ${this.edad} años`;
+}
+>>obj.getEdad();
+>>'tiene: 22 años'
+>>obj2.getEdad();
+>>'tiene: 34 años'
+>>obje.getEdad()
+>>106610.5
+>>obj3
+>>Persona {edad:213221,getEdad:[function]}
+
+
+/*ejemplo del video es una forma de hacer las clases con el constructor*/
+function Persona(nombre, apellido){
+	this.nombre=nombre || 'Juan';
+	this.apellido=apellido ||'Perez';
+}
+Persona.prototype.getNombre=function(){
+	return this.nombre + ' '+this.apellido;
+}
+
+var toni = new Persona('Toni','Tralice');
+var tincho = new Persona('Martin','Borchardt');
+var emi = new Persona('Emi','Chequer');
+
+>>toni.getNobre()
+>>Toni Tralice
+>>tincho.getNombre()
+>>Martin Borchardt
+>>emi.getNombre()
+>>Emi Chequer
+
+/*Object.create y pure prototypal inheritance  esta es otra forma de hacerlo las clases basado en java*/
+
+Object.create recibe un objeto como parametro y crea un nuevo objeto cuyo prototipo es el primero
+que le pasamos. Por lo tanto, vamos a poder acceder a todas las propiedades y metodos del objeto 
+base en los nuevos objetos credos.
+
+ejemplo
+
+var person={
+	nombre:'Defecto',
+	apellido:'Defecto'
+	getNombre:function gettNombre(){
+		return this.nombre;
+	}
+};//un objeto cualquiera
+var toni = Object.create(person);// le pasa el objeto que creamos
+
+toni.nombre
+toni.apellido
+toni.getNombre()
+
+console.log(toni)// es un objeto
+coneole.log(toni.__proto__)//es el objeto persona qeu se creo al inicio
+
+
+/*ES6 y Clases (class) esta es otra manera de hacerlo tercera forma vista*/
+
+class Persona{
+	constructor(nomnbre, apellido){
+		this.nombre = nombre,
+		this.apellido = apellido
+	}
+	saludar(){
+		console.log(`hola! ${this.nombre}`);
+	}
+//geter y setters
+}
+
+var toni = new Persona('Toni','Tralice');
+toni.saludar();
+
+//el motodo super nos permite usar el constructor de la clase de la cual estamos heredando
+//en este case de la clase Persona
+
+class EMpleado extends Persona{
+
+	constructor (nombre, apellido,empleo, sueldo){
+		super(nombre,apellido);
+		this.empleo= empleo;
+		this.sueldo= sueldo;
+	}
+}
+
+var toni = new Empleado('Toni','Tralice','profesor',100);
+toni.saludar();
+
+
