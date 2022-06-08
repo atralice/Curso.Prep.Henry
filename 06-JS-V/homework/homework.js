@@ -39,6 +39,10 @@ function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
+  Constructor.prototype.saludar=function(){
+    return `Hello World!`;
+  }
+ 
 }
 
 function agregarStringInvertida() {
@@ -47,6 +51,11 @@ function agregarStringInvertida() {
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
+  String.prototype.reverse=function(){
+    var recibe = this;
+    recibe = recibe.endsWith('o');
+    return recibe;
+  }
 }
 
 // ---------------------------------------------------------------------------//
@@ -61,9 +70,14 @@ function agregarStringInvertida() {
     //  }
 
   class Persona {
-    constructor(/*Escribir los argumentos que recibe el constructor*/) {
-      // Crea el constructor:
-
+    constructor(nombre, apellido, edad, domicilio) {
+      this.nombre = nombre,
+      this.apellido = apellido,
+      this.edad = edad,
+      this.domicilio = domicilio
+    }
+    detalle(){
+      return {Nombre:this.nombre, Apellido:this.apellido, Edad: this.edad, Domicilio:this.domicilio};
     }
 }
 
@@ -71,11 +85,16 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
+  var nuevaPersona= new Persona(nombre,apellido,edad,dir);
+  return nuevaPersona;
 }
   
 function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
+  Persona.prototype.datos=function(){
+    return `${this.nombre}, ${this.edad} años`;
+  }
 }
   
 
