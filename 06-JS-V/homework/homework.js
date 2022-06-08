@@ -52,9 +52,11 @@ function agregarStringInvertida() {
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
   String.prototype.reverse=function(){
-    var recibe = this;
-    recibe = recibe.endsWith('o');
-    return recibe;
+    var recibe = this, salida="";
+    for(var x=recibe.length;x>=0;x--){
+      salida = salida + recibe.charAt(x);
+   }
+   return salida;
   }
 }
 
