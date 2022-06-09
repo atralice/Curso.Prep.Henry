@@ -1,3 +1,6 @@
+ruta para ver el libro esta bueno y es avanzados
+https://eloquentjavascript.net/index.html
+
 linea de tiempo 53:30
 
 function Persona(edad){
