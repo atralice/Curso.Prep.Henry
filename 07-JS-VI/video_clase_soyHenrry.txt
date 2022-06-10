@@ -231,3 +231,23 @@ var sumaReduce = nums.reduce(function(acomulador , elemento){
 	return acomulador + elemento;
 },0);
 
+
+//ejemplo pagina de forEach
+
+const autos=['Ford','Chevrolet','Toyota','Tesla'];
+//podemos escribir el callback en los parentesis como una funcion anonima
+autos.forEach(function(eleento, indice){
+	console.log(elemento);	
+});
+//O podemos crear una instancia de una funcion para usarla como callback.
+//Ademas, no necesitamos usar el argumanto de indice, si no lo necesitas, no duden en omitirlo
+function mostrarNombres(elemento){
+	console.log(elemento);
+}
+//llama la funcion forEach en paretesis
+autos.forEach(mostrarNombres);
+
+
+// ejemplo pagina reduce
+
+const numeros=
