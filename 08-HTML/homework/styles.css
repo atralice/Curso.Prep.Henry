@@ -1,5 +1,16 @@
-h1{
-    color:aqua;
+body{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background:no-repeat center/100% url(https://milesdefondos.com/wp-content/uploads/2021/06/Fondos-de-pantalla-para-celular-de-Paisaje-de-Noche-7.jpg);  
+    background-attachment: fixed;
+    
+}
+h1{   
+    color:rgb(21, 99, 104);
+    text-align: center;
 }
 img{
     width: 400px;
@@ -7,14 +18,16 @@ img{
 #thirdDiv{  
     height:600px;
     width:500px;
+    margin:auto;
     background-color:azure;
     padding:50px;
     border: 1px solid rgb(41, 128, 150);
+    border-radius: 5%;
 }
 .divClass{
-    font-size: 20px;
+    font-size: 20px; 
 }
 #spanId{
     font-size: 18px;
-    margin:50px;    
+    margin:50px;   
 }
