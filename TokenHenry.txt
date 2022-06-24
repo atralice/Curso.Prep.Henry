@@ -1,0 +1,63 @@
+1.-Primero que nada debemos de tenes una URL al cual vamos a clonar nuesro repositorio, la clonaremos con nuestra terminal 
+  GIT dando clik derecho y selecionando "Git Bash Here" una vez que nos abra la terminal con el comando:
+  "[git clone (URL del repositorio que deseamos clonar)]" Y damos enter.
+
+2.- Una vez clonado el repositorio lo abrimos con Visual Code, modificamos lo que tengamos que modificar, damos "Save"
+   y depues tendremos que ejecutar los siguente comandos para guardar y sincronizar los cambios en nuestro repositorio
+   con el repositorio remoto que esta en GitHub.
+   
+3.- Abrimos la terminal "ctrl + ñ" vemos el estatus del codigo y sus cambios: "git status" ejecutando este comando
+    nos debera aparecer en rojo la linea de codigo del archivo modificado.
+
+4.- Despues lo tenemos que agregar con el comando: "git add" damos un estatus "git status" y nos tendra que aparecer 
+    en verde, que quiere decier que se agrego al historial de Github correctamente.
+
+5.-Ahora tendremos que verificar esos cambios con el comando: "[git commit -m  "cualquier descripcion"] " una vez confirmados 
+   los cambios tendremo que subir los cambios al repositorio de Github que es un servidor.
+	.si te salta un error de que no encuentra la direccion email, solo debemos establecer nuestro email con y nuestro 
+	.nombre de usuario con el sigieinte comamdo GIT: [git config --global user.email (nuestro email)]
+							 [git config --global user.name (Nuestro nombre)]
+
+6.- Para subir los cambios al repositorio de GitHub usamos el siguiente comando: "[git push]" en donde nos pedira por primera
+    vez una autenticacion para eso tendremos que crear un tocken.
+	.Para crear un token nos vamos a nuestra pagina de Github nos dirigimos a "setting" que se encuentra en el icono de 
+	 nuestra cuanta.
+	.despues nos vamos al "Developer settings" 
+	.ai veremos "Personal acces tokens" ai nos da la opcion de ver, crear y eliminar nuestros tokens
+
+				OTRAS LINEAS DE COMANDOS PARA "GIT"
+
+1.- Para ver los "comiit" que hemos realizado nosotros: [git log --oneline]  (nos devera de salir algo parecido)
+	7afde1d modific 4.2
+	3019f32 modific4
+	5127c9b modific 4	{TODOS ESTOS SON ID COMMIT, Y SIRVEN PARA REVERTIR CAMBIOS}
+	bb759b5 modifis3
+	34a96f7 midific2
+	c25284f si se puede
+	3535536 user
+   .Ahora para regresar en el tiempo y revertir algunos cambios de nuestro repositorio a un "commit" espesifico, debemos ingresar
+    la siguinete linea de comandos: [git reset --hard "ID COMMIT"]
+
+2.- Para ver todos lo scambios o "commit" que an hecho los usuarios con permiso para efectuar cambion en el repositorio
+    debemos ingresar el siguiente comando: [git log]
+
+
+
+                                    TOKEN DEL CURSO DE  HENRY
+
+NOTA: recuerden simpre guardar los tokens en un lugar seguro y copiarlos en un block de notas.
+
+TOKEN: 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
+
+Tambien podemos utilizar el token direntamente como linea de comando en la consola.
+Ingresando la sigiente linea de codigo en la consola.
+
+EJEMPLO: git push https://(token)@github.com/(nombre de usuario)/(nombre de repo).git
+ 
+quedaria asi:
+ 
+AUTENTICAION AL CLONAR: git clone https://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@github.com/Emmanuelvp88/curso.prep.henry.git
+
+AUTENTICAION AL SUBIR REPO: git push https://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@github.com/Emmanuelvp88/curso.prep.henry.git
+
+
