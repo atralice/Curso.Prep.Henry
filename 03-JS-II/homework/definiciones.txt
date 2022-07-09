@@ -2,4 +2,4 @@
 -&&, ||, !: son las operaciones logicas AND(Y),OR(O) y NOT(NO) en ese orden y los valores que pueden tener son true o false.
 -&&: and es un operador logico el cual es true si y solo si ambas expresiones logicas son true de lo contrario es false.
 -||: or es un operador logico el cual es true si alguno de las dos expresiones es true de lo contrario es false.
--!: not es un operador logico que invierte el valor de la expresion, es decir, si la expresion es true el operador logico not la convierte en false y viceversa.
+-!: not es un operador logico que invierte el valor de la expresion, es decir, si la expresion es true el operador logico not la convierte en false y viceversa. 
