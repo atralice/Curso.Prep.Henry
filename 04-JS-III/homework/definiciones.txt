@@ -1,1 +1,1 @@
--Arrays: los arrays o arreglos son estructuras de datos las cuales nos permiten almacenar diferentes tipos de datos y acceder a ellos coo si fuera un casillero refiriendonos al espacio alq ue queremos acceder.
+-Arrays: los arrays o arreglos son estructuras de datos las cuales nos permiten almacenar diferentes tipos de datos y acceder a ellos coo si fuera un casillero refiriendonos al espacio alq ue queremos acceder. 
