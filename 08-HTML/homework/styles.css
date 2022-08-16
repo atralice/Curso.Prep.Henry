@@ -30,35 +30,87 @@ img{
     font-size: 18px;
     margin:50px;   
 }
-.marco{
-    border:1px red solid;
-    margin:2px;
-    height:auto;
-    width:auto;
-    display: flex;
-    flex-direction: column;
+.cv{
+    width:90%;
 }
-.foto{
-    border:1px blue solid;
-    margin:1px;
-    height:50px;
-    width:50px;    
+.marco{
+    border: 5px groove #52538fa6;
+    margin:2px;     
+    height:auto; 
+    display: flex;
+    flex-direction:row;
+}
+.foto{      
+    margin:20px;
+    height:auto ;
+    width:auto;   
+    display: flex;
+    justify-content: center; 
 }
 .datos_personales{
-    border:1px green solid;
-    margin: 1px;
-    height:50px;
-    width:50px;
+    margin: 1px;      
+    padding:0px;
+    align-items: flex-start;
 }
 .encabezado{
     border:1px black solid;
     margin:1px;
-    height:50px;
-    width:50px;
+    height:auto ;
+    width:auto;  
 }
 .cuerpo{
     border:1px yellow solid;
     margin:1px;
-    height:50px;
-    width:50px;
+    height:auto ;
+    width:auto;  
+}
+.foto img {
+    width:150px;    
+    border-radius: 50%;
+    border:1px solid rgba(16, 16, 109, 0.897);
+}
+.foto img:hover{
+    width:160px;   
+    border-top: 2px solid #1eb0bb;
+    border-right: 2px solid #2640d8;   
+    border-bottom: 2px solid #1358a7;
+    border-left: 2px solid #120438;
+    transition: 5s;    
+}
+ul{
+    padding:0px;   
+}
+li{  
+    width:100%;   
+    margin:1px;
+    padding:0px;
+    list-style:none;
+    display: flex; 
+    justify-content: space-between;
+}
+img{   
+    margin: 1px;
+    padding:0px;
+    width:20%;
+}
+span{
+    margin: 1px;
+    padding:0px;
+    width:75%;
+}
+.datos_personales ul li img{
+    margin:1px;
+    padding:0px;
+    width:30px;    
+}
+.datos_personales ul li span{
+    margin: 1px;
+    padding:0px;
+}
+.lado_derecho{
+    border-right: 5px groove #52538fa6;
+    width:20%
+}
+.lado_izquierdo{
+    width:80%;
 }
