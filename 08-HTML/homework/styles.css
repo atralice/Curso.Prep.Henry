@@ -2,10 +2,9 @@ body{
     display:flex;
     flex-direction: column;
     width: 80%;
-    height: auto;
+    height: 90%;
     margin: auto;
-    background:no-repeat center/100% url(https://milesdefondos.com/wp-content/uploads/2021/06/Fondos-de-pantalla-para-celular-de-Paisaje-de-Noche-7.jpg);  
-    background-attachment: fixed;
+    background: lightblue no-repeat fixed  url(https://images6.alphacoders.com/103/thumb-1920-1039724.jpg);  
     
 }
 h1{   
@@ -30,4 +29,36 @@ img{
 #spanId{
     font-size: 18px;
     margin:50px;   
+}
+.marco{
+    border:1px red solid;
+    margin:2px;
+    height:auto;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+}
+.foto{
+    border:1px blue solid;
+    margin:1px;
+    height:50px;
+    width:50px;    
+}
+.datos_personales{
+    border:1px green solid;
+    margin: 1px;
+    height:50px;
+    width:50px;
+}
+.encabezado{
+    border:1px black solid;
+    margin:1px;
+    height:50px;
+    width:50px;
+}
+.cuerpo{
+    border:1px yellow solid;
+    margin:1px;
+    height:50px;
+    width:50px;
 }
