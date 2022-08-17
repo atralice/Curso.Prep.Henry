@@ -109,8 +109,8 @@ Las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo
 
 La cabecera o head representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (git branch rama, git checkout -b rama) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos ( git reset id-commit, git checkout rama-o-id-commit).
 
-- **git branch nombre de rama**: crea una rama.
-- **git checkout nombre de la rama**: cambiarse de rama.<br>
+- **git branch "nombre de rama"**: crea una rama.
+- **git checkout "nombre de la rama"**: cambiarse de rama.<br>
   **NOTA**: Hacer commit antes de cambiar de ramas para no perder los datos.
 
 # Fusión de ramas con Git Merge 🐱‍🏍
@@ -161,8 +161,8 @@ Sin embargo, esto solo funciona para las personas que quieren empezar a contribu
 
 Puedes trabajar con ramas que nunca enviamos a GitHub, así como pueden haber ramas importantes en GitHub que nunca usas en el repositorio local. Lo importante es que aprendas a manejarlas para trabajar profesionalmente.
 
-- **Crear una rama en el repositorio local**: git branch nombre de la rama o git checkout -b nombre de la rama.
-- **Publicar una rama local de, al repositorio remoto**: git push origin nombre de la rama.
+- **Crear una rama en el repositorio local**: git branch nombre de la rama o git checkout -b "nombre de la rama."
+- **Publicar una rama local de, al repositorio remoto**: git push origin "nombre de la rama."
 
 Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git usando el comando gitk.
 

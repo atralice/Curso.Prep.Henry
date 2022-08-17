@@ -1,0 +1,11 @@
+## Instrucciones
+---
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se 
+lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero 
+en tu comprensión.
+
+	* Arrays
+    Bueno un array es un arreglo de arreglos, como asi es como si tubiera un cajon con multipes separadores, como lo de las cucharas, 
+    eso un cajon de cubiertos, donde la palabra arrays es el cajo y los separadores seran los espacios que tiene para
+    acomodar lso cubiertos, y donde van los cubiertos pueden haber muchos pocos o ninguno
+    seria asi: var cajon_cubiertos =['cucharas', 'tenedores',' ','cuchillos'];

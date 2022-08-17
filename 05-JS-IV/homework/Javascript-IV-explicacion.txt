@@ -1,0 +1,14 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes 
+conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará 
+a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	* Objetos
+    -> es la representacion de un objeto el cual puede recibir diferentes nombres siendo en su origen el mismo, ejplo silla puede ser silla rimax, silla madera, silla dible, silla alta en fin 
+	* Propiedades
+    -> son valoes qeu se representan por medio de claves y valores, estos pueden ser innumerables cualidades o numeros ejm silla={mateial:[`madera`,`plastico`,`metal`]}
+	* Métodos
+    ->es interesante esto de los metodos, son funciones que se llaman como valor  de una clave, pueden ser operaciones dentro de esas de forma compleja o basica como una calculadora 
+	* Bucle `for…in`
+    -> es una forma de iterar en cada uno de las propiedades del objeto, por medio de su clave para acceder a su valor muy practico y rapido
+	* Notación de puntos vs notación de corchetes
+    ->es una forma de sacar los valores de las llaves, apesar qeu su representacion es diferente la salida sera la mismas

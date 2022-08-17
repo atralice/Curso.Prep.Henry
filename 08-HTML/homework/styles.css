@@ -1,0 +1,132 @@
+body{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    background: lightblue no-repeat fixed  url(https://images6.alphacoders.com/103/thumb-1920-1039724.jpg);  
+    
+}
+h1{   
+    color:rgb(21, 99, 104);
+    text-align: center;
+}
+img{
+    width: 400px;
+}
+#thirdDiv{  
+    height:600px;
+    width:500px;
+    margin:auto;
+    background-color:azure;
+    padding:50px;
+    border: 1px solid rgb(41, 128, 150);
+    border-radius: 5%;
+}
+.divClass{
+    font-size: 20px; 
+}
+#spanId{
+    font-size: 18px;
+    margin:50px;   
+}
+.cv{
+    width:90%;
+}
+.marco{
+    border: 5px groove #52538fa6;
+    margin:20px 5px;     
+    height:auto; 
+    display: flex;
+    flex-direction:row;
+}
+.foto{      
+    margin:20px;
+    height:auto ;
+    width:auto;   
+    display: flex;
+    justify-content: center; 
+}
+.datos_personales{
+    margin: 1px;      
+    padding:0px;
+    align-items: flex-start;
+}
+.encabezado{
+    margin:1px;
+    height:auto ;
+    width:auto;  
+}
+.cuerpo{
+    margin:1px;
+    height:auto ;
+    width:auto;  
+}
+.foto img {
+    width:150px;    
+    border-radius: 50%;
+    border:1px solid rgba(16, 16, 109, 0.897);
+}
+.foto img:hover{
+    width:160px;   
+    border-top: 2px solid #1eb0bb;
+    border-right: 2px solid #2640d8;   
+    border-bottom: 2px solid #1358a7;
+    border-left: 2px solid #120438;
+    transition: 5s;    
+}
+ul{
+    padding:0px;   
+}
+li{  
+    width:100%;   
+    margin:1px;
+    padding:0px;
+    list-style:none;
+    display: flex; 
+    justify-content: space-between;
+}
+img{   
+    margin: 1px;
+    padding:0px;
+    width:20%;
+}
+span{
+    margin: 1px;
+    padding:0px;
+    width:75%;
+}
+.datos_personales ul li img{
+    margin:1px;
+    padding:0px;
+    width:30px;    
+}
+.datos_personales ul li span{
+    margin: 1px;
+    padding:0px;
+}
+.lado_derecho{
+    border-right: 5px groove #52538fa6;
+    width:20%;
+}
+.lado_izquierdo{
+    width:80%;
+}
+h3 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#2640d8;
+}
+p i{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #120438;
+    background-color:rgb(95, 106, 141);
+}
+.cuerpo ul li {
+    margin-top: 12px;
+    padding:0px;
+    display: flex;
+    flex-direction:column;
+}
+.cuerpo ul li p{
+    margin:3px 0px;
+}
