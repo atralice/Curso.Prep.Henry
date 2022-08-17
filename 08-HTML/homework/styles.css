@@ -35,7 +35,7 @@ img{
 }
 .marco{
     border: 5px groove #52538fa6;
-    margin:2px;     
+    margin:20px 5px;     
     height:auto; 
     display: flex;
     flex-direction:row;
@@ -53,13 +53,11 @@ img{
     align-items: flex-start;
 }
 .encabezado{
-    border:1px black solid;
     margin:1px;
     height:auto ;
     width:auto;  
 }
 .cuerpo{
-    border:1px yellow solid;
     margin:1px;
     height:auto ;
     width:auto;  
@@ -113,4 +111,22 @@ span{
 }
 .lado_izquierdo{
     width:80%;
+}
+h3 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#2640d8;
+}
+p i{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #120438;
+    background-color:rgb(95, 106, 141);
+}
+.cuerpo ul li {
+    margin-top: 12px;
+    padding:0px;
+    display: flex;
+    flex-direction:column;
+}
+.cuerpo ul li p{
+    margin:3px 0px;
 }
