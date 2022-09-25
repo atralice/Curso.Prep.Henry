@@ -1,0 +1,14 @@
+Variable:Es un espacio de memoria que se utiliza para guardar datos q puedenser 
+modificados o rescatados mas adelante.
+
+Strings: Son un tipo de dato q almacena cadenas de caracteres o palabras.
+
+Funciones: Tambien llamada 'callable objects' u 'Objetos invocables, funcionan como objetos 
+y nos permites interactuar con las variable e introducir datos en forma de argumentos.
+La unica forma de acceder a una variable dentro de una funcion es mediante el codigo 'return'
+que me devuelve el dato especificado.
+
+Declaracion 'if': Son declaraciones de control de flujo, que permiten tomar decisiones dependiendo
+de ciertas condiciones que si se cumplen o no, generan las acciones determinadas.
+
+Valores booleanos: Son variables que solo pueden tener dos valores, 'true' o 'false'.
