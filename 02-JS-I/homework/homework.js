@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
-// Crea una variable "string", puede conte0ner lo que quieras:
-const nuevaString = 'prueba456';
+// Crea una variable "string", puede contener lo que quieras:
+const nuevaString = 'Hola3';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = null;
