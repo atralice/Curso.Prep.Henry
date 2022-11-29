@@ -1,8 +1,4 @@
-<img  src='./logo.png' height='70px'>
 
-## Introducción
-
-# Modulo 0 - Prep
 
 * [00 - Primeros Pasos](./00-PrimerosPasos)
 * [01 - Git](./01-Git)
