@@ -41,6 +41,10 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // y devuelve el array
   // Tu código:
 
+  elemento.push('');
+    return array;
+  
+
 }
 
 
@@ -49,6 +53,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  elemento.unshift ('');
+  return array;
 }
 
 
@@ -58,6 +64,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  
 }
 
 
